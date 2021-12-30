@@ -89,9 +89,10 @@ y += vsp;
 		}
 		break;
 	} 
-
 lastframe = image_index;
-if (framebefore = lastframe){
+
+
+if (framebefore == lastframe){
 	if (lastframe = 3) {
 		lastframe = 0;
 	} else {

@@ -23,16 +23,10 @@ text_x = box_x + x_buffer;
 text_y = box_y + y_buffer;
 name_text_x = namebox_x + (namebox_width/2);
 name_text_y = namebox_y + (namebox_height/2);
-text_max_width = box_width - (2*x_buffer);
 
 portrait_index = 0;
-
-text[0] = "this is a test string this is a test stringthis is a test stringthis is a test string";
-text[1] = "this is the second page.";
-page = 0;
-name = "name";
-
-interact_key = ord("Z") && ord("X");
+counter = 0;
+pause = false;
 
 text_col = c_white;
 name_text_col = c_white;
@@ -40,3 +34,16 @@ font = fnt_8bit;
 
 draw_set_font(font);
 text_height = string_height("M");
+text_max_width = box_width - (2*x_buffer);
+
+text[0] = "this is a test string this is a test stringthis is a test stringthis is a test string";
+text[1] = "this is the second page.";
+page = 0;
+name = "name";
+voice = snd_typewriter;
+
+interact_key = ord("Z") and ord("X");
+
+event_perform(ev_other, ev_user1);
+
+
