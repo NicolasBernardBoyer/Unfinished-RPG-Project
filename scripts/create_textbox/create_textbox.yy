@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "PlayerCollision",
+  "name": "create_textbox",
   "tags": [],
   "resourceType": "GMScript",
 }

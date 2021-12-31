@@ -1,5 +1,22 @@
-if (global.inventoryOpen == false && !instance_exists(obj_textbox)) {
 
+if (keyboard_check_pressed(ord("Z"))){
+	if(active_textbox == noone){
+		var inst = collision_rectangle(x-radius, y-radius, x+radius, y+radius, par_object, false, true);
+		if(inst != noone){
+			with(inst){
+				var tbox = create_textbox(text, speakers);
+			}
+			active_textbox = tbox;
+		}
+	} 
+} else {
+	if(!instance_exists(active_textbox)){
+		active_textbox = noone;
+	}
+}
+
+
+if (global.inventoryOpen == false and !instance_exists(obj_textbox)) {
 
 // get the input direction from keys
 hInput = keyboard_check(vk_right) - keyboard_check(vk_left);

@@ -1,6 +1,7 @@
 visible = false;
 
-myTextbox = noone;
-myName = "Bookshelf";
-
-myText[0] = "Bookshelf.";
+voice = snd_typewriter;
+name = "Bookshelf";
+text = ["Bookshelf."];
+portrait_index = noone;
+speakers = [id];

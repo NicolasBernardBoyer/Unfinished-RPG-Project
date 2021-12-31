@@ -36,14 +36,11 @@ draw_set_font(font);
 text_height = string_height("M");
 text_max_width = box_width - (2*x_buffer);
 
-text[0] = "this is a test string this is a test stringthis is a test stringthis is a test string";
-text[1] = "this is the second page.";
+text[0] = "";
 page = 0;
-name = "name";
+name = "";
 voice = snd_typewriter;
 
-interact_key = ord("Z") and ord("X");
-
-event_perform(ev_other, ev_user1);
+interact_key = ord("Z") or ord("X");
 
 

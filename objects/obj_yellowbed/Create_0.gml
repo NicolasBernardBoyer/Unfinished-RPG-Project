@@ -1,7 +1,9 @@
 visible = false;
 
-myTextbox = noone;
-myName = "Bed";
+voice = snd_typewriter;
+name = "";
 
-myText[0] = "It's your bed.";
-myText[1] = "There are no dragons under it, sadly.";
+text[0] = "It's your bed.";
+text[1] = "There are no dragons under it, sadly.";
+portrait_index = noone;
+speakers = [id, id];

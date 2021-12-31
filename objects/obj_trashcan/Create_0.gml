@@ -1,6 +1,8 @@
 visible = false;
 
-myTextbox = noone;
-myName = "Trashcan";
+voice = snd_typewriter;
+name = "";
 
-myText[0] = "It's the trash can. It eats garbage.";
+text = ["It's the trash can. It eats garbage."];
+portrait_index = noone;
+speakers = [id];
