@@ -15,7 +15,22 @@ if (keyboard_check_pressed(ord("Z"))){
 	}
 }
 
+//Objects
+var insttrans = instance_place(x,y,obj_transition);
+if (insttrans != noone) {
+	with(obj_game){
+		if(!doTransition){
+			spawnRoom = insttrans.targetRoom;
+			spawnX = insttrans.targetX;
+			spawnY = insttrans.targetY;
+			doTransition = true;
+		}
+	}
+}
 
+
+
+// Moving (only if there isn't a textbox and the inventory isn't open)
 if (global.inventoryOpen == false and !instance_exists(obj_textbox)) {
 
 // get the input direction from keys
@@ -69,40 +84,40 @@ y += vsp;
 
 //Set Sprite
 	switch(dir){
-		case 0: sprite_index = spr_yoru_rightwalk; break;
+		case 0: sprite_index = spr_yoru_rightwalk; facing = dir.right; break;
 		case 45: 
 		if (sprite_index = spr_yoru_rightwalk or sprite_index = spr_yoru_leftwalk){
-		sprite_index = spr_yoru_rightwalk;
+		sprite_index = spr_yoru_rightwalk; facing = dir.right;
 		}
 		else if (sprite_index = spr_yoru_upwalk or sprite_index = spr_yoru_walk){
-		sprite_index = spr_yoru_upwalk;
+		sprite_index = spr_yoru_upwalk; facing = dir.up;
 		}
 		break;
-		case 90: sprite_index = spr_yoru_upwalk; break;
+		case 90: sprite_index = spr_yoru_upwalk; facing = dir.up; break;
 		case 135: 
 		if (sprite_index = spr_yoru_leftwalk or sprite_index = spr_yoru_rightwalk){
-		sprite_index = spr_yoru_leftwalk;
+		sprite_index = spr_yoru_leftwalk; facing = dir.left;
 		}
 		else if (sprite_index = spr_yoru_upwalk or sprite_index = spr_yoru_walk){
-		sprite_index = spr_yoru_upwalk;
+		sprite_index = spr_yoru_upwalk; facing = dir.up;
 		}
 		break;
-		case 180: sprite_index = spr_yoru_leftwalk; break;
+		case 180: sprite_index = spr_yoru_leftwalk; facing = dir.left; break;
 		case 225: 
 		if (sprite_index = spr_yoru_leftwalk or sprite_index = spr_yoru_rightwalk){
-		sprite_index = spr_yoru_leftwalk;
+		sprite_index = spr_yoru_leftwalk; facing = dir.left;
 		}
 		else if (sprite_index = spr_yoru_walk  or sprite_index = spr_yoru_upwalk){
-		sprite_index = spr_yoru_walk;
+		sprite_index = spr_yoru_walk; facing = dir.down;
 		}
 		break;
-		case 270: sprite_index = spr_yoru_walk; break;
+		case 270: sprite_index = spr_yoru_walk; facing = dir.down break;
 		case 315: 
 		if (sprite_index = spr_yoru_rightwalk or sprite_index = spr_yoru_leftwalk){
-		sprite_index = spr_yoru_rightwalk;
+		sprite_index = spr_yoru_rightwalk; facing = dir.right;
 		}
 		else if (sprite_index = spr_yoru_walk or sprite_index = spr_yoru_upwalk){
-		sprite_index = spr_yoru_walk; 
+		sprite_index = spr_yoru_walk; facing = dir.down;
 		}
 		break;
 	} 
@@ -123,3 +138,4 @@ if (framebefore == lastframe){
 } else {
 	image_index = 0;
 }
+
