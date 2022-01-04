@@ -1,4 +1,4 @@
-
+// Textbox interaction
 if (keyboard_check_pressed(ord("Z"))){
 	if(active_textbox == noone){
 		var inst = collision_rectangle(x-radius, y-radius, x+radius, y+radius, par_object, false, true);
@@ -28,10 +28,8 @@ if (insttrans != noone) {
 	}
 }
 
-
-
 // Moving (only if there isn't a textbox and the inventory isn't open)
-if (global.inventoryOpen == false and !instance_exists(obj_textbox)) {
+if (global.inventoryOpen == false and !instance_exists(obj_textbox) and obj_game.doTransition == false) {
 
 // get the input direction from keys
 hInput = keyboard_check(vk_right) - keyboard_check(vk_left);
@@ -64,20 +62,49 @@ dir = point_direction(0,0,hInput,vInput);
 hsp = hInput*spd;
 vsp = vInput*spd;
 
+// Interrupt movement when meeting a wall
 if place_meeting(x + hsp, y, obj_wall)
 {
 	hsp = 0;
 	if (vsp = 0) {
-	image_index = 0;
+		image_index = 0;
 	}
 }
 if place_meeting(x, y + vsp, obj_wall)
 {
 	vsp = 0;
 	if (hsp = 0) {
-	image_index = 0;
+		image_index = 0;
 	}
 }
+if place_meeting(x, y, obj_wall)
+{
+	hsp = 0;
+	if (vsp = 0) {
+		image_index = 0;
+	}
+}
+if place_meeting(x, y, obj_wall)
+{
+	vsp = 0;
+	if (hsp = 0) {
+		image_index = 0;
+	}
+}
+if place_meeting(x + hsp, y, par_roadblock)
+{
+	hsp = 0;
+	if (vsp = 0) {
+		image_index = 0;
+	}
+}
+if place_meeting(x, y + vsp, par_roadblock)
+{
+	vsp = 0;
+	if (hsp = 0) {
+		image_index = 0;
+	}
+} 
 
 x += hsp;
 y += vsp;
