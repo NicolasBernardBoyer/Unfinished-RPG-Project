@@ -41,6 +41,10 @@ page = 0;
 name = "";
 voice = snd_typewriter;
 
-interact_key = ord("Z") or ord("X");
+interact_key = ord("Z");
+other_interact_key = ord("X");
+
+choice = 0;
+choice_col = c_yellow;
 
 

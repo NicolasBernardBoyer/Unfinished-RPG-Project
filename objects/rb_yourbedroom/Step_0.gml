@@ -7,7 +7,7 @@ if (inst!=noone){
 		
 		// Tell the player they can't leave
 		if (!instance_exists(obj_textbox)) {
-			create_textbox(text, speakers);
+			create_textbox(text, speakers, next_line, scripts);
 			runOnce = true;
 		}
 		} else {

@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "OldYoru",
-    "path": "folders/Sprites/Overworld/Characters/OldYoru.yy",
+    "name": "OldPlayer",
+    "path": "folders/Sprites/Overworld/Characters/OldPlayer.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_yoru_upwalkold",

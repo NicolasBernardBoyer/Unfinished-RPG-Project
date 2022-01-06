@@ -6,3 +6,5 @@ voice = snd_typewriter;
 name = "Anonymous";
 text = ["This thing has nothing to say."];
 speakers = [id];
+next_line = [0, [2,3], -1, -1];
+scripts = -1;

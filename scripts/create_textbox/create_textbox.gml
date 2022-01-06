@@ -6,6 +6,8 @@ function create_textbox(){
 	with(tbox){
 		text = argument[0];
 		speakers = argument[1];
+		next_line = argument[2];
+		scripts = argument[3];
 		
 		var len = array_length_1d(text);
 		var i = 0; repeat(len){

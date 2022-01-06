@@ -4,7 +4,7 @@ if (keyboard_check_pressed(ord("Z"))){
 		var inst = collision_rectangle(x-radius, y-radius, x+radius, y+radius, par_object, false, true);
 		if(inst != noone){
 			with(inst){
-				var tbox = create_textbox(text, speakers);
+				var tbox = create_textbox(text, speakers, next_line, scripts);
 			}
 			active_textbox = tbox;
 		}
@@ -77,20 +77,6 @@ if place_meeting(x, y + vsp, obj_wall)
 		image_index = 0;
 	}
 }
-if place_meeting(x, y, obj_wall)
-{
-	hsp = 0;
-	if (vsp = 0) {
-		image_index = 0;
-	}
-}
-if place_meeting(x, y, obj_wall)
-{
-	vsp = 0;
-	if (hsp = 0) {
-		image_index = 0;
-	}
-}
 if place_meeting(x + hsp, y, par_roadblock)
 {
 	hsp = 0;
@@ -111,40 +97,40 @@ y += vsp;
 
 //Set Sprite
 	switch(dir){
-		case 0: sprite_index = spr_yoru_rightwalk; facing = dir.right; break;
+		case 0: sprite_index = spr_player_rightwalk; facing = dir.right; break;
 		case 45: 
-		if (sprite_index = spr_yoru_rightwalk or sprite_index = spr_yoru_leftwalk){
-		sprite_index = spr_yoru_rightwalk; facing = dir.right;
+		if (sprite_index = spr_player_rightwalk or sprite_index = spr_player_leftwalk){
+		sprite_index = spr_player_rightwalk; facing = dir.right;
 		}
-		else if (sprite_index = spr_yoru_upwalk or sprite_index = spr_yoru_walk){
-		sprite_index = spr_yoru_upwalk; facing = dir.up;
+		else if (sprite_index = spr_player_upwalk or sprite_index = spr_player_walk){
+		sprite_index = spr_player_upwalk; facing = dir.up;
 		}
 		break;
-		case 90: sprite_index = spr_yoru_upwalk; facing = dir.up; break;
+		case 90: sprite_index = spr_player_upwalk; facing = dir.up; break;
 		case 135: 
-		if (sprite_index = spr_yoru_leftwalk or sprite_index = spr_yoru_rightwalk){
-		sprite_index = spr_yoru_leftwalk; facing = dir.left;
+		if (sprite_index = spr_player_leftwalk or sprite_index = spr_player_rightwalk){
+		sprite_index = spr_player_leftwalk; facing = dir.left;
 		}
-		else if (sprite_index = spr_yoru_upwalk or sprite_index = spr_yoru_walk){
-		sprite_index = spr_yoru_upwalk; facing = dir.up;
+		else if (sprite_index = spr_player_upwalk or sprite_index = spr_player_walk){
+		sprite_index = spr_player_upwalk; facing = dir.up;
 		}
 		break;
-		case 180: sprite_index = spr_yoru_leftwalk; facing = dir.left; break;
+		case 180: sprite_index = spr_player_leftwalk; facing = dir.left; break;
 		case 225: 
-		if (sprite_index = spr_yoru_leftwalk or sprite_index = spr_yoru_rightwalk){
-		sprite_index = spr_yoru_leftwalk; facing = dir.left;
+		if (sprite_index = spr_player_leftwalk or sprite_index = spr_player_rightwalk){
+		sprite_index = spr_player_leftwalk; facing = dir.left;
 		}
-		else if (sprite_index = spr_yoru_walk  or sprite_index = spr_yoru_upwalk){
-		sprite_index = spr_yoru_walk; facing = dir.down;
+		else if (sprite_index = spr_player_walk  or sprite_index = spr_player_upwalk){
+		sprite_index = spr_player_walk; facing = dir.down;
 		}
 		break;
-		case 270: sprite_index = spr_yoru_walk; facing = dir.down break;
+		case 270: sprite_index = spr_player_walk; facing = dir.down break;
 		case 315: 
-		if (sprite_index = spr_yoru_rightwalk or sprite_index = spr_yoru_leftwalk){
-		sprite_index = spr_yoru_rightwalk; facing = dir.right;
+		if (sprite_index = spr_player_rightwalk or sprite_index = spr_player_leftwalk){
+		sprite_index = spr_player_rightwalk; facing = dir.right;
 		}
-		else if (sprite_index = spr_yoru_walk or sprite_index = spr_yoru_upwalk){
-		sprite_index = spr_yoru_walk; facing = dir.down;
+		else if (sprite_index = spr_player_walk or sprite_index = spr_player_upwalk){
+		sprite_index = spr_player_walk; facing = dir.down;
 		}
 		break;
 	} 

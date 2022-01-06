@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_yoru_walk",
-    "path": "sprites/spr_yoru_walk/spr_yoru_walk.yy",
+    "name": "spr_player_walk",
+    "path": "sprites/spr_player_walk/spr_player_walk.yy",
   },
   "solid": false,
   "visible": true,
