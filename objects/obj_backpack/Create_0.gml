@@ -13,4 +13,4 @@ text = [
 portrait_index = noone;
 speakers = [id, id, id, id, id, id];
 next_line = [0, 0, [3,4], -1, -1];
-scripts = -1;
+scripts = [-1,-1,[[backpack_pickup], -1] ,-1,-1];

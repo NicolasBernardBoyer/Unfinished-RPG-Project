@@ -1,13 +1,12 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function Script4(){
+function script_execute_alt(){
 ///@description script_execute_alt
 ///@arg ind
 ///@arg [arg1,arg2,...]
- 
-	var s = argument0;
-	var a = argument1;
-	var len = array_length_1d(argument1);
+	var s = argument[0];
+	var a = argument[1];
+	var len = array_length_1d(argument[1]);
  
 	switch(len){
 	    case 0 : script_execute(s); break;
