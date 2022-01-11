@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Objects",
-    "path": "folders/Sprites/Overworld/Objects.yy",
+    "name": "HomeSprites",
+    "path": "folders/Sprites/Overworld/Objects/HomeSprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_longbox",

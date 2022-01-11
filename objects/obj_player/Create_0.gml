@@ -8,7 +8,7 @@ portrait_index = 0;
 voice = snd_typewriter;
 name = "Player";
 
-radius = 16;
+radius = 8;
 active_textbox = noone;
 
 facing = 0;

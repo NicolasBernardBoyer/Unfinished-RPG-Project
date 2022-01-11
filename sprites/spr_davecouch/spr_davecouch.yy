@@ -7,14 +7,14 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": -5,
-  "bbox_right": 67,
-  "bbox_top": 38,
-  "bbox_bottom": 68,
+  "bbox_left": -3,
+  "bbox_right": 34,
+  "bbox_top": -3,
+  "bbox_bottom": 66,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 64,
+  "width": 32,
   "height": 64,
   "textureGroupId": {
     "name": "Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"62004a41-7695-4118-b1da-8bf2ce818472","path":"sprites/spr_gaming/spr_gaming.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"62004a41-7695-4118-b1da-8bf2ce818472","path":"sprites/spr_gaming/spr_gaming.yy",},"LayerId":{"name":"3ef0fb60-5573-43b0-a281-132802d60863","path":"sprites/spr_gaming/spr_gaming.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gaming","path":"sprites/spr_gaming/spr_gaming.yy",},"resourceVersion":"1.0","name":"62004a41-7695-4118-b1da-8bf2ce818472","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2f992a7f-1443-4ac7-bf91-00b91741e141","path":"sprites/spr_davecouch/spr_davecouch.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2f992a7f-1443-4ac7-bf91-00b91741e141","path":"sprites/spr_davecouch/spr_davecouch.yy",},"LayerId":{"name":"0ee64aed-63a9-44d4-b89c-dceeeaeb9872","path":"sprites/spr_davecouch/spr_davecouch.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_davecouch","path":"sprites/spr_davecouch/spr_davecouch.yy",},"resourceVersion":"1.0","name":"2f992a7f-1443-4ac7-bf91-00b91741e141","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_gaming","path":"sprites/spr_gaming/spr_gaming.yy",},
+    "spriteId": {"name":"spr_davecouch","path":"sprites/spr_davecouch/spr_davecouch.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 5.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ee3ce5ab-ee97-45b6-8f26-1133e4fb2633","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"62004a41-7695-4118-b1da-8bf2ce818472","path":"sprites/spr_gaming/spr_gaming.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d5e088b0-f0b4-469a-bb9e-ffc5728fa83e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2f992a7f-1443-4ac7-bf91-00b91741e141","path":"sprites/spr_davecouch/spr_davecouch.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,18 +54,18 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 32,
+    "xorigin": 16,
     "yorigin": 64,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_gaming","path":"sprites/spr_gaming/spr_gaming.yy",},
+    "parent": {"name":"spr_davecouch","path":"sprites/spr_davecouch/spr_davecouch.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_gaming",
+    "name": "spr_davecouch",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3ef0fb60-5573-43b0-a281-132802d60863","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0ee64aed-63a9-44d4-b89c-dceeeaeb9872","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Overworld/Objects/HomeSprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_gaming",
+  "name": "spr_davecouch",
   "tags": [],
   "resourceType": "GMSprite",
 }
