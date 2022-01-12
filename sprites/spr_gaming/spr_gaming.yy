@@ -26,6 +26,7 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"62004a41-7695-4118-b1da-8bf2ce818472","path":"sprites/spr_gaming/spr_gaming.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"62004a41-7695-4118-b1da-8bf2ce818472","path":"sprites/spr_gaming/spr_gaming.yy",},"LayerId":{"name":"3ef0fb60-5573-43b0-a281-132802d60863","path":"sprites/spr_gaming/spr_gaming.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"62004a41-7695-4118-b1da-8bf2ce818472","path":"sprites/spr_gaming/spr_gaming.yy",},"LayerId":{"name":"bbff8fde-de47-41a8-b81a-1a537c22789e","path":"sprites/spr_gaming/spr_gaming.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_gaming","path":"sprites/spr_gaming/spr_gaming.yy",},"resourceVersion":"1.0","name":"62004a41-7695-4118-b1da-8bf2ce818472","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -66,6 +67,7 @@
   },
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3ef0fb60-5573-43b0-a281-132802d60863","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"shadow","resourceVersion":"1.0","name":"bbff8fde-de47-41a8-b81a-1a537c22789e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
