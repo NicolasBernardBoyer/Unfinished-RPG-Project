@@ -1,6 +1,6 @@
 global.inventoryOpen = false;
 global.inBattle = false;
-global.playerName = "New Kid";
+global.playerName = "New Guy";
 global.hasBackpack = false;
 
 global.game_width = 384;

@@ -48,7 +48,7 @@ if(!choice_dialogue){
 	c = text_col;
 			
 	var i = 0, y_add = 0; repeat(text_array_len){
-		if(choice == i){ c = choice_col; draw_sprite(spr_arrow, 0, box_x+text_max_width, text_y+y_add); }
+		if(choice == i){ c = choice_col; draw_sprite(spr_arrow, 0, text_x+5, text_y+3+y_add); }
 		else c = text_col;
 		
 		draw_text_ext_color(text_x, text_y+y_add, text_array[i], text_height, text_max_width, c,c,c,c, 1);

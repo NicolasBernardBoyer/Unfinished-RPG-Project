@@ -12,8 +12,8 @@ namebox_height = sprite_get_height(namebox);
 
 port_x = (global.game_width - box_width - port_width) * 0.5;
 port_y = (global.game_height*0.98) - port_height;
-box_x = 31;
-box_y = 191;
+box_x = 32;
+box_y = 200;
 namebox_x = port_x;
 namebox_y = box_y - namebox_height;
 
