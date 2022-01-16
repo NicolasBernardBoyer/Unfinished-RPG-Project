@@ -44,10 +44,12 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.93750006,"scaleY":0.75000006,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":31.0,"y":193.0,"resourceVersion":"1.0","name":"inst_3789A1BD","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":0.484375,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":31.0,"y":143.0,"resourceVersion":"1.0","name":"inst_7FF07991","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":0.328125,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":157.0,"y":138.0,"resourceVersion":"1.0","name":"inst_26DEA4D4","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":0.515625,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":144.0,"resourceVersion":"1.0","name":"inst_4ACB2E80","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Collision","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_toilet","path":"objects/obj_toilet/obj_toilet.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":48.0,"y":187.0,"resourceVersion":"1.0","name":"inst_11EE504B","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_shower","path":"objects/obj_shower/obj_shower.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.1875,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":148.0,"resourceVersion":"1.0","name":"inst_54528844","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_sink","path":"objects/obj_sink/obj_sink.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":0.859375,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":112.0,"y":144.0,"resourceVersion":"1.0","name":"inst_75E3C17A","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tset_home","path":"tilesets/tset_home/tset_home.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":7,"SerialiseHeight":7,"TileSerialiseData":[
 2147483648,2147483648,0,0,0,0,0,
@@ -75,6 +77,8 @@
     {"name":"inst_7FF07991","path":"rooms/rm_yourbathroom/rm_yourbathroom.yy",},
     {"name":"inst_54528844","path":"rooms/rm_yourbathroom/rm_yourbathroom.yy",},
     {"name":"inst_26DEA4D4","path":"rooms/rm_yourbathroom/rm_yourbathroom.yy",},
+    {"name":"inst_4ACB2E80","path":"rooms/rm_yourbathroom/rm_yourbathroom.yy",},
+    {"name":"inst_75E3C17A","path":"rooms/rm_yourbathroom/rm_yourbathroom.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

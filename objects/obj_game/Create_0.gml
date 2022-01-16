@@ -1,6 +1,8 @@
 global.inventoryOpen = false;
 global.inBattle = false;
 global.playerName = "New Guy";
+
+global.hasCoat = false;
 global.hasBackpack = false;
 
 global.game_width = 384;
@@ -13,8 +15,6 @@ spawnX = 0;
 spawnY = 0;
 spawnPlayerFacing = -1;
 doTransition = false;
-
-
 
 enum dir {
 	right = 0,

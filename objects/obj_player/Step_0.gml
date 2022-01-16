@@ -97,6 +97,8 @@ if place_meeting(x, y + vsp, par_roadblock)
 x += hsp;
 y += vsp;
 
+// This region is for setting the sprite depending on the state of the player
+#region
 if (global.hasBackpack == false){
 //Set Sprite
 		switch(dir){
@@ -138,7 +140,7 @@ if (global.hasBackpack == false){
 			break;
 		} 
 		
-} else if (global.hasBackpack){
+} else if (global.hasBackpack and !global.hasCoat){
 //Set Sprite with backpack
 		switch(dir){
 			case 0: sprite_index = spr_player_rightwalk_bag; facing = dir.right; break;
@@ -178,8 +180,49 @@ if (global.hasBackpack == false){
 			}
 			break;
 	} 
+} else if (global.hasBackpack and global.hasCoat){
+//Set Sprite with backpack
+		switch(dir){
+			case 0: sprite_index = spr_player_rightwalk_coat; facing = dir.right; break;
+			case 45: 
+			if (sprite_index = spr_player_rightwalk_coat or sprite_index = spr_player_leftwalk_coat){
+			sprite_index = spr_player_rightwalk_coat; facing = dir.right;
+			}
+			else if (sprite_index = spr_player_upwalk_coat or sprite_index = spr_player_walk_coat){
+			sprite_index = spr_player_upwalk_coat; facing = dir.up;
+			}
+			break;
+			case 90: sprite_index = spr_player_upwalk_coat; facing = dir.up; break;
+			case 135: 
+			if (sprite_index = spr_player_leftwalk_coat or sprite_index = spr_player_rightwalk_coat){
+			sprite_index = spr_player_leftwalk_coat; facing = dir.left;
+			}
+			else if (sprite_index = spr_player_upwalk_coat or sprite_index = spr_player_walk_coat){
+			sprite_index = spr_player_upwalk_coat; facing = dir.up;
+			}
+			break;
+			case 180: sprite_index = spr_player_leftwalk_coat; facing = dir.left; break;
+			case 225: 
+			if (sprite_index = spr_player_leftwalk_coat or sprite_index = spr_player_rightwalk_coat){
+			sprite_index = spr_player_leftwalk_coat; facing = dir.left;
+			}
+			else if (sprite_index = spr_player_walk_coat  or sprite_index = spr_player_upwalk_coat){
+			sprite_index = spr_player_walk_coat; facing = dir.down;
+			}
+			break;
+			case 270: sprite_index = spr_player_walk_coat; facing = dir.down break;
+			case 315: 
+			if (sprite_index = spr_player_rightwalk_coat or sprite_index = spr_player_leftwalk_coat){
+			sprite_index = spr_player_rightwalk_coat; facing = dir.right;
+			}
+			else if (sprite_index = spr_player_walk_coat or sprite_index = spr_player_upwalk_coat){
+			sprite_index = spr_player_walk_coat; facing = dir.down;
+			}
+			break;
+	} 
 }
 
+#endregion
 	lastframe = image_index;
 
 	if (framebefore == lastframe){
