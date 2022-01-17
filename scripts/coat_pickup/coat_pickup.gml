@@ -29,4 +29,6 @@ function coat_pickup(){
 	inst_522B61D8.next_line = [0];
 	inst_522B61D8.scripts = [-1];
 	
+	instance_destroy(inst_458E5062);
+	
 }

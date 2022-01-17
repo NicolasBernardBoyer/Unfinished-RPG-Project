@@ -34,7 +34,7 @@
     "path": "folders/Objects/worldObjects/Roadblocks/Home.yy",
   },
   "resourceVersion": "1.0",
-  "name": "rb_yourbedroom",
+  "name": "rb_nocoat",
   "tags": [],
   "resourceType": "GMObject",
 }
