@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Overworld",
-    "path": "folders/Sprites/Overworld.yy",
+    "name": "UI",
+    "path": "folders/Sprites/Overworld/UI.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_arrow",

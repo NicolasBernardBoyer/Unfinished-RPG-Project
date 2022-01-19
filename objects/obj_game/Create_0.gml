@@ -1,13 +1,3 @@
-global.inventoryOpen = false;
-global.inBattle = false;
-global.playerName = "New Guy";
-
-global.hasCoat = false;
-global.hasBackpack = false;
-
-global.game_width = 384;
-global.game_height = 288;
-
 blackAlpha = 0;
 
 spawnRoom = -1;
@@ -23,4 +13,53 @@ enum dir {
 	down = 270,
 }
 
+global.inventoryOpen = false;
+global.inBattle = false;
+global.playerName = "New Guy";
+
+global.hasCoat = false;
+global.hasBackpack = false;
+
+// Camera and Window size variables
+#region
+global.view_width  = camera_get_view_width(view_camera[0]);
+global.view_height = camera_get_view_height(view_camera[0]);
+global.game_width  = 384;
+global.game_height = 288;
 display_set_gui_size(global.game_width, global.game_height);
+#endregion
+
+// Controls
+#region
+	global.key_revert	= ord("X");
+	global.key_confirm	= ord("Z");
+	global.key_enter	= vk_enter;
+	global.key_left		= vk_left;
+	global.key_right	= vk_right;
+	global.key_up		= vk_up;
+	global.key_down		= vk_down;
+#endregion
+
+enum menu_page {
+	main,
+	settings,
+	audio,
+	difficulty,
+	graphics,
+	controls,
+	height
+}
+
+enum menu_element_type {
+	script_runner,
+	page_transfer,
+	slider,
+	shift,
+	toggle,
+	input
+}
+
+//CREATE MENU PAGES
+ds_menu_main = create_menu_page(
+	["RESUME",		menu_element_type.script_runner, resume_game];
+);
