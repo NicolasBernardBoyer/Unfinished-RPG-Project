@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "UI",
-    "path": "folders/Sprites/Overworld/UI.yy",
+    "path": "folders/Sprites/UI.yy",
   },
   "resourceVersion": "1.0",
   "name": "Button",

@@ -40,26 +40,4 @@ display_set_gui_size(global.game_width, global.game_height);
 	global.key_down		= vk_down;
 #endregion
 
-enum menu_page {
-	main,
-	settings,
-	audio,
-	difficulty,
-	graphics,
-	controls,
-	height
-}
 
-enum menu_element_type {
-	script_runner,
-	page_transfer,
-	slider,
-	shift,
-	toggle,
-	input
-}
-
-//CREATE MENU PAGES
-ds_menu_main = create_menu_page(
-	["RESUME",		menu_element_type.script_runner, resume_game];
-);
