@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Faces",
-    "path": "folders/Sprites/Overworld/Faces.yy",
+    "path": "folders/Sprites/UI/Faces.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_nat_faces",
