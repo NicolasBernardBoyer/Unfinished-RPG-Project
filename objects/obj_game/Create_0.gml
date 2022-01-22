@@ -14,6 +14,7 @@ enum dir {
 }
 
 global.inventoryOpen = false;
+global.pause = true;
 global.inBattle = false;
 global.playerName = "New Guy";
 

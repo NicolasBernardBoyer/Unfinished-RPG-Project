@@ -60,7 +60,12 @@ ds_menu_controls = create_menu_page(
 );
 
 page = 0;
-menu_pages = [ds_menu_main, ds_settings, ds_menu_audio, ds_menu_difficulty, ds_menu_graphics, ds_menu_controls];
+menu_pages[0] = ds_menu_main;
+menu_pages[1] = ds_settings;
+menu_pages[2] = ds_menu_audio;
+menu_pages[3] = ds_menu_difficulty;
+menu_pages[4] = ds_menu_graphics;
+menu_pages[5] = ds_menu_controls;
 
 var i = 0, array_len = array_length_1d(menu_pages);
 repeat(array_len){
