@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"goto_title","path":"scripts/goto_title/goto_title.yy",},"order":7,},
     {"id":{"name":"obj_davecouch","path":"objects/obj_davecouch/obj_davecouch.yy",},"order":7,},
     {"id":{"name":"par_roadblock","path":"objects/par_roadblock/par_roadblock.yy",},"order":2,},
     {"id":{"name":"spr_yoru_upwalkold","path":"sprites/spr_yoru_upwalkold/spr_yoru_upwalkold.yy",},"order":2,},
@@ -38,6 +39,7 @@
     {"id":{"name":"camera","path":"objects/camera/camera.yy",},"order":3,},
     {"id":{"name":"spr_kat_faces_old","path":"sprites/spr_kat_faces_old/spr_kat_faces_old.yy",},"order":0,},
     {"id":{"name":"spr_shower","path":"sprites/spr_shower/spr_shower.yy",},"order":16,},
+    {"id":{"name":"spr_pausebox","path":"sprites/spr_pausebox/spr_pausebox.yy",},"order":6,},
     {"id":{"name":"spr_transition","path":"sprites/spr_transition/spr_transition.yy",},"order":5,},
     {"id":{"name":"obj_bookshelf","path":"objects/obj_bookshelf/obj_bookshelf.yy",},"order":1,},
     {"id":{"name":"spr_dresser","path":"sprites/spr_dresser/spr_dresser.yy",},"order":2,},
@@ -56,6 +58,7 @@
     {"id":{"name":"spr_twomovingbox","path":"sprites/spr_twomovingbox/spr_twomovingbox.yy",},"order":10,},
     {"id":{"name":"Button","path":"sprites/Button/Button.yy",},"order":3,},
     {"id":{"name":"par_objectnotext","path":"objects/par_objectnotext/par_objectnotext.yy",},"order":1,},
+    {"id":{"name":"snd_select","path":"sounds/snd_select/snd_select.yy",},"order":1,},
     {"id":{"name":"spr_kat_faces","path":"sprites/spr_kat_faces/spr_kat_faces.yy",},"order":3,},
     {"id":{"name":"obj_coatrack","path":"objects/obj_coatrack/obj_coatrack.yy",},"order":18,},
     {"id":{"name":"create_textbox","path":"scripts/create_textbox/create_textbox.yy",},"order":2,},
@@ -138,7 +141,7 @@
     {"folderPath":"folders/Sounds.yy","order":2,"resourceVersion":"1.0","name":"Sounds","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Paths.yy","order":3,"resourceVersion":"1.0","name":"Paths","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts.yy","order":4,"resourceVersion":"1.0","name":"Scripts","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Shaders.yy","order":5,"resourceVersion":"1.0","name":"Shaders","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Shaders.yy","order":5,"resourceVersion":"1.0","name":"Shaders","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Fonts.yy","order":6,"resourceVersion":"1.0","name":"Fonts","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Timelines.yy","order":7,"resourceVersion":"1.0","name":"Timelines","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects.yy","order":8,"resourceVersion":"1.0","name":"Objects","tags":[],"resourceType":"GMFolder",},
