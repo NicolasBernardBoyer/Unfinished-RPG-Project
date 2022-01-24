@@ -10,6 +10,7 @@ var ds_grid = page, ds_height = ds_grid_height(ds_grid);
 
 var ochange = input_down_p - input_up_p;
 if(ochange != 0){
+	audio_play_sound(snd_typewriter, 0, false);
 	menu_option[page] += ochange;
 	if(menu_option[page] > ds_height-1) { menu_option[page] = 0; }
 	if(menu_option[page] < 0) { menu_option[page] = ds_height -1; }
