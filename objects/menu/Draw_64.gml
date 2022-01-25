@@ -1,6 +1,7 @@
-draw_set_font(fnt_excelsior);
 
 if(!global.pause) exit;
+
+draw_set_font(fnt_excelsior);
 
 var gwidth = global.view_width, gheight = global.view_height;
 

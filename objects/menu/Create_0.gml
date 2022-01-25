@@ -20,8 +20,8 @@ enum menu_element_type {
 //CREATE MENU PAGES
 #region
 ds_menu_main = create_menu_page(
-	["Resume",		menu_element_type.script_runner,	resume_game],
-	["Settings",	menu_element_type.page_transfer,	menu_page.settings],
+	["Resume",			menu_element_type.script_runner,	resume_game],
+	["Settings",		menu_element_type.page_transfer,	menu_page.settings],
 	["Return To Title", menu_element_type.script_runner,    goto_title],
 	["End Game",		menu_element_type.script_runner,	exit_game]
 );
