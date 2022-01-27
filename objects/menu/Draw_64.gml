@@ -1,4 +1,3 @@
-
 if(!global.pause) exit;
 
 draw_set_font(fnt_excelsior);
@@ -55,7 +54,8 @@ yy = 0; repeat(ds_height){
 			if(current_val == array_length_1d(ds_grid[# 4, yy])-1) right_shift = "";
 		
 			c = c_white;
-		
+			
+			if(inputting and yy == menu_option[page]) { c = c_yellow; }
 			draw_text_color(rtx, rty, left_shift+current_array[current_val]+right_shift, c,c,c,c, 1);
 		
 		break;
@@ -64,19 +64,21 @@ yy = 0; repeat(ds_height){
 			var len = 64;
 			var current_val = ds_grid[# 3, yy];
 			var current_array = ds_grid[# 4, yy];
-			var square_pos = ((current_val - current_array[0]) / current_array[1] - current_array[1] - current_array[0]);
 			c = c_white;
-			var nub_c = c_yellow;
+			var nub_c = c_gray;
 			
 			draw_line_width(rtx, rty, rtx +len, rty, 2);
-			draw_rectangle_color(rtx + (square_pos*len)-4, rty-4, rtx + (square_pos*len)+4, rty+4, nub_c,nub_c,nub_c,nub_c, false);
-			draw_text_color(rtx+ (len * 1.2), rty, string(floor(square_pos*100))+"%", c,c,c,c, 1);
+			
+			if(inputting and yy == menu_option[page]) { c = c_yellow; nub_c = c_yellow  }
+			draw_rectangle_color(rtx + (current_val*len)-4, rty-4, rtx + (current_val*len)+4, rty+4, nub_c,nub_c,nub_c,nub_c, false);
+			draw_text_color(rtx+ (len * 1.2), rty, string(floor(current_val*100))+"%", c,c,c,c, 1);
 		break;
 			
 		case menu_element_type.toggle:
 			var current_val = ds_grid[# 3, yy];
 			var c1, c2;
 			c = c_white;
+			if(inputting and yy == menu_option[page]) { c = c_yellow; }
 			
 			if(current_val == 0) { c1 = c; c2 = c_dkgray; }
 			else				 { c1 = c_dkgray; c2 = c; }
@@ -99,6 +101,7 @@ yy = 0; repeat(ds_height){
 			}
 			
 			c = c_white;
+			if(inputting and yy == menu_option[page]) { c = c_yellow; }
 			draw_text_color(rtx, rty, string_val, c,c,c,c, 1);
 		
 		break;

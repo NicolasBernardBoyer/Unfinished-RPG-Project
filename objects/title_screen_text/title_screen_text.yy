@@ -1,16 +1,10 @@
 {
-  "spriteId": {
-    "name": "spr_dresser",
-    "path": "sprites/spr_dresser/spr_dresser.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "par_object",
-    "path": "objects/par_object/par_object.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,16 +18,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Home",
-    "path": "folders/Objects/world Objects/Home.yy",
+    "name": "Event Objects",
+    "path": "folders/Objects/Event Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_dresser",
+  "name": "title_screen_text",
   "tags": [],
   "resourceType": "GMObject",
 }

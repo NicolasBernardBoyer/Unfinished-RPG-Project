@@ -1,3 +1,5 @@
+global.pause = false;
+
 blackAlpha = 0;
 
 spawnRoom = -1;
@@ -14,7 +16,6 @@ enum dir {
 }
 
 global.inventoryOpen = false;
-global.pause = true;
 global.inBattle = false;
 global.playerName = "New Guy";
 
@@ -39,6 +40,7 @@ display_set_gui_size(global.game_width, global.game_height);
 	global.key_right	= vk_right;
 	global.key_up		= vk_up;
 	global.key_down		= vk_down;
+	global.key_esc		= vk_escape;
 #endregion
 
 

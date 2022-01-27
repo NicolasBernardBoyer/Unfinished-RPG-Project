@@ -42,12 +42,12 @@ ds_menu_audio = create_menu_page(
 );
 
 ds_menu_difficulty = create_menu_page(
-	["Select Difficulty", menu_element_type.shift,		   change_difficulty,		0,		["Easy", "Norman", "Hard"]],
+	["Select Difficulty", menu_element_type.shift,		   change_difficulty,		0,		["Easy", "Normal", "Hard"]],
 	["Back",			  menu_element_type.page_transfer, menu_page.settings],
 );
 
 ds_menu_graphics = create_menu_page(
-	["Resolution", menu_element_type.shift,				change_resolution,		0,		["320 x 240", "640 x 480", "960 x 720", "1280 x 960"]],
+	["Resolution", menu_element_type.shift,				change_resolution,		0,		["640 x 480", "960 x 720", "1280 x 960"]],
 	["Fullscreen ON/OFF",menu_element_type.toggle,			change_window_mode,		1,		["Fullscreen", "Windowed"]],
 	["Back",	   menu_element_type.page_transfer,		menu_page.settings],
 );
@@ -73,5 +73,10 @@ repeat(array_len){
 	menu_option[i] = 0;
 	i++;
 }
+
+inputting = false;
+
+audio_group_load(audiogroup_music);
+audio_group_load(audiogroup_soundeffects);
 
 #endregion

@@ -31,7 +31,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Home",
-    "path": "folders/Objects/worldObjects/Home.yy",
+    "path": "folders/Objects/world Objects/Home.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_toilet",

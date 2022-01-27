@@ -1,4 +1,5 @@
 
+if (!global.pause) {
 
 // Textbox interaction
 if (keyboard_check_pressed(ord("Z"))){
@@ -30,8 +31,15 @@ if (insttrans != noone) {
 	}
 }
 
+if (keyboard_check_pressed(ord("C"))){
+	global.inventoryOpen = true;
+	if (keyboard_check_pressed(ord("C"))){
+		global.inventoryOpen = false;
+	}
+}
+
 // Moving (only if there isn't a textbox and the inventory isn't open)
-if (global.inventoryOpen == false and !instance_exists(obj_textbox) and obj_game.doTransition == false) {
+if (global.inventoryOpen == false and !instance_exists(obj_textbox) and obj_game.doTransition == false and global.pause == false) {
 
 // get the input direction from keys
 hInput = keyboard_check(vk_right) - keyboard_check(vk_left);
@@ -43,13 +51,6 @@ if (keyboard_check(ord("X"))){
 } else {
 	spd = 2;
 	image_speed = 1;
-}
-
-if (keyboard_check_pressed(ord("C"))){
-	global.inventoryOpen = true;
-	if (keyboard_check_pressed(ord("C"))){
-		global.inventoryOpen = false;
-	}
 }
 
 if (hInput != 0 or vInput != 0) {
@@ -240,3 +241,4 @@ if (global.hasBackpack == false){
 		image_index = 0;
 	}
 
+}

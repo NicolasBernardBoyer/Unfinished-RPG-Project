@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "General",
-    "path": "folders/Objects/worldObjects/General.yy",
+    "path": "folders/Objects/world Objects/General.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_wall",
