@@ -1,4 +1,6 @@
 // moveCam = keyboard_check(ord("C"));
+if (!instance_exists(obj_player)) exit;
+
 moveCam = false;
 
 if (moveCam) {

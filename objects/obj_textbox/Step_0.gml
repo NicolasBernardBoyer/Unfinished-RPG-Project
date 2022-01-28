@@ -1,3 +1,4 @@
+
 if(keyboard_check_pressed(interact_key) or keyboard_check_pressed(other_interact_key)){
 	
 	if(!choice_dialogue and counter < str_len){ counter = str_len; }

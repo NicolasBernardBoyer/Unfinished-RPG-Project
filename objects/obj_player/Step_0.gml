@@ -1,3 +1,6 @@
+if (room == rm_title_screen) {
+	instance_deactivate_object(self);
+}
 
 if (!global.pause) {
 
@@ -47,7 +50,7 @@ vInput = keyboard_check(vk_down) - keyboard_check(vk_up);
 
 if (keyboard_check(ord("X"))){
 	spd = 3;
-	image_speed = 2;
+	image_speed = 1.5;
 } else {
 	spd = 2;
 	image_speed = 1;

@@ -27,7 +27,7 @@
     "path": "folders/Objects/Event Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "title_screen_text",
+  "name": "ev_title_screen_text",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -6,7 +6,7 @@ visible = false;
 
 portrait_index = 0;
 voice = snd_typewriter;
-name = "Player";
+name = "";
 
 radius = 8;
 active_textbox = noone;

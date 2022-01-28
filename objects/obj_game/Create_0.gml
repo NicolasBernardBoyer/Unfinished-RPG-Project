@@ -1,4 +1,6 @@
 global.pause = false;
+global.name_text_col = c_white;
+global.hasname = false;
 
 blackAlpha = 0;
 

@@ -47,7 +47,7 @@
     "path": "folders/Rooms.yy",
   },
   "resourceVersion": "1.0",
-  "name": "rm_menu",
+  "name": "rm_intro",
   "tags": [],
   "resourceType": "GMRoom",
 }
