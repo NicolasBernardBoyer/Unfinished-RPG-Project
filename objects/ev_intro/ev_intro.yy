@@ -21,8 +21,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Event Objects",
-    "path": "folders/Objects/Event Objects.yy",
+    "name": "Opening",
+    "path": "folders/Objects/Event Objects/Opening.yy",
   },
   "resourceVersion": "1.0",
   "name": "ev_intro",
