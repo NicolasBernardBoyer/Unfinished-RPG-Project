@@ -1,16 +1,12 @@
 box = spr_textbox;
 frame = noone;
 portrait = noone;
-namebox = noone;
 
 box_width = sprite_get_width(box);
 box_height = sprite_get_height(box);
 port_width = sprite_get_width(portrait);
 port_height = sprite_get_height(portrait);
 global.hasname = true;
-
-namebox_width = sprite_get_width(namebox);
-namebox_height = sprite_get_height(namebox);
 
 port_x = (global.game_width - box_width - port_width) * 0.5;
 port_y = (global.game_height*0.98) - port_height;

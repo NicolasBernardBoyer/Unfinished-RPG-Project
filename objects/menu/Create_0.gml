@@ -76,7 +76,4 @@ repeat(array_len){
 
 inputting = false;
 
-audio_group_load(audiogroup_music);
-audio_group_load(audiogroup_soundeffects);
-
 #endregion

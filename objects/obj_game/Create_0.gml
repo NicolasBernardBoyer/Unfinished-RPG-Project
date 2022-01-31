@@ -45,4 +45,7 @@ display_set_gui_size(global.game_width, global.game_height);
 	global.key_esc		= vk_escape;
 #endregion
 
+audio_group_load(audiogroup_music);
+audio_group_load(audiogroup_soundeffects);
+
 
