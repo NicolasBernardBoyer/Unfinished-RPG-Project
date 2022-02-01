@@ -77,6 +77,7 @@
     {"id":{"name":"rb_leaveyourhouse","path":"objects/rb_leaveyourhouse/rb_leaveyourhouse.yy",},"order":1,},
     {"id":{"name":"spr_yoru_walkold","path":"sprites/spr_yoru_walkold/spr_yoru_walkold.yy",},"order":3,},
     {"id":{"name":"spr_movingbox","path":"sprites/spr_movingbox/spr_movingbox.yy",},"order":9,},
+    {"id":{"name":"obj_name_creator","path":"objects/obj_name_creator/obj_name_creator.yy",},"order":6,},
     {"id":{"name":"spr_player_leftwalk_coat","path":"sprites/spr_player_leftwalk_coat/spr_player_leftwalk_coat.yy",},"order":0,},
     {"id":{"name":"obj_movingbox","path":"objects/obj_movingbox/obj_movingbox.yy",},"order":9,},
     {"id":{"name":"spr_kat_walk","path":"sprites/spr_kat_walk/spr_kat_walk.yy",},"order":0,},
