@@ -1,5 +1,17 @@
-gridX = 0;
-gridY = 0;
+#region DEFINE KEYS
+	global.PL = false; //LEFT
+	global.PR = false; //RIGHT
+	global.PU = false; //UP
+	global.PD = false; //DOWN
+	
+	global.POK = false; //OK
+	global.PCAN = false; //CANCEL (DELETE)
+#endregion
+
+currentName = "";
+
+gridX = 0; //Our X coordinate in the grid
+gridY = 0; //Our Y coordinate in the grid
 
 letterString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ   ";
 

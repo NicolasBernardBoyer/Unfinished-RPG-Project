@@ -43,6 +43,7 @@ display_set_gui_size(global.game_width, global.game_height);
 	global.key_up		= vk_up;
 	global.key_down		= vk_down;
 	global.key_esc		= vk_escape;
+	global.key_del		= vk_backspace;
 #endregion
 
 audio_group_load(audiogroup_music);
