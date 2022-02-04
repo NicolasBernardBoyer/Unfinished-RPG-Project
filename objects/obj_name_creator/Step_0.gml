@@ -17,6 +17,9 @@ else global.POK = false;
 if (keyboard_check_pressed(global.key_revert) or keyboard_check_pressed(global.key_del)) global.PCAN = true;
 else global.PCAN = false;
 
+if (keyboard_check_pressed(global.key_shift)) global.PSEL = true;
+else global.PSEL = false;
+
 #endregion
 
 #region MOVE THE CURSOR
@@ -57,16 +60,30 @@ if (global.POK){
 	var newLetter = a_letters[gridX, gridY];
 	
 	//Save the new name to the hero
-	if (newLetter == "OK"){
+	if (newLetter == "OK" and currentName != ""and currentName != " "and currentName != "  " and currentName != "   "and currentName != "    "and currentName != "     "and currentName != "      "and currentName != "       " and currentName != "        "){
 		global.playerName = currentName;
-		
 		instance_destroy();
+	} else if(newLetter == "OK" and (currentName == ""or currentName == " "or currentName == "  " or currentName == "   "or currentName == "    "or currentName == "     "or currentName == "      "or currentName == "       " or currentName == "        ")){
+		audio_play_sound(snd_buzz, 6, false);
 	}
+	
+	//Check if we're at max letters for the name or not
+	letterCount = string_length(currentName);
 		
 	//Add letter to name (check if it's not the OK button before adding)
-	if (newLetter != "OK"){
+	if (newLetter != "OK") and (letterCount < MAX_LETTERS_IN_NAME){
+		
+		//CHANGE TO LOWER CASE IF NEEDED
+		if (showLowerCase) and (newLetter != " "){
+			uniCode = ord(newLetter) + 32;
+			newLetter = chr(uniCode);
+		}
+		
 		currentName += newLetter;
+	} else if (letterCount >= MAX_LETTERS_IN_NAME) {
+		audio_play_sound(snd_buzz, 6, false);
 	}
+	
 }
 #endregion
 
@@ -81,6 +98,14 @@ if (global.PCAN){
 	
 	//If we have at least 1, delete it
 	if (letterCount >= 1) currentName = string_delete(currentName, letterCount, 1);
+}
+
+#endregion
+
+#region PRESSED SELECT OR SHIFT
+	
+if (global.PSEL){
+	showLowerCase = !showLowerCase;
 }
 
 #endregion

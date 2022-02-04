@@ -4,6 +4,8 @@ BUFFER = ceil(6);
 
 #region DRAW CURRENT NAME
 
+
+
 startY = 32;
 startX = 92;
 
@@ -11,6 +13,7 @@ startX = 92;
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_text(startX, startY, currentName);
+draw_text(startX, startY + 2, spaces);
 
 #endregion
 
@@ -25,6 +28,12 @@ for (var yy = 0; yy < yLetters; yy++){
 		#region CODE INSIDE FOR LOOP
 		
 		var letter = a_letters[xx, yy];
+		
+		if (showLowerCase) and (charCount <= 26){
+			//Get the unicode for the letter and add 32 to it
+			uniCode = ord(letter) + 32;
+			letter = chr(uniCode);
+		}
 		
 		var drawX = startX + (xx * (fontSize * 2));
 		var drawY = startY + (yy * (fontSize + BUFFER));

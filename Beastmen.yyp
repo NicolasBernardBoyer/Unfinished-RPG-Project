@@ -60,6 +60,7 @@
     {"id":{"name":"par_object","path":"objects/par_object/par_object.yy",},"order":0,},
     {"id":{"name":"spr_kitchenset","path":"sprites/spr_kitchenset/spr_kitchenset.yy",},"order":14,},
     {"id":{"name":"spr_twomovingbox","path":"sprites/spr_twomovingbox/spr_twomovingbox.yy",},"order":10,},
+    {"id":{"name":"snd_buzz","path":"sounds/snd_buzz/snd_buzz.yy",},"order":3,},
     {"id":{"name":"disable_name","path":"scripts/disable_name/disable_name.yy",},"order":2,},
     {"id":{"name":"Button","path":"sprites/Button/Button.yy",},"order":3,},
     {"id":{"name":"goto_room","path":"scripts/goto_room/goto_room.yy",},"order":0,},

@@ -6,9 +6,17 @@
 	
 	global.POK = false; //OK
 	global.PCAN = false; //CANCEL (DELETE)
+	
+	global.PSEL = false;
 #endregion
 
+showLowerCase = false; //Show lower case or not
+
+spaces = "________"; //Spaces underlining the name
+
 currentName = "";
+
+#macro MAX_LETTERS_IN_NAME 8
 
 gridX = 0; //Our X coordinate in the grid
 gridY = 0; //Our Y coordinate in the grid
