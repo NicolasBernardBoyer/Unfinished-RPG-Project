@@ -23,29 +23,19 @@ text = [
 		"You. I can sense you. Don't you go thinking I don't know you're there.",
 		"Who are you?",
 		"Please enter your name.",
-		"Player... huh.",
-		"No... you're not someone else. That's impossible.",
-		"You're just a voice in my head. You're just me.",
-		"I am Player.",
-		"Alright then, Player. If you're me...",
-		"Then wake up, or you'll be late for work.",
-		"Player...",
-		"...That's me.",
+		"...",
 		"...",
 		];
 portrait_index = noone;
 speakers = [id, id, id, id, id,
 			id, id, id, id, id,
 			id, id, id, id, id,
-			id, id, id, id, id,
-			id, id, id, id, id, id, id];
+			id, id, id, id, id];
 next_line = [0, 0, 0, 0, 0, 
 			 0, 0, 0, 0, 0,
 			 0, 0, 0, 0, 0,
-			 0, 0, 0, 0, 0,
-			 0, 0, 0, 0, 0, 0, 0];
+			 0, 0, 0, 0, 0];
 scripts = [-1, -1, -1, -1, -1, 
 		   -1, -1, -1, -1, -1, 
 		   -1, -1, -1, -1, -1, 
-		   -1, -1, -1, -1, -1, 
-		   -1, -1, -1, -1, -1, [goto_room], -1];
+		   -1, [create_name_creator], -1];
