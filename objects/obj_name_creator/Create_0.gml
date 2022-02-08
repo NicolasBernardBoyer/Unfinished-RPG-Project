@@ -49,6 +49,10 @@ spaces = "________"; //Spaces underlining the name
 
 currentName = "";
 
+buttonREADY = false; //Ready for cursor to move to next letter or not (set by pressing/holding buttons)
+buttonTimer = 0; //Times how many steps the button has been held for
+timeTillButtonREADY = 10; //This is how many steps a player has to hold a button for before buttonREADY becomes true - this is bypassed by just PRESSING a button
+
 #macro MAX_LETTERS_IN_NAME 8
 
 gridX = 0; //Our X coordinate in the grid

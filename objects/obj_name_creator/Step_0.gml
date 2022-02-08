@@ -20,23 +20,23 @@ if (keyboard_check(global.key_revert) or keyboard_check(global.key_del)) global.
 else global.HCAN = false;
 
 //RELEASED
-if (keyboard_check_pressed(global.key_right)) global.PR = true;
-else global.PR = false;
+if (keyboard_check_released(global.key_right)) global.PR = true;
+else global.RR = false;
 
-if (keyboard_check_pressed(global.key_left)) global.PL = true;
-else global.PL = false;
+if (keyboard_check_released(global.key_left)) global.PL = true;
+else global.RL = false;
 
-if (keyboard_check_pressed(global.key_up)) global.PU = true;
-else global.PU = false;
+if (keyboard_check_released(global.key_up)) global.PU = true;
+else global.RU = false;
 
-if (keyboard_check_pressed(global.key_down)) global.PD = true;
-else global.PD = false;
+if (keyboard_check_released(global.key_down)) global.PD = true;
+else global.RD = false;
 
-if (keyboard_check_pressed(global.key_enter) or keyboard_check_pressed(global.key_confirm)) global.POK = true;
-else global.POK = false;
+if (keyboard_check_released(global.key_enter) or keyboard_check_pressed(global.key_confirm)) global.POK = true;
+else global.ROK = false;
 
-if (keyboard_check_pressed(global.key_revert) or keyboard_check_pressed(global.key_del)) global.PCAN = true;
-else global.PCAN = false;
+if (keyboard_check_released(global.key_revert) or keyboard_check_pressed(global.key_del)) global.PCAN = true;
+else global.RCAN = false;
 
 //PRESSED
 if (keyboard_check_pressed(global.key_right)) global.PR = true;
@@ -64,6 +64,21 @@ else global.PSEL = false;
 #endregion
 
 #region MOVE THE CURSOR
+
+	if (!buttonREADY){
+		if (global.HD || global.HL || global.HR || global.HU || global.HCAN || global.HOK){
+			buttonTimer++;
+		}
+		
+		if (buttonTimer >= timeTillButtonREADY){
+			buttonTimer = 0;
+			buttonREADY = true;
+		}
+		
+		if (global.PD || global.PL || global.PR || global.PU || global.PCAN || global.POK){
+					
+		}
+	}
 
 	if (global.PL){
 		//audio
