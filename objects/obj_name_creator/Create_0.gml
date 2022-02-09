@@ -12,16 +12,10 @@
 	global.HU = false; //HELD UP
 	global.HD = false; //HELD DOWN
 	
-	global.HOK = false; //HELD OK
-	global.HCAN = false; //HELD CANCEL (DELETE)
-	
 	global.RL = false; //RELEASED LEFT
 	global.RR = false; //RELEASED RIGHT
 	global.RU = false; //RELEASED UP
 	global.RD = false; //RELEASED DOWN
-	
-	global.ROK = false; //RELEASED OK
-	global.RCAN = false; //RELEASED CANCEL (DELETE)
 	
 	global.PSEL = false;
 #endregion
