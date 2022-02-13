@@ -1,4 +1,9 @@
 visible = false;
+alarm[0] = -1;
+alarm[1] = -1;
+image_speed = 0;
+runAlarm = true;
+moveReady = false;
 
 voice = snd_typewriter;
 name = "";
