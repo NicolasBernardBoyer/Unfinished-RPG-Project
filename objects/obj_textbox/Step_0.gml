@@ -19,7 +19,11 @@ if(keyboard_check_pressed(interact_key) or keyboard_check_pressed(other_interact
 }
 
 if(choice_dialogue){
-	choice += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
+	if (keyboard_check_pressed(global.key_down) or keyboard_check_pressed(global.key_up)){
+		audio_play_sound(snd_typewriter, 5, false);
+	}
+	
+	choice += keyboard_check_pressed(global.key_down) - keyboard_check_pressed(global.key_up);
 	
 	if(choice > text_array_len-1) choice = 0;
 	if(choice < 0) choice = text_array_len-1;

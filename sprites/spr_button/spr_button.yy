@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"0518827a-dffe-4be0-bc50-7ef450c877ce","path":"sprites/Button/Button.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0518827a-dffe-4be0-bc50-7ef450c877ce","path":"sprites/Button/Button.yy",},"LayerId":{"name":"4182bd07-6ade-4453-8885-76e91802cc61","path":"sprites/Button/Button.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Button","path":"sprites/Button/Button.yy",},"resourceVersion":"1.0","name":"0518827a-dffe-4be0-bc50-7ef450c877ce","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0518827a-dffe-4be0-bc50-7ef450c877ce","path":"sprites/spr_button/spr_button.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0518827a-dffe-4be0-bc50-7ef450c877ce","path":"sprites/spr_button/spr_button.yy",},"LayerId":{"name":"4182bd07-6ade-4453-8885-76e91802cc61","path":"sprites/spr_button/spr_button.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},"resourceVersion":"1.0","name":"0518827a-dffe-4be0-bc50-7ef450c877ce","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"Button","path":"sprites/Button/Button.yy",},
+    "spriteId": {"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 5.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"9f656daa-9197-4346-a40d-ea6a854a7734","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0518827a-dffe-4be0-bc50-7ef450c877ce","path":"sprites/Button/Button.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9f656daa-9197-4346-a40d-ea6a854a7734","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0518827a-dffe-4be0-bc50-7ef450c877ce","path":"sprites/spr_button/spr_button.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Button","path":"sprites/Button/Button.yy",},
+    "parent": {"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},
     "resourceVersion": "1.3",
-    "name": "Button",
+    "name": "spr_button",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/UI.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Button",
+  "name": "spr_button",
   "tags": [],
   "resourceType": "GMSprite",
 }

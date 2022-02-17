@@ -15,6 +15,7 @@
   "layers": [
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_transition","path":"objects/obj_transition/obj_transition.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":112.0,"y":277.0,"resourceVersion":"1.0","name":"inst_3D972728","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_fade_in","path":"objects/obj_fade_in/obj_fade_in.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":0.0,"resourceVersion":"1.0","name":"inst_7B1FDBC3","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Transitions","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Text","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tset_home","path":"tilesets/tset_home/tset_home.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":13,"SerialiseHeight":10,"TileSerialiseData":[
@@ -108,6 +109,7 @@
     {"name":"inst_8269439","path":"rooms/rm_yourbedroom/rm_yourbedroom.yy",},
     {"name":"inst_7C49F7A3","path":"rooms/rm_yourbedroom/rm_yourbedroom.yy",},
     {"name":"inst_C8DF2A","path":"rooms/rm_yourbedroom/rm_yourbedroom.yy",},
+    {"name":"inst_7B1FDBC3","path":"rooms/rm_yourbedroom/rm_yourbedroom.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
