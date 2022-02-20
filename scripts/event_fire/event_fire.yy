@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Textboxes",
-    "path": "folders/Scripts/Textboxes.yy",
+    "name": "Event System",
+    "path": "folders/Scripts/Event System.yy",
   },
   "resourceVersion": "1.0",
-  "name": "change_variable",
+  "name": "event_fire",
   "tags": [],
   "resourceType": "GMScript",
 }

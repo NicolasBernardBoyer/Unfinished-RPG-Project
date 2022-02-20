@@ -1,4 +1,5 @@
 if(!global.pause) exit;
+if(!global.canPause) exit;
 
 draw_set_font(fnt_excelsior);
 

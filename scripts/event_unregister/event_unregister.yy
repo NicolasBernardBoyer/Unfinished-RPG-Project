@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Event System",
+    "path": "folders/Scripts/Event System.yy",
   },
   "resourceVersion": "1.0",
-  "name": "do_nothing",
+  "name": "event_unregister",
   "tags": [],
   "resourceType": "GMScript",
 }

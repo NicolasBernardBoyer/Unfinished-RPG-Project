@@ -17,12 +17,23 @@ enum dir {
 	down = 270,
 }
 
+#region STATE VARIABLES
 global.inventoryOpen = false;
 global.inBattle = false;
-global.playerName = "New Guy";
+global.canPause = true;
+#endregion
 
+#region INFORMATION VARAIBLES
+global.playerName = "New Person";
+global.previousRoom = rm_yourbedroom;
+
+#endregion
+
+#region EVENT VARIABLES
 global.hasCoat = false;
 global.hasBackpack = false;
+global.playintro = true;
+#endregion
 
 // Camera and Window size variables
 #region
