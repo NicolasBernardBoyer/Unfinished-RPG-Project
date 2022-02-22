@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 6,
-  "bbox_right": 81,
-  "bbox_top": 30,
-  "bbox_bottom": 67,
+  "bbox_left": 0,
+  "bbox_right": 91,
+  "bbox_top": 0,
+  "bbox_bottom": 71,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 86,
-  "height": 68,
+  "width": 92,
+  "height": 72,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -25,8 +25,9 @@
   "gridY": 34,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"3496b570-f098-45f2-9b83-b9c406afece8","path":"sprites/spr_player_leftbike/spr_player_leftbike.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3496b570-f098-45f2-9b83-b9c406afece8","path":"sprites/spr_player_leftbike/spr_player_leftbike.yy",},"LayerId":{"name":"a3495f92-b50b-4aaf-b8c4-b92da9fa8400","path":"sprites/spr_player_leftbike/spr_player_leftbike.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"3496b570-f098-45f2-9b83-b9c406afece8","path":"sprites/spr_player_leftbike/spr_player_leftbike.yy",},"LayerId":{"name":"84342635-61c1-489b-bda6-ffd6177bcfaa","path":"sprites/spr_player_leftbike/spr_player_leftbike.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"3496b570-f098-45f2-9b83-b9c406afece8","path":"sprites/spr_player_leftbike/spr_player_leftbike.yy",},"LayerId":{"name":"a3495f92-b50b-4aaf-b8c4-b92da9fa8400","path":"sprites/spr_player_leftbike/spr_player_leftbike.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"3496b570-f098-45f2-9b83-b9c406afece8","path":"sprites/spr_player_leftbike/spr_player_leftbike.yy",},"LayerId":{"name":"fd8559de-7ca8-4a3e-82f5-a6e31c2d1a22","path":"sprites/spr_player_leftbike/spr_player_leftbike.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_player_leftbike","path":"sprites/spr_player_leftbike/spr_player_leftbike.yy",},"resourceVersion":"1.0","name":"3496b570-f098-45f2-9b83-b9c406afece8","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -55,8 +56,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 43,
-    "yorigin": 68,
+    "xorigin": 46,
+    "yorigin": 72,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_leftbike","path":"sprites/spr_player_leftbike/spr_player_leftbike.yy",},
@@ -68,6 +69,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"player","resourceVersion":"1.0","name":"84342635-61c1-489b-bda6-ffd6177bcfaa","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"bike","resourceVersion":"1.0","name":"a3495f92-b50b-4aaf-b8c4-b92da9fa8400","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"background","resourceVersion":"1.0","name":"fd8559de-7ca8-4a3e-82f5-a6e31c2d1a22","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
