@@ -82,7 +82,7 @@
   "nineSlice": null,
   "parent": {
     "name": "PlayerWithCoat",
-    "path": "folders/Sprites/Overworld/Characters/PlayerWithCoat.yy",
+    "path": "folders/Sprites/Overworld/Characters/Player/PlayerWithCoat.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_walk_coat",

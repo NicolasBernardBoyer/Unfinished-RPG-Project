@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "PlayerOnBike",
-    "path": "folders/Sprites/Overworld/Characters/PlayerOnBike.yy",
+    "path": "folders/Sprites/Overworld/Characters/Player/PlayerOnBike.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_leftbike",

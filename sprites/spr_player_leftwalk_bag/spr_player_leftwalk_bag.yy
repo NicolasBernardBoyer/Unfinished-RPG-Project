@@ -82,7 +82,7 @@
   "nineSlice": null,
   "parent": {
     "name": "PlayerWithBag",
-    "path": "folders/Sprites/Overworld/Characters/PlayerWithBag.yy",
+    "path": "folders/Sprites/Overworld/Characters/Player/PlayerWithBag.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_leftwalk_bag",

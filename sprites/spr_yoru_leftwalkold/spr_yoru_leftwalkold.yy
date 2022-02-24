@@ -82,7 +82,7 @@
   "nineSlice": null,
   "parent": {
     "name": "OldPlayer",
-    "path": "folders/Sprites/Overworld/Characters/OldPlayer.yy",
+    "path": "folders/Sprites/Overworld/Characters/Player/OldPlayer.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_yoru_leftwalkold",

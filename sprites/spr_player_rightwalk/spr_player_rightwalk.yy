@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Player",
-    "path": "folders/Sprites/Overworld/Characters/Player.yy",
+    "name": "Player Default",
+    "path": "folders/Sprites/Overworld/Characters/Player/Player Default.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_rightwalk",
