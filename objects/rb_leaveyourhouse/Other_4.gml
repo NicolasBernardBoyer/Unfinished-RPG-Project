@@ -1,0 +1,1 @@
+instance_deactivate_object(inst_740548B5);

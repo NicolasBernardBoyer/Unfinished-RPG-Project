@@ -6,7 +6,7 @@ text = ["Head out to work?",
 portrait_index = noone;
 speakers = [id,id,id,id];
 next_line = [0,[-1,0],0];
-scripts = [-1,[-1,-1],-1];
+scripts = [-1,[[leave_house],-1],-1];
 
 radiusX = 8;
 radiusY = 36;

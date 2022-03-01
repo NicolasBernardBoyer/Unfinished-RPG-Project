@@ -47,7 +47,6 @@ ds_menu_difficulty = create_menu_page(
 );
 
 ds_menu_graphics = create_menu_page(
-	["Resolution", menu_element_type.shift,				change_resolution,		0,		["640 x 480", "960 x 720", "1280 x 960"]],
 	["Fullscreen ON/OFF",menu_element_type.toggle,			change_window_mode,		1,		["Fullscreen", "Windowed"]],
 	["Back",	   menu_element_type.page_transfer,		menu_page.settings],
 );
