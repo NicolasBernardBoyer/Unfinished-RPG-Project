@@ -11,13 +11,12 @@ text = [
 		"Today is another day.",
 		"...",
 		"I don't wanna get up. I don't see the point.",
-		"In that case, why even bother?",
 		"Moving out was the worst decision I've ever made.",
-		"Thanks to my stupid head and it's stupid decisions, I'm stuck in this craphole with this smelly bastard of a roommate.",
+		"Thanks to my stupid decisions, I'm stuck in this garbage apartment with this smelly loser.",
 		"It's all my fault.",
-		"If only someone else could take this life from me.",
-		"That person could maybe make a change in this awful world plagued by injustice.",
-		"That person could maybe change others for the better and make them happier.",
+		"If only someone else could make use of my life.",
+		"That person could maybe make a change in this awful world.",
+		"That person could maybe change others for the better.",
 		"But that person isn't me.",
 		"...",
 		"I can sense someone listening. Don't you go thinking I don't know you're there.",
@@ -28,14 +27,14 @@ text = [
 		];
 portrait_index = noone;
 speakers = [id, id, id, id, id,
-			id, id, id, id, id,
+			id, id, id, id,
 			id, id, id, id, id,
 			id, id, id, id, id];
 next_line = [0, 0, 0, 0, 0, 
-			 0, 0, 0, 0, 0,
+			 0, 0, 0, 0,
 			 0, 0, 0, 0, 0,
 			 0, 0, 0, 0, 0];
 scripts = [-1, -1, -1, -1, -1, 
-		   -1, -1, -1, -1, -1, 
+		   -1, -1, -1, -1, 
 		   -1, -1, -1, -1, -1, 
 		   -1, [create_name_creator], -1];

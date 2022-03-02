@@ -1,3 +1,4 @@
+canMove = true;
 sprite_index = spr_player_walk;
 image_index = 0;
 framebefore = 0;

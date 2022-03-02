@@ -5,8 +5,8 @@ function city_room_transition(){
 	with(obj_game){
 		if(!doTransition){
 			spawnRoom = rm_waytowork;
-			spawnX = 587;
-			spawnY = 187;
+			spawnX = 1004;
+			spawnY = 238;
 			doTransition = true;
 		}
 	}
