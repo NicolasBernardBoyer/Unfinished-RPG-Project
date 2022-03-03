@@ -48,7 +48,6 @@
     {"id":{"name":"spr_coatrack","path":"sprites/spr_coatrack/spr_coatrack.yy",},"order":18,},
     {"id":{"name":"spr_player_leftbike","path":"sprites/spr_player_leftbike/spr_player_leftbike.yy",},"order":0,},
     {"id":{"name":"spr_toilet","path":"sprites/spr_toilet/spr_toilet.yy",},"order":15,},
-    {"id":{"name":"obj_credits","path":"objects/obj_credits/obj_credits.yy",},"order":5,},
     {"id":{"name":"camera","path":"objects/camera/camera.yy",},"order":2,},
     {"id":{"name":"spr_kat_faces_old","path":"sprites/spr_kat_faces_old/spr_kat_faces_old.yy",},"order":0,},
     {"id":{"name":"spr_shower","path":"sprites/spr_shower/spr_shower.yy",},"order":16,},
