@@ -44,7 +44,7 @@ global.game_height = 288;
 display_set_gui_size(global.game_width, global.game_height);
 #endregion
 
-// Controls
+// Controls (keyboard)
 #region
 	global.key_revert	= ord("X");
 	global.key_confirm	= ord("Z");
@@ -56,6 +56,20 @@ display_set_gui_size(global.game_width, global.game_height);
 	global.key_esc		= vk_escape;
 	global.key_del		= vk_backspace;
 	global.key_shift	= vk_shift;
+#endregion
+
+// Controls (controller)
+#region
+	global.gp_revert	= gp_face2;
+	global.gp_confirm	= gp_face1;
+	global.gp_enter		= gp_select;
+	global.gp_left		= gp_padl;
+	global.gp_right		= gp_padr;
+	global.gp_up		= gp_padu;
+	global.gp_down		= gp_padd;
+	global.gp_esc		= gp_start;
+	global.gp_del		= gp_face2;
+	global.gp_shift		= gp_face3;
 #endregion
 
 audio_group_load(audiogroup_music);

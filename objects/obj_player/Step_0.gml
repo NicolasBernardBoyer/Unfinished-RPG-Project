@@ -5,7 +5,7 @@ if (room == rm_title_screen) {
 if (!global.pause) {
 
 // Textbox interaction
-if (keyboard_check_pressed(ord("Z"))){
+if (keyboard_check_pressed(global.key_confirm) or gamepad_button_check_pressed(0,global.gp_confirm)){
 	if(active_textbox == noone){
 		var inst = collision_rectangle(x-radius, y-radius, x+radius, y+radius, par_object, false, true);
 		if(inst != noone){
@@ -34,9 +34,9 @@ if (insttrans != noone) {
 	}
 }
 
-if (keyboard_check_pressed(ord("C"))){
+if (keyboard_check_pressed(ord("C")) or gamepad_button_check_pressed(0,gp_face4)){
 	global.inventoryOpen = true;
-	if (keyboard_check_pressed(ord("C"))){
+	if (keyboard_check_pressed(ord("C")) or gamepad_button_check_pressed(0,gp_face4)){
 		global.inventoryOpen = false;
 	}
 }
@@ -45,10 +45,12 @@ if (keyboard_check_pressed(ord("C"))){
 if (global.inventoryOpen == false and !instance_exists(obj_textbox) and obj_game.doTransition == false and global.pause == false and canMove == true) {
 
 // get the input direction from keys
-hInput = keyboard_check(vk_right) - keyboard_check(vk_left);
-vInput = keyboard_check(vk_down) - keyboard_check(vk_up);
+hInput = keyboard_check(global.key_right) - keyboard_check(global.key_left);
+vInput = keyboard_check(global.key_down) - keyboard_check(global.key_up);
+gp_hInput = gamepad_button_check(0,global.gp_right) - gamepad_button_check(0,global.gp_left);
+gp_vInput = gamepad_button_check(0,global.gp_down) - gamepad_button_check(0,global.gp_up);
 
-if (keyboard_check(ord("X"))){
+if (keyboard_check(ord("X")) or gamepad_button_check(0,gp_shoulderrb) or gamepad_button_check(0,gp_shoulderlb)){
 	spd = 3;
 	image_speed = 1.5;
 } else {
@@ -56,17 +58,30 @@ if (keyboard_check(ord("X"))){
 	image_speed = 1;
 }
 
-if (hInput != 0 or vInput != 0) {
+if ((hInput != 0 or vInput != 0) or (gp_hInput != 0 or gp_vInput != 0)) {
 	
-if (keyboard_check_pressed(vk_right) or keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_up) or keyboard_check_pressed(vk_down)) {
+if (keyboard_check_pressed(global.key_right) or keyboard_check_pressed(global.key_left) or keyboard_check_pressed(global.key_up) or keyboard_check_pressed(global.key_down)
+ or gamepad_button_check_pressed(0,global.gp_right) or gamepad_button_check_pressed(0,global.gp_left) or gamepad_button_check_pressed(0,global.gp_up) or gamepad_button_check_pressed(0,global.gp_down)) {
 	image_index = lastframe;
 	framebefore = lastframe;
 }
 
-dir = point_direction(0,0,hInput,vInput);
+if ((hInput != 0 or vInput != 0) and (gp_hInput != 0 or gp_hInput != 0)){
+	dir = point_direction(0,0,hInput,vInput);
 
-hsp = hInput*spd;
-vsp = vInput*spd;
+	hsp = hInput*spd;
+	vsp = vInput*spd;
+} else if (hInput != 0 or vInput != 0) {
+	dir = point_direction(0,0,hInput,vInput);
+
+	hsp = hInput*spd;
+	vsp = vInput*spd;
+} else {
+	dir = point_direction(0,0,gp_hInput,gp_vInput);
+
+	hsp = gp_hInput*spd;
+	vsp = gp_vInput*spd;
+}
 
 // Interrupt movement when meeting a wall
 if place_meeting(x + hsp, y, obj_wall)

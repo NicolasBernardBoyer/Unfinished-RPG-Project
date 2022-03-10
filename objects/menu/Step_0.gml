@@ -8,6 +8,13 @@ input_enter_p    = keyboard_check_pressed(global.key_enter);
 input_revert_p	 = keyboard_check_pressed(global.key_revert);
 input_esc_p		 = keyboard_check_pressed(global.key_esc);
 
+gp_input_up_p		 = gamepad_button_check_pressed(0,global.gp_up);
+gp_input_down_p	     = gamepad_button_check_pressed(0,global.gp_down);
+gp_input_confirm_p   = gamepad_button_check_pressed(0,global.gp_confirm);
+gp_input_enter_p     = gamepad_button_check_pressed(0,global.gp_enter);
+gp_input_revert_p	 = gamepad_button_check_pressed(0,global.gp_revert);
+gp_input_esc_p		 = gamepad_button_check_pressed(0,global.gp_esc);
+
 var ds_grid = page, ds_height = ds_grid_height(ds_grid);
 
 if(inputting){
@@ -15,10 +22,12 @@ if(inputting){
 	switch(ds_grid[# 1, menu_option[page]]){
 		case menu_element_type.shift:
 			var hinput = keyboard_check_pressed(global.key_right) - keyboard_check_pressed(global.key_left);
-			if (hinput != 0){
+			var gp_hinput = gamepad_button_check_pressed(0,global.gp_right) - gamepad_button_check_pressed(0,global.gp_left);
+			if (hinput != 0 or gp_hinput != 0){
 				// audio
 				audio_play_sound(snd_typewriter, 5, false);
 				ds_grid[# 3, menu_option[page]] += hinput;
+				ds_grid[# 3, menu_option[page]] += gp_hinput;
 				ds_grid[# 3, menu_option[page]] = clamp(ds_grid[# 3, menu_option[page]], 0, array_length_1d(ds_grid[# 4, menu_option[page]])-1);
 			}
 			
@@ -32,8 +41,10 @@ if(inputting){
 			} */
 		
 			var hinput = keyboard_check(global.key_right) - keyboard_check(global.key_left);
-			if (hinput != 0){
+			var gp_hinput = gamepad_button_check_pressed(0,global.gp_right) - gamepad_button_check_pressed(0,global.gp_left);
+			if (hinput != 0 or gp_hinput != 0){
 				ds_grid[# 3, menu_option[page]] += hinput*0.01;
+				ds_grid[# 3, menu_option[page]] += gp_hinput*0.01;
 				ds_grid[# 3, menu_option[page]] = clamp(ds_grid[# 3, menu_option[page]], 0, 1);
 				script_execute(ds_grid[# 2, menu_option[page]], ds_grid[# 3, menu_option[page]]);
 			}
@@ -41,10 +52,12 @@ if(inputting){
 		break;
 		case menu_element_type.toggle:
 			var hinput = keyboard_check_pressed(global.key_right) - keyboard_check_pressed(global.key_left);
-			if (hinput != 0){
+			var gp_hinput = gamepad_button_check_pressed(0,global.gp_right) - gamepad_button_check_pressed(0,global.gp_left);
+			if (hinput != 0 or gp_hinput != 0){
 				// audio
 				audio_play_sound(snd_typewriter, 5, false);
 				ds_grid[# 3, menu_option[page]] += hinput;
+				ds_grid[# 3, menu_option[page]] += gp_hinput;
 				ds_grid[# 3, menu_option[page]] = clamp(ds_grid[# 3, menu_option[page]], 0, 1);
 			}
 		
@@ -64,15 +77,17 @@ if(inputting){
 	
 } else {
 	var ochange = input_down_p - input_up_p;
-	if(ochange != 0){
+	var gp_ochange = gp_input_down_p - gp_input_up_p;
+	if(ochange != 0 or gp_ochange != 0){
 		audio_play_sound(snd_typewriter, 5, false);
 		menu_option[page] += ochange;
+		menu_option[page] += gp_ochange;
 		if(menu_option[page] > ds_height-1) { menu_option[page] = 0; }
 		if(menu_option[page] < 0) { menu_option[page] = ds_height -1; }
 	}
 }
 
-	if(input_enter_p or input_confirm_p){
+	if(input_enter_p or input_confirm_p or gp_input_enter_p or gp_input_confirm_p){
 		switch(ds_grid[# 1, menu_option[page]]){
 			case menu_element_type.script_runner: script_execute(ds_grid[# 2, menu_option[page]]); break;
 			case menu_element_type.page_transfer: page = ds_grid[# 2, menu_option[page]]; break;

@@ -37,6 +37,7 @@ voice = snd_typewriter;
 
 interact_key = ord("Z");
 other_interact_key = ord("X");
+interact_button = gp_face1;
 
 choice = 0;
 choice_col = c_yellow;
