@@ -1,4 +1,4 @@
-enum menu_page {
+/*enum menu_page {
 	main,
 	settings,
 	audio,
