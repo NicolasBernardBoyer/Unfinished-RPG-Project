@@ -71,6 +71,7 @@
     {"id":{"name":"spr_kitchenset","path":"sprites/spr_kitchenset/spr_kitchenset.yy",},"order":14,},
     {"id":{"name":"bg_bluesky","path":"sprites/bg_bluesky/bg_bluesky.yy",},"order":0,},
     {"id":{"name":"spr_twomovingbox","path":"sprites/spr_twomovingbox/spr_twomovingbox.yy",},"order":10,},
+    {"id":{"name":"startmenu","path":"objects/startmenu/startmenu.yy",},"order":8,},
     {"id":{"name":"snd_buzz","path":"sounds/snd_buzz/snd_buzz.yy",},"order":3,},
     {"id":{"name":"disable_name","path":"scripts/disable_name/disable_name.yy",},"order":2,},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},"order":3,},
