@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "spr_shade",
-    "path": "sprites/spr_shade/spr_shade.yy",
+    "name": "spr_firehydrant",
+    "path": "sprites/spr_firehydrant/spr_firehydrant.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -29,11 +29,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "General",
-    "path": "folders/Objects/world Objects/General.yy",
+    "name": "TheCity",
+    "path": "folders/Objects/world Objects/TheCity.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_shade",
+  "name": "obj_firehydrant",
   "tags": [],
   "resourceType": "GMObject",
 }

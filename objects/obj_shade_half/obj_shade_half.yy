@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_shade",
-    "path": "sprites/spr_shade/spr_shade.yy",
+    "name": "spr_shade_diagonal_half",
+    "path": "sprites/spr_shade_diagonal_half/spr_shade_diagonal_half.yy",
   },
   "solid": false,
   "visible": false,
@@ -33,7 +33,7 @@
     "path": "folders/Objects/world Objects/General.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_shade",
+  "name": "obj_shade_half",
   "tags": [],
   "resourceType": "GMObject",
 }
