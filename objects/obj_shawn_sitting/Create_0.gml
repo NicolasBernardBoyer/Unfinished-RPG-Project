@@ -1,4 +1,7 @@
 // make it so that our objects higher on the y axis are drawn first
+image_speed = 0;
+runAnim = false;
+alarm[0] = -1;
 visible = false;
 
 portrait_index = 0;

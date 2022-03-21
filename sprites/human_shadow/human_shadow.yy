@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Cutscenes",
-    "path": "folders/Sprites/Cutscenes.yy",
+    "path": "folders/Cutscenes.yy",
   },
   "resourceVersion": "1.0",
   "name": "human_shadow",
