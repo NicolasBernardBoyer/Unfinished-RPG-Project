@@ -71,6 +71,7 @@
     {"id":{"name":"depthsorter","path":"objects/depthsorter/depthsorter.yy",},"order":0,},
     {"id":{"name":"change_window_mode","path":"scripts/change_window_mode/change_window_mode.yy",},"order":6,},
     {"id":{"name":"beastman_shadow","path":"sprites/beastman_shadow/beastman_shadow.yy",},"order":0,},
+    {"id":{"name":"spr_granny_walk","path":"sprites/spr_granny_walk/spr_granny_walk.yy",},"order":0,},
     {"id":{"name":"string_wrap","path":"scripts/string_wrap/string_wrap.yy",},"order":3,},
     {"id":{"name":"par_object","path":"objects/par_object/par_object.yy",},"order":0,},
     {"id":{"name":"spr_kitchenset","path":"sprites/spr_kitchenset/spr_kitchenset.yy",},"order":14,},
@@ -255,6 +256,7 @@
     {"folderPath":"folders/Sprites/Overworld/Characters/Rick and Charlotte.yy","order":4,"resourceVersion":"1.0","name":"Rick and Charlotte","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/world Objects/Characters.yy","order":10,"resourceVersion":"1.0","name":"Characters","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Overworld/Characters/Shawn.yy","order":5,"resourceVersion":"1.0","name":"Shawn","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Overworld/Characters/Granny.yy","order":6,"resourceVersion":"1.0","name":"Granny","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
