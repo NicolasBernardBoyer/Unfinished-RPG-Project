@@ -1,5 +1,5 @@
 visible = false;
-instance_deactivate_object(obj_player);
+deactivatePlayer = true;
 
 alarm[0] = -1;
 

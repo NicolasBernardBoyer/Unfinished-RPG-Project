@@ -7,9 +7,11 @@ if (keyboard_check_pressed(global.key_esc) or gamepad_button_check_pressed(0,glo
 }
 if (global.pause == true){
 	instance_deactivate_layer("Instances");
-} else {
-	instance_activate_layer("Instances");
+	if (global.pause == false){
+		instance_activate_layer("Instances");
+	}
 }
+
 if (instance_exists(obj_devmode)){
 	global.hasBackpack = true;
 	global.hasCoat = true;
