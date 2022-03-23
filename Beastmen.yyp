@@ -58,6 +58,7 @@
     {"id":{"name":"spr_pausebox","path":"sprites/spr_pausebox/spr_pausebox.yy",},"order":6,},
     {"id":{"name":"spr_transition","path":"sprites/spr_transition/spr_transition.yy",},"order":5,},
     {"id":{"name":"obj_bookshelf","path":"objects/obj_bookshelf/obj_bookshelf.yy",},"order":1,},
+    {"id":{"name":"ShaderTest","path":"shaders/ShaderTest/ShaderTest.yy",},"order":0,},
     {"id":{"name":"spr_dresser","path":"sprites/spr_dresser/spr_dresser.yy",},"order":2,},
     {"id":{"name":"spr_backpack","path":"sprites/spr_backpack/spr_backpack.yy",},"order":0,},
     {"id":{"name":"resume_game","path":"scripts/resume_game/resume_game.yy",},"order":1,},
@@ -153,6 +154,7 @@
     {"id":{"name":"script_execute_alt","path":"scripts/script_execute_alt/script_execute_alt.yy",},"order":3,},
     {"id":{"name":"spr_shawn_sitting","path":"sprites/spr_shawn_sitting/spr_shawn_sitting.yy",},"order":0,},
     {"id":{"name":"city_room_transition","path":"scripts/city_room_transition/city_room_transition.yy",},"order":0,},
+    {"id":{"name":"rm_park","path":"rooms/rm_park/rm_park.yy",},"order":3,},
     {"id":{"name":"obj_trashcan","path":"objects/obj_trashcan/obj_trashcan.yy",},"order":5,},
     {"id":{"name":"obj_shade","path":"objects/obj_shade/obj_shade.yy",},"order":3,},
     {"id":{"name":"change_variable","path":"scripts/change_variable/change_variable.yy",},"order":1,},
@@ -195,6 +197,7 @@
     {"roomId":{"name":"rm_yourbathroom","path":"rooms/rm_yourbathroom/rm_yourbathroom.yy",},},
     {"roomId":{"name":"rm_waytowork","path":"rooms/rm_waytowork/rm_waytowork.yy",},},
     {"roomId":{"name":"rm_takingbike","path":"rooms/rm_takingbike/rm_takingbike.yy",},},
+    {"roomId":{"name":"rm_park","path":"rooms/rm_park/rm_park.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":11,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -258,6 +261,8 @@
     {"folderPath":"folders/Objects/world Objects/Characters.yy","order":10,"resourceVersion":"1.0","name":"Characters","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Overworld/Characters/Shawn.yy","order":5,"resourceVersion":"1.0","name":"Shawn","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Overworld/Characters/Granny.yy","order":6,"resourceVersion":"1.0","name":"Granny","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/Characters.yy","order":8,"resourceVersion":"1.0","name":"Characters","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/Characters/Shawn.yy","order":1,"resourceVersion":"1.0","name":"Shawn","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

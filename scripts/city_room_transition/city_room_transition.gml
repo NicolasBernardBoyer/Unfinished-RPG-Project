@@ -5,7 +5,7 @@ function city_room_transition(){
 	with(obj_game){
 		if(!doTransition){
 			spawnRoom = rm_waytowork;
-			spawnX = 1800;
+			spawnX = 1400;
 			spawnY = 238;
 			instance_activate_object(obj_player);
 			room_goto(spawnRoom);

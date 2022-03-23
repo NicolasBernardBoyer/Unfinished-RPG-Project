@@ -1,4 +1,3 @@
-
 if (runAnim = true){
 	image_speed = 1;
 }

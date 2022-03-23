@@ -7,4 +7,5 @@ enum event {
 	name_creator_timer,
 	title_screen,
 	title_screen_text,
+	openingTown,
 }
