@@ -14,7 +14,9 @@
   ],
   "layers": [
     {"instances":[],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Text","tags":[],"resourceType":"GMRInstanceLayer",},
-    {"instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Transitions","tags":[],"resourceType":"GMRInstanceLayer",},
+    {"instances":[
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_transition","path":"objects/obj_transition/obj_transition.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":4.0625,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-290.0,"y":322.0,"resourceVersion":"1.0","name":"inst_5D88393","tags":[],"resourceType":"GMRInstance",},
+      ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Transitions","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tset_city","path":"tilesets/tset_city/tset_city.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":32,"SerialiseHeight":11,"TileSerialiseData":[
 0,0,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,0,0,0,0,0,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
@@ -143,6 +145,7 @@
     {"name":"inst_22CD6D1A","path":"rooms/rm_waytowork/rm_waytowork.yy",},
     {"name":"inst_532D43B5","path":"rooms/rm_waytowork/rm_waytowork.yy",},
     {"name":"inst_33614BEB","path":"rooms/rm_waytowork/rm_waytowork.yy",},
+    {"name":"inst_5D88393","path":"rooms/rm_waytowork/rm_waytowork.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
