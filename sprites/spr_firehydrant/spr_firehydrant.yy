@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "CitySprites",
-    "path": "folders/Sprites/Overworld/Objects/CitySprites.yy",
+    "name": "Shopping District",
+    "path": "folders/Sprites/Overworld/Objects/CitySprites/Shopping District.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_firehydrant",

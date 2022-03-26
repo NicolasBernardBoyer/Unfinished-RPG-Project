@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "CitySprites",
-    "path": "folders/Sprites/Overworld/Objects/CitySprites.yy",
+    "name": "The Park",
+    "path": "folders/Sprites/Overworld/Objects/CitySprites/The Park.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_bikerack",
