@@ -1,7 +1,7 @@
 var c;
 draw_set_font(fnt_excelsior);
 if (global.textvisible == true){
-	c = c_lime;
+	c = c_yellow;
 } else {
 	c = c_black;
 }
