@@ -44,8 +44,7 @@ global.game_height = 288;
 display_set_gui_size(global.game_width, global.game_height);
 #endregion
 
-// Controls (keyboard)
-#region
+#region KEYBOARD CONTROLS
 	global.key_revert	= ord("X");
 	global.key_confirm	= ord("Z");
 	global.key_enter	= vk_enter;
@@ -58,8 +57,7 @@ display_set_gui_size(global.game_width, global.game_height);
 	global.key_shift	= vk_shift;
 #endregion
 
-// Controls (controller)
-#region
+#region CONTROLLER CONTROLS
 	global.gp_revert	= gp_face2;
 	global.gp_confirm	= gp_face1;
 	global.gp_enter		= gp_select;
@@ -71,6 +69,30 @@ display_set_gui_size(global.game_width, global.game_height);
 	global.gp_del		= gp_face2;
 	global.gp_shift		= gp_face3;
 #endregion
+
+#region DEFINE KEYS
+	global.PL = false; //LEFT
+	global.PR = false; //RIGHT
+	global.PU = false; //UP
+	global.PD = false; //DOWN
+	
+	global.POK = false; //OK
+	global.PCAN = false; //CANCEL (DELETE)
+	
+	global.HL = false; //HELD LEFT
+	global.HR = false; //HELD RIGHT
+	global.HU = false; //HELD UP
+	global.HD = false; //HELD DOWN
+	
+	global.RL = false; //RELEASED LEFT
+	global.RR = false; //RELEASED RIGHT
+	global.RU = false; //RELEASED UP
+	global.RD = false; //RELEASED DOWN
+	
+	global.PSEL = false;
+#endregion
+
+
 
 audio_group_load(audiogroup_music);
 audio_group_load(audiogroup_soundeffects);

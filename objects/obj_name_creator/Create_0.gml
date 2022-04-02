@@ -1,25 +1,3 @@
-#region DEFINE KEYS
-	global.PL = false; //LEFT
-	global.PR = false; //RIGHT
-	global.PU = false; //UP
-	global.PD = false; //DOWN
-	
-	global.POK = false; //OK
-	global.PCAN = false; //CANCEL (DELETE)
-	
-	global.HL = false; //HELD LEFT
-	global.HR = false; //HELD RIGHT
-	global.HU = false; //HELD UP
-	global.HD = false; //HELD DOWN
-	
-	global.RL = false; //RELEASED LEFT
-	global.RR = false; //RELEASED RIGHT
-	global.RU = false; //RELEASED UP
-	global.RD = false; //RELEASED DOWN
-	
-	global.PSEL = false;
-#endregion
-
 #region TEXTBOX VARIABLES
 box = spr_textbox;
 box_x = 32;

@@ -9,7 +9,13 @@ draw_sprite_stretched
 );
 
 // DRAW CHANGING TABS
-
+if (inventorytab == 0){
+	draw_sprite(spr_inventory_tabs, 0, 42, 106);
+} else if (inventorytab == 1) {
+	draw_sprite(spr_inventory_tabs, 1, 42, 106);
+} else if (inventorytab == 2) {
+	draw_sprite(spr_inventory_tabs, 2, 42, 106);
+}
 
 // DRAW TEXT
 /*for (var i = 0; i < INVENTORY_SLOTS; i += 1)
