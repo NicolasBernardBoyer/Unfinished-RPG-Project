@@ -18,22 +18,59 @@ if (inventorytab == 0){
 }
 
 // DRAW TEXT
-/*for (var i = 0; i < INVENTORY_SLOTS; i += 1)
-{
-	var xx = 32 + (i mod rowLength)*64;
-	var yy = 32 + (i div rowLength)*64;
-	draw_sprite_stretched(spr_box,0,xx,yy,64,64);
-	if (inventory[i] != -1)
+draw_set_font(fnt_8bit);
+draw_set_halign(fa_center);
+
+// For party
+if (inventorytab == 0){
+	for (var i = 0; i < PARTY_SLOTS; i += 1)
 	{
-		draw_sprite(spr_dragon_plush, inventory[i],xx,yy);
+		var xx = 124 + (i mod inventoryRowLength)*128;
+		var yy = 148 + (i div inventoryRowLength)*24;
+		if (party[i] != -1)
+		{
+			if (party[i] == 0){
+				draw_text(xx,yy, global.playerName);
+			} else if (party[i] == 1){
+				draw_text(xx,yy, "Katarina");
+			} else if (party[i] == 2){
+				draw_text(xx,yy, "Natalie");
+			}
+			// insert the rest here when added
+		}
 	}
-}*/
+}
+// For consumables
+else if (inventorytab == 1){
+	for (var i = 0; i < INVENTORY_SLOTS; i += 1)
+	{
+		var xx = 124 + (i mod inventoryRowLength)*128;
+		var yy = 148 + (i div inventoryRowLength)*24;
+		if (inventory[i] != -1)
+		{
+			draw_text(xx,yy, inventory[i]);
+		}
+	}
+}
+// For Key Items
+else if (inventorytab == 2){
+	for (var i = 0; i < KEY_ITEM_SLOTS; i += 1)
+	{
+		var xx = 124 + (i mod inventoryRowLength)*128;
+		var yy = 148 + (i div inventoryRowLength)*24;
+		if (keyitems[i] != -1)
+		{
+			draw_text(xx,yy, keyitems[i]);
+		}
+	}
+}
+draw_set_halign(fa_left);
 
 // DRAW PARTY
 for (var i = 0; i < PARTY_SLOTS; i += 1)
 {
-	var xx = 42 + (i mod rowLength)*74;
-	var yy = 32 + (i div rowLength)*74;
+	var xx = 42 + (i mod partyRowLength)*74;
+	var yy = 32 + (i div partyRowLength)*74;
 	draw_sprite_stretched(spr_box_empty,0,xx,yy,74,74);
 	if (party[i] != -1)
 	{

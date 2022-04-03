@@ -15,7 +15,4 @@ if(is_array(scripts)) {
 			script_execute_alt(pagescript[0], args);
 		}
 	}
-	
-	
-	
 }

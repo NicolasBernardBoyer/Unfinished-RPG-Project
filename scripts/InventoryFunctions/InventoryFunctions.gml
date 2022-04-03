@@ -20,6 +20,16 @@ function InventoryRemove(rootObject, itemType) {
 	else return false;
 }
 
+function InventoryConsume(rootObject, itemType) {
+	var _slot = InventorySearch(rootObject,itemType);
+	if (_slot != -1)
+	{
+		with(rootObject) inventory[_slot] = -1;
+		return true;
+	}
+	else return false;
+}
+
 function InventoryAdd(rootObject,itemType) {
 	var _slot = InventorySearch(rootObject,-1);
 	if (_slot != 1)
