@@ -9,10 +9,12 @@ party = array_create(PARTY_SLOTS, 4);
 inventorytab = 0;
 randomize();
 
+
+
 #region PARTY MEMBERS LIST
 party[0] = 0;
-party[1] = 1;
-party[2] = 2;
+party[1] = -1;
+party[2] = -1;
 party[3] = -1;
 #endregion
 

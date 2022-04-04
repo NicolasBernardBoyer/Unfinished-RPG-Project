@@ -1,3 +1,6 @@
+if (global.pause) exit;
+if (global.canPause == false) exit;
+
 draw_sprite_stretched
 (
 	/* sprite */spr_box,
@@ -76,5 +79,13 @@ for (var i = 0; i < PARTY_SLOTS; i += 1)
 	{
 		draw_sprite(spr_party_faces, party[i],xx+1,yy+1);
 	}
+}
+
+if (inventorytab == 0){
+	draw_sprite(spr_arrow, image_index/10, 34, 116);
+} else if (inventorytab == 1){
+	draw_sprite(spr_arrow, image_index/10, 134, 116);
+} else if (inventorytab == 2){
+	draw_sprite(spr_arrow, image_index/10, 234, 116);
 }
 	
