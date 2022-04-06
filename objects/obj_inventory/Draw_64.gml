@@ -5,19 +5,31 @@ draw_sprite_stretched
 (
 	/* sprite */spr_box,
 	/* frame */0,
-	/* x */ 42,
-	/* y */ 32,
+	/* x */ box_x,
+	/* y */ box_y,
 	/* width */global.game_width-88,
 	/* height */global.game_height-64
 );
 
 // DRAW CHANGING TABS
 if (inventorytab == 0){
-	draw_sprite(spr_inventory_tabs, 0, 42, 106);
+	if (cursor == -1){
+		draw_sprite(spr_inventory_tabs, 0, 42, 106);
+	} else {
+		draw_sprite(spr_inventory_tabs, 3, 42, 106);
+	}
 } else if (inventorytab == 1) {
-	draw_sprite(spr_inventory_tabs, 1, 42, 106);
+	if (cursor == -1){
+		draw_sprite(spr_inventory_tabs, 1, 42, 106);
+	} else {
+		draw_sprite(spr_inventory_tabs, 4, 42, 106);
+	}
 } else if (inventorytab == 2) {
-	draw_sprite(spr_inventory_tabs, 2, 42, 106);
+	if (cursor == -1){
+		draw_sprite(spr_inventory_tabs, 2, 42, 106);
+	} else {
+		draw_sprite(spr_inventory_tabs, 5, 42, 106);
+	}
 }
 
 // DRAW TEXT
@@ -26,6 +38,7 @@ draw_set_halign(fa_center);
 
 // For party
 if (inventorytab == 0){
+	cursorLimit = 0;
 	for (var i = 0; i < PARTY_SLOTS; i += 1)
 	{
 		var xx = 124 + (i mod inventoryRowLength)*128;
@@ -34,17 +47,37 @@ if (inventorytab == 0){
 		{
 			if (party[i] == 0){
 				draw_text(xx,yy, global.playerName);
+				text = global.playerName;
+				if (selectedParty[i] == 0){
+					//draw checkmark
+					draw_sprite(spr_checkmark, 0, xx+44, yy+5);
+				}
 			} else if (party[i] == 1){
 				draw_text(xx,yy, "Katarina");
+				text = "Katarina";
+				if (selectedParty[i] == 1){
+					//draw checkmark
+					draw_sprite(spr_checkmark, 0, xx+44, yy+5);
+				}
 			} else if (party[i] == 2){
 				draw_text(xx,yy, "Natalie");
+				text = "Natalie";
+				if (selectedParty[i] == 2){
+					//draw checkmark
+					draw_sprite(spr_checkmark, 0, xx+44, yy+5);
+				}
 			}
+			cursorLimit++;
 			// insert the rest here when added
+		}
+		if (cursor = i){
+			draw_sprite(spr_arrow, image_index/10, xx-55, yy+2);
 		}
 	}
 }
 // For consumables
 else if (inventorytab == 1){
+	cursorLimit = 0;
 	for (var i = 0; i < INVENTORY_SLOTS; i += 1)
 	{
 		var xx = 124 + (i mod inventoryRowLength)*128;
@@ -52,11 +85,16 @@ else if (inventorytab == 1){
 		if (inventory[i] != -1)
 		{
 			draw_text(xx,yy, inventory[i]);
+			cursorLimit++;
+		}
+		if (cursor = i){
+			draw_sprite(spr_arrow, image_index/10, xx-55, yy+2);
 		}
 	}
 }
 // For Key Items
 else if (inventorytab == 2){
+	cursorLimit = 0;
 	for (var i = 0; i < KEY_ITEM_SLOTS; i += 1)
 	{
 		var xx = 124 + (i mod inventoryRowLength)*128;
@@ -64,28 +102,34 @@ else if (inventorytab == 2){
 		if (keyitems[i] != -1)
 		{
 			draw_text(xx,yy, keyitems[i]);
+			cursorLimit++;
+		}
+		if (cursor = i){
+			draw_sprite(spr_arrow, image_index/10, xx-55, yy+2);
 		}
 	}
 }
 draw_set_halign(fa_left);
 
 // DRAW PARTY
-for (var i = 0; i < PARTY_SLOTS; i += 1)
+for (var i = 0; i < SELECTED_PARTY_SLOTS; i += 1)
 {
 	var xx = 42 + (i mod partyRowLength)*74;
 	var yy = 32 + (i div partyRowLength)*74;
 	draw_sprite_stretched(spr_box_empty,0,xx,yy,74,74);
-	if (party[i] != -1)
+	if (selectedParty[i] != -1)
 	{
-		draw_sprite(spr_party_faces, party[i],xx+1,yy+1);
+		draw_sprite(spr_party_faces, selectedParty[i],xx+1,yy+1);
+	} else {
+		draw_text(xx+10, yy+28, "(Empty)");
 	}
 }
 
 if (inventorytab == 0){
-	draw_sprite(spr_arrow, image_index/10, 34, 116);
+	// draw_sprite(spr_arrow, image_index/10, 34, 116);
 } else if (inventorytab == 1){
-	draw_sprite(spr_arrow, image_index/10, 134, 116);
+	// draw_sprite(spr_arrow, image_index/10, 134, 116);
 } else if (inventorytab == 2){
-	draw_sprite(spr_arrow, image_index/10, 234, 116);
+	// draw_sprite(spr_arrow, image_index/10, 234, 116);
 }
 	

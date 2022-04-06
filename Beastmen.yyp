@@ -137,6 +137,7 @@
     {"id":{"name":"spr_big_arrow","path":"sprites/spr_big_arrow/spr_big_arrow.yy",},"order":1,},
     {"id":{"name":"spr_box","path":"sprites/spr_box/spr_box.yy",},"order":3,},
     {"id":{"name":"ev_intro_2","path":"objects/ev_intro_2/ev_intro_2.yy",},"order":3,},
+    {"id":{"name":"spr_checkmark","path":"sprites/spr_checkmark/spr_checkmark.yy",},"order":6,},
     {"id":{"name":"spr_player_upwalk_bag","path":"sprites/spr_player_upwalk_bag/spr_player_upwalk_bag.yy",},"order":2,},
     {"id":{"name":"spr_roadblock","path":"sprites/spr_roadblock/spr_roadblock.yy",},"order":6,},
     {"id":{"name":"ev_bike_stop","path":"objects/ev_bike_stop/ev_bike_stop.yy",},"order":2,},
