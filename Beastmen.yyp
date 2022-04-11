@@ -45,6 +45,7 @@
     {"id":{"name":"ev_title_screen_text","path":"objects/ev_title_screen_text/ev_title_screen_text.yy",},"order":2,},
     {"id":{"name":"spr_tile_home","path":"sprites/spr_tile_home/spr_tile_home.yy",},"order":0,},
     {"id":{"name":"snd_door","path":"sounds/snd_door/snd_door.yy",},"order":2,},
+    {"id":{"name":"spr_akano_faces","path":"sprites/spr_akano_faces/spr_akano_faces.yy",},"order":2,},
     {"id":{"name":"spr_arrow","path":"sprites/spr_arrow/spr_arrow.yy",},"order":1,},
     {"id":{"name":"spr_flowertable","path":"sprites/spr_flowertable/spr_flowertable.yy",},"order":8,},
     {"id":{"name":"rm_yourbathroom","path":"rooms/rm_yourbathroom/rm_yourbathroom.yy",},"order":1,},

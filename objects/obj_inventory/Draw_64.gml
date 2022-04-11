@@ -36,35 +36,47 @@ if (inventorytab == 0){
 draw_set_font(fnt_8bit);
 draw_set_halign(fa_center);
 
-// For party
+#region FOR PARTY
 if (inventorytab == 0){
 	cursorLimit = 0;
 	for (var i = 0; i < PARTY_SLOTS; i += 1)
 	{
 		var xx = 124 + (i mod inventoryRowLength)*128;
 		var yy = 148 + (i div inventoryRowLength)*24;
-		if (party[i] != -1)
-		{
-			if (party[i] == 0){
-				draw_text(xx,yy, global.playerName);
+		if (ds_list_find_value(party, i) != undefined)
+		{ 
+			if (ds_list_find_value(party, i) == 0){
+				if (cursor = i) text_col = c_yellow;
+				draw_text_color(xx,yy,global.playerName,text_col,text_col,text_col,text_col, 1);
+				text_col = c_white;
 				text = global.playerName;
-				if (selectedParty[i] == 0){
-					//draw checkmark
-					draw_sprite(spr_checkmark, 0, xx+44, yy+5);
+				for (var ii = 0; ii < SELECTED_PARTY_SLOTS; ii += 1){
+					if (ds_list_find_value(selectedParty, ii) == 0){
+						//draw checkmark
+						draw_sprite(spr_checkmark, 0, xx+44, yy+5);
+					}
 				}
-			} else if (party[i] == 1){
-				draw_text(xx,yy, "Katarina");
+			} else if (ds_list_find_value(party, i) == 1){
+				if (cursor = i) text_col = c_yellow;
+				draw_text_color(xx,yy,"Katarina",text_col,text_col,text_col,text_col, 1);
+				text_col = c_white;
 				text = "Katarina";
-				if (selectedParty[i] == 1){
-					//draw checkmark
-					draw_sprite(spr_checkmark, 0, xx+44, yy+5);
+				for (var ii = 0; ii < SELECTED_PARTY_SLOTS; ii += 1){
+					if (ds_list_find_value(selectedParty, ii) == 1){
+						//draw checkmark
+						draw_sprite(spr_checkmark, 0, xx+44, yy+5);
+					}
 				}
-			} else if (party[i] == 2){
-				draw_text(xx,yy, "Natalie");
+			} else if (ds_list_find_value(party, i) == 2){
+				if (cursor = i) text_col = c_yellow;
+				draw_text_color(xx,yy,"Natalie",text_col,text_col,text_col,text_col, 1);
+				text_col = c_white;
 				text = "Natalie";
-				if (selectedParty[i] == 2){
-					//draw checkmark
-					draw_sprite(spr_checkmark, 0, xx+44, yy+5);
+				for (var ii = 0; ii < SELECTED_PARTY_SLOTS; ii += 1){
+					if (ds_list_find_value(selectedParty, ii) == 2){
+						//draw checkmark
+						draw_sprite(spr_checkmark, 0, xx+44, yy+5);
+					}
 				}
 			}
 			cursorLimit++;
@@ -75,33 +87,73 @@ if (inventorytab == 0){
 		}
 	}
 }
-// For consumables
-else if (inventorytab == 1){
+#endregion
+
+#region FOR CONSUMABLES
+else if (inventorytab == 1 and itemConsumeMenu == false){
 	cursorLimit = 0;
 	for (var i = 0; i < INVENTORY_SLOTS; i += 1)
 	{
 		var xx = 124 + (i mod inventoryRowLength)*128;
 		var yy = 148 + (i div inventoryRowLength)*24;
-		if (inventory[i] != -1)
+		if (ds_list_find_value(consumables, i) != undefined)
 		{
-			draw_text(xx,yy, inventory[i]);
+			if (cursor = i) text_col = c_yellow;
+			draw_text_color(xx,yy,ds_list_find_value(consumables, i),text_col,text_col,text_col,text_col, 1);
+			text_col = c_white;
 			cursorLimit++;
 		}
 		if (cursor = i){
 			draw_sprite(spr_arrow, image_index/10, xx-55, yy+2);
 		}
 	}
+} 
+else if (inventorytab == 1 and itemConsumeMenu == true){
+	draw_text(box_x+200, box_y+110, "Give to whom?");
+	for (var i = 0; i < SELECTED_PARTY_SLOTS+1; i += 1){
+		var xx = 124 + 128;
+		var yy = 162 + i*16;
+			if (ds_list_find_value(selectedParty, i) == 0){
+				if (cursor = i) text_col = c_yellow;
+				draw_text_color(xx,yy,global.playerName,text_col,text_col,text_col,text_col, 1);
+				text_col = c_white;
+				text = global.playerName;
+			} else if (ds_list_find_value(selectedParty, i) == 1){
+				if (cursor = i) text_col = c_yellow;
+				draw_text_color(xx,yy,"Katarina",text_col,text_col,text_col,text_col, 1);
+				text_col = c_white;
+				text = "Katarina";
+			} else if (ds_list_find_value(selectedParty, i) == 2){
+				if (cursor = i) text_col = c_yellow;
+				draw_text_color(xx,yy,"Natalie",text_col,text_col,text_col,text_col, 1);
+				text_col = c_white;
+				text = "Natalie";
+			} else if (i == ds_list_size(selectedParty)+1){
+				if (cursor = i) text_col = c_yellow;
+				draw_text_color(xx,yy+5,"Do not use",text_col,text_col,text_col,text_col, 1);
+				text_col = c_white;
+			}
+			cursorLimit++;
+			// insert the rest here when added	
+		if (cursor = i){
+			draw_sprite(spr_arrow, image_index/10, xx-55, yy+2);
+		}
+	}
 }
-// For Key Items
+#endregion
+
+#region FOR KEY ITEMS
 else if (inventorytab == 2){
 	cursorLimit = 0;
 	for (var i = 0; i < KEY_ITEM_SLOTS; i += 1)
 	{
 		var xx = 124 + (i mod inventoryRowLength)*128;
 		var yy = 148 + (i div inventoryRowLength)*24;
-		if (keyitems[i] != -1)
+		if (ds_list_find_value(keyitems, i) != undefined)
 		{
-			draw_text(xx,yy, keyitems[i]);
+			if (cursor = i) text_col = c_yellow;
+			draw_text_color(xx,yy,ds_list_find_value(keyitems, i),text_col,text_col,text_col,text_col, 1);
+			text_col = c_white;
 			cursorLimit++;
 		}
 		if (cursor = i){
@@ -109,6 +161,7 @@ else if (inventorytab == 2){
 		}
 	}
 }
+#endregion
 draw_set_halign(fa_left);
 
 // DRAW PARTY
@@ -117,10 +170,10 @@ for (var i = 0; i < SELECTED_PARTY_SLOTS; i += 1)
 	var xx = 42 + (i mod partyRowLength)*74;
 	var yy = 32 + (i div partyRowLength)*74;
 	draw_sprite_stretched(spr_box_empty,0,xx,yy,74,74);
-	if (selectedParty[i] != -1)
-	{
-		draw_sprite(spr_party_faces, selectedParty[i],xx+1,yy+1);
-	} else {
+	if (ds_list_find_value(selectedParty, i) != undefined) {
+		draw_sprite(spr_party_faces, ds_list_find_value(selectedParty, i),xx+1,yy+1);
+	}
+	else {
 		draw_text(xx+10, yy+28, "(Empty)");
 	}
 }

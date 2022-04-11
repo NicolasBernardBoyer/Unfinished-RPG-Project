@@ -35,8 +35,20 @@ global.hasBackpack = false;
 global.playintro = true;
 #endregion
 
-// Camera and Window size variables
-#region
+#region SOUND EFFECT VARIABLES
+global.s_buzz		= snd_buzz;
+global.s_door		= snd_door;
+global.s_move		= snd_move;
+global.s_punch		= snd_punch;
+global.s_select		= snd_select;
+global.s_typewriter = snd_typewriter;
+#endregion
+
+#region MUSIC VARIABLES
+
+#endregion
+
+#region Camera and Window size variables
 global.view_width  = camera_get_view_width(view_camera[0]);
 global.view_height = camera_get_view_height(view_camera[0]);
 global.game_width  = 384;
