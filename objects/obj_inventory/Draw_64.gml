@@ -129,14 +129,18 @@ else if (inventorytab == 1 and itemConsumeMenu == true){
 				text_col = c_white;
 				text = "Natalie";
 			} else if (i == ds_list_size(selectedParty)+1){
-				if (cursor = i) text_col = c_yellow;
-				draw_text_color(xx,yy+5,"Do not use",text_col,text_col,text_col,text_col, 1);
+				if (cursor == 4) text_col = c_yellow;
+				draw_text_color(xx,231,"Do not use",text_col,text_col,text_col,text_col, 1);
 				text_col = c_white;
 			}
 			cursorLimit++;
 			// insert the rest here when added	
 		if (cursor = i){
-			draw_sprite(spr_arrow, image_index/10, xx-55, yy+2);
+			if (i != ds_list_size(selectedParty)+1 and i != 4){
+				draw_sprite(spr_arrow, image_index/10, xx-55, yy+2);
+			}else{
+				draw_sprite(spr_arrow, image_index/10, xx-55, 234);
+			}
 		}
 	}
 }
