@@ -1,3 +1,29 @@
+portrait_index = 0;
+voice = snd_typewriter;
+name = "";
+
+radius = 8;
+active_textbox = noone;
+
+facing = 0;
+
+#region PARTY INFO
+
+
+#region PARTY MAX HP
+global.MAXplayerHP = 80;
+global.MAXkatHP	= 60;
+global.MAXmomHP	= 60;
+global.MAXnatHP	= 120;
+global.MAXrobHP	= 70;
+global.MAXjusticHP = 200;
+global.MAXsammyHP  = 80;
+global.MAXsidHP	= 100;
+#endregion
+
+
+#endregion
+
 global.pause = false;
 global.name_text_col = c_white;
 global.hasname = false;
@@ -42,6 +68,7 @@ global.s_move		= snd_move;
 global.s_punch		= snd_punch;
 global.s_select		= snd_select;
 global.s_typewriter = snd_typewriter;
+global.s_heal		= snd_heal;
 #endregion
 
 #region MUSIC VARIABLES

@@ -1,5 +1,13 @@
+if (inventorytab == 0 and ds_list_size(party) == 0){
+	cursor = -1;
+} else if (inventorytab == 1 and ds_list_size(consumables) == 0){
+	cursor = -1;
+} else if (inventorytab == 1 and ds_list_size(keyitems) == 0){
+	cursor = -1;
+}
+
 #region MOVE THE CURSOR
-if (itemConsumeMenu == false){
+else if (itemConsumeMenu == false){
 	if (inventorytab == 0 and cursor == -1){
 		if (global.PD and cursor == -1){
 			cursor = 0;
@@ -36,10 +44,17 @@ if (itemConsumeMenu == false){
 		else cursor += 1;
 		audio_play_sound(global.s_typewriter, 5, false);
 	}
+	if (cursor != -1 and inventorytab = 1){
+		if (global.POK){ 
+			audio_play_sound(snd_select, 5, false);
+			itemConsumeMenu = true;
+			consumingItem = cursor;
+			cursor = 0;
+		}
+	}
 }
  else if (itemConsumeMenu == true and inventorytab == 1){
-		
-	if (cursor != 4){
+		if (cursor != 4){
 		if (global.PD and cursor != ds_list_size(selectedParty)-1){
 			cursor += 1;
 			audio_play_sound(global.s_typewriter, 5, false);
@@ -56,6 +71,12 @@ if (itemConsumeMenu == false){
 			cursor = 4;
 			audio_play_sound(global.s_typewriter, 5, false);
 		}
+		if (global.POK){
+			ds_list_delete(consumables, cursor);
+			itemConsumeMenu = false;
+			audio_play_sound(global.s_heal, 5, false);
+			cursor = 0;
+		}
 	} else if (cursor == 4){
 		if (global.PU){
 			cursor = ds_list_size(selectedParty)-1;
@@ -64,9 +85,13 @@ if (itemConsumeMenu == false){
 			cursor = 0;
 			audio_play_sound(global.s_typewriter, 5, false);
 		}
+		if (global.POK){
+			itemConsumeMenu = false;
+			cursor = 0;
+			audio_play_sound(global.s_select, 5, false);
+		}
 	}
 }
-
 if (cursor >= cursorLimit){
 	cursor = 0;
 	
@@ -100,14 +125,6 @@ if(cursor == -1 and itemConsumeMenu == false){
 		audio_play_sound(global.s_typewriter, 5, false);
 	}
 }
-#endregion
-
-#region CONSUME ITEM
-	if (cursor != -1 and inventorytab = 1){
-		if (global.POK and itemConsumeMenu == false){ 
-			itemConsumeMenu = true;
-		}
-	}
 #endregion
 
 #region ADD AND REMOVE PARTY MEMBERS

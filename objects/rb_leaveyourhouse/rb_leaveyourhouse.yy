@@ -32,7 +32,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Home",
-    "path": "folders/Objects/world Objects/Roadblocks/Home.yy",
+    "path": "folders/Objects/Event Objects/Roadblocks/Home.yy",
   },
   "resourceVersion": "1.0",
   "name": "rb_leaveyourhouse",

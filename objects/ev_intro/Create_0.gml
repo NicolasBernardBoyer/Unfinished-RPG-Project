@@ -3,24 +3,20 @@ instance_deactivate_object(obj_player);
 
 alarm[0] = -1;
 
+global.name_text_col = c_gray;
 voice = snd_typewriter;
-name = "";
+name = "???";
 text = [
-		"I can feel it.",
-		"It's almost time for me to wake up.",
-		"Today is another day.",
+		"Hello?",
+		"Is anyone there?",
+		"Oh. My. God.",
+		"It actually worked! I'm a genius! Hahahahaha!",
+		"Oh, I'm sorry. I didn't mean to bother you.",
+		"It's just that I've been messing with some magic mumbo jumbo as of late.",
+		"Been trying to contact people in other dimensions through dreams and whatnot.",
+		"You should be fine once you wake up though.",
 		"...",
-		"I don't wanna get up. I don't see the point.",
-		"Moving out was the worst decision I've ever made.",
-		"Thanks to my stupid decisions, I'm stuck in this garbage apartment with this smelly loser.",
-		"It's all my fault.",
-		"If only someone else could make use of my life.",
-		"That person could maybe make a change in this awful world.",
-		"That person could maybe change others for the better.",
-		"But that person isn't me.",
-		"...",
-		"I can sense someone listening. Don't you go thinking I don't know you're there.",
-		"Who are you?",
+		"Hey... out of pure curiosity, what's your name?",
 		"Please enter your name.",
 		"...",
 		"...",
@@ -28,13 +24,10 @@ text = [
 portrait_index = noone;
 speakers = [id, id, id, id, id,
 			id, id, id, id,
-			id, id, id, id, id,
 			id, id, id, id, id];
 next_line = [0, 0, 0, 0, 0, 
 			 0, 0, 0, 0,
-			 0, 0, 0, 0, 0,
 			 0, 0, 0, 0, 0];
 scripts = [-1, -1, -1, -1, -1, 
 		   -1, -1, -1, -1, 
-		   -1, -1, -1, -1, -1, 
 		   -1, [create_name_creator], -1];

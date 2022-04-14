@@ -176,6 +176,15 @@ for (var i = 0; i < SELECTED_PARTY_SLOTS; i += 1)
 	draw_sprite_stretched(spr_box_empty,0,xx,yy,74,74);
 	if (ds_list_find_value(selectedParty, i) != undefined) {
 		draw_sprite(spr_party_faces, ds_list_find_value(selectedParty, i),xx+1,yy+1);
+		draw_sprite_stretched(spr_box,0,xx+32,yy,42,18);
+		draw_sprite(spr_heart, 0, xx+66, yy+14);
+		if (ds_list_find_value(selectedParty, i) = 0){
+			draw_text_color(xx+36, yy+1, global.MAXplayerHP, c_white,c_white,c_white,c_white,1);
+		} else if (ds_list_find_value(selectedParty, i) = 1){
+			draw_text_color(xx+36, yy+1, global.MAXkatHP, c_white,c_white,c_white,c_white,1);
+		} else if (ds_list_find_value(selectedParty, i) = 2){
+			draw_text_color(xx+36, yy+1, global.MAXnatHP, c_white,c_white,c_white,c_white,1);
+		}
 	}
 	else {
 		draw_text(xx+10, yy+28, "(Empty)");

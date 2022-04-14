@@ -2,23 +2,23 @@ visible = false;
 
 alarm[0] = -1;
 
+global.name_text_col = c_gray;
 voice = snd_typewriter;
-name = "";
+name = "???";
 text = [
 		global.playerName + "... huh.",
-		"No... you're not someone else. That's impossible.",
-		"You're just a voice in my head. You're just me.",
-		"I am " + global.playerName + ".",
-		"Alright then, "+ global.playerName + ". If you're me...",
-		"Then wake up, or you'll be late for work.",
-		global.playerName + "...",
-		"...That's me.",
+		"That's a nice name.",
+		"Well " + global.playerName + ", I hate to interrupt our conversation like this, but I gotta get up. It's a work day.",
+		"I'll be trying this out again, and I hope that I won't be bothering you again. Unless you want me to, that is.",
+		"Alrighty then, time to wake up.",
+		"Toodles!",
+		"Coincidentally, you also need to wake up to go to work.",
 		"...",
 		];
 portrait_index = noone;
 speakers = [id, id, id, id, id,
-			id, id, id, id];
+			id, obj_game, id];
 next_line = [0, 0, 0, 0, 0, 
-			 0, 0, 0, 0];
-scripts = [-1, -1, -1, -1, -1,
-		   -1, -1, [goto_room], -1];
+			 0, 0, 0];
+scripts = [-1, -1, -1,
+		   -1, -1, -1, [goto_room], -1];

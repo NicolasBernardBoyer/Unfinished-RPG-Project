@@ -18,6 +18,7 @@ text_col = c_white;
 text="";
 cursor = -1;
 cursorLimit = 8;
+consumingItem = 0;
 
 box_x = 42;
 box_y = 32;
