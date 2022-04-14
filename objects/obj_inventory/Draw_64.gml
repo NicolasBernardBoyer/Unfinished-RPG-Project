@@ -109,9 +109,10 @@ else if (inventorytab == 1 and itemConsumeMenu == false){
 	}
 } 
 else if (inventorytab == 1 and itemConsumeMenu == true){
-	draw_text(box_x+200, box_y+110, "Give to whom?");
+	draw_text(box_x+240, box_y+110, "Give to whom?");
+	draw_line(210, 143, 210, 240);
 	for (var i = 0; i < SELECTED_PARTY_SLOTS+1; i += 1){
-		var xx = 124 + 128;
+		var xx = 280;
 		var yy = 162 + i*16;
 			if (ds_list_find_value(selectedParty, i) == 0){
 				if (cursor = i) text_col = c_yellow;
@@ -143,6 +144,21 @@ else if (inventorytab == 1 and itemConsumeMenu == true){
 			}
 		}
 	}
+	if (ds_list_find_value(consumables, consumingItem) = "Burger"){
+		draw_set_halign(fa_left);
+		draw_text(box_x+10, box_y+110, "A greasy burger");
+		draw_text(box_x+10, box_y+126, "from the food truck.");
+		draw_text(box_x+10, box_y+142, "It's disgusting.");
+		draw_set_color(c_lime);
+		draw_text(box_x+10, box_y+158, "+ 10 ATK");
+		draw_set_color(c_red);
+		draw_text(box_x+10, box_y+174, "- 5  SPD");
+		draw_set_color(c_lime);
+		draw_text(box_x+10, box_y+190, "HEAL 40");
+		draw_set_color(c_white);
+		draw_set_halign(fa_center);
+	}
+	
 }
 #endregion
 
@@ -199,3 +215,4 @@ if (inventorytab == 0){
 	// draw_sprite(spr_arrow, image_index/10, 234, 116);
 }
 	
+draw_set_halign(fa_left);
