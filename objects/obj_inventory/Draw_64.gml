@@ -36,7 +36,7 @@ if (inventorytab == 0){
 draw_set_font(fnt_8bit);
 draw_set_halign(fa_center);
 
-#region FOR PARTY
+#region DRAW PARTY OPTIONS
 if (inventorytab == 0){
 	cursorLimit = 0;
 	for (var i = 0; i < PARTY_SLOTS; i += 1)
@@ -89,7 +89,7 @@ if (inventorytab == 0){
 }
 #endregion
 
-#region FOR CONSUMABLES
+#region DRAW AVAILABLE CONSUMABLES
 else if (inventorytab == 1 and itemConsumeMenu == false){
 	cursorLimit = 0;
 	for (var i = 0; i < INVENTORY_SLOTS; i += 1)
@@ -109,7 +109,7 @@ else if (inventorytab == 1 and itemConsumeMenu == false){
 	}
 } 
 else if (inventorytab == 1 and itemConsumeMenu == true){
-	draw_text(box_x+240, box_y+110, "Give to whom?");
+	draw_text(box_x+235, box_y+110, "Give to whom?");
 	draw_line(210, 143, 210, 240);
 	for (var i = 0; i < SELECTED_PARTY_SLOTS+1; i += 1){
 		var xx = 280;
@@ -150,9 +150,9 @@ else if (inventorytab == 1 and itemConsumeMenu == true){
 		draw_text(box_x+10, box_y+126, "from the food truck.");
 		draw_text(box_x+10, box_y+142, "It's disgusting.");
 		draw_set_color(c_lime);
-		draw_text(box_x+10, box_y+158, "+ 10 ATK");
+		draw_text(box_x+10, box_y+158, "+2 ATK");
 		draw_set_color(c_red);
-		draw_text(box_x+10, box_y+174, "- 5  SPD");
+		draw_text(box_x+10, box_y+174, "-2 SPD");
 		draw_set_color(c_lime);
 		draw_text(box_x+10, box_y+190, "HEAL 40");
 		draw_set_color(c_white);
@@ -162,7 +162,7 @@ else if (inventorytab == 1 and itemConsumeMenu == true){
 }
 #endregion
 
-#region FOR KEY ITEMS
+#region DRAW AVAILABLE KEY ITEMS
 else if (inventorytab == 2){
 	cursorLimit = 0;
 	for (var i = 0; i < KEY_ITEM_SLOTS; i += 1)
@@ -190,29 +190,54 @@ for (var i = 0; i < SELECTED_PARTY_SLOTS; i += 1)
 	var xx = 42 + (i mod partyRowLength)*74;
 	var yy = 32 + (i div partyRowLength)*74;
 	draw_sprite_stretched(spr_box_empty,0,xx,yy,74,74);
+	
 	if (ds_list_find_value(selectedParty, i) != undefined) {
 		draw_sprite(spr_party_faces, ds_list_find_value(selectedParty, i),xx+1,yy+1);
-		draw_sprite_stretched(spr_box,0,xx+32,yy,42,18);
-		draw_sprite(spr_heart, 0, xx+66, yy+14);
 		if (ds_list_find_value(selectedParty, i) = 0){
-			draw_text_color(xx+36, yy+1, global.MAXplayerHP, c_white,c_white,c_white,c_white,1);
-		} else if (ds_list_find_value(selectedParty, i) = 1){
-			draw_text_color(xx+36, yy+1, global.MAXkatHP, c_white,c_white,c_white,c_white,1);
+			if (global.playerHP = global.MAXplayerHP) draw_set_color(c_lime);
+			if (global.MAXplayerHP > 99) {
+				draw_sprite_stretched(spr_box,0,xx+20,yy,54,18);
+				draw_text_transformed(xx+25, yy+1, global.playerHP, 0.8, 0.8, 0);
+				draw_text_transformed(xx+38, yy+2, " / ", 0.7, 0.7, 0);
+				draw_text_transformed(xx+47, yy+5, global.MAXplayerHP, 0.6, 0.6, 0);
+			} else {
+				draw_sprite_stretched(spr_box,0,xx+30,yy,44,18);
+				draw_text_transformed(xx+34, yy+1, global.playerHP, 0.8, 0.8, 0);
+				draw_text_transformed(xx+42, yy+2, " / ", 0.7, 0.7, 0);
+				draw_text_transformed(xx+50, yy+5, global.MAXplayerHP, 0.6, 0.6, 0);
+			}
+		}
+		else if (ds_list_find_value(selectedParty, i) = 1){
+			if (global.katHP = global.MAXkatHP) draw_set_color(c_lime);
+			if (global.MAXkatHP > 99) {
+				draw_sprite_stretched(spr_box,0,xx+20,yy,54,18);
+				draw_text_transformed(xx+25, yy+1, global.katHP, 0.8, 0.8, 0);
+				draw_text_transformed(xx+38, yy+2, " / ", 0.7, 0.7, 0);
+				draw_text_transformed(xx+47, yy+5, global.MAXkatHP, 0.6, 0.6, 0);
+			} else {
+				draw_sprite_stretched(spr_box,0,xx+30,yy,44,18);
+				draw_text_transformed(xx+34, yy+1, global.katHP, 0.8, 0.8, 0);
+				draw_text_transformed(xx+42, yy+2, " / ", 0.7, 0.7, 0);
+				draw_text_transformed(xx+50, yy+5, global.MAXkatHP, 0.6, 0.6, 0);
+			}
 		} else if (ds_list_find_value(selectedParty, i) = 2){
-			draw_text_color(xx+36, yy+1, global.MAXnatHP, c_white,c_white,c_white,c_white,1);
+			if (global.natHP = global.MAXnatHP) draw_set_color(c_lime);
+			if (global.MAXnatHP > 99) {
+				draw_sprite_stretched(spr_box,0,xx+20,yy,54,18);
+				draw_text_transformed(xx+25, yy+1, global.natHP, 0.8, 0.8, 0);
+				draw_text_transformed(xx+38, yy+2, " / ", 0.7, 0.7, 0);
+				draw_text_transformed(xx+47, yy+5, global.MAXnatHP, 0.6, 0.6, 0);
+			} else {
+				draw_sprite_stretched(spr_box,0,xx+30,yy,44,18);
+				draw_text_transformed(xx+34, yy+1, global.natHP, 0.8, 0.8, 0);
+				draw_text_transformed(xx+42, yy+2, " / ", 0.7, 0.7, 0);
+				draw_text_transformed(xx+50, yy+5, global.MAXnatHP, 0.6, 0.6, 0);
+			}
+		}
+		draw_sprite(spr_heart, 0, xx+66, yy+14);
+		draw_set_color(c_white);
+	} else {
+		draw_text(xx+10, yy+28, "(Empty)");
 		}
 	}
-	else {
-		draw_text(xx+10, yy+28, "(Empty)");
-	}
-}
-
-if (inventorytab == 0){
-	// draw_sprite(spr_arrow, image_index/10, 34, 116);
-} else if (inventorytab == 1){
-	// draw_sprite(spr_arrow, image_index/10, 134, 116);
-} else if (inventorytab == 2){
-	// draw_sprite(spr_arrow, image_index/10, 234, 116);
-}
-	
 draw_set_halign(fa_left);

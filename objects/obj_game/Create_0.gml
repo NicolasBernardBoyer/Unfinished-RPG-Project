@@ -9,7 +9,6 @@ facing = 0;
 
 #region PARTY INFO
 
-
 #region PARTY MAX HP
 global.MAXplayerHP = 80;
 global.MAXkatHP	= 60;
@@ -17,10 +16,64 @@ global.MAXmomHP	= 60;
 global.MAXnatHP	= 120;
 global.MAXrobHP	= 70;
 global.MAXjusticHP = 200;
-global.MAXsammyHP  = 80;
+global.MAXsamHP  = 80;
 global.MAXsidHP	= 100;
 #endregion
 
+#region PARTY HP
+global.playerHP = 80;
+global.katHP	= 60;
+global.momHP	= 60;
+global.natHP	= 120;
+global.robHP	= 70;
+global.justicHP = 200;
+global.samHP    = 80;
+global.sidHP	= 100;
+#endregion
+
+#region PARTY ATK
+global.playerATK= 10;
+global.katATK	= 5;
+global.momATK	= 4;
+global.natATK	= 20;
+global.robATK	= 5;
+global.justicATK= 30;
+global.samATK   = 10;
+global.sidATK	= 18;
+#endregion
+
+#region PARTY SPD
+global.playerSPD= 10;
+global.katSPD	= 48;
+global.momSPD	= 24;
+global.natSPD	= 64;
+global.robSPD	= 65;
+global.justicSPD= 50;
+global.samSPD   = 15;
+global.sidSPD	= 55;
+#endregion
+
+#region PARTY DEF
+global.playerDEF= 40;
+global.katDEF	= 10;
+global.momDEF	= 5;
+global.natDEF	= 60;
+global.robDEF	= 25;
+global.justicDEF= 100;
+global.samDEF   = 35;
+global.sidDEF	= 55;
+#endregion
+
+#region PARTY LUCK
+global.playerLK = 5;
+global.katLK	= -5;
+global.momLK	= 5;
+global.natLK	= 2;
+global.robLK	= 10;
+global.justicLK = 0;
+global.samLK    = 6;
+global.sidLK	= 3;
+#endregion
 
 #endregion
 
@@ -130,8 +183,6 @@ display_set_gui_size(global.game_width, global.game_height);
 	
 	global.PSEL = false;
 #endregion
-
-
 
 audio_group_load(audiogroup_music);
 audio_group_load(audiogroup_soundeffects);

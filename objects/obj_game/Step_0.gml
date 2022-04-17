@@ -14,6 +14,18 @@ if (global.pause == false){
 }
 #endregion
 
+#region CHARACTER HP CAP
+if (global.playerHP > global.MAXplayerHP){
+	global.playerHP = global.MAXplayerHP;
+} 
+if (global.katHP > global.MAXkatHP){
+	global.katHP = global.MAXkatHP;
+} 
+if (global.natHP > global.MAXnatHP){
+	global.natHP = global.MAXnatHP;
+} 
+#endregion
+
 #region ACTIVATE DEVMODE PRIVILEDGES
 if (instance_exists(obj_devmode)){
 	global.hasBackpack = true;

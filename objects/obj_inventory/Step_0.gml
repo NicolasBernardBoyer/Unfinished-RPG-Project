@@ -72,7 +72,16 @@ else if (itemConsumeMenu == false){
 			audio_play_sound(global.s_typewriter, 5, false);
 		}
 		if (global.POK){
-			ds_list_delete(consumables, cursor);
+			ds_list_delete(consumables, consumingItem);
+#region APPLY ITEM EFFECTS
+			if (ds_list_find_value(consumables, consumingItem) = "Burger"){
+				if (ds_list_find_value(selectedParty, cursor) = 0){
+					global.playerHP += 40;
+					global.playerATK += 2;
+					global.playerSPD -= 2;
+				}
+			}
+#endregion
 			itemConsumeMenu = false;
 			audio_play_sound(global.s_heal, 5, false);
 			cursor = 0;

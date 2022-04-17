@@ -10,6 +10,8 @@ party = ds_list_create();
 selectedParty = ds_list_create();
 consumables = ds_list_create();
 
+global.playerHP -= 40;
+
 inventorytab = 0;
 randomize();
 
