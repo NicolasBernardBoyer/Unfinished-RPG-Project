@@ -21,10 +21,10 @@ text="";
 cursor = -1;
 cursorLimit = 8;
 consumingItem = 0;
+usableItem = false;
 
 box_x = 42;
 box_y = 32;
-
 
 #region PARTY MEMBERS LIST
 ds_list_add(party, 0);

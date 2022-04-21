@@ -9,6 +9,8 @@ facing = 0;
 
 #region PARTY INFO
 
+global.money = 100;
+
 #region PARTY MAX HP
 global.MAXplayerHP = 80;
 global.MAXkatHP	= 60;

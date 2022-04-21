@@ -11,6 +11,9 @@ draw_sprite_stretched
 	/* height */global.game_height-64
 );
 
+draw_sprite_stretched(spr_box, 0, 42, 9, 105, 24);
+draw_text(48, 12, "MONEY: $" + string(global.money));
+
 // DRAW CHANGING TABS
 if (inventorytab == 0){
 	if (cursor == -1){
@@ -181,6 +184,10 @@ else if (inventorytab == 2){
 		}
 	}
 }
+
+
+
+
 #endregion
 draw_set_halign(fa_left);
 
