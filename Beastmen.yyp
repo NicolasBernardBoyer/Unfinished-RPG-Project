@@ -164,6 +164,7 @@
     {"id":{"name":"fnt_calculator","path":"fonts/fnt_calculator/fnt_calculator.yy",},"order":2,},
     {"id":{"name":"spr_lampost","path":"sprites/spr_lampost/spr_lampost.yy",},"order":3,},
     {"id":{"name":"spr_yoru_right_unused","path":"sprites/spr_yoru_right_unused/spr_yoru_right_unused.yy",},"order":0,},
+    {"id":{"name":"spr_icon","path":"sprites/spr_icon/spr_icon.yy",},"order":8,},
     {"id":{"name":"obj_RnC_coffee","path":"objects/obj_RnC_coffee/obj_RnC_coffee.yy",},"order":1,},
     {"id":{"name":"tset_home","path":"tilesets/tset_home/tset_home.yy",},"order":0,},
     {"id":{"name":"ev_bike_text","path":"objects/ev_bike_text/ev_bike_text.yy",},"order":0,},

@@ -53,7 +53,7 @@ else if (itemConsumeMenu == false){
 		}
 	}
 }
- else if (itemConsumeMenu == true and inventorytab == 1){
+else if (itemConsumeMenu == true and inventorytab == 1){
 		if (cursor != 4){
 		if (global.PD and cursor != ds_list_size(selectedParty)-1){
 			cursor += 1;
@@ -101,6 +101,30 @@ else if (itemConsumeMenu == false){
 		}
 	}
 }
+#region KEY ITEM USAGE
+else if (itemConsumeMenu == true and inventorytab == 2){
+	if (global.PD and cursor == 0){
+		cursor += 1;
+		audio_play_sound(global.s_typewriter, 5, false);
+	}
+	else if (global.PD and cursor == 1){
+		cursor = 0;
+		audio_play_sound(global.s_typewriter, 5, false);
+	}
+	else if (global.PU and cursor == 1){
+		cursor -= 1;
+		audio_play_sound(global.s_typewriter, 5, false);
+	}
+	else if (global.PU and cursor == 0){
+		cursor = 1;
+		audio_play_sound(global.s_typewriter, 5, false);
+	}
+	if (global.POK){
+		
+	}
+}
+#endregion
+
 if (cursor >= cursorLimit){
 	cursor = 0;
 	
