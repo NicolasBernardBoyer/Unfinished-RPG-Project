@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_rightwalk","path":"sprites/spr_player_rightwalk/spr_player_rightwalk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_rightwalk",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_kat_walk","path":"sprites/spr_kat_walk/spr_kat_walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_kat_walk",
     "tags": [],
     "resourceType": "GMSequence",

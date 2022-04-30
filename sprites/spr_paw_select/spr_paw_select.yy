@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_paw_select","path":"sprites/spr_paw_select/spr_paw_select.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_paw_select",
     "tags": [],
     "resourceType": "GMSequence",

@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_yoru_walkold","path":"sprites/spr_yoru_walkold/spr_yoru_walkold.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_yoru_walkold",
     "tags": [],
     "resourceType": "GMSequence",

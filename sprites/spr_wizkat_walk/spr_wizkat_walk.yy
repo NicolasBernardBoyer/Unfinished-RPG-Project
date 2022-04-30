@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_wizkat_walk","path":"sprites/spr_wizkat_walk/spr_wizkat_walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_wizkat_walk",
     "tags": [],
     "resourceType": "GMSequence",

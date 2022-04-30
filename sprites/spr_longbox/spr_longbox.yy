@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_longbox","path":"sprites/spr_longbox/spr_longbox.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_longbox",
     "tags": [],
     "resourceType": "GMSequence",

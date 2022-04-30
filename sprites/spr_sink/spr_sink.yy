@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_sink","path":"sprites/spr_sink/spr_sink.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_sink",
     "tags": [],
     "resourceType": "GMSequence",

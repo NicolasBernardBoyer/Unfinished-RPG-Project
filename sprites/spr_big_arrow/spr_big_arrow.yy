@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_big_arrow","path":"sprites/spr_big_arrow/spr_big_arrow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_big_arrow",
     "tags": [],
     "resourceType": "GMSequence",

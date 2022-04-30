@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_threemovingbox","path":"sprites/spr_threemovingbox/spr_threemovingbox.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_threemovingbox",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tvtable","path":"sprites/spr_tvtable/spr_tvtable.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tvtable",
     "tags": [],
     "resourceType": "GMSequence",

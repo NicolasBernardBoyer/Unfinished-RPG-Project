@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_leftbike","path":"sprites/spr_player_leftbike/spr_player_leftbike.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_leftbike",
     "tags": [],
     "resourceType": "GMSequence",

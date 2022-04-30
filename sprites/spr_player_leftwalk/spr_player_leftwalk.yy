@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_leftwalk","path":"sprites/spr_player_leftwalk/spr_player_leftwalk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_leftwalk",
     "tags": [],
     "resourceType": "GMSequence",

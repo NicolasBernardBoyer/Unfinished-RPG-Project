@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_rat_faces","path":"sprites/spr_rat_faces/spr_rat_faces.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_rat_faces",
     "tags": [],
     "resourceType": "GMSequence",

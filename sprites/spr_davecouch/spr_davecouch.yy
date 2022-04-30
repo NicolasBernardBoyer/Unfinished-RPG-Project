@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_davecouch","path":"sprites/spr_davecouch/spr_davecouch.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_davecouch",
     "tags": [],
     "resourceType": "GMSequence",

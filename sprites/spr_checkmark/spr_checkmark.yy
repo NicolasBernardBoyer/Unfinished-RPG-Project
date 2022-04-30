@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_checkmark","path":"sprites/spr_checkmark/spr_checkmark.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_checkmark",
     "tags": [],
     "resourceType": "GMSequence",

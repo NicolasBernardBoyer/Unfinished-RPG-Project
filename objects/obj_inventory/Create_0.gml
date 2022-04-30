@@ -1,3 +1,4 @@
+
 #macro INVENTORY_SLOTS 8
 #macro KEY_ITEM_SLOTS 8
 #macro SELECTED_PARTY_SLOTS 4
@@ -10,8 +11,6 @@ party = ds_list_create();
 selectedParty = ds_list_create();
 consumables = ds_list_create();
 
-global.playerHP -= 40;
-
 inventorytab = 0;
 randomize();
 
@@ -19,6 +18,8 @@ itemConsumeMenu = false;
 text_col = c_white;
 text="";
 cursor = -1;
+partyCursor = 0;
+partyCursorActive = false;
 cursorLimit = 8;
 consumingItem = 0;
 usableItem = false;

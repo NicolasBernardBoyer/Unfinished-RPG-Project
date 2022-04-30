@@ -25,8 +25,8 @@
   "gridY": 32,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"d3527007-3eab-478a-b4ad-7ff2c23c8bf3","path":"sprites/spr_RnC_coffee/spr_RnC_coffee.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d3527007-3eab-478a-b4ad-7ff2c23c8bf3","path":"sprites/spr_RnC_coffee/spr_RnC_coffee.yy",},"LayerId":{"name":"abba7f8b-7b81-4051-924f-5f5328ec12e8","path":"sprites/spr_RnC_coffee/spr_RnC_coffee.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"d3527007-3eab-478a-b4ad-7ff2c23c8bf3","path":"sprites/spr_RnC_coffee/spr_RnC_coffee.yy",},"LayerId":{"name":"43ced71f-2be2-40b8-871d-618f6501fc9a","path":"sprites/spr_RnC_coffee/spr_RnC_coffee.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"d3527007-3eab-478a-b4ad-7ff2c23c8bf3","path":"sprites/spr_RnC_coffee/spr_RnC_coffee.yy",},"LayerId":{"name":"abba7f8b-7b81-4051-924f-5f5328ec12e8","path":"sprites/spr_RnC_coffee/spr_RnC_coffee.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_RnC_coffee","path":"sprites/spr_RnC_coffee/spr_RnC_coffee.yy",},"resourceVersion":"1.0","name":"d3527007-3eab-478a-b4ad-7ff2c23c8bf3","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"78edf68f-b46f-499b-a3db-c0004906fc5a","path":"sprites/spr_RnC_coffee/spr_RnC_coffee.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"78edf68f-b46f-499b-a3db-c0004906fc5a","path":"sprites/spr_RnC_coffee/spr_RnC_coffee.yy",},"LayerId":{"name":"43ced71f-2be2-40b8-871d-618f6501fc9a","path":"sprites/spr_RnC_coffee/spr_RnC_coffee.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
@@ -70,7 +70,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_RnC_coffee","path":"sprites/spr_RnC_coffee/spr_RnC_coffee.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_RnC_coffee",
     "tags": [],
     "resourceType": "GMSequence",

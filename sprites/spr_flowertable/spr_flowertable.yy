@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_flowertable","path":"sprites/spr_flowertable/spr_flowertable.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_flowertable",
     "tags": [],
     "resourceType": "GMSequence",

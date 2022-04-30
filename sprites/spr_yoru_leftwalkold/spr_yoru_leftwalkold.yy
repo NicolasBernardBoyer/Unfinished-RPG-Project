@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_yoru_leftwalkold","path":"sprites/spr_yoru_leftwalkold/spr_yoru_leftwalkold.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_yoru_leftwalkold",
     "tags": [],
     "resourceType": "GMSequence",

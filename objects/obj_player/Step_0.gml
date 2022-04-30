@@ -34,13 +34,6 @@ if (insttrans != noone) {
 	}
 }
 
-if (keyboard_check_pressed(ord("C")) or gamepad_button_check_pressed(0,gp_face4)){
-	global.inventoryOpen = true;
-	if (keyboard_check_pressed(ord("C")) or gamepad_button_check_pressed(0,gp_face4)){
-		global.inventoryOpen = false;
-	}
-}
-
 // Moving (only if there isn't a textbox and the inventory isn't open)
 if (global.inventoryOpen == false and !instance_exists(obj_textbox) and obj_game.doTransition == false and global.pause == false and canMove == true) {
 

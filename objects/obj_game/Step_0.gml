@@ -12,6 +12,16 @@ if (global.pause == true){
 if (global.pause == false){
 	instance_activate_layer("Instances");
 }
+if (global.pause == false){
+	if (global.hasBackpack){
+		if (keyboard_check_pressed(ord("C")) or gamepad_button_check_pressed(0,gp_face4) and !global.inventoryOpen){
+			global.inventoryOpen = true;
+		} 
+	}
+}
+
+
+
 #endregion
 
 #region CHARACTER HP CAP
@@ -26,7 +36,7 @@ if (global.natHP > global.MAXnatHP){
 } 
 #endregion
 
-#region ACTIVATE DEVMODE PRIVILEDGES
+#region ACTIVATE DEVMODE PRIVILEGES
 if (instance_exists(obj_devmode)){
 	global.hasBackpack = true;
 	global.hasCoat = true;

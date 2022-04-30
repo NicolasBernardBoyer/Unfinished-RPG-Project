@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_noah_faces","path":"sprites/spr_noah_faces/spr_noah_faces.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_noah_faces",
     "tags": [],
     "resourceType": "GMSequence",

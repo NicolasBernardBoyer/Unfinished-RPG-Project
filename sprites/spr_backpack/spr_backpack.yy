@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_backpack","path":"sprites/spr_backpack/spr_backpack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_backpack",
     "tags": [],
     "resourceType": "GMSequence",

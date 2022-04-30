@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_shade_diagonal_half","path":"sprites/spr_shade_diagonal_half/spr_shade_diagonal_half.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_shade_diagonal_half",
     "tags": [],
     "resourceType": "GMSequence",

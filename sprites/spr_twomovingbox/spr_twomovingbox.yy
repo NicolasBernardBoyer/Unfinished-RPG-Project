@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_twomovingbox","path":"sprites/spr_twomovingbox/spr_twomovingbox.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_twomovingbox",
     "tags": [],
     "resourceType": "GMSequence",

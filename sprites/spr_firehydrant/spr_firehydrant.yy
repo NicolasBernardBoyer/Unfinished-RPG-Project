@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_firehydrant","path":"sprites/spr_firehydrant/spr_firehydrant.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_firehydrant",
     "tags": [],
     "resourceType": "GMSequence",

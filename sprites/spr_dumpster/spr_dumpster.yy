@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dumpster","path":"sprites/spr_dumpster/spr_dumpster.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dumpster",
     "tags": [],
     "resourceType": "GMSequence",

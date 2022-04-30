@@ -42,6 +42,9 @@
     {"compositeImage":{"FrameId":{"name":"b8d3253a-fbb3-4216-a024-727ec63eff28","path":"sprites/spr_inventory_tabs/spr_inventory_tabs.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"b8d3253a-fbb3-4216-a024-727ec63eff28","path":"sprites/spr_inventory_tabs/spr_inventory_tabs.yy",},"LayerId":{"name":"ee4c5034-ba73-4c64-b59c-567a558965f7","path":"sprites/spr_inventory_tabs/spr_inventory_tabs.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_inventory_tabs","path":"sprites/spr_inventory_tabs/spr_inventory_tabs.yy",},"resourceVersion":"1.0","name":"b8d3253a-fbb3-4216-a024-727ec63eff28","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2f77db71-4c76-4df3-a819-b9e96090ed9e","path":"sprites/spr_inventory_tabs/spr_inventory_tabs.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2f77db71-4c76-4df3-a819-b9e96090ed9e","path":"sprites/spr_inventory_tabs/spr_inventory_tabs.yy",},"LayerId":{"name":"ee4c5034-ba73-4c64-b59c-567a558965f7","path":"sprites/spr_inventory_tabs/spr_inventory_tabs.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_inventory_tabs","path":"sprites/spr_inventory_tabs/spr_inventory_tabs.yy",},"resourceVersion":"1.0","name":"2f77db71-4c76-4df3-a819-b9e96090ed9e","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_inventory_tabs","path":"sprites/spr_inventory_tabs/spr_inventory_tabs.yy",},
@@ -51,7 +54,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 6.0,
+    "length": 7.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -62,6 +65,7 @@
             {"id":"b95ce04e-65e9-445a-9705-d17411a5abc2","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3290b383-7f91-41f0-84ff-7db363b402f3","path":"sprites/spr_inventory_tabs/spr_inventory_tabs.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"71ce70d1-94bb-4039-8fbb-bbebf04768cb","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"43df904a-208e-47a0-b4d5-73c658b57f6b","path":"sprites/spr_inventory_tabs/spr_inventory_tabs.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"f53409bd-0929-41d8-a76e-defd9b1a6ead","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b8d3253a-fbb3-4216-a024-727ec63eff28","path":"sprites/spr_inventory_tabs/spr_inventory_tabs.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f0d7a48c-5991-4cc5-8cb6-66425287ad6b","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2f77db71-4c76-4df3-a819-b9e96090ed9e","path":"sprites/spr_inventory_tabs/spr_inventory_tabs.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -79,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_inventory_tabs","path":"sprites/spr_inventory_tabs/spr_inventory_tabs.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_inventory_tabs",
     "tags": [],
     "resourceType": "GMSequence",

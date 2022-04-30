@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_walk_bag","path":"sprites/spr_player_walk_bag/spr_player_walk_bag.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_walk_bag",
     "tags": [],
     "resourceType": "GMSequence",

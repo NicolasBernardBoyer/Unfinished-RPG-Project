@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_upwalk_coat","path":"sprites/spr_player_upwalk_coat/spr_player_upwalk_coat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_upwalk_coat",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_movingbox","path":"sprites/spr_movingbox/spr_movingbox.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_movingbox",
     "tags": [],
     "resourceType": "GMSequence",

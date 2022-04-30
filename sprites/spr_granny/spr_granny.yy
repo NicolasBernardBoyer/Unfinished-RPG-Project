@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_granny","path":"sprites/spr_granny/spr_granny.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_granny",
     "tags": [],
     "resourceType": "GMSequence",

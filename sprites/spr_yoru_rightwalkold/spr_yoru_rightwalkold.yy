@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_yoru_rightwalkold","path":"sprites/spr_yoru_rightwalkold/spr_yoru_rightwalkold.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_yoru_rightwalkold",
     "tags": [],
     "resourceType": "GMSequence",

@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_nat_faces","path":"sprites/spr_nat_faces/spr_nat_faces.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_nat_faces",
     "tags": [],
     "resourceType": "GMSequence",

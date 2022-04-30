@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_me","path":"sprites/spr_me/spr_me.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_me",
     "tags": [],
     "resourceType": "GMSequence",

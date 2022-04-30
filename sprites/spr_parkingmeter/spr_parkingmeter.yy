@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_parkingmeter","path":"sprites/spr_parkingmeter/spr_parkingmeter.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_parkingmeter",
     "tags": [],
     "resourceType": "GMSequence",

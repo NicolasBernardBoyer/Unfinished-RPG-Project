@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dragon_plush","path":"sprites/spr_dragon_plush/spr_dragon_plush.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dragon_plush",
     "tags": [],
     "resourceType": "GMSequence",

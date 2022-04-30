@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_shawn_sitting","path":"sprites/spr_shawn_sitting/spr_shawn_sitting.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_shawn_sitting",
     "tags": [],
     "resourceType": "GMSequence",

@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bedfall","path":"sprites/spr_bedfall/spr_bedfall.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bedfall",
     "tags": [],
     "resourceType": "GMSequence",

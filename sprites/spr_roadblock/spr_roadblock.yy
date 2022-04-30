@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_roadblock","path":"sprites/spr_roadblock/spr_roadblock.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_roadblock",
     "tags": [],
     "resourceType": "GMSequence",

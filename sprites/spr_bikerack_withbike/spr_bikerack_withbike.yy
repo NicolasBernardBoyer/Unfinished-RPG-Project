@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bikerack_withbike","path":"sprites/spr_bikerack_withbike/spr_bikerack_withbike.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bikerack_withbike",
     "tags": [],
     "resourceType": "GMSequence",

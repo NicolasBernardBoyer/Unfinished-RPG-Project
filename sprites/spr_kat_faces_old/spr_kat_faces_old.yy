@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_kat_faces_old","path":"sprites/spr_kat_faces_old/spr_kat_faces_old.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_kat_faces_old",
     "tags": [],
     "resourceType": "GMSequence",

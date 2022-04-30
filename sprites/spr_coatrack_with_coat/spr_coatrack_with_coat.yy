@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_coatrack_with_coat","path":"sprites/spr_coatrack_with_coat/spr_coatrack_with_coat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_coatrack_with_coat",
     "tags": [],
     "resourceType": "GMSequence",

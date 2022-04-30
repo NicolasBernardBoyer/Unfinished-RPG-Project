@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pausebox","path":"sprites/spr_pausebox/spr_pausebox.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pausebox",
     "tags": [],
     "resourceType": "GMSequence",

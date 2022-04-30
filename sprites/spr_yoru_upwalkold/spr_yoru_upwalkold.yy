@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_yoru_upwalkold","path":"sprites/spr_yoru_upwalkold/spr_yoru_upwalkold.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_yoru_upwalkold",
     "tags": [],
     "resourceType": "GMSequence",

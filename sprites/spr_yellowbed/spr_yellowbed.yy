@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_yellowbed","path":"sprites/spr_yellowbed/spr_yellowbed.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_yellowbed",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"human_shadow","path":"sprites/human_shadow/human_shadow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "human_shadow",
     "tags": [],
     "resourceType": "GMSequence",

@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_shower","path":"sprites/spr_shower/spr_shower.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_shower",
     "tags": [],
     "resourceType": "GMSequence",

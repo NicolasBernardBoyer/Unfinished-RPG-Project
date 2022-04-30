@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"beastman_shadow","path":"sprites/beastman_shadow/beastman_shadow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "beastman_shadow",
     "tags": [],
     "resourceType": "GMSequence",

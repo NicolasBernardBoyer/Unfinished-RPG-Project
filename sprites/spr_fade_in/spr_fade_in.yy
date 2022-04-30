@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fade_in","path":"sprites/spr_fade_in/spr_fade_in.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_fade_in",
     "tags": [],
     "resourceType": "GMSequence",

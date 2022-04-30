@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_lampost","path":"sprites/spr_lampost/spr_lampost.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_lampost",
     "tags": [],
     "resourceType": "GMSequence",

@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_kitchentable","path":"sprites/spr_kitchentable/spr_kitchentable.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_kitchentable",
     "tags": [],
     "resourceType": "GMSequence",

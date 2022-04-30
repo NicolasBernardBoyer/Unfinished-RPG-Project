@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_bluesky","path":"sprites/bg_bluesky/bg_bluesky.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_bluesky",
     "tags": [],
     "resourceType": "GMSequence",

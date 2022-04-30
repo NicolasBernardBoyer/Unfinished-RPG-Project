@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_yoru_right_unused","path":"sprites/spr_yoru_right_unused/spr_yoru_right_unused.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_yoru_right_unused",
     "tags": [],
     "resourceType": "GMSequence",

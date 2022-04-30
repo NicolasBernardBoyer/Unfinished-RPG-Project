@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dresser","path":"sprites/spr_dresser/spr_dresser.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dresser",
     "tags": [],
     "resourceType": "GMSequence",
