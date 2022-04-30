@@ -124,6 +124,7 @@ global.s_punch		= snd_punch;
 global.s_select		= snd_select;
 global.s_typewriter = snd_typewriter;
 global.s_heal		= snd_heal;
+global.s_back		= snd_back;
 #endregion
 
 #region MUSIC VARIABLES
@@ -149,6 +150,7 @@ display_set_gui_size(global.game_width, global.game_height);
 	global.key_esc		= vk_escape;
 	global.key_del		= vk_backspace;
 	global.key_shift	= vk_shift;
+	global.key_inventory= ord("C");
 #endregion
 
 #region CONTROLLER CONTROLS
@@ -162,6 +164,7 @@ display_set_gui_size(global.game_width, global.game_height);
 	global.gp_esc		= gp_start;
 	global.gp_del		= gp_face2;
 	global.gp_shift		= gp_face3;
+	global.gp_inventory = gp_face4;
 #endregion
 
 #region DEFINE KEYS
@@ -184,6 +187,7 @@ display_set_gui_size(global.game_width, global.game_height);
 	global.RD = false; //RELEASED DOWN
 	
 	global.PSEL = false;
+	global.PINV = false;
 #endregion
 
 audio_group_load(audiogroup_music);

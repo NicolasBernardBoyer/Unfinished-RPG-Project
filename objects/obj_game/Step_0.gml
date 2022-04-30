@@ -14,13 +14,11 @@ if (global.pause == false){
 }
 if (global.pause == false){
 	if (global.hasBackpack){
-		if (keyboard_check_pressed(ord("C")) or gamepad_button_check_pressed(0,gp_face4) and !global.inventoryOpen){
+		if (global.PINV and !global.inventoryOpen){
 			global.inventoryOpen = true;
 		} 
 	}
 }
-
-
 
 #endregion
 
@@ -98,5 +96,8 @@ if (keyboard_check_pressed(global.key_shift) or gamepad_button_check_pressed(0,g
 global.PSEL = true;
 else global.PSEL = false;
 
+if (keyboard_check_pressed(global.key_inventory) or gamepad_button_check_pressed(0,global.gp_inventory))
+global.PINV = true;
+else global.PINV = false;
 
 #endregion

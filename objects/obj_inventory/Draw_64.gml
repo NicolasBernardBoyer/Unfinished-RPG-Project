@@ -5,8 +5,8 @@ draw_sprite_stretched
 (
 	/* sprite */spr_box_noborder,
 	/* frame */0,
-	/* x */ box_x,
-	/* y */ box_y,
+	/* x */ 0,
+	/* y */ 0,
 	/* width */global.game_width,
 	/* height */global.game_height
 );
@@ -22,7 +22,19 @@ draw_sprite_stretched
 );
 
 draw_sprite_stretched(spr_box, 0, 42, 9, 105, 24);
+draw_sprite_stretched(spr_box, 0, 42, global.game_height-33, global.game_width-88, 24);
 draw_text(48, 12, "MONEY: $" + string(global.money));
+
+// DRAW TEXT
+draw_set_font(fnt_8bit);
+draw_set_halign(fa_center);
+
+draw_text_transformed(120, 260, "Z/    : Select/Confirm", 0.8, 0.8, 0);
+draw_text_transformed(270, 260, "X/    : Back/Close", 0.8, 0.8, 0);
+draw_sprite(spr_buttons, 0, 80, 267);
+draw_sprite(spr_buttons, 1, 240, 267);
+
+
 
 // DRAW CHANGING TABS
 if (inventorytab == 0){
@@ -52,10 +64,6 @@ if (inventorytab == 0){
 		draw_sprite(spr_inventory_tabs, 5, 42, 106);
 	}
 }
-
-// DRAW TEXT
-draw_set_font(fnt_8bit);
-draw_set_halign(fa_center);
 
 #region DRAW PARTY OPTIONS
 if (partyCursorActive == false){

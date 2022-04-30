@@ -29,26 +29,26 @@ box_y = 32;
 
 #region PARTY MEMBERS LIST
 ds_list_add(party, 0);
-ds_list_add(party, 1);
-ds_list_add(party, 2);
+// ds_list_add(party, 1);
+// ds_list_add(party, 2);
 #endregion
 
 #region SELECTED PARTY MEMBERS LIST
 ds_list_add(selectedParty, 0);
-ds_list_add(selectedParty, 1);
-ds_list_add(selectedParty, 2);
+// ds_list_add(selectedParty, 1);
+// ds_list_add(selectedParty, 2);
 #endregion
 
 #region CONSUMABLES LIST
-ds_list_add(consumables, "Burger");
-ds_list_add(consumables, "Burger");
-ds_list_add(consumables, "Burger");
-ds_list_add(consumables, "Burger");
-ds_list_add(consumables, "Burger");
+//ds_list_add(consumables, "Burger");
+//ds_list_add(consumables, "Burger");
+//ds_list_add(consumables, "Burger");
+//ds_list_add(consumables, "Burger");
+//ds_list_add(consumables, "Burger");
 #endregion
 
 #region KEY ITEMS LIST
-ds_list_add(keyitems, "Lost Bat");
-ds_list_add(keyitems, "A thing");
-ds_list_add(keyitems, "Dumb key");
+//ds_list_add(keyitems, "Lost Bat");
+//ds_list_add(keyitems, "A thing");
+//ds_list_add(keyitems, "Dumb key");
 #endregion
