@@ -1,5 +1,7 @@
 if (global.canPause == false) exit;
 if (global.inventoryOpen == false) exit;
+if (obj_game.doTransition) exit;
+if (instance_exists(obj_textbox)) exit;
 
 draw_sprite_stretched
 (

@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "TheCity",
-    "path": "folders/Objects/world Objects/TheCity.yy",
+    "name": "Shopping District",
+    "path": "folders/Objects/world Objects/TheCity/Shopping District.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_parkingmeter",

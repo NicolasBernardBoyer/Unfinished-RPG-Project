@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "TheCity",
-    "path": "folders/Objects/world Objects/TheCity.yy",
+    "name": "The Park",
+    "path": "folders/Objects/world Objects/TheCity/The Park.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bench",

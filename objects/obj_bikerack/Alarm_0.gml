@@ -7,5 +7,6 @@ with(obj_player){
 	y+=5;
 	image_index = 0;
 }
+global.canPause = true;
 instance_activate_object(inst_4D86892);
 instance_activate_object(inst_3E94A422);
