@@ -4,7 +4,7 @@ instance_deactivate_object(obj_player);
 alarm[0] = -1;
 
 global.name_text_col = c_gray;
-voice = snd_typewriter;
+voice = snd_meow;
 name = "???";
 text = [
 		"Hello?",

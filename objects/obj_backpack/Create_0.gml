@@ -1,5 +1,6 @@
 // make it so that our objects higher on the y axis are drawn first
 visible = false;
+hasText = true;
 
 voice = snd_typewriter;
 name = "";

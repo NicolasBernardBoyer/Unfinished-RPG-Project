@@ -3,6 +3,7 @@ image_speed = 0;
 runAnim = false;
 alarm[0] = -1;
 visible = false;
+hasText = false;
 
 portrait_index = 0;
 voice = snd_typewriter;

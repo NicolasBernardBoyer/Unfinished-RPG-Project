@@ -3,7 +3,7 @@ visible = false;
 alarm[0] = -1;
 
 global.name_text_col = c_gray;
-voice = snd_typewriter;
+voice = snd_meow;
 name = "???";
 text = [
 		global.playerName + "... huh.",

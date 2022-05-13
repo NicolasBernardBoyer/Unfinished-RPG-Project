@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Rick and Charlotte",
-    "path": "folders/Sprites/Overworld/Characters/Rick and Charlotte.yy",
+    "name": "GeneralNPCs",
+    "path": "folders/Sprites/Overworld/Characters/GeneralNPCs.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_RnC_coffee",

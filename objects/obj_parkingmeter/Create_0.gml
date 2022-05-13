@@ -1,4 +1,5 @@
 visible = false;
+hasText = false;
 
 voice = snd_typewriter;
 name = "";

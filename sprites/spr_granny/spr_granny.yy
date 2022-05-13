@@ -71,8 +71,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Granny",
-    "path": "folders/Sprites/Overworld/Characters/Granny.yy",
+    "name": "GeneralNPCs",
+    "path": "folders/Sprites/Overworld/Characters/GeneralNPCs.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_granny",

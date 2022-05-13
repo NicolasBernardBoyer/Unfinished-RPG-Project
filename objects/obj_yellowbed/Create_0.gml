@@ -4,6 +4,7 @@ alarm[1] = -1;
 image_speed = 0;
 runAlarm = true;
 moveReady = false;
+hasText = true;
 
 voice = snd_typewriter;
 name = "";

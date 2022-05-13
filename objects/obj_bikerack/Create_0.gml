@@ -1,4 +1,5 @@
 visible = false;
+hasText = true;
 alarm[0] = -1;
 
 voice = snd_typewriter;
@@ -12,8 +13,9 @@ next_line = [0, 0];
 scripts = [-1, -1];
 
 alttext = ["You biked right into the rack and your bike inserted itself perfectly into it.",
-			"You got off the bike."];
-altspeakers = [id, id];
-altnext_line = [0, 0];
-altscripts = [-1, -1];
+			"You tried to get off the bike...",
+			"However, you get off too fast. As you land on the ground, you lose your balance..."];
+altspeakers = [id, id, id];
+altnext_line = [0, 0, 0];
+altscripts = [-1, -1, [player_fall_over]];
 

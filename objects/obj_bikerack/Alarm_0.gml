@@ -1,4 +1,5 @@
-create_textbox(alttext,altspeakers,altnext_line,altscripts);
+var tbox = create_textbox(alttext,altspeakers,altnext_line,altscripts);
+obj_player.active_textbox = tbox;
 sprite_index = spr_bikerack_withbike;
 audio_play_sound(snd_move, 5, false);
 with(obj_player){

@@ -1,9 +1,10 @@
 visible = false;
+hasText = false;
 
 voice = snd_typewriter;
 name = "";
 
-text = ["It's a lamp post. It's turned off."];
+text = [""];
 portrait_index = noone;
 speakers = [id];
 next_line = [0];
