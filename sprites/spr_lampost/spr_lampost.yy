@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "CitySprites",
-    "path": "folders/Sprites/Overworld/Objects/CitySprites.yy",
+    "path": "folders/Sprites/Overworld/InanimateObj/CitySprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_lampost",

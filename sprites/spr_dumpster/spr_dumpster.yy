@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Shopping District",
-    "path": "folders/Sprites/Overworld/Objects/CitySprites/Shopping District.yy",
+    "path": "folders/Sprites/Overworld/InanimateObj/CitySprites/Shopping District.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_dumpster",

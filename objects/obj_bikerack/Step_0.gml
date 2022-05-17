@@ -7,3 +7,8 @@ if (place_meeting(x, y, obj_player)){
 		instance_destroy(ev_bike_stop);
 	}
 }
+
+if (fallEvent = true){
+	alarm[1] = 60;
+	fallEvent = false;
+}

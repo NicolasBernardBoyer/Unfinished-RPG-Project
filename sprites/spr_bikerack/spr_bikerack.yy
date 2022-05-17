@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "The Park",
-    "path": "folders/Sprites/Overworld/Objects/CitySprites/The Park.yy",
+    "path": "folders/Sprites/Overworld/InanimateObj/CitySprites/The Park.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_bikerack",

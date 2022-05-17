@@ -72,7 +72,7 @@
   "nineSlice": null,
   "parent": {
     "name": "HomeSprites",
-    "path": "folders/Sprites/Overworld/Objects/HomeSprites.yy",
+    "path": "folders/Sprites/Overworld/InanimateObj/HomeSprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_yellowbed",

@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Objects",
-    "path": "folders/Sprites/Overworld/Objects.yy",
+    "name": "InanimateObj",
+    "path": "folders/Sprites/Overworld/InanimateObj.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_dragon_plush",
