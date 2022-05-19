@@ -30,11 +30,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Home",
-    "path": "folders/Objects/Event Objects/Home.yy",
+    "name": "Opening City",
+    "path": "folders/Objects/Event Objects/Opening City.yy",
   },
   "resourceVersion": "1.0",
-  "name": "rb_nocoat",
+  "name": "rb_managercutscene",
   "tags": [],
   "resourceType": "GMObject",
 }

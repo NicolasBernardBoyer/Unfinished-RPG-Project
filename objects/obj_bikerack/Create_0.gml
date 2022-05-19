@@ -2,6 +2,7 @@ visible = false;
 hasText = true;
 fallEvent = false;
 alarm[0] = -1;
+alarm[1] = -1;
 
 voice = snd_typewriter;
 

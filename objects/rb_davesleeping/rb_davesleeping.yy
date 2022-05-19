@@ -31,7 +31,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Home",
-    "path": "folders/Objects/Event Objects/Roadblocks/Home.yy",
+    "path": "folders/Objects/Event Objects/Home.yy",
   },
   "resourceVersion": "1.0",
   "name": "rb_davesleeping",
