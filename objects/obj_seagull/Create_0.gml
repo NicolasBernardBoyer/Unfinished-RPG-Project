@@ -1,7 +1,7 @@
 visible = false;
 hasText = true;
+radius = 8;
 
-global.name_text_col = c_orange;
 checkBench = false;
 
 voice = snd_typewriter;

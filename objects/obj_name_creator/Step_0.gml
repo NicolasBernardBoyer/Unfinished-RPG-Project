@@ -39,7 +39,7 @@
 		}
 	
 		if (global.PU or global.HU){
-		if (!global.PD and !global.HD){
+		if (!global.PD and !global.HD and !global.HL and !global.HR and !global.PL and !global.PR){
 			audio_play_sound(snd_typewriter, 5, false);
 		}
 			if (gridY - 1) < 0 gridY = (yLetters - 1);
@@ -47,7 +47,7 @@
 		}
 	
 		if (global.PD or global.HD){
-		if (!global.PU and !global.HU){
+		if (!global.PU and !global.HU and !global.HL and !global.HR and !global.PL and !global.PR){
 			audio_play_sound(snd_typewriter, 5, false);
 		}
 			if (gridY + 1) >= yLetters gridY = 0;

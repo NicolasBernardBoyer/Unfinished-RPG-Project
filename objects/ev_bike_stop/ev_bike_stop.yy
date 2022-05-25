@@ -26,7 +26,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Opening City",
-    "path": "folders/Objects/Event Objects/Opening City.yy",
+    "path": "folders/Cutscenes/Opening City.yy",
   },
   "resourceVersion": "1.0",
   "name": "ev_bike_stop",

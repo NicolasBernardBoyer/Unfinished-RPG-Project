@@ -27,7 +27,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Opening",
-    "path": "folders/Objects/Event Objects/Opening.yy",
+    "path": "folders/Cutscenes/Opening.yy",
   },
   "resourceVersion": "1.0",
   "name": "ev_intro",
