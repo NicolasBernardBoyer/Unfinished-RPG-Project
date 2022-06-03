@@ -1,4 +1,5 @@
 var tbox = create_textbox(alttext,altspeakers,altnext_line,altscripts);
+instance_deactivate_object(rb_gotowork);
 obj_player.active_textbox = tbox;
 sprite_index = spr_bikerack_withbike;
 audio_play_sound(snd_move, 5, false);

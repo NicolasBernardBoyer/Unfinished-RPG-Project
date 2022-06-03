@@ -6,6 +6,6 @@ speakers = [id];
 next_line = [0];
 scripts = [-1];
 
-radiusX = 8;
-radiusY = 64;
+radiusX = 24;
+radiusY = 32;
 runOnce = false;

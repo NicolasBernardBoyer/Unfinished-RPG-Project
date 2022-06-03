@@ -177,20 +177,46 @@ if (partyCursorActive == false){
 			}
 		}
 #region ITEMS LIST
+		#region BURGER
 		if (ds_list_find_value(consumables, consumingItem) = "Burger"){
 			draw_set_halign(fa_left);
 			draw_text(box_x+10, box_y+110, "A greasy burger");
 			draw_text(box_x+10, box_y+126, "from the food truck.");
 			draw_text(box_x+10, box_y+142, "It's disgusting.");
-			draw_set_color(c_lime);
-			draw_text(box_x+10, box_y+158, "+2 ATK");
-			draw_set_color(c_red);
-			draw_text(box_x+10, box_y+174, "-2 SPD");
-			draw_set_color(c_lime);
-			draw_text(box_x+10, box_y+190, "HEAL 40");
-			draw_set_color(c_white);
+			for (var i = 0; i < SELECTED_PARTY_SLOTS; i += 1){
+				if (cursor = i){
+					if (ds_list_find_value(selectedParty,i) = 0){
+						draw_set_color(c_lime);
+						draw_text(box_x+10, box_y+158, "ATK: " + string(global.playerATK) + " -> " + string(global.playerATK + 2));
+						draw_set_color(c_red);
+						draw_text(box_x+10, box_y+174, "SPD: " + string(global.playerSPD) + " -> " + string(global.playerSPD - 2));
+						draw_set_color(c_lime);
+						draw_text(box_x+10, box_y+190, "HP: " + string(global.playerHP) + " -> " + string(global.playerHP + 40));
+						draw_set_color(c_white);
+					} else if (ds_list_find_value(selectedParty,i) = 1){
+						draw_set_color(c_lime);
+						draw_text(box_x+10, box_y+158, "ATK: " + string(global.katATK) + " -> " + string(global.katATK + 2));
+						draw_set_color(c_red);
+						draw_text(box_x+10, box_y+174, "SPD: " + string(global.katSPD) + " -> " + string(global.katSPD - 2));
+						draw_set_color(c_lime);
+						draw_text(box_x+10, box_y+190, "HP: " + string(global.katHP) + " -> " + string(global.katHP + 40));
+						draw_set_color(c_white);
+					} else if (ds_list_find_value(selectedParty,i) = 2){
+						draw_set_color(c_lime);
+						draw_text(box_x+10, box_y+158, "ATK: " + string(global.natATK) + " -> " + string(global.natATK + 2));
+						draw_set_color(c_red);
+						draw_text(box_x+10, box_y+174, "SPD: " + string(global.natSPD) + " -> " + string(global.natSPD - 2));
+						draw_set_color(c_lime);
+						draw_text(box_x+10, box_y+190, "HP: " + string(global.natHP) + " -> " + string(global.natHP + 40));
+						draw_set_color(c_white);
+					}
+				}
+			}
 			draw_set_halign(fa_center);
 		}
+		#endregion
+		
+		
 #endregion
 	}
 	#endregion

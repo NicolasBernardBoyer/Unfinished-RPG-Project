@@ -11,5 +11,5 @@ scripts = [[player_approach_true], -1];
 
 
 radiusX = 448;
-radiusY = 4;
+radiusY = 12;
 runOnce = false;

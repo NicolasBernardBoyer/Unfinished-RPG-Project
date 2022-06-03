@@ -4,9 +4,10 @@ hasText = true;
 voice = snd_typewriter;
 name = "";
 
-text = ["A block of concrete with some roses on it. They are nicely watered.",
-		"You wonder what kind of person is paid to water these."];
+text = ["Your workplace, the Burgr foodtruck.",
+		"Next to the company name on the truck is its mascot, Borgar.",
+		"You can't see anyone inside from your point of view, so you might as well just walk in."];
 portrait_index = noone;
-speakers = [id, id];
-next_line = [0, 0];
-scripts = [-1, -1];
+speakers = [id, id, id];
+next_line = [0, 0, 0];
+scripts = [-1, -1, -1];
