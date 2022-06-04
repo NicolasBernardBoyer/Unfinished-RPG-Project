@@ -1,3 +1,6 @@
+
+if(!global.pause and room = rm_title_settings) room_goto(rm_title_screen);
+
 if(!global.pause) exit;
 if(!global.canPause) exit;
 
