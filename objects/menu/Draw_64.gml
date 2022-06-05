@@ -1,6 +1,12 @@
 if(!global.pause) exit;
 if(!global.canPause) exit;
 
+if(room = rm_title_settings){
+	if (page < 1){
+		exit;
+	}
+}
+
 draw_set_font(fnt_excelsior);
 
 var gwidth = global.view_width, gheight = global.view_height;

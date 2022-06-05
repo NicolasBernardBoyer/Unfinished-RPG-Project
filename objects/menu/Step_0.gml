@@ -1,8 +1,14 @@
-
 if(!global.pause and room = rm_title_settings) room_goto(rm_title_screen);
 
 if(!global.pause) exit;
 if(!global.canPause) exit;
+
+if(room = rm_title_settings){
+	if (page < 1){
+		global.pause = false;
+		global.canPause = false;
+	}
+}
 
 input_up_p		 = keyboard_check_pressed(global.key_up);
 input_down_p	 = keyboard_check_pressed(global.key_down);
@@ -19,6 +25,18 @@ gp_input_revert_p	 = gamepad_button_check_pressed(0,global.gp_revert);
 gp_input_esc_p		 = gamepad_button_check_pressed(0,global.gp_esc);
 
 var ds_grid = page, ds_height = ds_grid_height(ds_grid);
+
+if (input_revert_p or gp_input_revert_p){
+		//audio
+		audio_play_sound(snd_select, 5, false);
+		if (page = 0) {
+			global.pause = false;
+		} else if (page = 1) {
+			page--;
+		} else {
+			page = 1;
+		}
+}
 
 if(inputting){
 	
@@ -94,6 +112,7 @@ if(inputting){
 		switch(ds_grid[# 1, menu_option[page]]){
 			case menu_element_type.script_runner: script_execute(ds_grid[# 2, menu_option[page]]); break;
 			case menu_element_type.page_transfer: page = ds_grid[# 2, menu_option[page]]; break;
+
 			case menu_element_type.shift:
 			case menu_element_type.slider:
 			case menu_element_type.toggle: if(inputting){ script_execute(ds_grid[# 2, menu_option[page]], ds_grid[# 3, menu_option[page]]); }
@@ -103,18 +122,5 @@ if(inputting){
 		}
 		//audio
 		audio_play_sound(snd_select, 5, false);
-	}
-
-	/*if (input_revert_p or input_esc_p){
-		//audio
-		audio_play_sound(snd_select, 5, false);
-		if (page = 0) {
-			global.pause = false;
-		} else if (page = 1) {
-			page--;
-		} else {
-			page = 1;
-		}
-
 	}
 	

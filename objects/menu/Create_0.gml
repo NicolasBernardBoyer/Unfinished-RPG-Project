@@ -1,3 +1,5 @@
+esc_okay = false;
+
 enum menu_page {
 	main,
 	settings,

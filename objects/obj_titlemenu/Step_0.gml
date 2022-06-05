@@ -14,14 +14,15 @@ if (canPress = true){
 	if pos < 0 {pos = op_length-1};
 
 	if (global.PD and !global.PU){
-		audio_play_sound(snd_typewriter, 5, false);
+		audio_play_sound(global.s_typewriter, 5, false);
 	}
 
 	else if (global.PU and !global.PD){
-		audio_play_sound(snd_typewriter, 5, false);
+		audio_play_sound(global.s_typewriter, 5, false);
 	}
 
 	if (global.POK){
+		audio_play_sound(global.s_select, 5, false);
 		switch(pos){
 	
 		//start game
