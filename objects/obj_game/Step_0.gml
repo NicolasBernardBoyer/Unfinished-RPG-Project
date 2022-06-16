@@ -19,8 +19,12 @@ if (global.pause == false and global.canPause == true and !instance_exists(obj_t
 		} 
 	}
 }
-
 #endregion
+
+if (instance_exists(obj_player)){
+	global.targetX = obj_player.x;
+	global.targetY = obj_player.y;
+}
 
 #region CHARACTER HP CAP
 if (global.playerHP > global.MAXplayerHP){

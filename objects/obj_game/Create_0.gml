@@ -7,6 +7,12 @@ active_textbox = noone;
 
 facing = 0;
 
+global.gameSaveSlot = 0;
+
+//Player Position
+global.targetX = 0;
+global.targetY = 0;
+
 #region PARTY INFO
 
 global.money = 100;
