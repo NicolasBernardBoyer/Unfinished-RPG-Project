@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "spr_collision",
-    "path": "sprites/spr_collision/spr_collision.yy",
+    "name": "spr_arrow",
+    "path": "sprites/spr_arrow/spr_arrow.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -25,11 +25,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "General",
-    "path": "folders/Objects/world Objects/General.yy",
+    "name": "meta",
+    "path": "folders/Objects/meta.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_wall",
+  "name": "obj_arrow",
   "tags": [],
   "resourceType": "GMObject",
 }

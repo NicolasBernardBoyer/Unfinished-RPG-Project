@@ -1,3 +1,3 @@
 targetRoom = rm_infoodtruck;
-targetX = 223;
-targetY = 32;
+targetX = 80;
+targetY = 174;

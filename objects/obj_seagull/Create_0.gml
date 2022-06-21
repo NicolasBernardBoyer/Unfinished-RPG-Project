@@ -15,8 +15,8 @@ next_line = [0, 0];
 scripts = [-1, -1];
 
 alttext = ["What do you want?",
-		"Look, buddy. I work hard.",
-		"The last thing I need during my only break of the day is someone accusing me of crapping on any benches."];
+		"Really, my guy?",
+		"I know that look you're giving me. I DID NOT do THAT to the benches."];
 altspeakers = [id, id, id];
 altnext_line = [0, 0, 0];
 altscripts = [-1, -1, -1];

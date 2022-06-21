@@ -1,7 +1,10 @@
 if (global.canPause == false) exit;
 if (global.inventoryOpen == false) exit;
 if (obj_game.doTransition) exit;
-if (instance_exists(obj_textbox)) exit;
+if (instance_exists(obj_textbox) and global.inventoryTB = false){ exit; }
+else if (global.inventoryTB = true){
+	instance_create_layer(0,0, "Instances", obj_inventorytutorial);
+}
 
 draw_sprite_stretched
 (

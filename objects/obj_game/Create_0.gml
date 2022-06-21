@@ -108,6 +108,7 @@ enum dir {
 global.inventoryOpen = false;
 global.inBattle = false;
 global.canPause = true;
+global.inventoryTB = true;
 #endregion
 
 #region INFORMATION VARAIBLES
