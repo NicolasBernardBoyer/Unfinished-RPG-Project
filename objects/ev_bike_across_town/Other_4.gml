@@ -6,4 +6,5 @@ with(obj_player){
 	sprite_index = spr_player_leftbike;
 	image_speed = 1;
 }
+audio_play_sound(global.s_bike, 1, true);
 

@@ -132,6 +132,8 @@ global.s_select		= snd_select;
 global.s_typewriter = snd_typewriter;
 global.s_heal		= snd_heal;
 global.s_back		= snd_back;
+global.s_whip		= snd_whip;
+global.s_bike		= snd_bike;
 #endregion
 
 #region MUSIC VARIABLES
