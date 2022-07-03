@@ -16,6 +16,7 @@ if (global.pause == false and global.canPause == true and !instance_exists(obj_t
 	if (global.hasBackpack){
 		if (global.PINV and !global.inventoryOpen){
 			global.inventoryOpen = true;
+			audio_play_sound(global.s_select, 5, false);
 		} 
 	}
 }

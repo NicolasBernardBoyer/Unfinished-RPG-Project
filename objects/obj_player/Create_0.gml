@@ -6,6 +6,7 @@ lastframe = 0;
 visible = false;
 
 portrait_index = 0;
+portrait = noone;
 voice = snd_typewriter;
 name = "";
 

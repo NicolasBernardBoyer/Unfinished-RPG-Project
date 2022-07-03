@@ -88,6 +88,7 @@ global.sidLK	= 3;
 global.pause = false;
 global.name_text_col = c_white;
 global.hasname = false;
+global.hasportrait = false;
 
 blackAlpha = 0;
 
@@ -134,6 +135,7 @@ global.s_heal		= snd_heal;
 global.s_back		= snd_back;
 global.s_whip		= snd_whip;
 global.s_bike		= snd_bike;
+global.s_birds		= snd_birds;
 #endregion
 
 #region MUSIC VARIABLES

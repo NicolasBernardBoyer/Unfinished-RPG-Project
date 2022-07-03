@@ -27,15 +27,15 @@ gp_input_esc_p		 = gamepad_button_check_pressed(0,global.gp_esc);
 var ds_grid = page, ds_height = ds_grid_height(ds_grid);
 
 if (input_revert_p or gp_input_revert_p){
-		//audio
-		audio_play_sound(snd_select, 5, false);
-		if (page = 0) {
-			global.pause = false;
-		} else if (page = 1) {
-			page--;
-		} else {
-			page = 1;
-		}
+	//audio
+	audio_play_sound(global.s_back, 5, false);
+	if (page = 0) {
+		global.pause = false;
+	} else if (page = 1) {
+		page--;
+	} else {
+		page = 1;
+	}
 }
 
 if(inputting){

@@ -102,7 +102,7 @@ if (global.POK){
 
 if (global.PCAN){
 	//audio
-	audio_play_sound(snd_select, 5, false);
+	audio_play_sound(global.s_back, 5, false);
 	
 	//Check we have at least 1 letter in the name
 	letterCount = string_length(currentName);

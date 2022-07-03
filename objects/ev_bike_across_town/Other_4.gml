@@ -8,3 +8,4 @@ with(obj_player){
 }
 audio_play_sound(global.s_bike, 1, true);
 
+

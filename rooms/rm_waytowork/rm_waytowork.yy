@@ -57,6 +57,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_lamppost","path":"objects/obj_lamppost/obj_lamppost.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":399.0,"y":197.0,"resourceVersion":"1.0","name":"inst_33712876","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_lamppost","path":"objects/obj_lamppost/obj_lamppost.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":269.0,"y":197.0,"resourceVersion":"1.0","name":"inst_50178AD2","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_shawn_sitting","path":"objects/obj_shawn_sitting/obj_shawn_sitting.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.1,"scaleY":1.1,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":305.6,"y":197.0,"resourceVersion":"1.0","name":"inst_532D43B5","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"ev_bird_chirp","path":"objects/ev_bird_chirp/ev_bird_chirp.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":0.0,"resourceVersion":"1.0","name":"inst_1F671D89","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tset_city","path":"tilesets/tset_city/tset_city.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":32,"SerialiseHeight":11,"TileSerialiseData":[
 0,0,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,0,2147483648,0,2147483648,2147483648,2147483648,0,0,0,2147483648,0,0,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
@@ -146,6 +147,7 @@
     {"name":"inst_532D43B5","path":"rooms/rm_waytowork/rm_waytowork.yy",},
     {"name":"inst_33614BEB","path":"rooms/rm_waytowork/rm_waytowork.yy",},
     {"name":"inst_5D88393","path":"rooms/rm_waytowork/rm_waytowork.yy",},
+    {"name":"inst_1F671D89","path":"rooms/rm_waytowork/rm_waytowork.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

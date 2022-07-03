@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "General",
-    "path": "folders/Sprites/UI/General.yy",
+    "name": "Unused",
+    "path": "folders/Sprites/UI/Unused.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_heart",

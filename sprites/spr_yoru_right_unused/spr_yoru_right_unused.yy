@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Unused",
-    "path": "folders/Sprites/Unused.yy",
+    "name": "General",
+    "path": "folders/Sprites/UI/General.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_yoru_right_unused",

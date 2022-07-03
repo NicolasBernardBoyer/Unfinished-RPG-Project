@@ -1,6 +1,13 @@
+if (portrait != noone){
+	portraitspace = 80;
+	text_max_width = box_width - (2*x_buffer) - portraitspace;
+} else if (portrait = noone){
+	portraitspace = 0;
+	text_max_width = box_width - (2*x_buffer);
+}
 
 if(keyboard_check_pressed(interact_key) or keyboard_check_pressed(other_interact_key) or gamepad_button_check_pressed(0,interact_button)){
-	
+
 	if(!choice_dialogue and counter < str_len){ counter = str_len; }
 	else if(page < array_length_1d(text) - 1){
 		

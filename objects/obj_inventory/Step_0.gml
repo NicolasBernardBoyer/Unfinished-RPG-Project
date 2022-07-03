@@ -5,6 +5,7 @@ if (obj_game.doTransition) exit;
 if (instance_exists(obj_textbox)) exit;
 
 if (global.PCAN and !itemConsumeMenu){
+	audio_play_sound(global.s_back, 5, false);
 	global.inventoryOpen = false;
 }
 
@@ -107,7 +108,7 @@ else if (itemConsumeMenu == true and inventorytab == 1 and partyCursorActive == 
 		if(global.PCAN){
 			itemConsumeMenu = false;
 			cursor = 0;
-			audio_play_sound(global.s_select, 5, false);
+			audio_play_sound(global.s_back, 5, false);
 		}
 		if (cursor != 4){
 		if (global.PD and cursor != ds_list_size(selectedParty)-1){
