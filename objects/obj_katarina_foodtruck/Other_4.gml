@@ -28,7 +28,7 @@ makeText = time_source_create(time_source_game, 5, time_source_units_seconds, fu
 {
 	global.name_text_col = c_gray;
 	global.hasportrait = true;
-	create_textbox(text, speakers, next_line, scripts);
+	create_facetextbox(text, speakers, next_line, scripts);
 	
 	time_source_stop(makeText);
 }

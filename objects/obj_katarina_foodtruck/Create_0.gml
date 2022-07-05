@@ -11,12 +11,20 @@ text = ["OH UH... HEY BOSS! NO, I WASN'T SLACKING O-",
 		"H-hey there! I'm Katarina, and I'll be training you today.",
 		"...",
 		"So... uh... y-you ever worked in fast food before?",
-		["    I've done this kind of thing before.", "    Nah, it's my first time."],
-		"Nice! In that case, I'll go over things quickly.",
-		"Oh... well that's fine. Work here is pretty simple. You'll get used to the flow."
+		"..."
+		//["    I've done this kind of thing before.", "    Nah, it's my first time."],
+		/*"Nice! In that case, I'll go over things quickly.",
+		"Oh... well that's fine. Work here is pretty simple. You'll get used to the flow."*/
 		];
 		
-		
-speakers = [id,id,id,id,id,id,id,id];
-next_line = [0,0,0,0,0,[6,7],-1,-1];
-scripts = [[change_variable, id, "portrait_index", 10],-1,-1,-1,-1,[-1,-1],-1,-1];
+
+speakers = [id,id,id,id,id,id];
+next_line = [0,0,0,0,0,0];
+scripts = 
+[[change_variable, id, "portrait_index", 10],
+[change_variable, id, "portrait_index", 6],
+[change_variable, id, "portrait_index", 0],
+[change_variable, id, "portrait_index", 12],
+-1,
+-1
+];
