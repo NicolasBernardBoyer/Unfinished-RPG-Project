@@ -5,8 +5,9 @@ draw_sprite(box, 0, box_x, box_y);
 //draw_sprite(frame, 0, port_x, port_y);
 
 //Draw Portrait
-draw_sprite(portrait, portrait_index, port_x, port_y);
-
+if (portrait != noone){
+	draw_sprite(portrait, portrait_index, port_x, port_y);
+}
 //Draw Portrait Frame
 /*if (portrait != noone){
 	draw_sprite_stretched(frame, 0, frame_x, frame_y, 76, 76);

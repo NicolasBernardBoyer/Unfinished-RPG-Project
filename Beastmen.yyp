@@ -30,6 +30,7 @@
     {"id":{"name":"canPauseTrue","path":"scripts/canPauseTrue/canPauseTrue.yy",},"order":5,},
     {"id":{"name":"fnt_8bit","path":"fonts/fnt_8bit/fnt_8bit.yy",},"order":0,},
     {"id":{"name":"spr_truckcounter","path":"sprites/spr_truckcounter/spr_truckcounter.yy",},"order":9,},
+    {"id":{"name":"spr_kat_sit_normal","path":"sprites/spr_kat_sit_normal/spr_kat_sit_normal.yy",},"order":7,},
     {"id":{"name":"let_manager_pass","path":"scripts/let_manager_pass/let_manager_pass.yy",},"order":3,},
     {"id":{"name":"InventoryFunctions","path":"scripts/InventoryFunctions/InventoryFunctions.yy",},"order":0,},
     {"id":{"name":"spr_yoru_leftwalkold","path":"sprites/spr_yoru_leftwalkold/spr_yoru_leftwalkold.yy",},"order":0,},

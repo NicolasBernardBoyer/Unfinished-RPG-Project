@@ -23,7 +23,7 @@ spriteFreeze = time_source_create(time_source_game, 4, time_source_units_seconds
 }
 , [], -1);
 time_source_start(spriteFreeze);
-	
+
 makeText = time_source_create(time_source_game, 5, time_source_units_seconds, function()
 {
 	global.name_text_col = c_gray;
