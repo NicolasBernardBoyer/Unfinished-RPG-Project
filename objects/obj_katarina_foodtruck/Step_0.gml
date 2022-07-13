@@ -25,3 +25,18 @@ if (run4thTextbox = true){
 	run4thTextbox = false;
 }
 
+if (sprite_index = spr_kat_sit_getup){
+	image_speed = 1;
+	if (image_index = 7){
+		sprite_index = spr_kat_sit_getup2;
+	}
+}
+
+if (sprite_index = spr_kat_sit_getup2 and image_index = 4){
+	image_speed = 0;
+	if (move_getup_y = true){
+		y+= 5;
+		move_getup_y = false;
+	}
+}
+
