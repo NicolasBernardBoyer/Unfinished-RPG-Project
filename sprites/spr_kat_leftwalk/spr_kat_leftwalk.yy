@@ -49,7 +49,7 @@
     "spriteId": {"name":"spr_kat_leftwalk","path":"sprites/spr_kat_leftwalk/spr_kat_leftwalk.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 5.0,
+    "playbackSpeed": 6.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

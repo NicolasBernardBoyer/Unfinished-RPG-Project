@@ -41,7 +41,7 @@
     "spriteId": {"name":"spr_player_rightwalk_coat","path":"sprites/spr_player_rightwalk_coat/spr_player_rightwalk_coat.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 5.0,
+    "playbackSpeed": 6.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

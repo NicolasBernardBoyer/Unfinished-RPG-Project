@@ -5,8 +5,12 @@ sprite_index = spr_kat_sit;
 run2ndTextbox = false;
 run3rdTextbox = false;
 run4thTextbox = false;
+run5thTextbox = true;
+
+end_scene = false;
 
 move_getup_y = true;
+move_getup_y2 = true;
 
 hasText = false;
 portrait_index = 7;
@@ -18,8 +22,6 @@ text = ["OH UH... HEY BOSS! NO, I WASN'T SLACKING O-",
 		"H-hey there! I'm Katarina, and I'll be training you today.",
 		"You must be " + global.playerName + ", right?",
 		"..."
-		/*"Nice! In that case, I'll go over things quickly.",
-		"Oh... well that's fine. Work here is pretty simple. You'll get used to the flow."*/
 		];
 speakers = [id,id,id,id,id];
 next_line = [0,0,0,-1,0];
@@ -31,10 +33,8 @@ scripts =
 -1
 ];
 
-text2 = [["    Yep! That's me!", "    Wait, how do you know my name?"],
+text2 = [["   - Yep! That's me!", "   - Wait, how do you know my name?"],
 		"..."
-		/*"Nice! In that case, I'll go over things quickly.",
-		"Oh... well that's fine. Work here is pretty simple. You'll get used to the flow."*/
 		];
 speakers2 = [obj_player,id];
 next_line2 = [[-1,-1], 0];
@@ -52,11 +52,22 @@ speakers3 = [id,id,id,id];
 next_line3 = [0,0,-1,-1];
 scripts3 = [[change_variable, id, "portrait_index", 12], 
 			-1,
-			[change_variable, id, "sprite_index", spr_kat_sit_getup],
+			[change_variable, id, "sprite_index", spr_kat_sit_getup, id, "portrait_index", 10],
 			-1];
 			
 text4 = ["Great! Let's get started then. Let me show you around.",
 		"..."];
 speakers4 = [id, id];
 next_line4 = [-1, 0];
-scripts4 = [[change_variable, id, "sprite_index", spr_kat_sit_getup], -1];
+scripts4 = [[change_variable, id, "sprite_index", spr_kat_sit_getup, id, "portrait_index", 10], -1];
+
+text5 = ["First, let's go over some rules.",
+		"No.1, don't tell the boss if I'm on my phone when I'm supposed to be working.",
+		"That one's really important, so don't forget it.",
+		"..."];
+speakers5 = [id,id,id,id];
+next_line5 = [0,0,-1,0];
+scripts5 = [[change_variable, id, "portrait_index", 8],
+			-1,
+			[change_variable, id, "end_scene", true],
+			-1];
