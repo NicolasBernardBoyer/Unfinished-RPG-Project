@@ -33,7 +33,7 @@ scripts =
 -1
 ];
 
-text2 = [["   - Yep! That's me!", "   - Wait, how do you know my name?"],
+text2 = [["   ''Yep, that's me!''", "   ''Wait, how do you know my name?''"],
 		"..."
 		];
 speakers2 = [obj_player,id];

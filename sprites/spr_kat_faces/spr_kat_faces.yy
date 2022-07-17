@@ -154,7 +154,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 2","resourceVersion":"1.0","name":"29350c5e-0777-4098-aa65-a651e4154112","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"e90cd9e7-9745-405c-8f12-1c3cb893b1dd","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Whiskers","resourceVersion":"1.0","name":"029d9ee7-fb1a-451b-8c57-8023361e974a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Freckles","resourceVersion":"1.0","name":"029d9ee7-fb1a-451b-8c57-8023361e974a","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1b8e2838-db1d-436c-a958-f1014d3381fb","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
