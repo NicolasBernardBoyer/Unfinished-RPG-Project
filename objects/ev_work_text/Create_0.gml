@@ -1,6 +1,7 @@
 visible = false;
 deactivatePlayer = true;
 goToPark = false;
+katBox = false;
 
 alarm[0] = -1;
 
@@ -12,7 +13,17 @@ text = [
 		"Despite her not being interested in conversation, you walked together on the way home.",
 		"..."
 		];
-portrait_index = noone;
 speakers = [id, id, id, id];
 next_line = [0, 0, -1, 0];
-scripts = [-1,-1,[change_variable, id, "goToPark", true],-1];
+scripts = [-1,-1,[change_variable, id, "katBox", true],-1];
+
+portrait_index = 7;
+portrait = spr_kat_faces;
+kattext = ["Hey... Is it just me, or is there a massive crater in the middle of the park?",
+			"..."
+			];
+katspeakers = [id,id];
+katnext_line = [-1,0];
+katscripts = 
+[[change_variable, id, "goToPark", true], -1
+];

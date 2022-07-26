@@ -60,6 +60,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_park_treedarker","path":"objects/obj_park_treedarker/obj_park_treedarker.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":83.0,"y":178.0,"resourceVersion":"1.0","name":"inst_7B850431_1","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_park_treedarker","path":"objects/obj_park_treedarker/obj_park_treedarker.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":359.0,"y":126.0,"resourceVersion":"1.0","name":"inst_63D11C12_1","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"ev_bird_chirp","path":"objects/ev_bird_chirp/ev_bird_chirp.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_2B7B6314_1","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_katarina_crater_room","path":"objects/obj_katarina_crater_room/obj_katarina_crater_room.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":207.0,"y":34.0,"resourceVersion":"1.0","name":"inst_765A54B3","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tset_city","path":"tilesets/tset_city/tset_city.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":14,"SerialiseHeight":20,"TileSerialiseData":[
 148,148,148,148,148,148,180,181,148,148,148,148,148,148,
@@ -153,6 +154,7 @@
     {"name":"inst_2E6AC47C_1","path":"rooms/rm_park_crater/rm_park_crater.yy",},
     {"name":"inst_2547B241_1","path":"rooms/rm_park_crater/rm_park_crater.yy",},
     {"name":"inst_42D84C57_1","path":"rooms/rm_park_crater/rm_park_crater.yy",},
+    {"name":"inst_765A54B3","path":"rooms/rm_park_crater/rm_park_crater.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
