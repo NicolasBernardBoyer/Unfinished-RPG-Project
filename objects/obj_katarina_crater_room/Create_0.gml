@@ -8,7 +8,7 @@ craterTextbox = false;
 hasText = false;
 portrait_index = 10;
 portrait = spr_kat_faces;
-voice = snd_typewriter;
+voice = snd_meow;
 name = "Katarina";
 text = ["Well, I guess it's just me.",
 		"That's not a crater, it's just a massive hole.",
