@@ -4,6 +4,9 @@ visible = false;
 moveForward = true;
 moveCam = false;
 craterTextbox = false;
+runChoice = false;
+pushChoice = false;
+stareChoice = false;
 
 hasText = false;
 portrait_index = 10;
@@ -20,3 +23,22 @@ scripts = [-1,
 [change_variable, id, "portrait_index", 1],
 [change_variable, id, "moveCam", true],
 -1];
+
+text2 = ["Sheesh. This thing is so deep, I can't even see the bottom.",
+		"I wonder how far down it goes...",
+		"..."];
+speakers2 = [id,id,id];
+next_line2 = [0,-1,0];
+scripts2 = [-1,
+[change_variable, id, "runChoice", true],
+-1
+];
+
+text3 = [["    Look into the hole with Katarina",
+		"    Do an epic prank and push her in"],
+		"..."];
+speakers3 = [obj_player,obj_player];
+next_line3 = [[-1,-1],0];
+scripts3 = [[[change_variable, id, "stareChoice", true],[change_variable, id, "pushChoice", true]],
+-1
+];
