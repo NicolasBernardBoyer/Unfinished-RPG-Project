@@ -60,7 +60,7 @@ if (runChoice = true and !instance_exists(obj_textbox)){
 	runChoice = false;
 }
 
-if (stareChoice = true){
+if (stareChoice = true and cutProg = 0){
 	if (obj_player.y != 173){
 		obj_player.image_speed = 1;
 		obj_player.y++;
@@ -68,7 +68,41 @@ if (stareChoice = true){
 	if (obj_player.y = 173){
 		obj_player.image_speed = 0;
 		obj_player.image_index = 0;
+		
+		katReact = time_source_create(time_source_game, 90, time_source_units_frames, function()
+		{
+			if (sprite_index != spr_kat_bendover_lookright and cutProg = 0){
+				sprite_index = spr_kat_bendover_lookright;
+				instance_create_layer(x, y-55,"Text", obj_exclamation);
+				if (cutProg = 0){
+					cutProg++;
+				}		
+			}
+		time_source_stop(katReact);
+		}, [], -1);
+		if (sprite_index != spr_kat_bendover_lookright){
+			time_source_start(katReact);
+		}
 	}
+}
+
+if (obj_player.y = 173 and cutProg = 1 and sprite_index != spr_kat_lookright){
+	switchSprite1 = time_source_create(time_source_game, 90, time_source_units_frames, function()
+	{
+		if (sprite_index != spr_kat_lookright and cutProg = 1){
+			sprite_index = spr_kat_lookright;
+			cutProg++;
+		}
+		time_source_stop(switchSprite1);
+	}, [], -1);
+	time_source_start(switchSprite1);
+}
+
+if (cutProg = 2 and !instance_exists(obj_textbox)){
+	portrait_index = 14;
+	voice = snd_meow;
+	create_facetextbox(text4,speakers4,next_line4,scripts4);
+	if (cutProg = 2) cutProg++;
 }
 
 

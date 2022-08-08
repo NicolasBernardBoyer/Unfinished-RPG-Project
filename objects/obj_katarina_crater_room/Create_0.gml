@@ -5,8 +5,13 @@ moveForward = true;
 moveCam = false;
 craterTextbox = false;
 runChoice = false;
+
 pushChoice = false;
 stareChoice = false;
+global.pushChoice = false;
+global.stareChoice = false;
+
+cutProg = 0;
 
 hasText = false;
 portrait_index = 10;
@@ -40,5 +45,13 @@ text3 = [["    Look into the hole with Katarina",
 speakers3 = [obj_player,obj_player];
 next_line3 = [[-1,-1],0];
 scripts3 = [[[change_variable, id, "stareChoice", true],[change_variable, id, "pushChoice", true]],
+-1
+];
+
+text4 = ["W-WAIT! DON'T STAND THERE, YOU IDIOT!",
+		"..."];
+speakers4 = [id,id];
+next_line4 = [-1,0];
+scripts4 = [-1,
 -1
 ];
