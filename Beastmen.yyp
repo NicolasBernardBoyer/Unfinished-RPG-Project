@@ -266,6 +266,7 @@
     {"id":{"name":"obj_devmode_testroom","path":"objects/obj_devmode_testroom/obj_devmode_testroom.yy",},"order":7,},
     {"id":{"name":"spr_player_rightwalk_bag","path":"sprites/spr_player_rightwalk_bag/spr_player_rightwalk_bag.yy",},"order":4,},
     {"id":{"name":"snd_bike","path":"sounds/snd_bike/snd_bike.yy",},"order":10,},
+    {"id":{"name":"spr_player_falling_coat_left","path":"sprites/spr_player_falling_coat_left/spr_player_falling_coat_left.yy",},"order":6,},
     {"id":{"name":"spr_tvtable","path":"sprites/spr_tvtable/spr_tvtable.yy",},"order":12,},
     {"id":{"name":"spr_buttons","path":"sprites/spr_buttons/spr_buttons.yy",},"order":12,},
     {"id":{"name":"tset_city","path":"tilesets/tset_city/tset_city.yy",},"order":1,},

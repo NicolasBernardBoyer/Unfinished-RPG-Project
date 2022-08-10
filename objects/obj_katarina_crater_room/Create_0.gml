@@ -52,6 +52,6 @@ text4 = ["W-WAIT! DON'T STAND THERE, YOU IDIOT!",
 		"..."];
 speakers4 = [id,id];
 next_line4 = [-1,0];
-scripts4 = [-1,
+scripts4 = [[change_variable, obj_cliff_park, "cliffBreak", true],
 -1
 ];

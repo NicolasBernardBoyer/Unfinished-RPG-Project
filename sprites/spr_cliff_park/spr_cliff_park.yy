@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 8,
+  "bbox_left": 0,
   "bbox_right": 87,
-  "bbox_top": 8,
-  "bbox_bottom": 24,
+  "bbox_top": 0,
+  "bbox_bottom": 47,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 96,
-  "height": 32,
+  "height": 48,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -27,21 +27,61 @@
     {"compositeImage":{"FrameId":{"name":"c97341f0-091d-47a3-ac0a-6a7cd0f4d06e","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"c97341f0-091d-47a3-ac0a-6a7cd0f4d06e","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":{"name":"8826a603-8387-4509-ba1c-9541b7fb2146","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_cliff_park","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"c97341f0-091d-47a3-ac0a-6a7cd0f4d06e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a1a2f738-1248-4fe4-b2fd-e39e9df7f067","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a1a2f738-1248-4fe4-b2fd-e39e9df7f067","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":{"name":"8826a603-8387-4509-ba1c-9541b7fb2146","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_cliff_park","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"a1a2f738-1248-4fe4-b2fd-e39e9df7f067","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e2c9a100-9b2d-453a-b257-b5e3e28187b3","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e2c9a100-9b2d-453a-b257-b5e3e28187b3","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":{"name":"8826a603-8387-4509-ba1c-9541b7fb2146","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_cliff_park","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"e2c9a100-9b2d-453a-b257-b5e3e28187b3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"67aaf5d3-5a57-4f6b-938c-3ad14b9ca828","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"67aaf5d3-5a57-4f6b-938c-3ad14b9ca828","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":{"name":"8826a603-8387-4509-ba1c-9541b7fb2146","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_cliff_park","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"67aaf5d3-5a57-4f6b-938c-3ad14b9ca828","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2867fca0-2d46-46cb-afe4-a2fa06ce0ef3","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2867fca0-2d46-46cb-afe4-a2fa06ce0ef3","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":{"name":"8826a603-8387-4509-ba1c-9541b7fb2146","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_cliff_park","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"2867fca0-2d46-46cb-afe4-a2fa06ce0ef3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c1028912-9370-413c-8b02-d1419d02e780","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c1028912-9370-413c-8b02-d1419d02e780","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":{"name":"8826a603-8387-4509-ba1c-9541b7fb2146","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_cliff_park","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"c1028912-9370-413c-8b02-d1419d02e780","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"da008af1-0ad2-4023-8ad4-75ea0b64ec93","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"da008af1-0ad2-4023-8ad4-75ea0b64ec93","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":{"name":"8826a603-8387-4509-ba1c-9541b7fb2146","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_cliff_park","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"da008af1-0ad2-4023-8ad4-75ea0b64ec93","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"bd9f0dcf-be2b-4d76-aef3-ddc7e94c8ebb","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"bd9f0dcf-be2b-4d76-aef3-ddc7e94c8ebb","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":{"name":"8826a603-8387-4509-ba1c-9541b7fb2146","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_cliff_park","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"bd9f0dcf-be2b-4d76-aef3-ddc7e94c8ebb","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"afb3d632-de2a-4531-94f9-28a73e328247","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"afb3d632-de2a-4531-94f9-28a73e328247","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":{"name":"8826a603-8387-4509-ba1c-9541b7fb2146","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_cliff_park","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"afb3d632-de2a-4531-94f9-28a73e328247","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"37f967c4-45f6-4581-b4b1-b10f10871375","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"37f967c4-45f6-4581-b4b1-b10f10871375","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":{"name":"8826a603-8387-4509-ba1c-9541b7fb2146","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_cliff_park","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"37f967c4-45f6-4581-b4b1-b10f10871375","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"eb4637ec-8cd4-4fa1-bed3-dfdfebf1d968","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"eb4637ec-8cd4-4fa1-bed3-dfdfebf1d968","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"LayerId":{"name":"8826a603-8387-4509-ba1c-9541b7fb2146","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_cliff_park","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","name":"eb4637ec-8cd4-4fa1-bed3-dfdfebf1d968","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_cliff_park","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 5.0,
+    "playbackSpeed": 15.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 11.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"ddd99ae8-7c6f-4992-aacd-f98ebde91a0b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c97341f0-091d-47a3-ac0a-6a7cd0f4d06e","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4448e8f5-428f-43bd-aa28-c3b962342b61","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a1a2f738-1248-4fe4-b2fd-e39e9df7f067","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3138e3b4-4e42-49e6-998b-db8f2dd6beb6","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e2c9a100-9b2d-453a-b257-b5e3e28187b3","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f9e67b1a-9454-48d2-b7de-2bbe6ca7711d","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"67aaf5d3-5a57-4f6b-938c-3ad14b9ca828","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"67bf1a11-74d3-414b-ac13-3b64d45d1498","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2867fca0-2d46-46cb-afe4-a2fa06ce0ef3","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"61171a30-30b0-4ad6-ba9f-c1c7bf131214","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c1028912-9370-413c-8b02-d1419d02e780","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"853f1891-a66d-4614-a183-8fe46e87d3f1","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"da008af1-0ad2-4023-8ad4-75ea0b64ec93","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"713120b3-1434-4fba-94d5-035d1de8bc16","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bd9f0dcf-be2b-4d76-aef3-ddc7e94c8ebb","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"60ab1943-b961-4aa3-bb25-6ec799876ca2","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"afb3d632-de2a-4531-94f9-28a73e328247","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"91b1336e-f404-4e89-8b1f-d8c9e39b16be","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"37f967c4-45f6-4581-b4b1-b10f10871375","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"97a59fa0-5979-4073-b18e-235d200e6c54","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eb4637ec-8cd4-4fa1-bed3-dfdfebf1d968","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -55,7 +95,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 48,
-    "yorigin": 32,
+    "yorigin": 48,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cliff_park","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},
