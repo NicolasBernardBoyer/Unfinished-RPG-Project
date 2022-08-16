@@ -1,9 +1,3 @@
-if (deactivatePlayer = true){
-	if (instance_exists(obj_player)){
-		instance_deactivate_object(obj_player);
-		deactivatePlayer = false;
-	}
-}
 
 if (katBox = true and !instance_exists(obj_textbox)){
 	voice = snd_meow;
@@ -16,7 +10,6 @@ if (katBox = true and !instance_exists(obj_textbox)){
 }
 
 if (goToPark = true){
-	instance_activate_object(obj_player);
 	obj_game.spawnX = 237;
 	obj_game.spawnY = 30;
 	obj_game.spawnRoom = rm_park_crater;

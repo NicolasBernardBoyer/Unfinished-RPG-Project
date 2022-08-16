@@ -79,7 +79,6 @@ if (move_getup_y2 = false){
 
 if (end_scene){
 	instance_destroy(obj_textbox);
-	instance_deactivate_object(obj_player);
 	
 	obj_game.spawnRoom = rm_workshift;
 	obj_game.doTransition = true;

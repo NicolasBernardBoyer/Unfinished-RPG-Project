@@ -1,5 +1,4 @@
 visible = false;
-deactivatePlayer = true;
 goToPark = false;
 katBox = false;
 

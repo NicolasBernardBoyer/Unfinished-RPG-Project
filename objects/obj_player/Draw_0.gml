@@ -1,1 +1,3 @@
-draw_self();
+if (sprite_index != noone){
+	draw_self();
+}
