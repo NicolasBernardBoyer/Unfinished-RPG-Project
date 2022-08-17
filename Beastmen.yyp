@@ -270,6 +270,7 @@
     {"id":{"name":"spr_buttons","path":"sprites/spr_buttons/spr_buttons.yy",},"order":12,},
     {"id":{"name":"tset_city","path":"tilesets/tset_city/tset_city.yy",},"order":1,},
     {"id":{"name":"spr_RnC_coffee","path":"sprites/spr_RnC_coffee/spr_RnC_coffee.yy",},"order":1,},
+    {"id":{"name":"spr_kat_fall","path":"sprites/spr_kat_fall/spr_kat_fall.yy",},"order":14,},
     {"id":{"name":"spr_threemovingbox","path":"sprites/spr_threemovingbox/spr_threemovingbox.yy",},"order":11,},
     {"id":{"name":"obj_katarina_foodtruck","path":"objects/obj_katarina_foodtruck/obj_katarina_foodtruck.yy",},"order":0,},
     {"id":{"name":"spr_busy_seagull","path":"sprites/spr_busy_seagull/spr_busy_seagull.yy",},"order":2,},
