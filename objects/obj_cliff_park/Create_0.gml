@@ -1,4 +1,6 @@
 cliffBreak = false;
+dropOff = false;
+alarm[0] = -1;
 
 hasText = false;
 
