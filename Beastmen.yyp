@@ -170,6 +170,7 @@
     {"id":{"name":"spr_movingbox","path":"sprites/spr_movingbox/spr_movingbox.yy",},"order":9,},
     {"id":{"name":"spr_box_empty_white","path":"sprites/spr_box_empty_white/spr_box_empty_white.yy",},"order":9,},
     {"id":{"name":"obj_name_creator","path":"objects/obj_name_creator/obj_name_creator.yy",},"order":3,},
+    {"id":{"name":"rm_falling_down","path":"rooms/rm_falling_down/rm_falling_down.yy",},"order":0,},
     {"id":{"name":"obj_firehydrant","path":"objects/obj_firehydrant/obj_firehydrant.yy",},"order":1,},
     {"id":{"name":"spr_player_leftwalk_coat","path":"sprites/spr_player_leftwalk_coat/spr_player_leftwalk_coat.yy",},"order":0,},
     {"id":{"name":"create_name_creator","path":"scripts/create_name_creator/create_name_creator.yy",},"order":1,},
@@ -311,6 +312,7 @@
     {"roomId":{"name":"rm_infoodtruck","path":"rooms/rm_infoodtruck/rm_infoodtruck.yy",},},
     {"roomId":{"name":"rm_workshift","path":"rooms/rm_workshift/rm_workshift.yy",},},
     {"roomId":{"name":"rm_park_crater","path":"rooms/rm_park_crater/rm_park_crater.yy",},},
+    {"roomId":{"name":"rm_falling_down","path":"rooms/rm_falling_down/rm_falling_down.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":9,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -381,6 +383,7 @@
     {"folderPath":"folders/Scripts/inventory tutorial.yy","order":12,"resourceVersion":"1.0","name":"inventory tutorial","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/world Objects/Characters/Katarina.yy","order":5,"resourceVersion":"1.0","name":"Katarina","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Cutscenes/Work.yy","order":5,"resourceVersion":"1.0","name":"Work","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Rooms/Mine.yy","order":3,"resourceVersion":"1.0","name":"Mine","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
