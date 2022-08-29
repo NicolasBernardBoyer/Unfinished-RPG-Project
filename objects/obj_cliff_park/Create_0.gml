@@ -1,5 +1,6 @@
 cliffBreak = false;
 dropOff = false;
+dropSpeed = 1;
 alarm[0] = -1;
 
 hasText = false;

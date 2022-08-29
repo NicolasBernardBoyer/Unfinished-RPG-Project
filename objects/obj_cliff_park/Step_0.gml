@@ -9,12 +9,13 @@ if (!cliffBreak){
 
 if (cliffBreak and !dropOff){
 	if (alarm[0] = -1){
-		alarm[0] = 20;
+		alarm[0] = 10;
 	}
 }
 
 if (dropOff) {
-	obj_player.y += 4;
-	obj_katarina_crater_room.y += 4;
+	dropSpeed = Approach(dropSpeed, 4, 0.2);
+	obj_player.y += dropSpeed;
+	obj_katarina_crater_room.y += dropSpeed;
 }
 
