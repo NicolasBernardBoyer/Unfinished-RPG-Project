@@ -201,7 +201,7 @@ if (global.hasBackpack == false){
 		switch(dir){
 			case 0: sprite_index = spr_player_rightwalk_coat; facing = dir.right; break;
 			case 45: 
-			if (sprite_index = spr_player_rightwalk_coat or sprite_index = spr_player_leftwalk_coat){
+			if (sprite_index = spr_player_rightwalk_coat  /* or sprite_index = spr_player_leftwalk_coat */){
 			sprite_index = spr_player_rightwalk_coat; facing = dir.right;
 			}
 			else if (sprite_index = spr_player_upwalk_coat or sprite_index = spr_player_walk_coat){
@@ -210,7 +210,7 @@ if (global.hasBackpack == false){
 			break;
 			case 90: sprite_index = spr_player_upwalk_coat; facing = dir.up; break;
 			case 135: 
-			if (sprite_index = spr_player_leftwalk_coat or sprite_index = spr_player_rightwalk_coat){
+			if (sprite_index = spr_player_leftwalk_coat /* or sprite_index = spr_player_rightwalk_coat */){
 			sprite_index = spr_player_leftwalk_coat; facing = dir.left;
 			}
 			else if (sprite_index = spr_player_upwalk_coat or sprite_index = spr_player_walk_coat){
@@ -219,7 +219,7 @@ if (global.hasBackpack == false){
 			break;
 			case 180: sprite_index = spr_player_leftwalk_coat; facing = dir.left; break;
 			case 225: 
-			if (sprite_index = spr_player_leftwalk_coat or sprite_index = spr_player_rightwalk_coat){
+			if (sprite_index = spr_player_leftwalk_coat /*or sprite_index = spr_player_rightwalk_coat */){
 			sprite_index = spr_player_leftwalk_coat; facing = dir.left;
 			}
 			else if (sprite_index = spr_player_walk_coat  or sprite_index = spr_player_upwalk_coat){
@@ -228,7 +228,7 @@ if (global.hasBackpack == false){
 			break;
 			case 270: sprite_index = spr_player_walk_coat; facing = dir.down break;
 			case 315: 
-			if (sprite_index = spr_player_rightwalk_coat or sprite_index = spr_player_leftwalk_coat){
+			if (sprite_index = spr_player_rightwalk_coat /*or sprite_index = spr_player_leftwalk_coat*/){
 			sprite_index = spr_player_rightwalk_coat; facing = dir.right;
 			}
 			else if (sprite_index = spr_player_walk_coat or sprite_index = spr_player_upwalk_coat){
