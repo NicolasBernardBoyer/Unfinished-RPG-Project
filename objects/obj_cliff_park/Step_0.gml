@@ -14,8 +14,22 @@ if (cliffBreak and !dropOff){
 }
 
 if (dropOff) {
-	dropSpeed = Approach(dropSpeed, 4, 0.2);
-	obj_player.y += dropSpeed;
-	obj_katarina_crater_room.y += dropSpeed;
+	if (dropSpeed != 1){
+		dropSpeed += 1/120;
+	}
+	
+	position = animcurve_channel_evaluate(curve,dropSpeed);
+	
+	var _startplayer = obj_player.y;
+	var _endplayer = 300;
+	var _distanceplayer = _endplayer - _startplayer;
+	
+	var _startkat = obj_katarina_crater_room.y;
+	var _endkat = 300;
+	var _distancekat = _endkat - _startkat;
+	
+	obj_player.y = _startplayer + (_distanceplayer * position);
+	obj_katarina_crater_room.y = _startkat + (_distancekat * position);
+	
 }
 

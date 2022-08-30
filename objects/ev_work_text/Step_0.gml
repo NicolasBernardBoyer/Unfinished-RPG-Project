@@ -4,9 +4,13 @@ if (katBox = true and !instance_exists(obj_textbox)){
 	name = "Katarina";
 	global.name_text_col = c_gray;
 	create_facetextbox(kattext, katspeakers, katnext_line, katscripts);
-	obj_textbox.portrait_index = 7;
+	obj_textbox.portrait_index = 10;
 	obj_textbox.portrait = spr_kat_faces;
 	katBox = false;
+}
+
+if (instance_exists(obj_facetextbox)){
+	obj_textbox.portrait_index = portrait_index;
 }
 
 if (goToPark = true){

@@ -1,6 +1,7 @@
 cliffBreak = false;
 dropOff = false;
-dropSpeed = 1;
+dropSpeed = 0;
+curve = animcurve_get_channel(ac_accelDrop,0);
 alarm[0] = -1;
 
 hasText = false;

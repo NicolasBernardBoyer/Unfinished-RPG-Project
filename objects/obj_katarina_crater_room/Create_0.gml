@@ -7,7 +7,6 @@ moveCam = false;
 craterTextbox = false;
 runChoice = false;
 
-pushChoice = false;
 stareChoice = false;
 global.pushChoice = false;
 global.stareChoice = false;
@@ -40,12 +39,11 @@ scripts2 = [-1,
 -1
 ];
 
-text3 = [["    Look into the hole with Katarina",
-		"    Do an epic prank and push her in"],
+text3 = ["The mystery behind the hole reels you in, causing you to want to look closer.",
 		"..."];
 speakers3 = [obj_player,obj_player];
-next_line3 = [[-1,-1],0];
-scripts3 = [[[change_variable, id, "stareChoice", true],[change_variable, id, "pushChoice", true]],
+next_line3 = [-1,0];
+scripts3 = [[change_variable, id, "stareChoice", true],
 -1
 ];
 

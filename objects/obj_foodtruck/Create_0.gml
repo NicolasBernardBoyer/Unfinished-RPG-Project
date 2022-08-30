@@ -6,7 +6,7 @@ name = "";
 
 text = ["Your workplace, the Burgr foodtruck.",
 		"Next to the company name on the truck is its mascot, Borgar.",
-		"You can't see anyone inside from your point of view, so you might as well just walk in."];
+		"There seems to be someone inside."];
 portrait_index = noone;
 speakers = [id, id, id];
 next_line = [0, 0, 0];
