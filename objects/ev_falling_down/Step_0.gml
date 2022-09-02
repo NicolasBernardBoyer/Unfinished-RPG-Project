@@ -37,3 +37,25 @@ if (cutProg = 1 and !instance_exists(obj_textbox)){
 	obj_kat_falling.sprite_index = spr_kat_fall_angry;
 	create_facetextbox(text, speakers, next_line, scripts);
 }
+
+if (cutProg = 2){
+	if (sorryChoice or blameChoice or deathChoice){
+		cutProg++;
+	}
+	else if (!instance_exists(obj_textbox)){
+		create_textbox(text2, speakers2, next_line2, scripts2);
+	}
+}
+
+if (cutProg = 3){
+	obj_kat_falling.sprite_index = spr_kat_fall_lookright;
+	if (!instance_exists(obj_textbox)){
+		if (sorryChoice){
+			create_facetextbox(text3, speakers3, next_line3, scripts3);
+		} else if (blameChoice){
+			create_facetextbox(text4, speakers4, next_line4, scripts4);
+		} else if (deathChoice){
+			create_facetextbox(text5, speakers5, next_line5, scripts5);
+		}
+	}
+}

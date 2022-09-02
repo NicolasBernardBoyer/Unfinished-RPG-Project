@@ -142,6 +142,7 @@
     {"id":{"name":"obj_park_tree","path":"objects/obj_park_tree/obj_park_tree.yy",},"order":2,},
     {"id":{"name":"snd_select","path":"sounds/snd_select/snd_select.yy",},"order":1,},
     {"id":{"name":"spr_kat_faces","path":"sprites/spr_kat_faces/spr_kat_faces.yy",},"order":3,},
+    {"id":{"name":"spr_kat_fall_lookright","path":"sprites/spr_kat_fall_lookright/spr_kat_fall_lookright.yy",},"order":16,},
     {"id":{"name":"JumpInDirection","path":"scripts/JumpInDirection/JumpInDirection.yy",},"order":8,},
     {"id":{"name":"spr_box","path":"sprites/spr_box/spr_box.yy",},"order":10,},
     {"id":{"name":"obj_coatrack","path":"objects/obj_coatrack/obj_coatrack.yy",},"order":18,},
