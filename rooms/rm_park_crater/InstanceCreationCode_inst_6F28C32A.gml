@@ -1,3 +1,3 @@
 targetRoom = rm_falling_down;
-targetX = 127;
-targetY = 170;
+targetX = 138;
+targetY = 8;

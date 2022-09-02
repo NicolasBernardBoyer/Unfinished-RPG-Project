@@ -5,6 +5,8 @@
 - FriendlyCosmonaut (video tutorials)
 - Shaun Spalding (video tutorials)
 - Yann Le Bihan (Yanooki) (character designs)
-- SciFiSounds (Whip Crack)
-- Bike (L.Finck)
-- Birds (InspectorJ)
+- Whip sfx (SciFiSounds)
+- Bike sfx (L.Finck)
+- Birds sfx (InspectorJ)
+- Wind sfx (jorge0000)
+
