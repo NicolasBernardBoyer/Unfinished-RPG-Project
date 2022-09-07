@@ -32,7 +32,7 @@ text3 = ["It's... it's fine. I accept your apology. It was my fault, too.",
 		 "..."];
 speakers3 =	[id,id,id,id];
 next_line3 = [0,0,-1,0];
-scripts3 = [[change_variable, id, "portrait_index", 1]];
+scripts3 = [[change_variable, id, "portrait_index", 0], [change_variable, id, "portrait_index", 5], [change_variable, id, "cutProg", 4], -1];
 
 text4 = ["Way to avoid taking responsibility. I'm real proud of you.",
 		 "Then again, I'm pretty much doing the exact same thing right now.",
@@ -40,7 +40,7 @@ text4 = ["Way to avoid taking responsibility. I'm real proud of you.",
 		 "..."];
 speakers4 = [id,id,id,id];
 next_line4 = [0,0,-1,0];
-scripts4 = [[change_variable, id, "portrait_index", 1]];
+scripts4 = [[change_variable, id, "portrait_index", 13], [change_variable, id, "portrait_index", 12], [change_variable, id, "cutProg", 4], -1];
 
 text5 = ["Oh come on, don't be such a drama queen.",
 		 "We're not gonna die.",
@@ -48,7 +48,7 @@ text5 = ["Oh come on, don't be such a drama queen.",
 		 "..."];
 speakers5 =	[id,id,id,id];
 next_line5 = [0,0,-1,0];
-scripts5 = [[change_variable, id, "portrait_index", 1]];
+scripts5 = [[change_variable, id, "portrait_index", 10],-1, [change_variable, id, "cutProg", 4], -1];
 
 
 
