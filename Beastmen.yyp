@@ -234,6 +234,7 @@
     {"id":{"name":"ev_name_creator_timer","path":"objects/ev_name_creator_timer/ev_name_creator_timer.yy",},"order":4,},
     {"id":{"name":"spr_foodtruck","path":"sprites/spr_foodtruck/spr_foodtruck.yy",},"order":8,},
     {"id":{"name":"spr_shade_diagonal_half","path":"sprites/spr_shade_diagonal_half/spr_shade_diagonal_half.yy",},"order":9,},
+    {"id":{"name":"spr_kat_staffpull","path":"sprites/spr_kat_staffpull/spr_kat_staffpull.yy",},"order":18,},
     {"id":{"name":"spr_gaming","path":"sprites/spr_gaming/spr_gaming.yy",},"order":3,},
     {"id":{"name":"ev_falling_down","path":"objects/ev_falling_down/ev_falling_down.yy",},"order":0,},
     {"id":{"name":"ev_bike_across_town","path":"objects/ev_bike_across_town/ev_bike_across_town.yy",},"order":1,},
