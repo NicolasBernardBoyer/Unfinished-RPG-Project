@@ -64,6 +64,13 @@ if (cutProg = 3){
 }
 
 if (cutProg = 4){
-	obj_kat_falling.sprite_index = spr_kat_staffpull;
-	if (obj_kat_falling.image_index >= obj_kat_falling.image_number - 1) obj_kat_falling.image_speed = 0;
+	with (obj_kat_falling){
+		if (sprite_index != spr_kat_staffpull){
+			image_index = 0;
+			sprite_index = spr_kat_staffpull;
+		}
+		if (image_index = 7){
+			image_speed = 0;
+		}
+	}
 }
