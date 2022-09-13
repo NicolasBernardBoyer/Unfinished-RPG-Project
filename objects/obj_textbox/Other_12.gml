@@ -9,8 +9,8 @@ if(is_array(scripts)) {
 		var len = array_length_1d(pagescript);
 		if(len == 1){ script_execute(pagescript[0]); }
 		else {
-			var args = array_create(len-1, 0);
-			array_copy(args, 0, pagescript, 1, len-1);
+			var args = array_create(len, 0);
+			array_copy(args, 0, pagescript, 1, len);
 			script_execute_alt(pagescript[0], args);
 		}
 	}		

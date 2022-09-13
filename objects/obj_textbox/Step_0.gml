@@ -13,7 +13,10 @@ if(keyboard_check_pressed(interact_key) or keyboard_check_pressed(other_interact
 		
 		event_perform(ev_other, ev_user1);
 		
-	} else { instance_destroy(); }
+	} else {  
+		event_perform(ev_other, ev_user2); 
+		instance_destroy(); 
+		}
 }
 
 if(choice_dialogue){

@@ -56,7 +56,6 @@ for (var yy = 0; yy < yLetters; yy++){
 
 		
 		charCount++;
-		
 		#endregion
 	}
 }
