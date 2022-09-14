@@ -47,26 +47,36 @@ switch (cutProg){
 	case 4:
 		staffPull = time_source_create(time_source_game, 40, time_source_units_frames, function(){
 		with (obj_kat_falling){
-			if (sprite_index != spr_kat_staffpull){
-				audio_play_sound(snd_fling2, 10, false);
-				image_index = 0;
-				sprite_index = spr_kat_staffpull;
+				if (sprite_index != spr_kat_staffpull and sprite_index != spr_kat_stafffall){
+					audio_play_sound(snd_fling2, 10, false);
+					image_index = 0;
+					sprite_index = spr_kat_staffpull;
+				}
+				else if (sprite_index = spr_kat_staffpull and image_index = 8){
+					sprite_index = spr_kat_stafffall;
+					ev_falling_down.cutProg++;
+				}
 			}
-			if (image_index = 7){
-				image_speed = 0;
-				ev_falling_down.cutProg++;
-			}
-		}
 		}, [], 1);
 		time_source_start(staffPull);
 	break;
 	case 5:
-	approachTextbox = time_source_create(time_source_game, 45, time_source_units_frames, function(){
-		portrait_index = 0;
-		create_facetextbox(text6,speakers6,next_line6,scripts6);
+		approachTextbox = time_source_create(time_source_game, 45, time_source_units_frames, function(){
+			if (!instance_exists(obj_textbox) and cutProg = 5){
+				portrait_index = 0;
+				create_facetextbox(text6,speakers6,next_line6,scripts6);
+			}
 		}, [], 1);
 		time_source_start(approachTextbox);
 	break;
+	case 6:
+	with(obj_player){
+		if (x != 120){
+			x -= 1;
+			obj_kat_falling.x += 1;
+		}
+	}
+	
 }
 
 if (cutProg > 0){

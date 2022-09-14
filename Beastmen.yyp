@@ -88,6 +88,7 @@
     {"id":{"name":"spr_player_leftwalk_bag","path":"sprites/spr_player_leftwalk_bag/spr_player_leftwalk_bag.yy",},"order":0,},
     {"id":{"name":"obj_dragplush","path":"objects/obj_dragplush/obj_dragplush.yy",},"order":19,},
     {"id":{"name":"spr_trashcan","path":"sprites/spr_trashcan/spr_trashcan.yy",},"order":5,},
+    {"id":{"name":"spr_kat_stafffall","path":"sprites/spr_kat_stafffall/spr_kat_stafffall.yy",},"order":19,},
     {"id":{"name":"spr_coatrack","path":"sprites/spr_coatrack/spr_coatrack.yy",},"order":18,},
     {"id":{"name":"spr_player_leftbike","path":"sprites/spr_player_leftbike/spr_player_leftbike.yy",},"order":0,},
     {"id":{"name":"spr_toilet","path":"sprites/spr_toilet/spr_toilet.yy",},"order":15,},

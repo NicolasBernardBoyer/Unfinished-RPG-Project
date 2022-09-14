@@ -2,6 +2,7 @@ global.name_text_col = c_gray;
 cutProg = 0;
 dropSpeed = 0;
 curve = animcurve_get_channel(ac_pitFall,0);
+		
 
 sorryChoice = false;
 blameChoice = false;
@@ -50,6 +51,7 @@ text6 = ["Here, get closer to me."];
 speakers6 =	[id];
 next_line6 = [0];
 scripts6 = [[change_variable, id, "cutProg", 6]];
+
 
 
 
