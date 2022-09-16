@@ -74,9 +74,22 @@ switch (cutProg){
 		if (x != 120){
 			x -= 1;
 			obj_kat_falling.x += 1;
+		} else {
+			if (obj_kat_falling.sprite_index != spr_kat_staffbubble){
+				obj_kat_falling.image_index = 0;
+			}
+			obj_kat_falling.sprite_index = spr_kat_staffbubble;
+			ev_falling_down.cutProg++;
 		}
 	}
-	
+	break;
+	case 7:
+	with (obj_kat_falling){
+		if (sprite_index = spr_kat_staffbubble and image_index = 6){
+			image_speed = 0;
+		}
+	}
+	break;
 }
 
 if (cutProg > 0){
