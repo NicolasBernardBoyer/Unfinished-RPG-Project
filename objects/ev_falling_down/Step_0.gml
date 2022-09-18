@@ -86,7 +86,7 @@ switch (cutProg){
 	case 7:
 	with (obj_kat_falling){
 		if (sprite_index = spr_kat_staffbubble and image_index = 6){
-			image_speed = 0;
+			sprite_index = spr_kat_staffbubble_idle;
 		}
 	}
 	break;

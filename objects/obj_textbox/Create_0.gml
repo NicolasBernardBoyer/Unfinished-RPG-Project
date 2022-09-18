@@ -11,9 +11,16 @@ global.hasname = true;
 port_x = (global.game_width - box_width - port_width) * 0.5 + 45;
 port_y = (global.game_height*0.98) - port_height - 2;
 box_x = 32;
-box_y = 200;
+
+if(global.highbox = true){
+	box_y = 0;
+	frame_y = 6;
+} else {
+	box_y = 200;
+	frame_y = 206;
+}
+
 frame_x = 40;
-frame_y = 206;
 
 x_buffer = 14;
 y_buffer = 10;

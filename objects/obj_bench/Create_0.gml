@@ -4,9 +4,9 @@ hasText = true;
 voice = snd_typewriter;
 name = "";
 
-text = ["It's a bench. There's a seagull's poop stain on it.",
-		"..."];
+text = ["The city just recently replaced the old wooden benches with these new metal ones.",
+		"Someone had launched a campaign to get them to change the benches. The slogan was: ''New benches, splinter-free!''"];
 portrait_index = noone;
-speakers = [id, id];
-next_line = [0, 0];
-scripts = [[bench_true], -1];
+speakers = [id,id];
+next_line = [0,0];
+scripts = -1;

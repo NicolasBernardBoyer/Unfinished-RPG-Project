@@ -3,6 +3,7 @@ if (inst!=noone){
 	if (runOnce == false){
 		// Run the cutscene
 		if (!instance_exists(obj_textbox)) {
+			global.highbox = true;
 			create_textbox(text, speakers, next_line, scripts);
 			runOnce = true;
 		}
@@ -54,6 +55,7 @@ if (createManager = false and !instance_exists(obj_manager)){
 		global.canPause = true;
 		obj_player.canMove = true;
 		camera.following = obj_player;
+		global.highbox = false;
 		instance_activate_object(rb_gotowork);
 		instance_destroy(self);
 	}

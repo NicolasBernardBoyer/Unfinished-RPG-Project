@@ -5,7 +5,7 @@ voice = snd_typewriter;
 name = "";
 
 text = ["A block of concrete with some roses on it. They are nicely watered.",
-		"You wonder what kind of person is paid to water these."];
+		"They smell like an old lady's house. The type of old lady that doesn't smoke."];
 portrait_index = noone;
 speakers = [id, id];
 next_line = [0, 0];

@@ -4,6 +4,7 @@ name = "";
 
 radius = 8;
 active_textbox = noone;
+global.highbox = false;
 
 facing = 0;
 
