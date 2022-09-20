@@ -79,6 +79,9 @@ switch (cutProg){
 				obj_kat_falling.image_index = 0;
 			}
 			obj_kat_falling.sprite_index = spr_kat_staffbubble;
+			if (!audio_is_playing(snd_magicup)){
+				audio_play_sound(snd_magicup, 1, false);
+			}
 			ev_falling_down.cutProg++;
 		}
 	}
