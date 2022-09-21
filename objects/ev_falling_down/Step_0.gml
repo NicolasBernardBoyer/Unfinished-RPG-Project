@@ -11,13 +11,13 @@ switch (cutProg){
 	case 0:
 		if(obj_player.y != 98){
 			obj_player.y++;
-			obj_kat_falling.y++;
+			obj_kat.y++;
 		}
 		if (obj_player.y = 98) cutProg++;
 	break;
 	case 1:
 		if (!instance_exists(obj_textbox)){
-			obj_kat_falling.sprite_index = spr_kat_fall_angry;
+			obj_kat.sprite_index = spr_kat_fall_angry;
 			create_facetextbox(text, speakers, next_line, scripts);
 		}
 	break;
@@ -30,7 +30,7 @@ switch (cutProg){
 	}
 	break;
 	case 3:
-		obj_kat_falling.sprite_index = spr_kat_fall_lookright;
+		obj_kat.sprite_index = spr_kat_fall_lookright;
 		if (!instance_exists(obj_textbox)){
 			if (sorryChoice){
 				portrait_index = 13;
@@ -46,7 +46,7 @@ switch (cutProg){
 	break;
 	case 4:
 		staffPull = time_source_create(time_source_game, 40, time_source_units_frames, function(){
-		with (obj_kat_falling){
+		with (obj_kat){
 				if (sprite_index != spr_kat_staffpull and sprite_index != spr_kat_stafffall){
 					audio_play_sound(snd_fling2, 10, false);
 					image_index = 0;
@@ -73,12 +73,12 @@ switch (cutProg){
 	with(obj_player){
 		if (x != 120){
 			x -= 1;
-			obj_kat_falling.x += 1;
+			obj_kat.x += 1;
 		} else {
-			if (obj_kat_falling.sprite_index != spr_kat_staffbubble){
-				obj_kat_falling.image_index = 0;
+			if (obj_kat.sprite_index != spr_kat_staffbubble){
+				obj_kat.image_index = 0;
 			}
-			obj_kat_falling.sprite_index = spr_kat_staffbubble;
+			obj_kat.sprite_index = spr_kat_staffbubble;
 			if (!audio_is_playing(snd_magicup)){
 				audio_play_sound(snd_magicup, 1, false);
 			}
@@ -87,12 +87,32 @@ switch (cutProg){
 	}
 	break;
 	case 7:
-	with (obj_kat_falling){
+	with (obj_kat){
 		if (sprite_index = spr_kat_staffbubble and image_index = 6){
 			sprite_index = spr_kat_staffbubble_idle;
 		}
 	}
+	if (!instance_exists(obj_bubble)){
+		instance_create_layer(95, 140, "Instances", obj_bubble);
+	} else {
+		if (obj_bubble.image_index = 4){
+			obj_bubble.image_speed = 0;
+			cutProg8 = time_source_create(time_source_game, 120, time_source_units_frames, function(){
+			if (cutProg = 7){
+				cutProg++;
+			}
+			}, [], 1);
+			time_source_start(cutProg8);
+		}
+	}
 	break;
+	case 8:
+	{
+		obj_game.spawnX = 224;
+		obj_game.spawnY = 2;
+		obj_game.spawnRoom = rm_mine_entrance;
+		obj_game.doTransition = true;
+	}
 }
 
 if (cutProg > 0){
@@ -109,6 +129,14 @@ if (cutProg > 0){
 	var _endkat = 128;
 	var _distancekat = _endkat - _startkat;
 	
+	var _startbubble = 140;
+	var _endbubble = 150;
+	var _distancebubble = _endbubble - _startbubble;
+	
 	obj_player.y = _startplayer + (_distanceplayer * position);
-	obj_kat_falling.y = _startkat + (_distancekat * position);
+	obj_kat.y = _startkat + (_distancekat * position);
+	
+	if (instance_exists(obj_bubble) and obj_bubble.image_index = 4){
+		obj_bubble.y = _startbubble + (_distancebubble * position);
+	}
 }
