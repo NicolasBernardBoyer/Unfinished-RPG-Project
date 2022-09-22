@@ -1,10 +1,10 @@
-draw_set_font(fnt_8bit);
+//draw_set_font(fnt_8bit);
 
 //Draw Box
-draw_sprite(box, 0, box_x, box_y);
-draw_text(text_x,text_y,dialogue);
-draw_text(text_x,text_y+text_height,dialogue2);
-draw_text(text_x,text_y+(text_height*2),dialogue3);
+//draw_sprite(box, 0, box_x, box_y);
+//draw_text(text_x,text_y,dialogue);
+//draw_text(text_x,text_y+text_height,dialogue2);
+//draw_text(text_x,text_y+(text_height*2),dialogue3);
 
 draw_set_font(fnt_excelsior);
 fontSize = font_get_size(fnt_excelsior);

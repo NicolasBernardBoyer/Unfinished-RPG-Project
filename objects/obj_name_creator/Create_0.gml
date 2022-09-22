@@ -7,15 +7,10 @@ y_buffer = 10;
 text_x = box_x + x_buffer;
 text_y = box_y + y_buffer;
 text_height = string_height("M");
-dialogue = "Please enter your name.";
-dialogue2 = "SHIFT to toggle caps.";
-dialogue3 = "BACKSPACE/X to delete.";
 #endregion
 
 
 showLowerCase = false; //Show lower case or not
-
-count = 0;
 
 spaces = "________"; //Spaces underlining the name
 

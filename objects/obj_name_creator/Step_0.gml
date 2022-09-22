@@ -26,7 +26,8 @@
 		if (!global.PR and !global.HR){
 			audio_play_sound(snd_typewriter, 5, false);
 		}
-		if (gridX - 1) < 0 gridX = (xLetters - 1);
+		if (gridX = 9 and gridY = 2) gridX = 5;
+		else if (gridX - 1) < 0 gridX = (xLetters - 1);
 		else gridX --;
 		}
 	
@@ -34,7 +35,8 @@
 		if (!global.PL and !global.HL){
 			audio_play_sound(snd_typewriter, 5, false);
 		}
-			if (gridX + 1) >= xLetters gridX = 0;
+			if (gridX = 5 and gridY = 2) gridX = 9;
+			else if (gridX + 1) >= xLetters gridX = 0;
 			else gridX ++;
 		}
 	
@@ -42,7 +44,8 @@
 		if (!global.PD and !global.HD and !global.HL and !global.HR and !global.PL and !global.PR){
 			audio_play_sound(snd_typewriter, 5, false);
 		}
-			if (gridY - 1) < 0 gridY = (yLetters - 1);
+			if (gridY = 0 and gridX > 5 and gridX != 9) gridY = 1;
+			else if (gridY - 1) < 0 gridY = (yLetters - 1);
 			else gridY --;
 		}
 	
@@ -50,7 +53,8 @@
 		if (!global.PU and !global.HU and !global.HL and !global.HR and !global.PL and !global.PR){
 			audio_play_sound(snd_typewriter, 5, false);
 		}
-			if (gridY + 1) >= yLetters gridY = 0;
+			if (gridY = 1 and gridX > 5 and gridX != 9) gridY = 0;
+			else if (gridY + 1) >= yLetters gridY = 0;
 			else gridY ++;
 		}
 		
@@ -68,12 +72,14 @@ if (global.POK){
 	var newLetter = a_letters[gridX, gridY];
 	
 	//Save the new name to the hero
-	if (newLetter == "OK" and currentName != ""and currentName != " "and currentName != "  " and currentName != "   "and currentName != "    "and currentName != "     "and currentName != "      "and currentName != "       " and currentName != "        "){
+	if (newLetter == "OK" and currentName != ""){
 		global.playerName = currentName;
 		audio_play_sound(snd_select, 5, false);
+		instance_destroy(obj_textbox);
+		instance_destroy(ev_intro);
 		instance_create_layer(0,0, "Instances", ev_intro_2);
-		instance_destroy();
-	} else if(newLetter == "OK" and (currentName == ""or currentName == " "or currentName == "  " or currentName == "   "or currentName == "    "or currentName == "     "or currentName == "      "or currentName == "       " or currentName == "        ")){
+		instance_destroy(self);
+	} else if(newLetter == "OK" and currentName == ""){
 		audio_play_sound(snd_buzz, 6, false);
 	}
 	
@@ -81,7 +87,7 @@ if (global.POK){
 	letterCount = string_length(currentName);
 		
 	//Add letter to name (check if it's not the OK button before adding)
-	if (newLetter != "OK") and (letterCount < MAX_LETTERS_IN_NAME) and (!instance_exists(obj_textbox)){
+	if ((newLetter != "OK") and (letterCount < MAX_LETTERS_IN_NAME) and newLetter != " "){
 		audio_play_sound(snd_select, 5, false);
 		
 		//CHANGE TO LOWER CASE IF NEEDED
@@ -115,8 +121,10 @@ if (global.PCAN){
 
 #region CHANGE CAPITALISATION
 
-if (global.PSEL){
-	showLowerCase = !showLowerCase;
+if (string_length(currentName) = 0){
+	showLowerCase = false;
+} else {
+	showLowerCase = true;
 }
 
 #endregion

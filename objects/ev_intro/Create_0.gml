@@ -11,16 +11,14 @@ text = [
 		"It has been a while.",
 		"If you don't remember, that is fine. I'll give you a little reminder.",
 		"I am your conscience. We haven't had a talk in quite a while.",
-		"I don't blame you. People are often so busy with their lives that they simply go through the motions without taking a moment to stop and reflect...",
-		"But since we've been disconnected for quite some time, I'd like you to remind me what name you go by.",
-		"Please enter your name.",
-		"...",
-		"...",
+		"People are often so busy with their lives that they simply go through the motions without taking a moment to stop and reflect...",
+		"But since we've been apart for quite some time, I'd like you to remind me what name you go by.",
+		"Please enter your name. Use backspace/X to delete.",
 		];
 portrait_index = noone;
 speakers = [id, id, id, id, id,
-			id, id, id, id];
+			id, id];
 next_line = [0, 0, 0, 0, 0, 
-			 0, 0, 0, 0];
+			 0, 0];
 scripts = [-1, -1, -1, -1, -1, 
-		   -1, -1, [create_name_creator], -1];
+		   [create_name_creator], -1];

@@ -1,24 +1,26 @@
 
 
 if(keyboard_check_pressed(interact_key) or keyboard_check_pressed(other_interact_key) or gamepad_button_check_pressed(0,interact_button)){
-	if(!choice_dialogue and counter < str_len){ counter = str_len; }
-	else if(page < array_length_1d(text) - 1){
+	if (proceed){
+		if(!choice_dialogue and counter < str_len){ counter = str_len; }
+		else if(page < array_length_1d(text) - 1){
 		
-		event_perform(ev_other, ev_user2);
+			event_perform(ev_other, ev_user2);
 
-		var line = next_line[page];
-		if(choice_dialogue) line = line[choice];
+			var line = next_line[page];
+			if(choice_dialogue) line = line[choice];
 		
-		if(line == 0) page++;
-		else if(line == -1){ instance_destroy(); exit; }
-		else page = line;
+			if(line == 0) page++;
+			else if(line == -1){ instance_destroy(); exit; }
+			else page = line;
 		
-		event_perform(ev_other, ev_user1);
+			event_perform(ev_other, ev_user1);
 		
-	} else {  
-		event_perform(ev_other, ev_user2); 
-		instance_destroy(); 
-		}
+		} else {  
+			event_perform(ev_other, ev_user2); 
+			instance_destroy(); 
+			}
+	}
 }
 
 if(choice_dialogue){
