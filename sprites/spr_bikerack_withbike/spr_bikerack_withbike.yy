@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_bikerack_withbike",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"41a3b5a8-f8ff-4f02-b89c-9155d45b4475","path":"sprites/spr_bikerack_withbike/spr_bikerack_withbike.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"41a3b5a8-f8ff-4f02-b89c-9155d45b4475","path":"sprites/spr_bikerack_withbike/spr_bikerack_withbike.yy",},"LayerId":{"name":"54b0053a-5911-4fb4-b2db-d11e650f9d32","path":"sprites/spr_bikerack_withbike/spr_bikerack_withbike.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bikerack_withbike","path":"sprites/spr_bikerack_withbike/spr_bikerack_withbike.yy",},"resourceVersion":"1.0","name":"41a3b5a8-f8ff-4f02-b89c-9155d45b4475","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"41a3b5a8-f8ff-4f02-b89c-9155d45b4475",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_bikerack_withbike","path":"sprites/spr_bikerack_withbike/spr_bikerack_withbike.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_bikerack_withbike",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 5.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"ffdd36b3-3c75-4fd8-b38d-400927c7efad","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"41a3b5a8-f8ff-4f02-b89c-9155d45b4475","path":"sprites/spr_bikerack_withbike/spr_bikerack_withbike.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 48,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_bikerack_withbike","path":"sprites/spr_bikerack_withbike/spr_bikerack_withbike.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_bikerack_withbike",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"54b0053a-5911-4fb4-b2db-d11e650f9d32","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"54b0053a-5911-4fb4-b2db-d11e650f9d32","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "The Park",
     "path": "folders/Sprites/Overworld/InanimateObj/CitySprites/The Park.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_bikerack_withbike",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

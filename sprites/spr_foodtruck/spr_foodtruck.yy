@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_foodtruck",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 16,
   "gridY": 16,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"98c900ed-a722-4021-8742-b482b658f604","path":"sprites/spr_foodtruck/spr_foodtruck.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"98c900ed-a722-4021-8742-b482b658f604","path":"sprites/spr_foodtruck/spr_foodtruck.yy",},"LayerId":{"name":"3fbf77e9-a5f1-44f1-9e2f-8cf1db2ddf47","path":"sprites/spr_foodtruck/spr_foodtruck.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_foodtruck","path":"sprites/spr_foodtruck/spr_foodtruck.yy",},"resourceVersion":"1.0","name":"98c900ed-a722-4021-8742-b482b658f604","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"98c900ed-a722-4021-8742-b482b658f604",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_foodtruck","path":"sprites/spr_foodtruck/spr_foodtruck.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_foodtruck",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 5.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"57685d3c-0b28-4647-99c6-da467bfe233b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"98c900ed-a722-4021-8742-b482b658f604","path":"sprites/spr_foodtruck/spr_foodtruck.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 122,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_foodtruck","path":"sprites/spr_foodtruck/spr_foodtruck.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_foodtruck",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3fbf77e9-a5f1-44f1-9e2f-8cf1db2ddf47","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3fbf77e9-a5f1-44f1-9e2f-8cf1db2ddf47","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "The Park",
     "path": "folders/Sprites/Overworld/InanimateObj/CitySprites/The Park.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_foodtruck",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_kat_lookright",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,13 +27,12 @@
   "gridX": 17,
   "gridY": 17,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"9ed9e493-b21e-4722-81c6-0401b4b67b43","path":"sprites/spr_kat_lookright/spr_kat_lookright.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9ed9e493-b21e-4722-81c6-0401b4b67b43","path":"sprites/spr_kat_lookright/spr_kat_lookright.yy",},"LayerId":{"name":"51487d3c-4bb1-4359-94b0-58d8ee77c34d","path":"sprites/spr_kat_lookright/spr_kat_lookright.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"9ed9e493-b21e-4722-81c6-0401b4b67b43","path":"sprites/spr_kat_lookright/spr_kat_lookright.yy",},"LayerId":{"name":"cff44ad9-a33a-4d49-aed4-197ad4f89bb6","path":"sprites/spr_kat_lookright/spr_kat_lookright.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_kat_lookright","path":"sprites/spr_kat_lookright/spr_kat_lookright.yy",},"resourceVersion":"1.0","name":"9ed9e493-b21e-4722-81c6-0401b4b67b43","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9ed9e493-b21e-4722-81c6-0401b4b67b43",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_kat_lookright","path":"sprites/spr_kat_lookright/spr_kat_lookright.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_kat_lookright",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 6.0,
@@ -38,12 +40,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"6fd25413-b6d4-4a52-843d-30af8afd74bc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9ed9e493-b21e-4722-81c6-0401b4b67b43","path":"sprites/spr_kat_lookright/spr_kat_lookright.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"6fd25413-b6d4-4a52-843d-30af8afd74bc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9ed9e493-b21e-4722-81c6-0401b4b67b43","path":"sprites/spr_kat_lookright/spr_kat_lookright.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -59,23 +61,14 @@
     "yorigin": 68,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_kat_lookright","path":"sprites/spr_kat_lookright/spr_kat_lookright.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_kat_lookright",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"51487d3c-4bb1-4359-94b0-58d8ee77c34d","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":false,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"cff44ad9-a33a-4d49-aed4-197ad4f89bb6","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"51487d3c-4bb1-4359-94b0-58d8ee77c34d","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cff44ad9-a33a-4d49-aed4-197ad4f89bb6","visible":false,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Katarina",
     "path": "folders/Sprites/Overworld/Characters/Katarina.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_kat_lookright",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

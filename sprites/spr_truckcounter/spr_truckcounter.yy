@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_truckcounter",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 32,
   "gridY": 32,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a6db8c55-6069-459f-9fd1-59bdf4f573dc","path":"sprites/spr_truckcounter/spr_truckcounter.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a6db8c55-6069-459f-9fd1-59bdf4f573dc","path":"sprites/spr_truckcounter/spr_truckcounter.yy",},"LayerId":{"name":"7a0e3766-f005-4067-87d3-00f7148ecdcb","path":"sprites/spr_truckcounter/spr_truckcounter.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_truckcounter","path":"sprites/spr_truckcounter/spr_truckcounter.yy",},"resourceVersion":"1.0","name":"a6db8c55-6069-459f-9fd1-59bdf4f573dc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a6db8c55-6069-459f-9fd1-59bdf4f573dc",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_truckcounter","path":"sprites/spr_truckcounter/spr_truckcounter.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_truckcounter",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 5.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"624b6f6d-3b49-4c57-9e87-a5100eb4e9ba","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a6db8c55-6069-459f-9fd1-59bdf4f573dc","path":"sprites/spr_truckcounter/spr_truckcounter.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 64,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_truckcounter","path":"sprites/spr_truckcounter/spr_truckcounter.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_truckcounter",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7a0e3766-f005-4067-87d3-00f7148ecdcb","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7a0e3766-f005-4067-87d3-00f7148ecdcb","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "The Park",
     "path": "folders/Sprites/Overworld/InanimateObj/CitySprites/The Park.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_truckcounter",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

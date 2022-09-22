@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_park_tree",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,13 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"85db9dce-b024-47ae-bde8-5060891439d9","path":"sprites/spr_park_tree/spr_park_tree.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"85db9dce-b024-47ae-bde8-5060891439d9","path":"sprites/spr_park_tree/spr_park_tree.yy",},"LayerId":{"name":"b5910b77-de06-4301-b08c-2c5c80e91b84","path":"sprites/spr_park_tree/spr_park_tree.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"85db9dce-b024-47ae-bde8-5060891439d9","path":"sprites/spr_park_tree/spr_park_tree.yy",},"LayerId":{"name":"ab5572a5-6de4-4cdf-94e2-ecdd6c3eaaf7","path":"sprites/spr_park_tree/spr_park_tree.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_park_tree","path":"sprites/spr_park_tree/spr_park_tree.yy",},"resourceVersion":"1.0","name":"85db9dce-b024-47ae-bde8-5060891439d9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"85db9dce-b024-47ae-bde8-5060891439d9",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_park_tree","path":"sprites/spr_park_tree/spr_park_tree.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_park_tree",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 5.0,
@@ -41,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"48b52ee3-f798-4c7e-a6be-fabd1a4376f8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"85db9dce-b024-47ae-bde8-5060891439d9","path":"sprites/spr_park_tree/spr_park_tree.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -59,23 +61,14 @@
     "yorigin": 108,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_park_tree","path":"sprites/spr_park_tree/spr_park_tree.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_park_tree",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b5910b77-de06-4301-b08c-2c5c80e91b84","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"ab5572a5-6de4-4cdf-94e2-ecdd6c3eaaf7","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b5910b77-de06-4301-b08c-2c5c80e91b84","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ab5572a5-6de4-4cdf-94e2-ecdd6c3eaaf7","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "The Park",
     "path": "folders/Sprites/Overworld/InanimateObj/CitySprites/The Park.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_park_tree",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

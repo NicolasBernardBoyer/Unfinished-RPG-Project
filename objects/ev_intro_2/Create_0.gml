@@ -3,19 +3,25 @@ visible = false;
 alarm[0] = -1;
 
 global.name_text_col = c_gray;
-voice = snd_meow;
-name = "???";
-text = [
-		global.playerName + "... huh.",
-		"That's a nice name. Uh... I'm sure people say that about every name.",
-		"Unless you're named something like ''Eugene'', which just sounds silly. Imagine being named Eugene.",
-		"Well " + global.playerName + ", I hate to interrupt our conversation like this, but I gotta get up. It's a work day.",
-		"I hope that I won't be bothering you again. Sorry 'bout that. That is, unless you want me to.",
-		"Alrighty then, time to wake up.",
-		"Toodles!",
-		"Coincidentally, you also need to wake up to go to work.",
-		"...",
-		];
+voice = snd_typewriter;
+name = "";
+if (global.playerName = "Noa"){
+	text = [
+			global.playerName + "...I see it hasn't changed.",
+			"Next, let us evaluate how cruel you would like the world to be towards you.",
+			"Always remember that the harsher the world treats you, the stronger you'll be...",
+			"Select your difficulty."
+			];
+} else {
+	text = [
+			global.playerName + "...of course.",
+			"Next, let us evaluate how cruel you would like the world to be towards you.",
+			"Always remember that the harsher the world treats you, the stronger you'll be...",
+			"Select your difficulty."
+			];
+}
+		
+		
 portrait_index = noone;
 speakers = [id, id, id, id, id, id,
 			id, obj_game, id];

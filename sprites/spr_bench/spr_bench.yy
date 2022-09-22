@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_bench",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 24,
   "gridY": 16,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ef210376-8fc7-4e3d-ac92-34014ef8cc39","path":"sprites/spr_bench/spr_bench.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ef210376-8fc7-4e3d-ac92-34014ef8cc39","path":"sprites/spr_bench/spr_bench.yy",},"LayerId":{"name":"1d69f100-e40e-4ed7-befd-eb6f1d002ed3","path":"sprites/spr_bench/spr_bench.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bench","path":"sprites/spr_bench/spr_bench.yy",},"resourceVersion":"1.0","name":"ef210376-8fc7-4e3d-ac92-34014ef8cc39","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ef210376-8fc7-4e3d-ac92-34014ef8cc39",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_bench","path":"sprites/spr_bench/spr_bench.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_bench",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 5.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"2bb729f2-7320-47d3-b98b-f0e9aa282afd","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ef210376-8fc7-4e3d-ac92-34014ef8cc39","path":"sprites/spr_bench/spr_bench.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_bench","path":"sprites/spr_bench/spr_bench.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_bench",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1d69f100-e40e-4ed7-befd-eb6f1d002ed3","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1d69f100-e40e-4ed7-befd-eb6f1d002ed3","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "The Park",
     "path": "folders/Sprites/Overworld/InanimateObj/CitySprites/The Park.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_bench",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

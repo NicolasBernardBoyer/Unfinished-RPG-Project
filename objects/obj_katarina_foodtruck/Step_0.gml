@@ -9,19 +9,16 @@ if (instance_exists(obj_facetextbox)){
 
 if (run2ndTextbox = true){
 	instance_destroy(obj_textbox);
-	create_textbox(text2, speakers2, next_line2, scripts2);
+	portrait_index = 4;
+	create_facetextbox(text2, speakers2, next_line2, scripts2);
 	run2ndTextbox = false;
-}
-
-if (run3rdTextbox = true){
-	instance_destroy(obj_textbox);
-	create_facetextbox(text3, speakers3, next_line3, scripts3);
-	run3rdTextbox = false;
 }
 
 if (run4thTextbox = true){
 	instance_destroy(obj_textbox);
-	create_facetextbox(text4, speakers4, next_line4, scripts4);
+	name = "";
+	voice = snd_typewriter;
+	create_textbox(text4, speakers4, next_line4, scripts4);
 	run4thTextbox = false;
 }
 
@@ -67,9 +64,9 @@ if (move_getup_y2 = false){
 		
 	anotherTB = time_source_create(time_source_game, 30, time_source_units_frames, function()
 	{
-		if (!instance_exists(obj_textbox) and run5thTextbox){
-			create_facetextbox(text5, speakers5, next_line5, scripts5);
-			run5thTextbox = false;
+		if (!instance_exists(obj_textbox) and run3rdTextbox){
+			create_facetextbox(text3, speakers3, next_line3, scripts3);
+			run3rdTextbox = false;
 		}
 		time_source_stop(approach);
 	}, [], -1);
