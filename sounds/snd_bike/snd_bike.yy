@@ -1,7 +1,10 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_bike",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.5,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -17,8 +20,4 @@
     "name": "Sound Effects",
     "path": "folders/Sounds/Sound Effects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_bike",
-  "tags": [],
-  "resourceType": "GMSound",
 }

@@ -26,20 +26,11 @@ gp_input_esc_p		 = gamepad_button_check_pressed(0,global.gp_esc);
 
 var ds_grid = page, ds_height = ds_grid_height(ds_grid);
 
-if (input_revert_p or gp_input_revert_p){
-	//audio
-	audio_play_sound(global.s_back, 5, false);
-	if (page = 0) {
-		global.pause = false;
-	} else if (page = 1) {
-		page--;
-	} else {
-		page = 1;
-	}
-}
+//if (menu_pages[page] = ds_menu_difficulty and inputting = false and ds_grid[# 1, menu_option[page]] = menu_element_type.toggle){
+//	ds_grid[# 3, menu_option[page]] = global.difficultySet;
+//}
 
 if(inputting){
-	
 	switch(ds_grid[# 1, menu_option[page]]){
 		case menu_element_type.shift:
 			var hinput = keyboard_check_pressed(global.key_right) - keyboard_check_pressed(global.key_left);
@@ -95,7 +86,6 @@ if(inputting){
 			
 		break;
 	}
-	
 } else {
 	var ochange = input_down_p - input_up_p;
 	var gp_ochange = gp_input_down_p - gp_input_up_p;
@@ -105,6 +95,17 @@ if(inputting){
 		menu_option[page] += gp_ochange;
 		if(menu_option[page] > ds_height-1) { menu_option[page] = 0; }
 		if(menu_option[page] < 0) { menu_option[page] = ds_height -1; }
+	}
+		if (input_revert_p or gp_input_revert_p){
+		//audio
+		audio_play_sound(global.s_back, 5, false);
+		if (page = 0) {
+			global.pause = false;
+		} else if (page = 1) {
+			page--;
+		} else {
+			page = 1;
+		}
 	}
 }
 

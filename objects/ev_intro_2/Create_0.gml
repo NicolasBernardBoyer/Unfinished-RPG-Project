@@ -3,11 +3,15 @@ difficulty_page = 0;
 Xdifficulty = (global.game_width/2)-30;
 Ydifficulty = (global.game_height/2)-35;
 
+nameok = true;
+
 global.name_text_col = c_gray;
 voice = snd_typewriter;
 name = "";
 if (global.playerName = "Noa"){
 	text = [
+			["    Yes", "    No"],
+			"Please enter your name.",
 			global.playerName + "... I see it hasn't changed.",
 			"Next, let us evaluate how cruel you would like the world to be towards you.",
 			"Always remember that the harsher the world treats you, the stronger you'll be.",
@@ -15,6 +19,8 @@ if (global.playerName = "Noa"){
 			];
 } else {
 	text = [
+			["    Yes", "    No"],
+			"Please enter your name.",
 			global.playerName + "... of course.",
 			"Next, let us evaluate how cruel you would like the world to be towards you.",
 			"Always remember that the harsher the world treats you, the stronger you'll be.",
@@ -23,6 +29,6 @@ if (global.playerName = "Noa"){
 }
 	
 portrait_index = noone;
-speakers = [id, id, id, id];
-next_line = [0, 0, 0, 0];
-scripts = [-1, -1, [change_variable, id, "draw_difficulty", true], -1];
+speakers = [id,id,id, id, id, id];
+next_line = [[2,0],0, 0, 0, 0,0];
+scripts = [[[change_variable, id, "nameok", false],[create_name_creator]],-1,-1, -1, [change_variable, id, "draw_difficulty", true], -1];

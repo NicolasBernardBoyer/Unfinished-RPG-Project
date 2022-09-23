@@ -9,6 +9,7 @@ global.highbox = false;
 facing = 0;
 
 global.gameSaveSlot = 0;
+global.difficultySet = 0;
 
 //Player Position
 global.targetX = 0;

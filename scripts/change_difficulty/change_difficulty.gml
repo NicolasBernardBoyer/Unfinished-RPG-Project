@@ -7,14 +7,17 @@ function change_difficulty(){
 		switch(argument0){
 			case 0:
 				//easy
+				change_difficulty_nonmenu(0);
 			break;
 			
 			case 1:
 				//normal
+				change_difficulty_nonmenu(1);
 			break;
 			
 			case 2:
 				//hard
+				change_difficulty_nonmenu(2);
 			break;
 		}
 	}

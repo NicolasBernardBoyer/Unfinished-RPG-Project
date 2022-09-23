@@ -77,7 +77,9 @@ if (global.POK){
 		audio_play_sound(snd_select, 5, false);
 		instance_destroy(obj_textbox);
 		instance_destroy(ev_intro);
-		instance_create_layer(0,0, "Instances", ev_intro_2);
+		if (!instance_exists(ev_intro_2)){
+			instance_create_layer(0,0, "Instances", ev_intro_2);
+		}
 		instance_destroy(self);
 	} else if(newLetter == "OK" and currentName == ""){
 		audio_play_sound(snd_buzz, 6, false);
