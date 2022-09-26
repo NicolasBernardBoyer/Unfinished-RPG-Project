@@ -8,4 +8,4 @@ text = ["Most of the books here were mailed to you by your grandfather, who is n
 portrait_index = noone;
 speakers = [id, id];
 next_line = [0, 0];
-scripts = [-1];
+scripts = [-1,-1];
