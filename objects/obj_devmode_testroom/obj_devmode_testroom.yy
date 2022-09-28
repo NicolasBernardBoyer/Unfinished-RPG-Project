@@ -1,7 +1,11 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_devmode_testroom",
   "spriteId": null,
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": true,
   "parentObjectId": null,
@@ -18,16 +22,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "meta",
-    "path": "folders/Objects/meta.yy",
+    "name": "dev stuff",
+    "path": "folders/Objects/dev stuff.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_devmode_testroom",
-  "tags": [],
-  "resourceType": "GMObject",
 }

@@ -4,6 +4,7 @@
 - Gamemaker Rob (programming help)
 - FriendlyCosmonaut (programming help)
 - Shaun Spalding (programming help)
+- Matharoo (programming help)
 - Yann Le Bihan (Yanooki) (character designs)
 - Whip sfx (SciFiSounds)
 - Bike sfx (L.Finck)

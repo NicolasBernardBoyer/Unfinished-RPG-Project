@@ -27,7 +27,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "meta",
-    "path": "folders/Objects/meta.yy",
+    "name": "dev stuff",
+    "path": "folders/Objects/dev stuff.yy",
   },
 }

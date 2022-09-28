@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_santa",
   "spriteId": {
     "name": "alexportrait2",
     "path": "sprites/alexportrait2/alexportrait2.yy",
@@ -28,11 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "dev stuff",
+    "path": "folders/Objects/dev stuff.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_santa",
-  "tags": [],
-  "resourceType": "GMObject",
 }

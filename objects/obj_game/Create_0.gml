@@ -6,6 +6,9 @@ radius = 8;
 active_textbox = noone;
 global.highbox = false;
 
+global.partSystem = part_system_create();
+part_system_depth(global.partSystem, 100);
+
 facing = 0;
 
 global.gameSaveSlot = 0;
