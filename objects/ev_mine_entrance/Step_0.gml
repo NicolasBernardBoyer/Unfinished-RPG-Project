@@ -14,6 +14,15 @@ switch (cutProg){
 	}
 	break;
 	case 1:
-	
+	with (obj_bubble){
+		if (sprite_index != noone){
+			sprite_index = spr_bubble_shield_break;
+			image_speed = 1;
+			if (sprite_index = spr_bubble_shield_break and image_index = 2){
+				part_particles_create(global.partSystem, x, y-50, global.ptGlass, 80);
+				sprite_index = noone;
+			}
+		}
+	}
 	break;
 }

@@ -1,3 +1,13 @@
 global.playerName = "Nick";
-instance_create_layer(138, 8, "Instances", obj_player);
-room_goto(rm_falling_down);
+instance_create_layer(2, 224, "Instances", obj_player);
+obj_player.sprite_index = spr_player_falling_coat_left;
+instance_create_layer(2, 224, "Instances", obj_kat);
+obj_kat.x = 160;
+obj_kat.y = 2;
+instance_create_layer(2, 224, "Instances", obj_bubble);
+obj_bubble.image_index = 4;
+obj_bubble.image_speed = 0;
+obj_bubble.x = 191;
+obj_bubble.y = 30;
+obj_kat.sprite_index = spr_kat_fall;
+room_goto(rm_mine_entrance);

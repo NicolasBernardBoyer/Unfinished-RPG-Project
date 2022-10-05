@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tset_mine",
   "spriteId": {
     "name": "spr_tile_mine",
     "path": "sprites/spr_tile_mine/spr_tile_mine.yy",
@@ -20,18 +23,18 @@
   "tile_count": 256,
   "autoTileSets": [],
   "tileAnimationFrames": [
-    {"frames":[
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_1","frames":[
         1,
         17,
-      ],"resourceVersion":"1.0","name":"animation_1","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_2","frames":[
         17,
         33,
-      ],"resourceVersion":"1.0","name":"animation_2","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_3","frames":[
         33,
         1,
-      ],"resourceVersion":"1.0","name":"animation_3","tags":[],"resourceType":"GMTileAnimation",},
+      ],},
   ],
   "tileAnimationSpeed": 10.0,
   "tileAnimation": {
@@ -560,8 +563,4 @@
     "name": "Tile Sets",
     "path": "folders/Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "tset_mine",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }
