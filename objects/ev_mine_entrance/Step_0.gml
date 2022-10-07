@@ -24,5 +24,30 @@ switch (cutProg){
 			}
 		}
 	}
+	if (obj_bubble.sprite_index = noone){
+		obj_player.sprite_index = spr_player_face_fall;
+		curvePos += curveSpeed;
+		//curvePos = curvePos mod 1;
+		//Apply curve's x and y channel
+		var _curveStruct = animcurve_get(curve);
+		//channels
+		var _ychannel = animcurve_get_channel(_curveStruct, "y");
+		var _xchannel = animcurve_get_channel(_curveStruct, "x");
+		//values
+		var _yvalue = animcurve_channel_evaluate(_ychannel, curvePos);
+		var _xvalue = animcurve_channel_evaluate(_xchannel, curvePos);		
+
+		if (obj_player.y <= 190){
+			obj_player.y += _yvalue;
+			obj_kat.y += _yvalue;
+		}
+		if (obj_player.x <= 260){
+			obj_player.x += _xvalue;
+			obj_kat.x -= _xvalue;
+		}
+	}
+	break;
+	case 2:
+	
 	break;
 }
