@@ -10,6 +10,7 @@
     {"id":{"name":"event_register_script","path":"scripts/event_register_script/event_register_script.yy",},"order":1,},
     {"id":{"name":"obj_davecouch","path":"objects/obj_davecouch/obj_davecouch.yy",},"order":7,},
     {"id":{"name":"obj_exclamation","path":"objects/obj_exclamation/obj_exclamation.yy",},"order":15,},
+    {"id":{"name":"spr_kat_landing","path":"sprites/spr_kat_landing/spr_kat_landing.yy",},"order":22,},
     {"id":{"name":"rm_mine_default","path":"rooms/rm_mine_default/rm_mine_default.yy",},"order":1,},
     {"id":{"name":"spr_kat_staffbubble","path":"sprites/spr_kat_staffbubble/spr_kat_staffbubble.yy",},"order":20,},
     {"id":{"name":"spr_dragon_plush","path":"sprites/spr_dragon_plush/spr_dragon_plush.yy",},"order":9,},
