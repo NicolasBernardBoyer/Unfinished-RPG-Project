@@ -26,6 +26,7 @@ switch (cutProg){
 	}
 	if (obj_bubble.sprite_index = noone){
 		obj_player.sprite_index = spr_player_face_fall;
+		obj_kat.sprite_index = spr_kat_landing;
 		curvePos += curveSpeed;
 		//curvePos = curvePos mod 1;
 		//Apply curve's x and y channel
