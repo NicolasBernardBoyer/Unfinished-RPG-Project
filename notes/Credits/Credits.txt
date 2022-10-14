@@ -10,4 +10,6 @@
 - Bike sfx (L.Finck)
 - Birds sfx (InspectorJ)
 - Wind sfx (jorge0000)
+- Glass breaking sfx (P.Jezisek)
+- Cat screaming sfx (Sound laboratory)
 

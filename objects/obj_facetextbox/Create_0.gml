@@ -13,7 +13,7 @@ box_x = 32;
 
 if(global.highbox = true){
 	box_y = 0;
-	port_y = port_height - 2;
+	port_y = box_height-10;
 	frame_y = 6;
 } else {
 	box_y = 200;

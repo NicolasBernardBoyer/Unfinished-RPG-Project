@@ -62,7 +62,7 @@ next_line2 = [-1, 0];
 scripts2 = [[change_variable, id, "sprite_index", spr_kat_sit_getup, id, "portrait_index", 10, id, "run3rdTextbox", true], -1];
 
 text3 = ["First, let's go over some rules.",
-		"No.1, don't tell the boss if I'm on my phone when I'm supposed to be working.",
+		"No.1, don't tell the boss when I'm slacking off.",
 		"That one's really important, so don't forget it.",
 		"..."];
 speakers3 = [id,id,id,id];

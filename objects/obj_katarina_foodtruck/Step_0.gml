@@ -33,6 +33,7 @@ if (sprite_index = spr_kat_sit_getup2 and image_index = 4){
 	if (move_getup_y = true){
 		image_speed = 0;
 		y+= 5;
+		audio_play_sound(snd_move, 5, false);
 		move_getup_y = false;
 	}
 

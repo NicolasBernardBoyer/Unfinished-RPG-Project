@@ -10,4 +10,6 @@ obj_bubble.image_speed = 0;
 obj_bubble.x = 191;
 obj_bubble.y = 30;
 obj_kat.sprite_index = spr_kat_fall;
+global.canPause = false;
+obj_player.canMove = false;
 room_goto(rm_mine_entrance);
