@@ -36,41 +36,18 @@ if (sprite_index = spr_kat_sit_getup2 and image_index = 4){
 		audio_play_sound(snd_move, 5, false);
 		move_getup_y = false;
 	}
-
-	swapSprite = time_source_create(time_source_game, 30, time_source_units_frames, function()
-	{
-		if (move_getup_y2 = true){
-			sprite_index = spr_kat_leftwalk;
-			image_index = 0;
-			y-= 5;
-			move_getup_y2 = false;
-		}
-		time_source_stop(swapSprite);
-	}, [], -1);
 	time_source_start(swapSprite);
 }
 
 if (move_getup_y2 = false){
-	approach = time_source_create(time_source_game, 60, time_source_units_frames, function()
-	{
-		image_speed = 1;
-		x = Approach(x, 164, 1);
-	}, [], -1);
 	time_source_start(approach);
-	
+	if (image_speed = 1){
+		x = Approach(x, 164, 1);
+	}
 	if (x = 164){
-		time_source_stop(approach);
 		image_index = 0;
 		image_speed = 0;
-		
-	anotherTB = time_source_create(time_source_game, 30, time_source_units_frames, function()
-	{
-		if (!instance_exists(obj_textbox) and run3rdTextbox){
-			create_facetextbox(text3, speakers3, next_line3, scripts3);
-			run3rdTextbox = false;
-		}
 		time_source_stop(approach);
-	}, [], -1);
 	time_source_start(anotherTB);
 	}
 }

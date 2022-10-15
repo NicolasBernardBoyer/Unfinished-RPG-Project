@@ -177,6 +177,7 @@
     {"id":{"name":"create_menu_page","path":"scripts/create_menu_page/create_menu_page.yy",},"order":0,},
     {"id":{"name":"obj_icon","path":"objects/obj_icon/obj_icon.yy",},"order":5,},
     {"id":{"name":"spr_bookshelf","path":"sprites/spr_bookshelf/spr_bookshelf.yy",},"order":1,},
+    {"id":{"name":"Todo List","path":"notes/Todo List/Todo List.yy",},"order":1,},
     {"id":{"name":"backpack_pickup","path":"scripts/backpack_pickup/backpack_pickup.yy",},"order":0,},
     {"id":{"name":"rm_waytowork","path":"rooms/rm_waytowork/rm_waytowork.yy",},"order":0,},
     {"id":{"name":"spr_me","path":"sprites/spr_me/spr_me.yy",},"order":1,},

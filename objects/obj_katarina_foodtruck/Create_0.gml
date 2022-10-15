@@ -1,3 +1,28 @@
+swapSprite = time_source_create(time_source_game, 30, time_source_units_frames, function()
+	{
+		if (move_getup_y2 = true){
+			sprite_index = spr_kat_leftwalk;
+			image_index = 0;
+			y-= 5;
+			move_getup_y2 = false;
+		}
+		time_source_stop(swapSprite);
+	}, [], 1);
+	
+approach = time_source_create(time_source_game, 60, time_source_units_frames, function()
+	{
+		image_speed = 1;
+	}, [], 1);
+	
+anotherTB = time_source_create(time_source_game, 30, time_source_units_frames, function()
+{
+	if (!instance_exists(obj_textbox) and run3rdTextbox){
+		create_facetextbox(text3, speakers3, next_line3, scripts3);
+		run3rdTextbox = false;
+	}
+	time_source_stop(approach);
+}, [], 1);
+
 visible = false;
 
 sprite_index = spr_kat_sit;

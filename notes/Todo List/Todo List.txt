@@ -1,0 +1,7 @@
+- Change dialogue for flowers
+- Fix naming when going back
+- Add additional dialogue when getting out of bed
+- Add additional dialogue for checking kitchen
+- Change inventory functionality
+- Add walking sfx
+- Add more touches to player hair
