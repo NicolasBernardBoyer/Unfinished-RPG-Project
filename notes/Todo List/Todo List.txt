@@ -4,4 +4,3 @@
 - Add additional dialogue for checking kitchen
 - Change inventory functionality
 - Add walking sfx
-- Add more touches to player hair
