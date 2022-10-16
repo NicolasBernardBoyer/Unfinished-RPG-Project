@@ -79,6 +79,9 @@ if (global.POK){
 		instance_destroy(ev_intro);
 		if (!instance_exists(ev_intro_2)){
 			instance_create_layer(0,0, "Instances", ev_intro_2);
+		} else {
+			instance_destroy(ev_intro_2);
+			instance_create_layer(0,0, "Instances", ev_intro_2);
 		}
 		instance_destroy(self);
 	} else if(newLetter == "OK" and currentName == ""){

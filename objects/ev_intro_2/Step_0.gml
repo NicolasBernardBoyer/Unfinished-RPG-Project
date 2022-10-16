@@ -1,6 +1,9 @@
 
-if (!instance_exists(obj_textbox)){
+if (!instance_exists(obj_textbox) and runText2 = false){
+	create_textbox(preText, preSpeakers, preNext_line, preScripts);
+} else if (!instance_exists(obj_textbox) and runText2 = true){
 	create_textbox(text, speakers, next_line, scripts);
+	runText2 = false;
 }
 
 if (draw_difficulty = true){
