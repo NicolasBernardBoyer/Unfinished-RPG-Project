@@ -12,4 +12,5 @@
 - Wind sfx (jorge0000)
 - Glass breaking sfx (P.Jezisek)
 - Cat screaming sfx (Sound laboratory)
+- Walking sfx (Gelatin)
 

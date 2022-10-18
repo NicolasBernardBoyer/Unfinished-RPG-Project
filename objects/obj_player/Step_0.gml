@@ -2,6 +2,26 @@ if (room == rm_title_screen) {
 	instance_deactivate_object(self);
 }
 
+if (room = rm_yourbedroom or room = rm_yourbathroom or room = rm_yourhallway){
+	if (image_speed != 0){
+		if (count = 0){
+			p=random_range(.9,1.1);
+			audio_sound_pitch(snd_step,p);
+			audio_play_sound(snd_step, 5, false);
+		}
+		if (image_speed = 1){
+			count++;
+		} else {
+			count +=1.5;
+		}
+		if (count >= 22){
+			count = 0;
+		}
+	} else {
+		count = 0;
+	}
+}
+
 if (!global.pause) {
 
 // Textbox interaction
@@ -65,7 +85,7 @@ if (keyboard_check_pressed(global.key_right) or keyboard_check_pressed(global.ke
 
 if ((hInput != 0 or vInput != 0) and (gp_hInput != 0 or gp_hInput != 0)){
 	dir = point_direction(0,0,hInput,vInput);
-
+	
 	hsp = hInput*spd;
 	vsp = vInput*spd;
 } else if (hInput != 0 or vInput != 0) {
@@ -85,6 +105,7 @@ if place_meeting(x + hsp, y, obj_wall)
 {
 	hsp = 0;
 	if (vsp = 0) {
+		image_speed = 0;
 		image_index = 0;
 	}
 }
@@ -92,6 +113,7 @@ if place_meeting(x, y + vsp, obj_wall)
 {
 	vsp = 0;
 	if (hsp = 0) {
+		image_speed = 0;
 		image_index = 0;
 	}
 }
@@ -99,6 +121,7 @@ if place_meeting(x + hsp, y, par_roadblock)
 {
 	hsp = 0;
 	if (vsp = 0) {
+		image_speed = 0;
 		image_index = 0;
 	}
 }
@@ -106,6 +129,7 @@ if place_meeting(x, y + vsp, par_roadblock)
 {
 	vsp = 0;
 	if (hsp = 0) {
+		image_speed = 0;
 		image_index = 0;
 	}
 } 
@@ -252,10 +276,12 @@ if (global.hasBackpack == false){
 	} else {
 		if (canMove = true){
 			image_index = 0;
+			image_speed = 0;
 			}
 		}
 	} else {
 		if (canMove = true){
+			image_speed = 0;
 			image_index = 0;
 			}
 		}

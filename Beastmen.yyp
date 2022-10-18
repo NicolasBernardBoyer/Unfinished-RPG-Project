@@ -297,6 +297,7 @@
     {"id":{"name":"spr_player_leftwalk","path":"sprites/spr_player_leftwalk/spr_player_leftwalk.yy",},"order":0,},
     {"id":{"name":"obj_devmode_testroom","path":"objects/obj_devmode_testroom/obj_devmode_testroom.yy",},"order":1,},
     {"id":{"name":"spr_player_rightwalk_bag","path":"sprites/spr_player_rightwalk_bag/spr_player_rightwalk_bag.yy",},"order":3,},
+    {"id":{"name":"snd_step","path":"sounds/snd_step/snd_step.yy",},"order":20,},
     {"id":{"name":"spr_glassParticle","path":"sprites/spr_glassParticle/spr_glassParticle.yy",},"order":2,},
     {"id":{"name":"snd_bike","path":"sounds/snd_bike/snd_bike.yy",},"order":10,},
     {"id":{"name":"spr_player_falling_coat_left","path":"sprites/spr_player_falling_coat_left/spr_player_falling_coat_left.yy",},"order":5,},
