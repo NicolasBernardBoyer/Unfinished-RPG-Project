@@ -12,13 +12,11 @@ if (room = rm_yourbedroom or room = rm_yourbathroom or room = rm_yourhallway){
 		if (image_speed = 1){
 			count++;
 		} else {
-			count +=1.5;
+			count += 1.5;
 		}
 		if (count >= 22){
 			count = 0;
 		}
-	} else {
-		count = 0;
 	}
 }
 
@@ -61,26 +59,35 @@ if (insttrans != noone) {
 // Moving (only if there isn't a textbox and the inventory isn't open)
 if (global.inventoryOpen == false and !instance_exists(obj_textbox) and obj_game.doTransition == false and global.pause == false and canMove == true) {
 
+
 // get the input direction from keys
 hInput = keyboard_check(global.key_right) - keyboard_check(global.key_left);
 vInput = keyboard_check(global.key_down) - keyboard_check(global.key_up);
 gp_hInput = gamepad_button_check(0,global.gp_right) - gamepad_button_check(0,global.gp_left);
 gp_vInput = gamepad_button_check(0,global.gp_down) - gamepad_button_check(0,global.gp_up);
 
-if (keyboard_check(ord("X")) or gamepad_button_check(0,gp_shoulderrb) or gamepad_button_check(0,gp_shoulderlb)){
-	spd = 3;
-	image_speed = 1.5;
-} else {
-	spd = 2;
-	image_speed = 1;
-}
-
 if ((hInput != 0 or vInput != 0) or (gp_hInput != 0 or gp_vInput != 0)) {
 	
 if (keyboard_check_pressed(global.key_right) or keyboard_check_pressed(global.key_left) or keyboard_check_pressed(global.key_up) or keyboard_check_pressed(global.key_down)
  or gamepad_button_check_pressed(0,global.gp_right) or gamepad_button_check_pressed(0,global.gp_left) or gamepad_button_check_pressed(0,global.gp_up) or gamepad_button_check_pressed(0,global.gp_down)) {
-	image_index = lastframe;
-	framebefore = lastframe;
+	time_source_start(checkWalk);
+}
+
+if (!keyboard_check(global.key_right) and !keyboard_check(global.key_left) and !keyboard_check(global.key_up) and !keyboard_check(global.key_down)
+ and !gamepad_button_check(0,global.gp_right) and !gamepad_button_check(0,global.gp_left) and !gamepad_button_check(0,global.gp_up) and !gamepad_button_check(0,global.gp_down)) {
+	time_source_stop(checkWalk);
+}
+	
+if (keyboard_check(ord("X")) or gamepad_button_check(0,gp_shoulderrb) or gamepad_button_check(0,gp_shoulderlb)){
+	spd = 3;
+} else {
+	spd = 2;
+}
+
+if (spd = 2){
+	image_speed = 1;
+} else {
+	image_speed = 1.5;
 }
 
 if ((hInput != 0 or vInput != 0) and (gp_hInput != 0 or gp_hInput != 0)){
@@ -136,6 +143,7 @@ if place_meeting(x, y + vsp, par_roadblock)
 
 x += hsp;
 y += vsp;
+
 
 // This region is for setting the sprite depending on the state of the player
 #region
@@ -263,7 +271,11 @@ if (global.hasBackpack == false){
 }
 
 #endregion
-	lastframe = image_index;
+	if (image_index != 3){
+		lastframe = image_index+1;
+	} else {
+		lastframe = 1;
+	}
 
 	if (framebefore == lastframe){
 		if (lastframe = 3) {
@@ -275,14 +287,14 @@ if (global.hasBackpack == false){
 
 	} else {
 		if (canMove = true){
-			image_index = 0;
-			image_speed = 0;
+				image_speed = 0;
+				time_source_start(stepLoop);
 			}
 		}
 	} else {
 		if (canMove = true){
-			image_speed = 0;
-			image_index = 0;
+				image_speed = 0;
+				time_source_start(stepLoop);
 			}
 		}
 	}

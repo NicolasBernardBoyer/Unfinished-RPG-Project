@@ -1,5 +1,7 @@
 - Change dialogue for flowers
-- Add additional dialogue when getting out of bed
 - Add additional dialogue for checking kitchen
 - Change inventory functionality
 - Change Dave text and door collision
+
+Questions to ask testers:
+- Should Dave be seen in the intro?

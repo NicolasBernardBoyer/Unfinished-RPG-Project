@@ -7,3 +7,11 @@ if (moveReady){
 		instance_create_layer(240, 143, "Instances", obj_player);
 	}
 }
+
+if (textAlarm){
+	image_speed = 1;
+	if (alarm[1] = -1){
+		alarm[1] = 60;
+	}
+	textAlarm = false;
+}

@@ -1,4 +1,5 @@
 canMove = true;
+spd = 2;
 sprite_index = spr_player_walk;
 image_index = 0;
 framebefore = 0;
@@ -17,14 +18,15 @@ active_textbox = noone;
 
 facing = 0;
 
-stepLoop = time_source_create(time_source_game, 20, time_source_units_frames, function(){
-	if (image_speed != 0) {
-		audio_play_sound(snd_step, 5, false);
-	} 
+stepLoop = time_source_create(time_source_game, 10, time_source_units_frames, function(){
+	if (!keyboard_check(vk_up or vk_down or vk_right or vk_left)){
+		image_index = 0;
+	}
 }, [], 1);
 
-stepLoopFaster = time_source_create(time_source_game, 15, time_source_units_frames, function(){
-	if (image_speed != 0) {
-		audio_play_sound(snd_step, 5, false);
-	} 
+checkWalk = time_source_create(time_source_game, 10, time_source_units_frames, function(){
+	if (keyboard_check(vk_up or vk_down or vk_right or vk_left)){
+		image_index = lastframe;
+		framebefore = lastframe;
+	}
 }, [], 1);

@@ -1,3 +1,3 @@
-image_speed = 1;
-alarm[1] = 60;
+create_textbox(itext,ispeakers,inext_line,iscripts);
+
 
