@@ -24,9 +24,10 @@ stepLoop = time_source_create(time_source_game, 10, time_source_units_frames, fu
 	}
 }, [], 1);
 
-checkWalk = time_source_create(time_source_game, 10, time_source_units_frames, function(){
-	if (keyboard_check(vk_up or vk_down or vk_right or vk_left)){
-		image_index = lastframe;
-		framebefore = lastframe;
+checkSpeed = time_source_create(time_source_game, 10, time_source_units_frames, function(){
+	if (spd = 2){
+		image_speed = 1;
+	} else {
+		image_speed = 1.5;
 	}
 }, [], 1);
