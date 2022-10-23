@@ -50,36 +50,22 @@ gp_vInput = gamepad_button_check(0,global.gp_down) - gamepad_button_check(0,glob
 
 if ((hInput != 0 or vInput != 0) or (gp_hInput != 0 or gp_vInput != 0)) {
 
-if (room = rm_yourbedroom or room = rm_yourbathroom or room = rm_yourhallway){
-		if (count = 0){
-			p=random_range(.9,1.1);
-			audio_sound_pitch(snd_step,p);
-			audio_play_sound(snd_step, 5, false);
-		}
-		if (image_speed = 1){
-			count++;
-		} else {
-			count += 1.5;
-		}
-		if (count >= 22){
-			count = 0;
-		}
+if (checkFrame){
+	framebefore = lastframe;
+	image_index = lastframe;
+	checkFrame = false;
 }
 
-
-if (keyboard_check_pressed(vk_up or vk_down or vk_right or vk_left)){
-	if (image_speed = 0){
-		image_index = lastframe;
-		framebefore = lastframe;
-	}
+if (checkFrame = false){
 	time_source_start(checkSpeed);
-	
-	if (keyboard_check(ord("X")) or gamepad_button_check(0,gp_shoulderrb) or gamepad_button_check(0,gp_shoulderlb)){
-		spd = 3;
-	} else {
-		spd = 2;
-	}	
 }
+	
+if (keyboard_check(ord("X")) or gamepad_button_check(0,gp_shoulderrb) or gamepad_button_check(0,gp_shoulderlb)){
+	spd = 3;
+} else {
+	spd = 2;
+}
+
 
 if ((hInput != 0 or vInput != 0) and (gp_hInput != 0 or gp_hInput != 0)){
 	dir = point_direction(0,0,hInput,vInput);
@@ -131,6 +117,24 @@ if place_meeting(x, y + vsp, par_roadblock)
 		image_index = 0;
 	}
 } 
+
+if (room = rm_yourbedroom or room = rm_yourbathroom or room = rm_yourhallway){
+	if (hsp != 0 or vsp != 0){
+		if (count = 0){
+			p=random_range(.9,1.1);
+			audio_sound_pitch(snd_step,p);
+			audio_play_sound(snd_step, 5, false);
+		}
+		if (image_speed = 1){
+			count++;
+		} else {
+			count += 1.5;
+		}
+		if (count >= 22){
+			count = 0;
+		}
+	}
+}
 
 x += hsp;
 y += vsp;
@@ -270,12 +274,14 @@ if (global.hasBackpack == false){
 
 	} else {
 		if (canMove = true){
+				checkFrame = true;
 				image_speed = 0;
 				time_source_start(stepLoop);
 			}
 		}
 	} else {
 		if (canMove = true){
+				checkFrame = true;
 				image_speed = 0;
 				time_source_start(stepLoop);
 			}

@@ -12,6 +12,7 @@ portrait_index = 0;
 portrait = noone;
 voice = snd_typewriter;
 name = "";
+checkFrame = true;
 
 radius = 8;
 active_textbox = noone;
@@ -24,7 +25,7 @@ stepLoop = time_source_create(time_source_game, 10, time_source_units_frames, fu
 	}
 }, [], 1);
 
-checkSpeed = time_source_create(time_source_game, 10, time_source_units_frames, function(){
+checkSpeed = time_source_create(time_source_game, 5, time_source_units_frames, function(){
 	if (spd = 2){
 		image_speed = 1;
 	} else {
