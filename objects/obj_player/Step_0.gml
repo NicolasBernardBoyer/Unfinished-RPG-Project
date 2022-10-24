@@ -41,7 +41,6 @@ if (insttrans != noone) {
 // Moving (only if there isn't a textbox and the inventory isn't open)
 if (global.inventoryOpen == false and !instance_exists(obj_textbox) and obj_game.doTransition == false and global.pause == false and canMove == true) {
 
-
 // get the input direction from keys
 hInput = keyboard_check(global.key_right) - keyboard_check(global.key_left);
 vInput = keyboard_check(global.key_down) - keyboard_check(global.key_up);
@@ -276,14 +275,18 @@ if (global.hasBackpack == false){
 		if (canMove = true){
 				checkFrame = true;
 				image_speed = 0;
-				time_source_start(stepLoop);
+				if (!instance_exists(obj_textbox)){
+					time_source_start(stepLoop);
+				} else { image_index = 0; }
 			}
 		}
 	} else {
 		if (canMove = true){
 				checkFrame = true;
 				image_speed = 0;
-				time_source_start(stepLoop);
+				if (!instance_exists(obj_textbox)){
+					time_source_start(stepLoop);
+				} else { image_index = 0; }
 			}
 		}
 	}

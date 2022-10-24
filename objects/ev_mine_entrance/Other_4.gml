@@ -6,3 +6,5 @@ obj_bubble.x = 191;
 obj_bubble.y = 30;
 obj_kat.sprite_index = spr_kat_fall;
 audio_stop_sound(snd_wind);
+obj_player.canMove = false;
+global.canPause = false;

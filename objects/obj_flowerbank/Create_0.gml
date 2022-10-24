@@ -4,9 +4,8 @@ hasText = true;
 voice = snd_typewriter;
 name = "";
 
-text = ["A block of concrete with some roses on it. They are nicely watered.",
-		"They smell like an old lady's house. The type of old lady that doesn't smoke."];
+text = ["A block of concrete with some flowers.\nA white guy dressed in white passes by to water them each day."];
 portrait_index = noone;
-speakers = [id, id];
-next_line = [0, 0];
-scripts = [-1, -1];
+speakers = [id];
+next_line = [0];
+scripts = [-1];
