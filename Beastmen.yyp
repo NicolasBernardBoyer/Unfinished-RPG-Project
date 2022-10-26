@@ -145,6 +145,7 @@
     {"id":{"name":"spr_flowerholder","path":"sprites/spr_flowerholder/spr_flowerholder.yy",},"order":6,},
     {"id":{"name":"player_approach_true","path":"scripts/player_approach_true/player_approach_true.yy",},"order":2,},
     {"id":{"name":"obj_park_bush","path":"objects/obj_park_bush/obj_park_bush.yy",},"order":3,},
+    {"id":{"name":"snd_partyup","path":"sounds/snd_partyup/snd_partyup.yy",},"order":21,},
     {"id":{"name":"par_object","path":"objects/par_object/par_object.yy",},"order":0,},
     {"id":{"name":"spr_kitchenset","path":"sprites/spr_kitchenset/spr_kitchenset.yy",},"order":14,},
     {"id":{"name":"bg_bluesky","path":"sprites/bg_bluesky/bg_bluesky.yy",},"order":0,},

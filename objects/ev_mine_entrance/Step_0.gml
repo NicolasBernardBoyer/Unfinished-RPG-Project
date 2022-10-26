@@ -59,9 +59,7 @@ switch (cutProg){
 	}
 	break;
 	case 2:
-	
 	time_source_start(part2);
-	cutProg++;
 	break;
 	case 3:
 	with obj_kat {
@@ -96,7 +94,38 @@ switch (cutProg){
 	case 5:
 	if (!instance_exists(obj_textbox)){
 		name = "";
-		voice = snd_typewriter;
+		voice = noone;
+		audio_play_sound(snd_partyup, 5, false);
 		create_textbox(text4, speakers4, next_line4, scripts4);
+	}
+	break;
+	case 6:
+	if (!instance_exists(obj_textbox)){
+		name = "Katarina";
+		voice = snd_meow;
+		portrait_index = 0;
+		time_source_start(part5);
+	}
+	break;
+	case 7:
+	if (!instance_exists(obj_textbox)){
+		with (obj_kat) {
+			if (x <= 250){
+				image_speed = 1;
+				x+=2;
+			} else if (x >= 250){
+				image_speed = 0;
+			}
+		}
+		if (obj_kat.x >= 250){
+			time_source_start(spritewait);
+		}
+	}
+	break;
+	case 8:
+	if (!instance_exists(obj_textbox)){
+		name = "";
+		voice = snd_typewriter;
+		create_textbox(text6, speakers6, next_line6, scripts6);
 	}
 }
