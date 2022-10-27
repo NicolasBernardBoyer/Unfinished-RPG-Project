@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_kat",
   "spriteId": {
     "name": "spr_kat_fall",
     "path": "sprites/spr_kat_fall/spr_kat_fall.yy",
@@ -24,15 +27,13 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Katarina",
     "path": "folders/Objects/world Objects/Characters/Katarina.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_kat",
-  "tags": [],
-  "resourceType": "GMObject",
 }

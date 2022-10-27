@@ -69,8 +69,7 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c91b5d67-26d8-45ab-a579-fdc25fabdb47","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Tail",},
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"48402ec5-db26-41b8-865a-f035be3a3881","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ce52114b-d95d-4153-90c6-51c3bd0b1803","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Tail (2)",},
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"41b775cf-e0b1-4e08-941a-163f1d55e036","visible":false,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"PlayerShadow",},
   ],
   "nineSlice": null,

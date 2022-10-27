@@ -134,6 +134,7 @@
     {"id":{"name":"obj_toilet","path":"objects/obj_toilet/obj_toilet.yy",},"order":15,},
     {"id":{"name":"spr_park_duobush","path":"sprites/spr_park_duobush/spr_park_duobush.yy",},"order":5,},
     {"id":{"name":"rm_mine_entrance","path":"rooms/rm_mine_entrance/rm_mine_entrance.yy",},"order":2,},
+    {"id":{"name":"spr_kat_giveright","path":"sprites/spr_kat_giveright/spr_kat_giveright.yy",},"order":24,},
     {"id":{"name":"obj_camreference","path":"objects/obj_camreference/obj_camreference.yy",},"order":1,},
     {"id":{"name":"swap_stats_tab","path":"scripts/swap_stats_tab/swap_stats_tab.yy",},"order":4,},
     {"id":{"name":"snd_meow","path":"sounds/snd_meow/snd_meow.yy",},"order":8,},

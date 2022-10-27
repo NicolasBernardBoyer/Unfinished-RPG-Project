@@ -1,5 +1,6 @@
 global.name_text_col = c_gray;
 cutProg = 0;
+kat = obj_kat;
 
 part2 = time_source_create(time_source_game, 2, time_source_units_seconds, function() {
 	if (!instance_exists(obj_textbox) and cutProg = 2){
@@ -34,8 +35,11 @@ part5 = time_source_create(time_source_game, 1, time_source_units_seconds, funct
 }, [], 1);
 
 spritewait = time_source_create(time_source_game, 10, time_source_units_frames, function() {
-	obj_kat.image_index = 0;
-	time_source_stop(spritewait);
+	if (cutProg = 7){
+		obj_kat.image_index = 0;
+		time_source_stop(spritewait);
+		cutProg++;
+	}
 }, [], 1);
 
 
@@ -77,5 +81,26 @@ scripts5 = [[change_variable, id, "cutProg", 7]];
 text6 = ["You got (2x) Brgr Burger."];
 next_line6 = [0];
 speakers6 = [id];
-scripts6 = [[change_variable, id, "cutProg", 8]];
+scripts6 = [[change_variable, id, "cutProg", 9]];
+
+text7 = ["These are leftovers from the truck. I was going to give them to you.",
+		 "I usually wouldn't recommend eating this stuff...\nIt's not very good for you.",
+		 "However, we are in a bit of an emergency situation here.",
+		 "Just, uh, please don't give me much. I DO NOT like that kind of food.",
+		 "You should always be weary of the consequences food will have on your health.",
+		 "And I mean that literally.\nIf you eat that stuff, you'll heal, but you'll lose MAX HP.",
+		 "You will, however, gain some ATK.",
+		 "And that's permanent, unless you eat another food that'll increase your MAX HP.",
+		 "What I'm getting to is: watch what you eat, and watch what you give your friends to eat.",
+		 "Oh, and one more thing. If someone LIKES the food you give them...",
+		 "They'll probably get a stat bonus that the food doesn't normally give.",
+		 "Same goes for food they don't like, they might lose certain stats if it sucks.",
+		 "You can view a food's effect on party members in your inventory.",
+		 "I hope you wrote all that down, cuz I ain't repeatin' it!"
+		 ];
+next_line7 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+speakers7 = [kat,kat,kat,kat,kat,kat,kat,kat,kat,kat,kat,kat,kat,kat];
+scripts7 = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];
+
+
 
