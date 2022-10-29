@@ -22,12 +22,7 @@ switch (cutProg){
 		}
 	break;
 	case 2:
-		if (sorryChoice or blameChoice or deathChoice){
-		cutProg++;
-	}
-	else if (!instance_exists(obj_textbox)){
-		create_textbox(text2, speakers2, next_line2, scripts2);
-	}
+	cutProg++;
 	break;
 	case 3:
 		obj_kat.sprite_index = spr_kat_fall_lookright;

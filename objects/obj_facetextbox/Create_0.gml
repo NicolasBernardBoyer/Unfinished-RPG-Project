@@ -54,4 +54,7 @@ interact_button = gp_face1;
 choice = 0;
 choice_col = c_yellow;
 
+ch_text_x = 10;
+ch_text_y = text_y-48;
+
 

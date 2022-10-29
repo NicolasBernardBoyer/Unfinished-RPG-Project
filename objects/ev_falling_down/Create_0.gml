@@ -8,23 +8,18 @@ sorryChoice = false;
 blameChoice = false;
 deathChoice = false;
 
-portrait_index = 10;
+portrait_index = 1;
 portrait = spr_kat_faces;
 voice = snd_meow;
 name = "Katarina";
 
-text = ["Well, this is just great.",
-		"We both could've been done with our days, you know.",
-		"But instead, you had to walk onto the same cliff as me,",
-		"and because of THAT, we're now gonna be stuck underground with no way out!"];
-speakers = [id,id,id,id];
-next_line = [0,0,0,-1];
-scripts = [[change_variable, id, "portrait_index", 1],[change_variable, id, "portrait_index", 1],[change_variable, id, "portrait_index", 2],[change_variable, id, "cutProg", 2]];
-
-text2 = [["   ''Sorry, I shouldn't have done that.''","   ''This is your fault, too.''","   ''Oh my god! We're gonna die!''"]];
-speakers2 = [obj_player];
-next_line2 = [[-1,-1,-1]];
-scripts2 = [[[change_variable, id, "sorryChoice", true],[change_variable, id, "blameChoice", true],[change_variable, id, "deathChoice", true]]];
+text = ["We both could've been done with our days, you know.",
+		["   ''Sorry, I shouldn't have done that.''","   ''This is your fault, too.''","   ''Oh my god! We're gonna die!''"]];
+speakers = [id,id];
+next_line = [0,[0,0,0]];
+scripts = [-1,[[change_variable, id, "sorryChoice", true, id, "cutProg", 2],
+   [change_variable, id, "blameChoice", true, id, "cutProg", 2],
+   [change_variable, id, "deathChoice", true, id, "cutProg", 2]]];
 
 text3 = ["It's... it's fine. I accept your apology. It was my fault, too.",
 		 "Besides, there's no point in me getting mad at you right now.",

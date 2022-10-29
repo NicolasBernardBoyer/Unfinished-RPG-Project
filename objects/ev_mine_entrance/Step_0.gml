@@ -101,14 +101,6 @@ switch (cutProg){
 	break;
 	case 6:
 	if (!instance_exists(obj_textbox)){
-		name = "Katarina";
-		voice = snd_meow;
-		portrait_index = 0;
-		time_source_start(part5);
-	}
-	break;
-	case 7:
-	if (!instance_exists(obj_textbox)){
 		with (obj_kat) {
 			if (x <= 250){
 				image_speed = 1;
@@ -122,34 +114,15 @@ switch (cutProg){
 		}
 	}
 	break;
-	case 8:
-	with (obj_kat) {
-		sprite_index = spr_kat_giveright;
-		if (image_index = 8){
-			image_speed = 0;
-		} else {
-			image_speed = 1;
-			if (image_index = 2){
-				audio_play_sound(snd_move, 5, false);
-			} else if (image_index = 4){
-				audio_play_sound(snd_move, 5, false);
-			} else if (image_index = 6){
-				audio_play_sound(snd_move, 5, false);
-			}
-		}
-	}
-	if (obj_kat.image_index = 8){
-		if (!instance_exists(obj_textbox)){
-			name = "";
-			voice = snd_typewriter;
-			audio_play_sound(snd_select, 5, false);
-			create_textbox(text6, speakers6, next_line6, scripts6);
-		}
+	case 7:
+	if (!instance_exists(obj_textbox)){
+		portrait_index = 8;
+		create_facetextbox(text5, speakers5, next_line5, scripts5);
 	}
 	break;
-	case 9:
+	case 8:
 	if (!instance_exists(obj_textbox)){
-		create_facetextbox(text7, speakers7, next_line7, scripts7);
-	}	
+		create_textbox(text6, speakers6, next_line6, scripts6);
+	}
 	break;
 }
