@@ -1,6 +1,7 @@
 - Add additional dialogue for checking kitchen?
 - Change inventory functionality
+- Add Dave in intro
+- Add first battle/save guy 
 
 Questions to ask testers:
-- Should Dave be seen in the intro?
 - Should the visuals be reworked?

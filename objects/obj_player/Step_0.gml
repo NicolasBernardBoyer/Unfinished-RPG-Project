@@ -65,7 +65,6 @@ if (keyboard_check(ord("X")) or gamepad_button_check(0,gp_shoulderrb) or gamepad
 	spd = 2;
 }
 
-
 if ((hInput != 0 or vInput != 0) and (gp_hInput != 0 or gp_hInput != 0)){
 	dir = point_direction(0,0,hInput,vInput);
 	
