@@ -10,10 +10,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 9,
-  "bbox_right": 61,
+  "bbox_left": 0,
+  "bbox_right": 70,
   "bbox_top": 10,
-  "bbox_bottom": 68,
+  "bbox_bottom": 71,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -28,6 +28,7 @@
   "gridY": 24,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"76b9507b-b8cd-42e6-97b6-831f6930c3a6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8d9a4ac7-9bbc-4a01-a5fc-6e40ec797532",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -39,12 +40,13 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 2.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"4243505f-18b6-4207-be58-fe7b615f3fa9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"76b9507b-b8cd-42e6-97b6-831f6930c3a6","path":"sprites/spr_dave_faces/spr_dave_faces.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b0ffcf88-e48b-4c64-9021-1a3334981c35","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8d9a4ac7-9bbc-4a01-a5fc-6e40ec797532","path":"sprites/spr_dave_faces/spr_dave_faces.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
