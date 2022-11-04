@@ -6,11 +6,11 @@ name = "";
 
 text = [
 		"Take your coat from the coatrack?",
-		["    Yes","    No"],
+		["Yes","No"],
 		"You put your coat on.",
 		"You're now ready for work. Go ahead and head out the front door.",
 		"You decided to take the coat some other time."
-		];
+];
 
 portrait_index = noone;
 speakers = [id, id, id, id, id, id];

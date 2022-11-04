@@ -1,6 +1,6 @@
 name = names[page];
 voice = voices[page];
-portrait_index = portraits[page];
+portrait = portrait_imgs[page];
 
 if(!is_array(text[page])){
 	text_wrapped = string_wrap(text[page], text_max_width);

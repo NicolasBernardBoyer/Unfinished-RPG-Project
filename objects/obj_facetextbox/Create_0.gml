@@ -1,6 +1,8 @@
 box = spr_textbox;
 frame = spr_box_empty;
+
 portrait = noone;
+portrait_index = 0;
 
 box_width = sprite_get_width(box);
 box_height = sprite_get_height(box);
@@ -30,7 +32,6 @@ y_buffer = 10;
 text_x = box_x + x_buffer;
 text_y = box_y + y_buffer;
 
-portrait_index = 0;
 counter = 0;
 pause = false;
 
@@ -42,11 +43,12 @@ draw_set_font(font);
 text_height = string_height("M");
 
 text_max_width = box_width - (2*x_buffer) - 80;
+
 text[0] = "";
 page = 0;
 name = "";
 voice = snd_typewriter;
-
+	
 interact_key = ord("Z");
 other_interact_key = ord("X");
 interact_button = gp_face1;
@@ -54,7 +56,7 @@ interact_button = gp_face1;
 choice = 0;
 choice_col = c_yellow;
 
-ch_text_x = 10;
+ch_text_x = 64;
 ch_text_y = text_y-48;
 
 

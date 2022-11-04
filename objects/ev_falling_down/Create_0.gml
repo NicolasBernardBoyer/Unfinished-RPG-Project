@@ -14,7 +14,7 @@ voice = snd_meow;
 name = "Katarina";
 
 text = ["We both could've been done with our days, you know.",
-		["   ''Sorry, I shouldn't have done that.''","   ''This is your fault, too.''","   ''Oh my god! We're gonna die!''"]];
+		["''Sorry, I shouldn't have done that.''","''This is your fault, too.''","''Oh my god! We're gonna die!''"]];
 speakers = [id,id];
 next_line = [0,[0,0,0]];
 scripts = [-1,[[change_variable, id, "sorryChoice", true, id, "cutProg", 2],

@@ -7,7 +7,7 @@ name = "";
 text = [
 		"It's your backpack. You're gonna need this for work.",
 		"Take it?",
-		["    Yes","    No"],
+		["Yes","No"],
 		"You picked up the backpack. Press C to open your inventory.",
 		"You decided to not take the backpack."
 		];

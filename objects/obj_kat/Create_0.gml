@@ -3,6 +3,7 @@ visible = false;
 
 hasText = false;
 portrait_index = 0;
+portrait = spr_kat_faces;
 voice = snd_meow;
 name = "Katarina";
 text = [""];

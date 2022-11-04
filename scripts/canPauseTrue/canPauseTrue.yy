@@ -5,7 +5,7 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Beastmen",
-    "path": "Beastmen.yyp",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
 }

@@ -1,7 +1,7 @@
 voice = snd_typewriter;
 name = "";
 text = ["Head out to work?", 
-	   ["   Yes", "   No"],
+	   ["Yes", "No"],
 	   "Hurry up!"];
 portrait_index = noone;
 speakers = [id,id,id,id];
