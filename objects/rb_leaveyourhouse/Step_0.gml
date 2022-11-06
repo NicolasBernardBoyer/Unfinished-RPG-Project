@@ -7,6 +7,8 @@ if (inst!=noone){
 		
 		// Tell the player they can't leave
 		if (!instance_exists(obj_textbox)) {
+			name = "";
+			voice = snd_typewriter;
 			create_textbox(text, speakers, next_line, scripts);
 			runOnce = true;
 		}
@@ -17,5 +19,11 @@ if (inst!=noone){
 	
 } else if (!place_meeting(x,y,obj_player)){
 	runOnce = false;
+}
+
+if (davePart = true and !instance_exists(obj_textbox)){
+	name = "Dave";
+	create_facetextbox(davetext,davespeakers,davenext_line,davescripts);
+	davePart = false;
 }
 

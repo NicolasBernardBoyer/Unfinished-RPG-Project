@@ -30,6 +30,13 @@ if (runOnce = true and !instance_exists(obj_textbox)){
 	}
 }
 
+if (interactCh = true){
+	text = alttext;
+	speakers = altspeakers;
+	next_line = altnext_line;
+	scripts = altscripts;
+}
+
 
 
 

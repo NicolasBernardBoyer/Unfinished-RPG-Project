@@ -12,7 +12,15 @@ if (keyboard_check_pressed(global.key_confirm) or gamepad_button_check_pressed(0
 			if(inst != noone){
 				if (inst.hasText = true){
 					with(inst){
-						var tbox = create_textbox(text, speakers, next_line, scripts);
+						if (!variable_instance_exists(inst, "portrait")){
+							var tbox = create_textbox(text, speakers, next_line, scripts);
+						} else {
+							if (portrait != noone){
+								var tbox = create_facetextbox(text, speakers, next_line, scripts);
+							} else {
+								var tbox = create_textbox(text, speakers, next_line, scripts);
+							}
+						}
 					}
 					active_textbox = tbox;
 				}
