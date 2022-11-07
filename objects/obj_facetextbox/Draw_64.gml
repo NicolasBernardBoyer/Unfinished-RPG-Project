@@ -77,15 +77,18 @@ if (name = "") {
 	}
 	draw_sprite_stretched(spr_box_noborder, 0, 0, box_y-box_yadd-8,global.game_width,box_yadd+8);
 	
-	var i = 0, y_add = 0; repeat(text_array_len){
-		if(choice == i){ c = choice_col; draw_sprite(spr_arrow, image_index/10, ch_text_x-18, box_y-box_yadd+y_add); }
-		else c = text_col;
+	if (!global.highbox){
+		var i = 0, y_add = 0; repeat(text_array_len){
+			if(choice == i){ c = choice_col; draw_sprite(spr_arrow, image_index/10, ch_text_x-18, box_y-box_yadd+y_add); }
+			else c = text_col;
 		
-		draw_text_ext_color(ch_text_x, box_y-box_yadd+y_add-4, text_array[i], text_height, global.game_width, c,c,c,c, 1);
-		y_add += string_height_ext(text_array[i], text_height,global.game_width);
-		i++;
+			draw_text_ext_color(ch_text_x, box_y-box_yadd+y_add-4, text_array[i], text_height, global.game_width, c,c,c,c, 1);
+			y_add += string_height_ext(text_array[i], text_height,global.game_width);
+			i++;
+		}
+	} else {
+		
 	}
-	
 	c = text_col;
 	if (name != ""){
 		draw_text_color(text_x+portraitspace, text_y+text_height, text_wrapped, c,c,c,c, 1);
