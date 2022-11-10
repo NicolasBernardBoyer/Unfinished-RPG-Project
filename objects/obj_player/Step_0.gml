@@ -6,23 +6,25 @@ if (!global.pause) {
 
 // Textbox interaction
 if (keyboard_check_pressed(global.key_confirm) or gamepad_button_check_pressed(0,global.gp_confirm)){
-	if (!global.inventoryOpen and global.canPause = true){
+	if (!global.inventoryOpen and global.canPause = true and canMove = true){
 		if(active_textbox == noone and !instance_exists(obj_textbox)){
 			var inst = collision_rectangle(x-radius, y-radius, x+radius, y+radius, par_object, false, true);
 			if(inst != noone){
-				if (inst.hasText = true){
-					with(inst){
-						if (!variable_instance_exists(inst, "portrait")){
-							var tbox = create_textbox(text, speakers, next_line, scripts);
-						} else {
-							if (portrait != noone){
-								var tbox = create_facetextbox(text, speakers, next_line, scripts);
-							} else {
+				if (variable_struct_exists(inst, "hasText")){
+					if (inst.hasText = true){
+						with(inst){
+							if (!variable_instance_exists(inst, "portrait")){
 								var tbox = create_textbox(text, speakers, next_line, scripts);
+							} else {
+								if (portrait != noone){
+									var tbox = create_facetextbox(text, speakers, next_line, scripts);
+								} else {
+									var tbox = create_textbox(text, speakers, next_line, scripts);
+								}
 							}
 						}
+						active_textbox = tbox;
 					}
-					active_textbox = tbox;
 				}
 			}
 		} 

@@ -69,12 +69,10 @@ scripts4 = [[change_variable, id, "cutProg", 6]];
 
 text5 = ["Now get us out of here, or I'll get you fired.",
 		 "That, or we might both end up dead.",
-		 "I'd worry more about getting fired.",
-		 ["''Are we not going to talk about that magic crap you just pulled off?''",
-		  "''Getting out of here sounds like a good plan to me.''"]];
-next_line5 = [0,0,0,[0,0]];
-speakers5 = [kat,kat,kat,kat];
+		 "I'd worry more about getting fired."];
+next_line5 = [0,0,0];
+speakers5 = [kat,kat,kat];
 scripts5 = [[change_variable, id, "portrait_index", 13],
 			[change_variable, id, "portrait_index", 8],
-			-1,[-1,-1]];
+			[change_variable, id, "cutProg", 9]];
 			

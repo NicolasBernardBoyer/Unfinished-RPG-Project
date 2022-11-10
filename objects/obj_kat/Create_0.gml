@@ -2,6 +2,7 @@
 visible = false;
 
 hasText = false;
+
 portrait_index = 0;
 portrait = spr_kat_faces;
 voice = snd_meow;
@@ -10,4 +11,8 @@ text = [""];
 speakers = [id];
 next_line = [0];
 scripts = -1;
+
+walk = 1;
+walking1 = false;
+walking2 = false;
 

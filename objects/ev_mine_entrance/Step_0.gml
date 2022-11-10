@@ -125,4 +125,9 @@ switch (cutProg){
 		create_textbox(text6, speakers6, next_line6, scripts6);
 	}
 	break;
+	case 9:
+	obj_player.canMove = true;
+	global.canPause = true;
+	instance_destroy(self);
+	break;
 }
