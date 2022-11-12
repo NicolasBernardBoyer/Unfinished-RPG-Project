@@ -187,6 +187,7 @@
     {"id":{"name":"spr_me","path":"sprites/spr_me/spr_me.yy",},"order":1,},
     {"id":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},"order":0,},
     {"id":{"name":"spr_couch","path":"sprites/spr_couch/spr_couch.yy",},"order":7,},
+    {"id":{"name":"rm_mine_leftentrance","path":"rooms/rm_mine_leftentrance/rm_mine_leftentrance.yy",},"order":3,},
     {"id":{"name":"spr_bikerack_withbike","path":"sprites/spr_bikerack_withbike/spr_bikerack_withbike.yy",},"order":0,},
     {"id":{"name":"obj_fade_in","path":"objects/obj_fade_in/obj_fade_in.yy",},"order":4,},
     {"id":{"name":"tset_mine","path":"tilesets/tset_mine/tset_mine.yy",},"order":2,},
@@ -359,6 +360,7 @@
     {"roomId":{"name":"rm_falling_down","path":"rooms/rm_falling_down/rm_falling_down.yy",},},
     {"roomId":{"name":"rm_mine_default","path":"rooms/rm_mine_default/rm_mine_default.yy",},},
     {"roomId":{"name":"rm_mine_entrance","path":"rooms/rm_mine_entrance/rm_mine_entrance.yy",},},
+    {"roomId":{"name":"rm_mine_leftentrance","path":"rooms/rm_mine_leftentrance/rm_mine_leftentrance.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":6,},
