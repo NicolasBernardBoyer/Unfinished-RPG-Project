@@ -1,3 +1,6 @@
+hsp = 0;
+vsp = 0;
+
 canMove = true;
 spd = 2;
 sprite_index = spr_player_walk;

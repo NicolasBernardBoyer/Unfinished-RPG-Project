@@ -2,17 +2,43 @@ if (obj_player.canMove and global.canPause){
 	walk = obj_player.spd;
 	dir = point_direction(x,y,obj_player.x,obj_player.y);
 	
-	if (x <= obj_player.x - 50 or x >= obj_player.x + 50){
+	if (x <= obj_player.x - 25 or x >= obj_player.x + 25){
 		x = Approach(x, obj_player.x, walk);
-		y = Approach(y, obj_player.y, walk);
+		y = Approach(y, obj_player.y, walk);	
 		
+		if (place_meeting(x+walk,y,obj_wall)){
+			x -= walk;
+		}
+		if (place_meeting(x-walk,y,obj_wall)){
+			x += walk;
+		}
+		if (place_meeting(x,y+walk,obj_wall)){
+			y -= walk;
+		}
+		if (place_meeting(x,y-walk,obj_wall)){
+			y += walk;
+		}
+
 		image_index = obj_player.image_index;
 		walking1 = true;
 	}  else { walking1 = false; }
-	if (y <= obj_player.y - 50 or y >= obj_player.y + 50){
+	if (y <= obj_player.y - 25 or y >= obj_player.y + 25){
 		x = Approach(x, obj_player.x, walk);
-		y = Approach(y, obj_player.y, walk);
+		y = Approach(y, obj_player.y, walk);	
 		
+		if (place_meeting(x,y+walk,obj_wall)){
+			y -= walk;
+		}
+		if (place_meeting(x,y-walk,obj_wall)){
+			y += walk;
+		}
+		if (place_meeting(x+walk,y,obj_wall)){
+			x -= walk;
+		}
+		if (place_meeting(x-walk,y,obj_wall)){
+			x += walk;
+		}
+
 		image_index = obj_player.image_index;
 		walking2 = true;
 	} else { walking2 = false; }
@@ -20,6 +46,7 @@ if (obj_player.canMove and global.canPause){
 	if (walking1 = false and walking2 = false){
 		image_index = 0;
 	}
+
 	
 	if (walking1 = true or walking2 = true){
 		if (obj_player.sprite_index = spr_player_walk_coat){
