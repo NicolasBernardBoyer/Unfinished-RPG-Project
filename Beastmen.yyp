@@ -56,6 +56,7 @@
     {"id":{"name":"spr_kat_walk","path":"sprites/spr_kat_walk/spr_kat_walk.yy",},"order":5,},
     {"id":{"name":"spr_logo","path":"sprites/spr_logo/spr_logo.yy",},"order":2,},
     {"id":{"name":"obj_threemovingbox","path":"objects/obj_threemovingbox/obj_threemovingbox.yy",},"order":11,},
+    {"id":{"name":"spr_antworker","path":"sprites/spr_antworker/spr_antworker.yy",},"order":4,},
     {"id":{"name":"obj_titlemenu","path":"objects/obj_titlemenu/obj_titlemenu.yy",},"order":10,},
     {"id":{"name":"rm_title_screen","path":"rooms/rm_title_screen/rm_title_screen.yy",},"order":1,},
     {"id":{"name":"spr_fade_in","path":"sprites/spr_fade_in/spr_fade_in.yy",},"order":9,},
