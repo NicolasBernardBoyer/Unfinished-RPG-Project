@@ -33,7 +33,7 @@ if (keyboard_check(vk_up or vk_down or vk_right or vk_left)){
 	if (spd = 2){
 		image_speed = 1;
 	} else {
-		image_speed = 1.5;
+		image_speed = 1.2;
 	}
 }
 }, [], 1);
