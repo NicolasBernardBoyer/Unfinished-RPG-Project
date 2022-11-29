@@ -1,5 +1,6 @@
 box = spr_textbox;
 frame = spr_box_empty;
+
 portrait = noone;
 
 box_width = sprite_get_width(box);
@@ -10,19 +11,22 @@ global.hasname = true;
 
 proceed = true;
 
-port_x = (global.game_width - box_width - port_width) * 0.5 + 45;
 port_y = (global.game_height*0.98) - port_height - 2;
+port_x = (global.game_width - box_width - port_width) * 0.5 + 45;
 box_x = 32;
 
 if(global.highbox = true){
 	box_y = 0;
+	port_y = box_height-10;
 	frame_y = 6;
 } else {
 	box_y = 200;
+	port_y = (global.game_height*0.98) - port_height - 2;
 	frame_y = 206;
 }
 
 frame_x = 40;
+portraitspace = 80;
 
 x_buffer = 14;
 y_buffer = 10;

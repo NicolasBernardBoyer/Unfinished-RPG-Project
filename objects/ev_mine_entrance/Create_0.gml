@@ -64,7 +64,7 @@ scripts3 = [[change_variable, id, "portrait_index", 3],[change_variable, id, "cu
 
 text4 = ["Katarina joined your party."];
 next_line4 = [0];
-speakers4 = [id];
+speakers4 = [obj_player];
 scripts4 = [[change_variable, id, "cutProg", 6]];
 
 text5 = ["Now get us out of here, or I'll get you fired.",

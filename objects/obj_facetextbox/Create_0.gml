@@ -24,7 +24,6 @@ if(global.highbox = true){
 }
 
 frame_x = 40;
-frame_y = 206;
 portraitspace = 80;
 
 x_buffer = 14;
