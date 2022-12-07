@@ -12,11 +12,12 @@ global.name_text_col = c_gray;
 voice = snd_typewriter;
 name = "";
 
-preText = [["    Yes", "    No"],
+preText = ["Is this name correct?",
+			["Yes", "No"],
 			"Please enter your name."];
-preSpeakers = [id,id];
-preNext_line = [[-1,0],0];
-preScripts = [[[change_variable, id, "nameok", false, id, "runText2", true],[create_name_creator]], -1];
+preSpeakers = [id,id,id];
+preNext_line = [0,[-1,0],0];
+preScripts = [-1,[[change_variable, id, "nameok", false, id, "runText2", true],[create_name_creator]], -1];
 
 if (global.playerName = "Noa"){
 	text = [
@@ -41,12 +42,13 @@ speakers = [id, id, id, id,id];
 next_line = [0, 0, 0, 0, 0];
 scripts = [-1,-1, -1, [change_variable, id, "draw_difficulty", true], -1];
 
-text2 = [["    Yes", "    No"],
+text2 = ["Is this the difficulty you want?",
+		["Yes", "No"],
 		"Select your difficulty.\nThis can be changed at any point during gameplay in settings.",
 		"Perfect.",
 		"Now...\nYou are ready to face the world.",
 		"Good luck, and do the right thing."];
-speakers2 = [id,id,id,id,id];
-next_line2 = [[2,0],1,0,0,0];
-scripts2 = [[[change_variable, id, "draw_difficulty", false, id, "confirm_difficulty", false],[change_variable, id, "draw_difficulty", true, id, "confirm_difficulty", false, obj_textbox, "proceed", false, id, "delayCheck", true]],-1,-1,-1,[goto_room]];
+speakers2 = [id,id,id,id,id,id];
+next_line2 = [0,[3,0],1,0,0,0];
+scripts2 = [-1,[[change_variable, id, "draw_difficulty", false, id, "confirm_difficulty", false],[change_variable, id, "draw_difficulty", true, id, "confirm_difficulty", false, obj_textbox, "proceed", false, id, "delayCheck", true]],-1,-1,-1,[goto_room]];
 	

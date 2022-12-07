@@ -11,7 +11,7 @@ text = [
 		"You and your coworker decide to walk to the parking lot together before parting ways.",
 		"..."
 		];
-speakers = [id, id, id];
+speakers = [obj_player, obj_player, obj_player];
 next_line = [0, -1, 0];
 scripts = [-1,[change_variable, id, "katBox", true],-1];
 

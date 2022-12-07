@@ -7,7 +7,7 @@ text = ["Head out to work?",
 	   ["Yes", "No"],
 	   "Hurry up!"];
 portrait_index = 0;
-speakers = [id,id,id,id];
+speakers = [obj_player,obj_player,obj_player,obj_player];
 next_line = [0,[-1,0],0];
 scripts = [-1,[[change_variable, id, "davePart", true],-1],-1];
 

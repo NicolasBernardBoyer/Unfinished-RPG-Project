@@ -76,3 +76,4 @@ scripts5 = [[change_variable, id, "portrait_index", 13],
 			[change_variable, id, "portrait_index", 8],
 			[change_variable, id, "cutProg", 9]];
 			
+			

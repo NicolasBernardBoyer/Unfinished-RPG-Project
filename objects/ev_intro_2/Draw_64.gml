@@ -1,8 +1,8 @@
 if (!instance_exists(obj_name_creator) and nameok){
-	draw_set_font(fnt_8bit);
-	draw_set_color(c_white);
-	draw_text(95,63, "Is this the name you want?");
-	draw_set_color(c_yellow);
+	//draw_set_font(fnt_8bit);
+	//draw_set_color(c_white);
+	//draw_text(95,63, "Is this the name you want?");
+	//draw_set_color(c_yellow);
 	draw_set_font(fnt_excelsior);
 	draw_text(120,83, global.playerName);
 	draw_set_font(fnt_8bit);
@@ -10,9 +10,9 @@ if (!instance_exists(obj_name_creator) and nameok){
 }
 
 if (draw_difficulty = false and confirm_difficulty){
-	draw_set_font(fnt_8bit);
-	draw_set_color(c_white);
-	draw_text(85,63, "Is this the difficulty you want?");
+	//draw_set_font(fnt_8bit);
+	//draw_set_color(c_white);
+	//draw_text(85,63, "Is this the difficulty you want?");
 	draw_set_font(fnt_excelsior);
 		switch(global.difficultySet){
 			case 0:

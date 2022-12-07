@@ -128,6 +128,7 @@ switch (cutProg){
 	case 9:
 	obj_player.canMove = true;
 	global.canPause = true;
+	global.highbox = false;
 	camera.following = obj_player;
 	instance_destroy(self);
 	break;

@@ -98,6 +98,6 @@ scripts3 = [[change_variable, id, "portrait_index", 8],
 			-1];
 			
 text4 = ["That's not an actual rule. Don't listen to her, " + global.playerName + "."];
-speakers4 = [id];
+speakers4 = [obj_player];
 next_line4 = [0];
 scripts4 = [[change_variable, id, "end_scene", true]];	

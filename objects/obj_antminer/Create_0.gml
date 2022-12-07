@@ -1,3 +1,6 @@
+pick_em = audio_emitter_create();
+counter = 0;
+
 // make it so that our objects higher on the y axis are drawn first
 visible = false;
 
@@ -50,13 +53,14 @@ next_line =  [0,0,
  0];
 scripts = [-1,-1,
  -1,
- -1,-1,
+ [port_swap, 10], -1,
  -1,
  -1,
  -1,
- -1,-1,-1,
+ -1,-1,[port_swap, 16],
  -1,
+ [port_swap, 16],
  -1,
- -1,
- -1,
+ [port_swap, 15],
  -1];
+

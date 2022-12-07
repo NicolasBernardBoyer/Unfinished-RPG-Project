@@ -1,3 +1,5 @@
+audio_listener_position(x, y, 0);
+
 if (room == rm_title_screen) {
 	instance_deactivate_object(self);
 }

@@ -3,5 +3,9 @@
 ///@arg value
 
 function port_swap() {
-	variable_instance_set(obj_facetextbox,"portrait_index",argument0);
+	if (instance_exists(obj_facetextbox)){
+		variable_instance_set(obj_facetextbox,"portrait_index",argument0);
+	} else {
+		variable_instance_set(obj_textbox,"portrait_index",argument0);
+	}
 }
