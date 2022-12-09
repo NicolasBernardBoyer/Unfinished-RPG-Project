@@ -169,6 +169,7 @@
     {"id":{"name":"settings_to_main_menu","path":"scripts/settings_to_main_menu/settings_to_main_menu.yy",},"order":8,},
     {"id":{"name":"spr_player_on_ground","path":"sprites/spr_player_on_ground/spr_player_on_ground.yy",},"order":6,},
     {"id":{"name":"obj_facetextbox","path":"objects/obj_facetextbox/obj_facetextbox.yy",},"order":14,},
+    {"id":{"name":"spr_wheelbarrow","path":"sprites/spr_wheelbarrow/spr_wheelbarrow.yy",},"order":11,},
     {"id":{"name":"snd_pickaxe","path":"sounds/snd_pickaxe/snd_pickaxe.yy",},"order":22,},
     {"id":{"name":"spr_kat_fall_angry","path":"sprites/spr_kat_fall_angry/spr_kat_fall_angry.yy",},"order":15,},
     {"id":{"name":"rm_park_crater","path":"rooms/rm_park_crater/rm_park_crater.yy",},"order":8,},
