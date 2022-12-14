@@ -2,6 +2,7 @@
 visible = false;
 
 hasText = false;
+name_col = c_gray;
 
 portrait_index = 0;
 portrait = spr_kat_faces;

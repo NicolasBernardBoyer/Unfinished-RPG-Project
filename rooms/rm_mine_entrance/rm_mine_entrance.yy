@@ -19,6 +19,7 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Text","instances":[],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Transitions","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_20D66AA8","properties":[],"isDnd":false,"objectId":{"name":"obj_transition","path":"objects/obj_transition/obj_transition.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":256.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_66AD0C99","properties":[],"isDnd":false,"objectId":{"name":"obj_transition","path":"objects/obj_transition/obj_transition.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":256.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"ForegroundTSET","tilesetId":{"name":"tset_mine","path":"tilesets/tset_mine/tset_mine.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":12,"SerialiseHeight":9,"TileCompressedData":[
 -2,-2147483648,1,8,-6,-2147483648,1,9,-4,-2147483648,1,24,
@@ -46,6 +47,7 @@
     {"name":"inst_18C9515B","path":"rooms/rm_mine_entrance/rm_mine_entrance.yy",},
     {"name":"inst_36389123","path":"rooms/rm_mine_entrance/rm_mine_entrance.yy",},
     {"name":"inst_5068DBBA","path":"rooms/rm_mine_entrance/rm_mine_entrance.yy",},
+    {"name":"inst_66AD0C99","path":"rooms/rm_mine_entrance/rm_mine_entrance.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

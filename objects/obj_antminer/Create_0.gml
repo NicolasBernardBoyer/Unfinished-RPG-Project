@@ -4,7 +4,10 @@ counter = 0;
 // make it so that our objects higher on the y axis are drawn first
 visible = false;
 
+name_col = c_dkgray;
 kat = obj_kat;
+
+textRpt = false;
 
 hasText = true;
 portrait_index = 0;
@@ -62,5 +65,5 @@ scripts = [-1,-1,
  [port_swap, 16],
  -1,
  [port_swap, 15],
- -1];
+ [change_variable, id, "textRpt", true]];
 

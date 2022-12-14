@@ -31,6 +31,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "General",
-    "path": "folders/Objects/world Objects/General.yy",
+    "path": "folders/Objects/General.yy",
   },
 }

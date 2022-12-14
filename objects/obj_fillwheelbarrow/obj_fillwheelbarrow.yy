@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_granny_standing",
+  "name": "obj_fillwheelbarrow",
   "spriteId": {
-    "name": "spr_granny",
-    "path": "sprites/spr_granny/spr_granny.yy",
+    "name": "spr_wheelbarrow",
+    "path": "sprites/spr_wheelbarrow/spr_wheelbarrow.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,11 +27,13 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Shopping District",
-    "path": "folders/Objects/world Objects/TheCity/Shopping District.yy",
+    "name": "Mine",
+    "path": "folders/Objects/world Objects/Mine.yy",
   },
 }

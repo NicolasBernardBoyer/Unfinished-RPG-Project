@@ -4,6 +4,10 @@ function create_textbox(){
 		var hasPort = true;
 	} else { var hasPort = false; }
 	
+	if (variable_struct_exists(self, "name_col")){
+		var hasCol = true;
+	} else { var hasCol = false; }
+	
 	var tbox = instance_create_layer(0,0, "Text", obj_textbox);
 	
 	with(tbox){
@@ -23,6 +27,15 @@ function create_textbox(){
 				}
 			} else {
 				portrait_imgs[i] = noone;
+			}
+			if (hasCol){
+				if (speakers[i].name_col != noone){
+				name_cols[i] = speakers[i].name_col;
+				} else {
+				name_cols[i] = noone;
+				}
+			} else {
+				name_cols[i] = noone;
 			}
 			voices[i]	 = speakers[i].voice;
 			i++;

@@ -1,6 +1,11 @@
 name = names[page];
 voice = voices[page];
 portrait = portrait_imgs[page];
+name_text_col = name_cols[page];
+
+if (name_text_col != noone){
+global.name_text_col = name_text_col;
+}
 
 if (portrait != noone){
 	text_max_width = box_width - (2*x_buffer) - 80;

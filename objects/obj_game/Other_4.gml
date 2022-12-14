@@ -9,3 +9,5 @@ if (instance_exists(obj_player)){
 		}
 	}
 }
+
+part_system_clear(global.partSystem);

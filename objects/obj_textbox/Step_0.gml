@@ -1,3 +1,5 @@
+
+
 if (portrait = noone){
 	text_x = box_x + x_buffer;
 }
