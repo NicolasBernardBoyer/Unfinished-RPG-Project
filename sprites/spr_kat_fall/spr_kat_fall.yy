@@ -73,10 +73,7 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e3841f92-bd2f-4ac9-8634-2fb0c246424f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Coat",},
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"51487d3c-4bb1-4359-94b0-58d8ee77c34d","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3a26588f-6112-4d3b-b36f-80e618a7f3e3","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Arms",},
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cff44ad9-a33a-4d49-aed4-197ad4f89bb6","visible":false,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"52e5a406-afab-4fc5-8124-97bb526c1b82","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {

@@ -69,9 +69,7 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"961f9313-4e34-4784-8b9c-c575fb4370d4","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Tail",},
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"51487d3c-4bb1-4359-94b0-58d8ee77c34d","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cff44ad9-a33a-4d49-aed4-197ad4f89bb6","visible":false,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a99a5d50-645d-4a28-a7cc-bb0b09d53ec7","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {

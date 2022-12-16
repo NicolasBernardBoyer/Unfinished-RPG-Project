@@ -73,8 +73,7 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a347d0c1-96e5-4804-8304-b89b8c65bf5b","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"arms",},
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"51bd860e-2dc4-4c88-9d4d-b877a631b0fa","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"body",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9b303f6d-fd17-4f9d-81f7-4a7de709acea","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {

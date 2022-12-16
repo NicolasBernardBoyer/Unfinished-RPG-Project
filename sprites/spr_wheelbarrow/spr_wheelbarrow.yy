@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "InanimateObj",
-    "path": "folders/Sprites/Overworld/InanimateObj.yy",
+    "name": "MineSprites",
+    "path": "folders/Sprites/Overworld/InanimateObj/MineSprites.yy",
   },
 }
