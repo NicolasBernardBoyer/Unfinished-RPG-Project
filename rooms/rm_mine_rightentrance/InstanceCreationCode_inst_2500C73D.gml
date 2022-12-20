@@ -1,3 +1,3 @@
 targetRoom = rm_mine_entrance;
-targetX = 349;
-targetY = 207;
+targetX = 412;
+targetY = 206;

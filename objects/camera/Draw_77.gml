@@ -1,5 +1,8 @@
+
 gpu_set_blendenable(false);
+
 var _scale = window_get_width()/camWidth;
+
 draw_surface_ext
 (
 	application_surface,
@@ -11,6 +14,7 @@ draw_surface_ext
 	c_white,
 	1.0
 );
+
 gpu_set_blendenable(true);
 
 

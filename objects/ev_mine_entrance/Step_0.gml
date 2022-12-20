@@ -131,5 +131,6 @@ switch (cutProg){
 	global.highbox = false;
 	camera.following = obj_player;
 	instance_destroy(self);
+	
 	break;
 }

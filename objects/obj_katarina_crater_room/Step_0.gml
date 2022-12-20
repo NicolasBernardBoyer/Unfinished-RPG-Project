@@ -27,10 +27,10 @@ if (craterTextbox = true and !instance_exists(obj_textbox)){
 }
 
 if (moveCam){
-	if (camera.y != 272){
+	if (camera.y != 189){
 		camera.y = Approach(camera.y, 275, 1);
 	}
-	else if (camera.y = 272 and y != 175){
+	else if (camera.y = 189 and y != 175){
 		image_speed = 1;
 		y++;
 	}

@@ -51,7 +51,7 @@ if (createManager = false and !instance_exists(obj_manager)){
 	if (camera.y != obj_player.y){
 		camera.y = Approach(camera.y, obj_player.y, 2);
 	}
-	if (camera.y = obj_player.y and camera.x = obj_player.x){			
+	if (camera.y = obj_player.y){			
 		global.canPause = true;
 		obj_player.canMove = true;
 		camera.following = obj_player;

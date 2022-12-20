@@ -1,5 +1,5 @@
-camWidth = 384;
-camHeight = 288;
+camWidth = 430;
+camHeight = 320;
 
 halfcamerawidth = camWidth/2;
 halfcameraheight = camHeight/2;

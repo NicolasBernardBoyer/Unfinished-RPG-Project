@@ -9,11 +9,11 @@ if (!audio_is_playing(snd_wind)){
 
 switch (cutProg){
 	case 0:
-		if(obj_player.y != 98){
+		if(obj_player.y != 157){
 			obj_player.y++;
 			obj_kat.y++;
 		}
-		if (obj_player.y = 98) cutProg++;
+		if (obj_player.y = 157) cutProg++;
 	break;
 	case 1:
 		if (!instance_exists(obj_textbox)){
@@ -88,7 +88,7 @@ switch (cutProg){
 		}
 	}
 	if (!instance_exists(obj_bubble)){
-		instance_create_layer(95, 140, "Instances", obj_bubble);
+		instance_create_layer(95, 199, "Instances", obj_bubble);
 	} else {
 		if (obj_bubble.image_index = 4){
 			obj_bubble.image_speed = 0;
@@ -116,16 +116,16 @@ if (cutProg > 0){
 	
 	position = animcurve_channel_evaluate(curve,dropSpeed);
 	
-	var _startplayer = 98;
-	var _endplayer = 128;
+	var _startplayer = 157;
+	var _endplayer = 187;
 	var _distanceplayer = _endplayer - _startplayer;
 	
-	var _startkat = 98;
-	var _endkat = 128;
+	var _startkat = 157;
+	var _endkat = 187;
 	var _distancekat = _endkat - _startkat;
 	
-	var _startbubble = 140;
-	var _endbubble = 150;
+	var _startbubble = 199;
+	var _endbubble = 209;
 	var _distancebubble = _endbubble - _startbubble;
 	
 	obj_player.y = _startplayer + (_distanceplayer * position);
