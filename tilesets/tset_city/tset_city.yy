@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tset_city",
   "spriteId": {
     "name": "spr_tile_city",
     "path": "sprites/spr_tile_city/spr_tile_city.yy",
@@ -20,11 +23,11 @@
   "tile_count": 1024,
   "autoTileSets": [],
   "tileAnimationFrames": [
-    {"frames":[
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_1","frames":[
         352,
         384,
-      ],"resourceVersion":"1.0","name":"animation_1","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_2","frames":[
         167,
         167,
         167,
@@ -41,7 +44,7 @@
         167,
         167,
         167,
-      ],"resourceVersion":"1.0","name":"animation_2","tags":[],"resourceType":"GMTileAnimation",},
+      ],},
   ],
   "tileAnimationSpeed": 5.0,
   "tileAnimation": {
@@ -16442,8 +16445,4 @@
     "name": "Tile Sets",
     "path": "folders/Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "tset_city",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }
