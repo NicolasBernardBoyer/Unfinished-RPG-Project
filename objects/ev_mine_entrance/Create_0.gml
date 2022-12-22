@@ -46,7 +46,7 @@ portrait = spr_kat_faces;
 voice = snd_meow;
 name = "Katarina";
 
-text = ["Well, I guess that thing wasn't as sturdy as I wanted it to be."];
+text = ["Well, I guess that barrier wasn't as sturdy as I wanted it to be."];
 next_line = [0];
 speakers = [id];
 scripts = [[change_variable, obj_kat, "sprite_index", spr_kat_dustoff, obj_kat, "image_speed", 1, id, "cutProg", 3]];
@@ -69,11 +69,19 @@ scripts4 = [[change_variable, id, "cutProg", 6]];
 
 text5 = ["Now get us out of here, or I'll get you fired.",
 		 "That, or we might both end up dead.",
-		 "I'd worry more about getting fired."];
-next_line5 = [0,0,0];
-speakers5 = [kat,kat,kat];
+		 "I'd worry more about getting fired.",
+		 ["What even was that?", "Yes ma'am!"],
+		 "What was what?",
+		 "I have absolutely no idea what you're talking about.",
+		 "That's the kind of response I'm looking for!"];
+next_line5 = [0,0,0,[4,6],0,-1,0];
+speakers5 = [kat,kat,kat,kat,kat,kat,kat];
 scripts5 = [[change_variable, id, "portrait_index", 13],
 			[change_variable, id, "portrait_index", 8],
+			-1,
+			[[change_variable, id, "portrait_index", 10],[change_variable, id, "portrait_index", 6]],
+			[change_variable, id, "portrait_index", 8],
+			[change_variable, id, "cutProg", 9],
 			[change_variable, id, "cutProg", 9]];
 			
 			

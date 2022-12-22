@@ -16,8 +16,6 @@ if (run2ndTextbox = true){
 
 if (run4thTextbox = true){
 	instance_destroy(obj_textbox);
-	name = "";
-	voice = snd_typewriter;
 	create_textbox(text4, speakers4, next_line4, scripts4);
 	run4thTextbox = false;
 }
