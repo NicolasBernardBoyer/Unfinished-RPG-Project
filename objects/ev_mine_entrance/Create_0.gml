@@ -1,3 +1,5 @@
+if (instance_exists(obj_devmode)) instance_destroy(self);
+
 global.name_text_col = c_gray;
 cutProg = 0;
 kat = obj_kat;
@@ -70,7 +72,7 @@ scripts4 = [[change_variable, id, "cutProg", 6]];
 text5 = ["Now get us out of here, or I'll get you fired.",
 		 "That, or we might both end up dead.",
 		 "I'd worry more about getting fired.",
-		 ["What even was that?", "Yes ma'am!"],
+		 ["''What even was that?''", "''Yes ma'am!''"],
 		 "What was what?",
 		 "I have absolutely no idea what you're talking about.",
 		 "That's the kind of response I'm looking for!"];

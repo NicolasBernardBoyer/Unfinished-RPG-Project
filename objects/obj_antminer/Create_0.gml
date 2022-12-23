@@ -13,8 +13,8 @@ hasText = true;
 portrait_index = 0;
 portrait = noone;
 voice = snd_typewriter;
-name = "Ant Worker";
-text =  ["Working for Wolfreud is a hard and boring task.",
+name = "Worker Ant";
+text =  ["Working for the boss is a hard and boring task.",
 		"Except when you're me, because I don't work.",
 		"Uuuh... You seem to be working quite hard, though.",
 		"I'm not working for my boss, I'm working for myself.",

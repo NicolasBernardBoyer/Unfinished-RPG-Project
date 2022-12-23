@@ -7,9 +7,12 @@ if (round(image_index) = 2 and counter<=0){
 else { counter-- };
 
 if (textRpt = true){
-	text = ["I've got mining to do.\nLeave me alone."];
-	speakers = [id];
-	next_line = [0];
-	scripts = -1;
+	text = ["I've got mining to do.\nLeave me alone.",
+			"Seems like he won't give us any more info on where we are.",
+			"Unless...\nWe help him find what he's looking for.",
+			"If we find any diamond, let's bring it to him. Okay?"];
+	speakers = [id,kat,kat,kat];
+	next_line = [0,0,0,0];
+	scripts = [[port_swap, 0],[port_swap, 13],[port_swap, 3],-1];
 }
 
