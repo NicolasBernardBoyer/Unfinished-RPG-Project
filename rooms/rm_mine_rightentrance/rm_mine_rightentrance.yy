@@ -39,6 +39,7 @@
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1BB558C4","properties":[],"isDnd":false,"objectId":{"name":"obj_emblem_large","path":"objects/obj_emblem_large/obj_emblem_large.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":240.0,"y":106.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_31594267","properties":[],"isDnd":false,"objectId":{"name":"ev_logo_check","path":"objects/ev_logo_check/ev_logo_check.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":78.0,},
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_BG","instances":[],"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BackgroundTSET","tilesetId":{"name":"tset_mine","path":"tilesets/tset_mine/tset_mine.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":16,"SerialiseHeight":14,"TileCompressedData":[
@@ -67,6 +68,7 @@
     {"name":"inst_7E7C5C8C","path":"rooms/rm_mine_rightentrance/rm_mine_rightentrance.yy",},
     {"name":"inst_2500C73D","path":"rooms/rm_mine_rightentrance/rm_mine_rightentrance.yy",},
     {"name":"inst_1BB558C4","path":"rooms/rm_mine_rightentrance/rm_mine_rightentrance.yy",},
+    {"name":"inst_31594267","path":"rooms/rm_mine_rightentrance/rm_mine_rightentrance.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
