@@ -9,8 +9,6 @@ attribute vec2 in_TextureCoord;              // (u,v)
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 
-uniform float brightness;
-
 void main()
 {
     vec4 object_space_pos = vec4( in_Position.x, in_Position.y, in_Position.z, 1.0);
@@ -18,5 +16,4 @@ void main()
     
     v_vColour = in_Colour;
     v_vTexcoord = in_TextureCoord;
-	
 }

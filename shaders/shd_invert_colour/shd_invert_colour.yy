@@ -1,7 +1,7 @@
 {
   "resourceType": "GMShader",
   "resourceVersion": "1.0",
-  "name": "sh_passthrough",
+  "name": "shd_invert_colour",
   "type": 1,
   "parent": {
     "name": "Shaders",
