@@ -20,6 +20,7 @@ if (obj_player.canMove and global.canPause){
 		}
 
 		image_index = obj_player.image_index;
+		
 		walking1 = true;
 	}  else { walking1 = false; }
 	if (y <= obj_player.y - 25 or y >= obj_player.y + 25){
@@ -38,8 +39,9 @@ if (obj_player.canMove and global.canPause){
 		if (place_meeting(x-walk,y,obj_wall)){
 			x += walk;
 		}
-
+		
 		image_index = obj_player.image_index;
+		
 		walking2 = true;
 	} else { walking2 = false; }
 	

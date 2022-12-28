@@ -3,6 +3,10 @@ voice = voices[page];
 portrait = portrait_imgs[page];
 name_text_col = name_cols[page];
 
+if (page = 0){
+	portrait_index = speakers[0].portrait_index;
+}
+
 if (name_text_col != noone){
 global.name_text_col = name_text_col;
 }

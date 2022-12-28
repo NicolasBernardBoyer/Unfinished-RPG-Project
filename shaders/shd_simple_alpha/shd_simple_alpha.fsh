@@ -4,7 +4,7 @@
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 
-uniform 
+uniform float alpha;
 
 void main()
 {
