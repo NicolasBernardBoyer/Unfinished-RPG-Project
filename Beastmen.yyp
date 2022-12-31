@@ -156,6 +156,7 @@
     {"id":{"name":"par_object","path":"objects/par_object/par_object.yy",},"order":0,},
     {"id":{"name":"spr_kitchenset","path":"sprites/spr_kitchenset/spr_kitchenset.yy",},"order":14,},
     {"id":{"name":"bg_bluesky","path":"sprites/bg_bluesky/bg_bluesky.yy",},"order":0,},
+    {"id":{"name":"rm_mine_barracade","path":"rooms/rm_mine_barracade/rm_mine_barracade.yy",},"order":5,},
     {"id":{"name":"spr_dumpster","path":"sprites/spr_dumpster/spr_dumpster.yy",},"order":1,},
     {"id":{"name":"spr_twomovingbox","path":"sprites/spr_twomovingbox/spr_twomovingbox.yy",},"order":10,},
     {"id":{"name":"snd_buzz","path":"sounds/snd_buzz/snd_buzz.yy",},"order":3,},
@@ -183,6 +184,7 @@
     {"id":{"name":"spr_manager_walk","path":"sprites/spr_manager_walk/spr_manager_walk.yy",},"order":3,},
     {"id":{"name":"rm_foodtruck","path":"rooms/rm_foodtruck/rm_foodtruck.yy",},"order":5,},
     {"id":{"name":"create_textbox","path":"scripts/create_textbox/create_textbox.yy",},"order":2,},
+    {"id":{"name":"spr_barracade","path":"sprites/spr_barracade/spr_barracade.yy",},"order":3,},
     {"id":{"name":"spr_tile_city","path":"sprites/spr_tile_city/spr_tile_city.yy",},"order":1,},
     {"id":{"name":"destroy_obj","path":"scripts/destroy_obj/destroy_obj.yy",},"order":17,},
     {"id":{"name":"create_menu_page","path":"scripts/create_menu_page/create_menu_page.yy",},"order":0,},
@@ -382,6 +384,7 @@
     {"roomId":{"name":"rm_mine_entrance","path":"rooms/rm_mine_entrance/rm_mine_entrance.yy",},},
     {"roomId":{"name":"rm_mine_leftentrance","path":"rooms/rm_mine_leftentrance/rm_mine_leftentrance.yy",},},
     {"roomId":{"name":"rm_mine_rightentrance","path":"rooms/rm_mine_rightentrance/rm_mine_rightentrance.yy",},},
+    {"roomId":{"name":"rm_mine_barracade","path":"rooms/rm_mine_barracade/rm_mine_barracade.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":6,},
