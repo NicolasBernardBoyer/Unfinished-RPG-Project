@@ -1,3 +1,3 @@
-targetRoom = rm_mine_entrance;
-targetX = 412;
-targetY = 206;
+targetRoom = rm_mine_barracade;
+targetX = 31;
+targetY = 175;
