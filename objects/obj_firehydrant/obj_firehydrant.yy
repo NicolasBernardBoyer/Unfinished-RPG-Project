@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_firehydrant",
   "spriteId": {
     "name": "spr_firehydrant",
     "path": "sprites/spr_firehydrant/spr_firehydrant.yy",
@@ -25,7 +28,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,8 +36,4 @@
     "name": "Shopping District",
     "path": "folders/Objects/world Objects/TheCity/Shopping District.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_firehydrant",
-  "tags": [],
-  "resourceType": "GMObject",
 }

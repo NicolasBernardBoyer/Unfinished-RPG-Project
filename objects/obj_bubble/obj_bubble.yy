@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_bubble",
   "spriteId": {
     "name": "spr_bubble_shield",
     "path": "sprites/spr_bubble_shield/spr_bubble_shield.yy",
@@ -28,8 +31,4 @@
     "name": "particle effects",
     "path": "folders/Objects/particle effects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_bubble",
-  "tags": [],
-  "resourceType": "GMObject",
 }

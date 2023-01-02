@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_icon",
   "spriteId": {
     "name": "spr_icon_small",
     "path": "sprites/spr_icon_small/spr_icon_small.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "meta",
     "path": "folders/Objects/meta.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_icon",
-  "tags": [],
-  "resourceType": "GMObject",
 }

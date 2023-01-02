@@ -16,6 +16,8 @@ if(keyboard_check_pressed(interact_key) or keyboard_check_pressed(other_interact
 
 			var line = next_line[page];
 			if(choice_dialogue) line = line[choice];
+			
+			choice = 0;
 		
 			if(line == 0) page++;
 			else if(line == -1){ instance_destroy(); exit; }

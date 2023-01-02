@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_foodtruck",
   "spriteId": {
     "name": "spr_foodtruck",
     "path": "sprites/spr_foodtruck/spr_foodtruck.yy",
@@ -25,7 +28,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,8 +36,4 @@
     "name": "The Park",
     "path": "folders/Objects/world Objects/TheCity/The Park.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_foodtruck",
-  "tags": [],
-  "resourceType": "GMObject",
 }

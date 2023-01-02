@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_arrow",
   "spriteId": {
     "name": "spr_arrow",
     "path": "sprites/spr_arrow/spr_arrow.yy",
@@ -28,8 +31,4 @@
     "name": "meta",
     "path": "folders/Objects/meta.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_arrow",
-  "tags": [],
-  "resourceType": "GMObject",
 }

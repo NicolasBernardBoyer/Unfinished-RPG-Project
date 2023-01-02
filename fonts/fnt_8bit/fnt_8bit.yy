@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMFont",
+  "resourceVersion": "1.0",
+  "name": "fnt_8bit",
   "hinting": 0,
   "glyphOperations": 0,
   "interpreter": 0,
@@ -21,6 +24,7 @@
     "path": "texturegroups/Default",
   },
   "ascenderOffset": 0,
+  "ascender": 0,
   "glyphs": {
     "32": {"x":2,"y":2,"w":6,"h":16,"character":32,"shift":6,"offset":0,},
     "33": {"x":36,"y":74,"w":2,"h":16,"character":33,"shift":4,"offset":1,},
@@ -131,8 +135,4 @@
     "name": "Fonts",
     "path": "folders/Fonts.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "fnt_8bit",
-  "tags": [],
-  "resourceType": "GMFont",
 }

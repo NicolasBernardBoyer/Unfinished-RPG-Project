@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_fallparticle",
   "spriteId": {
     "name": "bg_fallinglines",
     "path": "sprites/bg_fallinglines/bg_fallinglines.yy",
@@ -28,8 +31,4 @@
     "name": "particle effects",
     "path": "folders/Objects/particle effects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_fallparticle",
-  "tags": [],
-  "resourceType": "GMObject",
 }

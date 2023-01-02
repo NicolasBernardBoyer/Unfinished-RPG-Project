@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMFont",
+  "resourceVersion": "1.0",
+  "name": "fnt_excelsior",
   "hinting": 0,
   "glyphOperations": 0,
   "interpreter": 0,
@@ -21,6 +24,7 @@
     "path": "texturegroups/Default",
   },
   "ascenderOffset": 0,
+  "ascender": 0,
   "glyphs": {
     "32": {"x":2,"y":2,"w":9,"h":19,"character":32,"shift":9,"offset":0,},
     "33": {"x":101,"y":44,"w":5,"h":19,"character":33,"shift":9,"offset":2,},
@@ -132,8 +136,4 @@
     "name": "Fonts",
     "path": "folders/Fonts.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "fnt_excelsior",
-  "tags": [],
-  "resourceType": "GMFont",
 }
