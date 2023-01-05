@@ -71,7 +71,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Katarina",
-    "path": "folders/Sprites/Overworld/Characters/Katarina.yy",
+    "name": "Cutscene",
+    "path": "folders/Sprites/Overworld/Characters/Katarina/Cutscene.yy",
   },
 }

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_kat_staffoverhead",
+  "name": "spr_kat_idle",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -29,30 +29,24 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9ed9e493-b21e-4722-81c6-0401b4b67b43",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2eb5fd5b-393d-4a38-a6ec-56c361f33dc2",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7430f574-3af4-4ef9-92f4-56ef5c09cc18",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ae4038e0-d2fb-43bc-86f0-3fd18c53ef60",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5d5da0b5-890e-4bc4-8b85-dd02cb8445d4",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_kat_staffoverhead",
+    "name": "spr_kat_idle",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 6.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 5.0,
+    "length": 2.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b43f2d0c-8988-47c9-8af1-4bff1ccf19d9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9ed9e493-b21e-4722-81c6-0401b4b67b43","path":"sprites/spr_kat_staffoverhead/spr_kat_staffoverhead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"a06c4344-ba35-461c-bfed-370c8697f015","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2eb5fd5b-393d-4a38-a6ec-56c361f33dc2","path":"sprites/spr_kat_staffoverhead/spr_kat_staffoverhead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"7668dd9e-0233-49ca-bc5f-ca53578d42c2","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7430f574-3af4-4ef9-92f4-56ef5c09cc18","path":"sprites/spr_kat_staffoverhead/spr_kat_staffoverhead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"99604222-a131-4f07-b480-8a6df95fdabc","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ae4038e0-d2fb-43bc-86f0-3fd18c53ef60","path":"sprites/spr_kat_staffoverhead/spr_kat_staffoverhead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"cdd99025-e82f-4cf3-9f60-ee70e9fcbfa6","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5d5da0b5-890e-4bc4-8b85-dd02cb8445d4","path":"sprites/spr_kat_staffoverhead/spr_kat_staffoverhead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c77f1ea5-4000-4f35-8d32-14128c2f45e7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9ed9e493-b21e-4722-81c6-0401b4b67b43","path":"sprites/spr_kat_idle/spr_kat_idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b772a0bb-5b9d-4953-9af2-105672e30fad","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2eb5fd5b-393d-4a38-a6ec-56c361f33dc2","path":"sprites/spr_kat_idle/spr_kat_idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -77,7 +71,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Katarina",
-    "path": "folders/Sprites/Overworld/Characters/Katarina.yy",
+    "name": "Battle",
+    "path": "folders/Sprites/Overworld/Characters/Katarina/Battle.yy",
   },
 }
