@@ -3,7 +3,7 @@
   "resourceVersion": "1.1",
   "name": "Windows",
   "option_windows_display_name": "Beastmen",
-  "option_windows_executable_name": "${project_name}.exe",
+  "option_windows_executable_name": "Beastmen.exe",
   "option_windows_version": "1.0.0.0",
   "option_windows_company_info": "Nicolas Boyer",
   "option_windows_product_info": "Beastmen",
