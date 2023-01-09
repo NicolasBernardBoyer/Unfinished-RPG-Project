@@ -25,7 +25,7 @@ evtext = ["You seem to have taken quite the tumble out of bed, "+ global.playerN
 		 "Some guy tried to break it up. Didn't end well for him.",
 		 "Come to think of it, they showed a similar thing on TV last week.",
 		 "In fact, I rarely ever see any news regarding humans committing violent crimes.",
-		 ["''I think the news may be biased.''","''Maybe beastmen are just naturally wild.''"],
+		 ["''The news may be biased.''","''Beastmen are just naturally wild.''"],
 		 "Naaaahh. That may be true for most media, but my sources are 100% non-biased.",
 		 "Seems like a plausible explanation. They are half-animal, after all.",
 		 "Sorry for rambling for this long. You should get to work."

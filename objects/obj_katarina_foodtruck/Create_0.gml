@@ -97,7 +97,7 @@ scripts3 = [[change_variable, id, "portrait_index", 8],
 			[change_variable, id, "run4thTextbox", true],
 			-1];
 			
-text4 = ["That's not an actual rule. Don't listen to her, " + global.playerName + ".",
+text4 = ["That doesn't seem like an actual rule. I probably shouldn't listen to her...",
 		"I'm just messing with ya. Go wash your hands so we can get started."];
 speakers4 = [obj_player, id];
 next_line4 = [0,0];

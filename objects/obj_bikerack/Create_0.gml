@@ -7,7 +7,7 @@ alarm[1] = -1;
 voice = snd_typewriter;
 
 name = "";
-text = ["You didn't lock your bike, but it's ok.",
+text = ["I didn't lock my bike, but it's ok.",
 		"Nobody will steal it anyways."];
 portrait_index = noone;
 speakers = [id, id];
@@ -22,7 +22,7 @@ altspeakers = [id, id, id, id];
 altnext_line = [0, 0, -1, 0];
 altscripts = [-1, -1, [player_fall_over], -1];
 
-alttext2 = ["...You gotta stop doing that.",
+alttext2 = ["...I gotta stop doing that.",
 			"..."];
 altspeakers2 = [id, id];
 altnext_line2 = [0, 0];

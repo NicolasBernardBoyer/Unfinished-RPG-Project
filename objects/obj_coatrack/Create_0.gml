@@ -5,11 +5,11 @@ voice = snd_typewriter;
 name = "";
 
 text = [
-		"Take your coat from the coatrack?",
+		"Should I take my coat from the coatrack?",
 		["Yes","No"],
-		"You put your coat on.",
-		"You're now ready for work. Go ahead and head out the front door.",
-		"You decided to take the coat some other time."
+		"I put my coat on.",
+		"I'm now ready for work. I should go ahead and head out the front door.",
+		"I decided to take the coat some other time."
 ];
 
 portrait_index = noone;

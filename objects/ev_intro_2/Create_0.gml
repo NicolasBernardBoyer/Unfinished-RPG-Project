@@ -21,18 +21,18 @@ preScripts = [-1,[[change_variable, id, "nameok", false, id, "runText2", true],[
 
 if (global.playerName = "Noa"){
 	text = [
-			"Your name is...",
-			global.playerName + "? I see it hasn't changed.",
-			"Next, let us evaluate how cruel you would like the world to be towards you.",
-			"Always remember that the harsher the world treats you, the stronger you'll be.",
+			"My name is...",
+			global.playerName + "? Oh yeah, it always was.",
+			"Back when I was part of this reality, how hard was life?",
+			"The harsher reality is, the stronger I'll get.",
 			"Select your difficulty.\nThis can be changed at any point during gameplay in settings.",
 			];
 } else {
 	text = [
-			"Your name is...",
-			global.playerName + "? Of course.",
-			"Next, let us evaluate how cruel you would like the world to be towards you.",
-			"Always remember that the harsher the world treats you, the stronger you'll be.",
+			"My name is...",
+			global.playerName + "? My memory's kinda foggy...",
+			"Back when I was part of this reality, how hard was life?",
+			"The harsher reality is, the stronger I'll get.",
 			"Select your difficulty.\nThis can be changed at any point during gameplay in settings.",
 			];
 }
@@ -45,9 +45,9 @@ scripts = [-1,-1, -1, [change_variable, id, "draw_difficulty", true], -1];
 text2 = ["Is this the difficulty you want?",
 		["Yes", "No"],
 		"Select your difficulty.\nThis can be changed at any point during gameplay in settings.",
-		"Perfect.",
-		"Now...\nYou are ready to face the world.",
-		"Good luck, and do the right thing."];
+		"Yeah... That's how things were.",
+		"Now...\nTime to wake up, I guess.",
+		"I must do the right thing."];
 speakers2 = [id,id,id,id,id,id];
 next_line2 = [0,[3,0],1,0,0,0];
 scripts2 = [-1,[[change_variable, id, "draw_difficulty", false, id, "confirm_difficulty", false],[change_variable, id, "draw_difficulty", true, id, "confirm_difficulty", false, obj_textbox, "proceed", false, id, "delayCheck", true]],-1,-1,-1,[goto_room]];
