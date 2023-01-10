@@ -87,6 +87,7 @@
     {"id":{"name":"spr_tile_home","path":"sprites/spr_tile_home/spr_tile_home.yy",},"order":0,},
     {"id":{"name":"spr_tile_mine","path":"sprites/spr_tile_mine/spr_tile_mine.yy",},"order":2,},
     {"id":{"name":"snd_door","path":"sounds/snd_door/snd_door.yy",},"order":2,},
+    {"id":{"name":"ev_bat_take","path":"objects/ev_bat_take/ev_bat_take.yy",},"order":4,},
     {"id":{"name":"spr_akano_faces","path":"sprites/spr_akano_faces/spr_akano_faces.yy",},"order":2,},
     {"id":{"name":"ac_accelDrop","path":"animcurves/ac_accelDrop/ac_accelDrop.yy",},"order":0,},
     {"id":{"name":"rb_gotowork","path":"objects/rb_gotowork/rb_gotowork.yy",},"order":4,},
