@@ -19,9 +19,10 @@ yy = 0; repeat(inst_num){
 	//pull out an ID
 	inst = dgrid[# 0, yy];
 	//get instance to draw itself
-	with(inst){
-		event_perform(ev_draw,0);
+	if (layer_has_instance("Instances", inst)){
+		with(inst){
+			event_perform(ev_draw,0);
+		}
 	}
-	
 	yy++;
 }
