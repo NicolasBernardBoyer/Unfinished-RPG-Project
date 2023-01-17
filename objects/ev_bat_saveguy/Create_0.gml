@@ -37,9 +37,18 @@ text2 = ["EEK! YOU'RE NAKED! WHAT EVEN ARE YOU?!?",
 		 "Here, I'll give you this. You seem like the type to be good a swinging.",
 		 "Besides, I sense zero potential for any sort of special power from you."
 		 ];
-speakers2 = [kat,sguy,sguy,sguy,kat,sguy,kat,sguy,sguy,kat,sguy,sguy,kat,
-			sguy,sguy,kat,sguy,kat,sguy,id,id,id,sguy,sguy];
-next_line2 = [0];
-scripts2 = [[change_variable, id, "cutProg", 2]];
+speakers2 = [kat,sguy,sguy,sguy,
+			 kat,sguy,kat,sguy,
+			 sguy,kat,sguy,sguy,
+			 kat, sguy,sguy,kat,
+			 sguy,kat,sguy,id,
+			 id,id,sguy,sguy];
+next_line2 = [0,0,0,0,
+			  0,0,0,0,
+			  0,0,0,0,
+			  0,0,0,0,
+			  0,0,0,0,
+			 [0,0],0,0,0];
+scripts2 = [[port_swap],[change_variable, id, "cutProg", 2]];
 
 

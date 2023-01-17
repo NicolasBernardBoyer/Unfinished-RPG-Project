@@ -8,6 +8,7 @@
     {"id":{"name":"rb_managercutscene","path":"objects/rb_managercutscene/rb_managercutscene.yy",},"order":3,},
     {"id":{"name":"event_unregister","path":"scripts/event_unregister/event_unregister.yy",},"order":2,},
     {"id":{"name":"ev_title_screen","path":"objects/ev_title_screen/ev_title_screen.yy",},"order":1,},
+    {"id":{"name":"spr_save_guy_faces","path":"sprites/spr_save_guy_faces/spr_save_guy_faces.yy",},"order":7,},
     {"id":{"name":"event_register_script","path":"scripts/event_register_script/event_register_script.yy",},"order":1,},
     {"id":{"name":"obj_davecouch","path":"objects/obj_davecouch/obj_davecouch.yy",},"order":19,},
     {"id":{"name":"obj_exclamation","path":"objects/obj_exclamation/obj_exclamation.yy",},"order":15,},
