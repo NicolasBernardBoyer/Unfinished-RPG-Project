@@ -9,7 +9,7 @@ textRpt = false;
 
 hasText = true;
 portrait_index = 0;
-portrait = noone;
+portrait = spr_save_guy_faces;
 voice = snd_typewriter;
 name = "Save Guy";
 text =  [""];

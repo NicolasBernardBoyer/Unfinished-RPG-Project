@@ -30,6 +30,7 @@
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3979A6FF","properties":[],"isDnd":false,"objectId":{"name":"obj_save_guy","path":"objects/obj_save_guy/obj_save_guy.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":463.0,"y":137.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7961B52D","properties":[],"isDnd":false,"objectId":{"name":"ev_bat_saveguy","path":"objects/ev_bat_saveguy/ev_bat_saveguy.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_BG","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1A47608C","properties":[],"isDnd":false,"objectId":{"name":"WarningSign","path":"objects/WarningSign/WarningSign.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":74.0,"y":88.0,},
@@ -50,6 +51,7 @@
     {"name":"inst_1A47608C","path":"rooms/rm_mine_barracade/rm_mine_barracade.yy",},
     {"name":"inst_3979A6FF","path":"rooms/rm_mine_barracade/rm_mine_barracade.yy",},
     {"name":"inst_29D2F14D","path":"rooms/rm_mine_barracade/rm_mine_barracade.yy",},
+    {"name":"inst_7961B52D","path":"rooms/rm_mine_barracade/rm_mine_barracade.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
