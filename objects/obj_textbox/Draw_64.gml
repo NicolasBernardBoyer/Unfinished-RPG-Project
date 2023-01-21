@@ -42,7 +42,13 @@ if (name = "") {
 			case ":": pause = true; alarm[1] = 15; break;
 			case ".": 
 			case "?":
-			case "!": pause = true; alarm[1] = 25; break;
+			case "!": 
+			if (string_char_at(text_wrapped, counter+1) != "." and
+				string_char_at(text_wrapped, counter+1) != "?" and
+				string_char_at(text_wrapped, counter+1) != "!"){
+					pause = true; alarm[1] = 25;
+			}
+			break;
 		}
 	}
 	var substr = string_copy(text_wrapped, 1, counter);
@@ -68,7 +74,12 @@ if (name = "") {
 			case ":": pause = true; alarm[1] = 15; break;
 			case ".": 
 			case "?":
-			case "!": pause = true; alarm[1] = 25; break;
+			if (string_char_at(text_wrapped, counter+1) != "." and
+				string_char_at(text_wrapped, counter+1) != "?" and
+				string_char_at(text_wrapped, counter+1) != "!"){
+			pause = true; alarm[1] = 25;
+			}
+			break;
 		}
 	}
 	var substr = string_copy(text_wrapped, 1, counter);

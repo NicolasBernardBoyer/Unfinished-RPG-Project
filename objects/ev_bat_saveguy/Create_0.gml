@@ -23,7 +23,7 @@ text2 = ["EEK! IS THAT A NAKED GUY?!? OH MY GOD!",
 		 "What are you two even doin' down here? This area is off-limits, you know.",
 		 "Oh? Are you an employee of Wolfred Entreprises?",
 		 "No. My job is workin' as a save guy for the city.",
-		 "Both of you should go back the way you came. It ain't safe past here.",
+		 "Both of you should go back the way you came. It's dangerous here.",
 		 "We fell down a hole. We can't go back the same way we went in.",
 		 "Well then, you'll need to be able to fight your way out.",
 		 "Want me to teach you the ropes? I'm great at teachin'!",
@@ -34,7 +34,7 @@ text2 = ["EEK! IS THAT A NAKED GUY?!? OH MY GOD!",
 		 "Will you participate in Save Guy's tutorial?",
 		 ["Yes", "Yes"],
 		 "You decided out of your own free will to participate.",
-		 "Here, I'll give you this. You seem like the type to be good a swingin'.",
+		 "Here, I'll give you this. You seem like the type to be good at swingin'.",
 		 ];
 speakers2 = [kat,sguy,sguy,sguy,
 			 kat,sguy,kat,sguy,
@@ -54,5 +54,20 @@ scripts2 = [[port_swap, 0], [port_swap, 0], [port_swap, 0], [port_swap, 1],
 			[port_swap, 0], [port_swap, 0], [port_swap, 10], [port_swap, 0],
 			[port_swap, 7], [port_swap, 0], -1, -1,
 			[-1, -1], [port_swap, 0], [change_variable, id, "cutProg", 2]];
+			
+text3 = ["So, about your job...",
+		 "What exactly does being a save guy entail?",
+		 "I do savin' for people.",
+		 "I'm not sure I understand.",
+		 "It's a lot easier to grasp with a demonstration.",
+		 "...but you don't really have anythin' to save.",
+		 "Once my tutorial is done, then I can save for you.",
+		 "Alright, time to beat you two to a pulp! ...In an educational way!",
+		 "It's savin' time!"];
+speakers3 = [kat, kat, sguy, kat, sguy, sguy, sguy, sguy, sguy];
+next_line3 = [0,0,0,0,0,0,0,0,0];
+scripts3 = [[port_swap, 0], [port_swap, 0], [port_swap, 0],[port_swap, 0],
+			[port_swap, 0], [port_swap, 0], [port_swap, 0],[port_swap, 0],
+			[port_swap, 0], [port_swap, 0], [port_swap, 0],[port_swap, 0]];
 
 

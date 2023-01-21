@@ -21,13 +21,13 @@ evtext = ["You seem to have taken quite the tumble out of bed, "+ global.playerN
 		 "That's the spirit!\nMaybe I'll stop by for a burger today.",
 		 "You don't have a choice.\nI can't be the only one paying rent.",
 		 "Anyways, you missed this morning's news on TV.",
-		 "Two beastmen got into a really intense street fight last night.",
+		 "Two animals got into a really intense street fight last night.",
 		 "Some guy tried to break it up. Didn't end well for him.",
 		 "Come to think of it, they showed a similar thing on TV last week.",
 		 "In fact, I rarely ever see any news regarding humans committing violent crimes.",
-		 ["''The news may be biased.''","''Beastmen are just naturally wild.''"],
+		 ["''The news may be biased.''","''Animals are wild, after all.''"],
 		 "Naaaahh. That may be true for most media, but my sources are 100% non-biased.",
-		 "Seems like a plausible explanation. They are half-animal, after all.",
+		 "Seems like a plausible explanation. They're a bit scary, don'tcha think?",
 		 "Sorry for rambling for this long. You should get to work."
 		 ]; 
 evspeakers =  [id,id,id, id,id,id,id,id,id,id,id,id,id,id,id,id,id];

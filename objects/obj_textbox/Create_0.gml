@@ -36,6 +36,7 @@ text_y = box_y + y_buffer;
 portrait_index = 0;
 counter = 0;
 pause = false;
+pauseDelay = false;
 
 text_col = c_white;
 name_text_col = c_white;
