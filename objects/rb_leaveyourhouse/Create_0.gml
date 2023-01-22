@@ -1,21 +1,18 @@
-portrait = spr_dave_faces;
-davePart = false;
-
+text_col = c_white;
+portrait = noone;
 voice = snd_typewriter;
 name = "";
 text = ["Head out to work?", 
 	   ["Yes", "No"],
-	   "Hurry up!"];
+	   "Hurry up!",
+	   "Hey " + global.playerName + ", be careful.\nIt's a wild world out there.",
+		"Get it? Wild?\nBecause animals exist?\nOkay, I'll let you leave."
+	   ];
 portrait_index = 0;
-speakers = [obj_player,obj_player,obj_player,obj_player];
-next_line = [0,[-1,0],0];
-scripts = [-1,[[change_variable, id, "davePart", true],-1],-1];
-
-davetext = ["Hey " + global.playerName + ", be careful.\nIt's a wild world out there.",
-			"Get it? Wild?\nBecause beastmen exist?\nOkay, I'll let you leave."];
-davespeakers = [id,id];
-davenext_line = [0,0];
-davescripts = [[change_variable, obj_textbox, "portrait_index", 2],[leave_house]];
+speakers = [id,id,id,obj_davecouch,obj_davecouch];
+next_line = [0,[3,0],-1,0,0];
+scripts = [-1,[-1,-1],-1,
+			[change_variable, obj_textbox, "portrait_index", 2],[leave_house]];
 
 radiusX = 8;
 radiusY = 36;

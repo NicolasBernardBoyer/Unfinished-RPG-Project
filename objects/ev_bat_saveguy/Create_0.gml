@@ -1,12 +1,13 @@
 
 kat = obj_kat;
 sguy = obj_save_guy;
-cutProg = 0;
+cutProg = -1;
 
 portrait = noone;
 portrait_index = 3;
 voice = snd_typewriter;
 name = "";
+name_col = c_white;
 text = ["OH MY GOD! WHAT IS THAT?!?!?!?"];
 speakers = [kat];
 next_line = [0];

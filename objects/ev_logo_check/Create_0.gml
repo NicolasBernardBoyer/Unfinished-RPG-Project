@@ -5,6 +5,7 @@ portrait = noone;
 portrait_index = 11;
 voice = snd_typewriter;
 name = "";
+name_col = c_white;
 katApproach = false;
 
 text = ["Oh no.",

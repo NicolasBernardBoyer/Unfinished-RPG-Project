@@ -1,5 +1,7 @@
 global.name_text_col = c_orange;
 
+//initialization
+
 portrait_index = 3;
 portrait = spr_dave_faces;
 

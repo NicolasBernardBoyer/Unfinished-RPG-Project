@@ -12,7 +12,7 @@
       ],},
   ],
   "parent": {
-    "name": "Animation Curves",
-    "path": "folders/Animation Curves.yy",
+    "name": "group1",
+    "path": "folders/Animation Curves/group1.yy",
   },
 }

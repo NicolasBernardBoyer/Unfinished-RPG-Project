@@ -23,7 +23,8 @@ draw_set_font(font);
 //Draw Name
 if (name != "" and global.hasname = true){	
 	var c = global.name_text_col;
-	draw_text_color(text_x, text_y, name, c,c,c,c, 1);
+	
+	draw_text_color(text_x, text_y, "[" + name + "]", c,c,c,c, 1);
 }
 
 if(!choice_dialogue){
