@@ -19,3 +19,16 @@ if (inst!=noone){
 	runOnce = false;
 }
 
+if (movePlayer = true){
+	if (alarm[0] = -1){
+		alarm[0] = 10;
+	}
+	with (obj_player){
+		canMove = false;
+		global.canPause = false;
+		sprite_index = spr_player_upwalk;
+		image_speed = 1;
+		y--;
+	}
+}
+

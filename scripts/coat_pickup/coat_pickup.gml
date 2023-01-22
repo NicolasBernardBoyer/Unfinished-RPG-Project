@@ -3,6 +3,7 @@
 function coat_pickup(){
 	global.hasCoat = true;
 	
+	//change player's sprite depending on direction
 		if (obj_player.facing == dir.down) {
 			obj_player.sprite_index = spr_player_walk_coat;
 			obj_player.image_index = 0;
@@ -20,6 +21,7 @@ function coat_pickup(){
 			obj_player.image_index = 0;
 		} 
 	
+	//change text for the coat rack
 	inst_522B61D8.sprite_index = spr_coatrack;
 	inst_522B61D8.voice = snd_typewriter;
 	inst_522B61D8.name = "";
@@ -29,6 +31,7 @@ function coat_pickup(){
 	inst_522B61D8.next_line = [0];
 	inst_522B61D8.scripts = [-1];
 	
+	instance_activate_object(rb_leaveyourhouse);
 	instance_destroy(inst_458E5062);
 	
 }
