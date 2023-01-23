@@ -1,35 +1,39 @@
-if (instance_exists(obj_devmode)) instance_destroy(self);
+// If any developer skips are active, do not run this cutscene
+//if (instance_exists(obj_devmode)) instance_destroy(self);
 
 global.name_text_col = c_gray;
 cutProg = 0;
 kat = obj_kat;
 
-part2 = time_source_create(time_source_game, 2, time_source_units_seconds, function() {
+// Two second pause during the cutscene
+twoSeconds = time_source_create(time_source_game, 2, time_source_units_seconds, function() {
+	// Runs when cutscene progression is at 2
+	// Turns highboxes on and changes kat's sprite, as well as creates a textbox
 	if (!instance_exists(obj_textbox) and cutProg = 2){
 		global.highbox = true;
 		obj_kat.image_index = 2;
-		create_facetextbox(text,speakers,next_line,scripts);
-		time_source_stop(part2);
+		create_textbox(text,speakers,next_line,scripts);
+		time_source_stop(twoSeconds);
 	}
-}, [], 1);
-
-part3 = time_source_create(time_source_game, 2, time_source_units_seconds, function() {
-	if (!instance_exists(obj_textbox) and cutProg = 3){
+	// Runs when cutscene progression is at 3
+	// Makes kat turn towards the player and creates a textbox
+	else if (!instance_exists(obj_textbox) and cutProg = 3){
 		obj_kat.sprite_index = spr_kat_rightwalk;
 		portrait_index = 10;
-		create_facetextbox(text2,speakers2,next_line2,scripts2);
-		time_source_stop(part3);
+		create_textbox(text2,speakers2,next_line2,scripts2);
+		time_source_stop(twoSeconds);
 	}
 }, [], 1);
 
+//Runs when cutscene progression is at 4. Creates a textbox.
 part4 = time_source_create(time_source_game, 1, time_source_units_seconds, function() {
 	if (!instance_exists(obj_textbox) and cutProg = 4){
-		create_facetextbox(text3,speakers3,next_line3,scripts3);
+		create_textbox(text3,speakers3,next_line3,scripts3);
 	}
 	time_source_stop(part4);
 }, [], 1);
 
-
+//Creates a delay during the 6th part of the cutscene before a sprite change
 spritewait = time_source_create(time_source_game, 10, time_source_units_frames, function() {
 	if (cutProg = 6){
 		obj_kat.image_index = 0;
@@ -38,11 +42,13 @@ spritewait = time_source_create(time_source_game, 10, time_source_units_frames, 
 	}
 }, [], 1);
 
-
+//Curve for speed of the falling anim
 curve = ac_bubbleShatter;
 curvePos = 0;
 curveSpeed = 0.02;
 
+//This event's textbox variables are set to the same as Katarina's.
+//This isn't a big deal but should not occur in the future.
 portrait_index = 11;
 portrait = spr_kat_faces;
 voice = snd_meow;

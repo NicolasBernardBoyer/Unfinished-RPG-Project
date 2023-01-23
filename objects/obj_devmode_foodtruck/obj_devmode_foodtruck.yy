@@ -1,14 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "ev_bat_take",
+  "name": "obj_devmode_foodtruck",
   "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
-  "persistent": false,
-  "parentObjectId": null,
+  "persistent": true,
+  "parentObjectId": {
+    "name": "obj_devmode",
+    "path": "objects/obj_devmode/obj_devmode.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -22,13 +25,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Unused",
-    "path": "folders/Cutscenes/Unused.yy",
+    "name": "dev stuff",
+    "path": "folders/Objects/dev stuff.yy",
   },
 }

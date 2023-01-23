@@ -1,5 +1,6 @@
 global.name_text_col = c_gray;
 cutProg = 0;
+//Declare the curve for the falling animation
 dropSpeed = 0;
 curve = animcurve_get_channel(ac_pitFall,0);
 		
