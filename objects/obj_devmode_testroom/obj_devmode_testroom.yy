@@ -8,7 +8,10 @@
   "managed": true,
   "spriteMaskId": null,
   "persistent": true,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_devmode",
+    "path": "objects/obj_devmode/obj_devmode.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

@@ -73,7 +73,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Characters",
-    "path": "folders/Sprites/Overworld/Characters.yy",
+    "name": "SaveGuy",
+    "path": "folders/Sprites/Overworld/Characters/SaveGuy.yy",
   },
 }

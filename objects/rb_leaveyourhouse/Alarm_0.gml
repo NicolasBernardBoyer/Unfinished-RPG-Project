@@ -1,3 +1,4 @@
+//Let the player move again and reset movePlayer to false
 with (obj_player){
 	canMove = true;
 	global.canPause = true;

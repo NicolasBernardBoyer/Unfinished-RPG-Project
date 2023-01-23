@@ -1,4 +1,5 @@
 
+
 kat = obj_kat;
 sguy = obj_save_guy;
 cutProg = -1;
