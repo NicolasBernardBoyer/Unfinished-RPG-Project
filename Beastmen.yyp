@@ -414,6 +414,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Mine","folderPath":"folders/Cutscenes/Mine.yy","order":6,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Opening City","folderPath":"folders/Cutscenes/Opening City.yy","order":4,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Opening","folderPath":"folders/Cutscenes/Opening.yy","order":3,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Unused","folderPath":"folders/Cutscenes/Unused.yy","order":7,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Work","folderPath":"folders/Cutscenes/Work.yy","order":5,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Extensions","folderPath":"folders/Extensions.yy","order":8,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fonts","folderPath":"folders/Fonts.yy","order":2,},
@@ -490,7 +491,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Unused","folderPath":"folders/Sprites/Unused.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":13,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":3,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Unused","folderPath":"folders/Cutscenes/Unused.yy","order":7,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
