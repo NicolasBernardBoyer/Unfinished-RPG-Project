@@ -59,21 +59,23 @@ switch (cutProg){
 	/*if the player has stopped moving and their sprite has changed,
 	continue the cutscene*/
 	if (obj_player.sprite_index = spr_player_walk_coat){
-		obj_save_guy.image_index = 0;
 		cutProg++;
 	}
 	break;
 	
 	//Change save guy's sprite
 	case 3:
-	obj_save_guy.sprite_index = spr_save_guy_armout;
+	with (obj_save_guy){
+		animState = "throw";
+		instance_create_layer(x+32, y, "Instances", obj_bat);
+	}
 	cutProg++;
 	break;
 	
 	//Once the animation is done, stop saveguy's speed
 	case 4:
-	if (obj_save_guy.image_index > image_number -1){
-		obj_save_guy.image_speed = 0;
+	if (obj_save_guy.image_speed = 0){
+		
 	}
 	break;
 }
