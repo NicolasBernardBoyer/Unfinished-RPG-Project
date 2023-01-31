@@ -1,12 +1,17 @@
-if (instance_exists(obj_facetextbox)){
-obj_textbox.portrait_index = portrait_index;
-obj_textbox.portrait = portrait;
+// Set portrait for the textbox
+if (instance_exists(obj_textbox)){
+	if (portrait != noone){
+		obj_textbox.portrait_index = portrait_index;
+		obj_textbox.portrait = portrait;
+	}
 }
 
+// Play wind sfx in this room if it is not already playing
 if (!audio_is_playing(snd_wind)){
 	audio_play_sound(snd_wind, 5, false);
 }
 
+// Switch statement for cutscene progression
 switch (cutProg){
 	case 0:
 		if(obj_player.y != 157){
@@ -18,26 +23,11 @@ switch (cutProg){
 	case 1:
 		if (!instance_exists(obj_textbox)){
 			obj_kat.sprite_index = spr_kat_fall_angry;
-			create_facetextbox(text, speakers, next_line, scripts);
+			create_textbox(text, speakers, next_line, scripts);
 		}
 	break;
 	case 2:
-	cutProg++;
-	break;
-	case 3:
 		obj_kat.sprite_index = spr_kat_fall_lookright;
-		if (!instance_exists(obj_textbox)){
-			if (sorryChoice){
-				portrait_index = 13;
-				create_facetextbox(text3, speakers3, next_line3, scripts3);
-			} else if (blameChoice){
-				portrait_index = 10;
-				create_facetextbox(text4, speakers4, next_line4, scripts4);
-			} else if (deathChoice){
-				portrait_index = 9;
-				create_facetextbox(text5, speakers5, next_line5, scripts5);
-			}
-		}
 	break;
 	case 4:
 		staffPull = time_source_create(time_source_game, 40, time_source_units_frames, function(){
