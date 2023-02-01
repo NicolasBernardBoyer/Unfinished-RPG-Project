@@ -1,4 +1,5 @@
 var c;
+// text flicker effect by changing the color to black
 draw_set_font(fnt_excelsior);
 if (global.textvisible == true){
 	c = c_yellow;

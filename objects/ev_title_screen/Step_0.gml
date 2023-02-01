@@ -1,4 +1,5 @@
-
+// By pressing any key play sfx and display the menu,
+// Reset playsound to prevent double sfx
 if ((keyboard_check_pressed(vk_anykey) or gamepad_button_check_pressed(0, gp_start)) and global.pause = false and playsound = true){
 	if (playsound == true) audio_play_sound(snd_select, 5, false);
 	instance_activate_object(obj_titlemenu);

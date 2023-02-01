@@ -1,3 +1,4 @@
+// If intro isn't playing then send the player to their room automatically
 if (global.playintro == false) {
 	goto_room();
 }

@@ -1,3 +1,4 @@
+// Draw the name that the player entered
 if (!instance_exists(obj_name_creator) and nameok){
 	//draw_set_font(fnt_8bit);
 	//draw_set_color(c_white);
@@ -9,6 +10,7 @@ if (!instance_exists(obj_name_creator) and nameok){
 	draw_set_color(c_white);
 }
 
+// Draw difficulty options ---> confirming selected difficulty
 if (draw_difficulty = false and confirm_difficulty){
 	//draw_set_font(fnt_8bit);
 	//draw_set_color(c_white);
@@ -32,6 +34,7 @@ if (draw_difficulty = false and confirm_difficulty){
 	draw_set_color(c_white);
 }
 
+// If not confirming display the possible difficulty options
 if (draw_difficulty = true){
 	draw_set_font(fnt_excelsior);
 	switch(difficulty_page){

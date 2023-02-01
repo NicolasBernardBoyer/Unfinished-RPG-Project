@@ -4,17 +4,13 @@ cutProg = 0;
 dropSpeed = 0;
 curve = animcurve_get_channel(ac_pitFall,0);
 
-// Dialogue choices for the cutscene
-sorryChoice = false;
-blameChoice = false;
-deathChoice = false;
-
 p = obj_player;
+kat = obj_kat;
 
 portrait_index = 1;
-portrait = spr_kat_faces;
-voice = snd_meow;
-name = "Katarina";
+portrait = noone;
+voice = snd_typewriter;
+name = "";
 
 // Declare textbox variables
 text = ["We both could've been done with our days, you know.",
@@ -29,25 +25,26 @@ text = ["We both could've been done with our days, you know.",
 		 "We're not gonna die.",
 		 "All I need to do is find a way to get us out of this mess."
 		 ];
-speakers = [id,p,id,id,id,id,id,id,id,id,id];
+speakers = [kat,kat,kat,kat,kat,kat,kat,kat,kat,kat,kat];
 next_line = [0,[2,5,8],0,0,-1,0,0,-1,0,0,-1];
-scripts = [-1,[[change_variable, obj_textbox, "portrait_index", 9, obj_kat, "sprite_index", spr_kat_fall_lookright],
+scripts = [-1,[[change_variable, obj_textbox, "portrait_index", 13, obj_kat, "sprite_index", spr_kat_fall_lookright],
    [change_variable, obj_textbox, "portrait_index", 10, obj_kat, "sprite_index", spr_kat_fall_lookright],
-   [change_variable, obj_textbox, "portrait_index", 13, obj_kat, "sprite_index", spr_kat_fall_lookright]],
+   [change_variable, obj_textbox, "portrait_index", 9, obj_kat, "sprite_index", spr_kat_fall_lookright]],
    [port_swap, 0],
    [port_swap, 5],
-   [change_variable, id, "cutProg", 4],
+   [change_variable, id, "cutProg", 2],
    [port_swap, 13],
    [port_swap, 12],
-   [change_variable, id, "cutProg", 4],
+   [change_variable, id, "cutProg", 2],
    [port_swap, 10],
    -1,
-   [change_variable, id, "cutProg", 4]];
+   [change_variable, id, "cutProg", 2]];
 
+// initialization for dialogue in the 2nd part of the cutscene
 text2 = ["Here, get closer to me."];
-speakers2 =	[id];
+speakers2 =	[kat];
 next_line2 = [0];
-scripts2 = [[change_variable, id, "cutProg", 6]];
+scripts2 = [[change_variable, id, "cutProg", 4]];
 
 
 
