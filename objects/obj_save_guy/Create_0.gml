@@ -19,3 +19,13 @@ speakers = [id];
 next_line =  [0];
 scripts = [-1];
 
+stateIdle = function(){
+	sprite_index = spr_save_guy;
+}
+
+stateThrow = function(){
+	sprite_index = spr_save_guy_throw;
+}
+
+state = stateIdle;
+

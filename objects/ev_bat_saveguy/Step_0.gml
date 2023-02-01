@@ -66,8 +66,8 @@ switch (cutProg){
 	//Change save guy's sprite
 	case 3:
 	with (obj_save_guy){
-		animState = "throw";
-		instance_create_layer(x+32, y, "Instances", obj_bat);
+		state = stateThrow;
+		instance_create_layer(x-32, y, "Instances", obj_bat);
 	}
 	cutProg++;
 	break;

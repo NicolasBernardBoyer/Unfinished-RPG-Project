@@ -1,5 +1,5 @@
-if (sprite_index = spr_save_guy_throw){
-	image_speed = 0;
+if (state = stateThrow){
+	state = stateIdle;
 }
 
 

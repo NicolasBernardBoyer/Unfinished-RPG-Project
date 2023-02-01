@@ -161,135 +161,72 @@ y += vsp;
 
 // This region is for setting the sprite depending on the state of the player
 #region
-if (global.hasBackpack == false){
-//Set Sprite
-		switch(dir){
-			case 0: sprite_index = spr_player_rightwalk; facing = dir.right; break;
-			case 45: 
-			if (sprite_index = spr_player_rightwalk /*or sprite_index = spr_player_leftwalk*/){
-			sprite_index = spr_player_rightwalk; facing = dir.right;
-			}
-			else if (sprite_index = spr_player_upwalk or sprite_index = spr_player_walk){
-			sprite_index = spr_player_upwalk; facing = dir.up;
-			}
-			break;
-			case 90: sprite_index = spr_player_upwalk; facing = dir.up; break;
-			case 135: 
-			if (sprite_index = spr_player_leftwalk /*or sprite_index = spr_player_rightwalk*/){
-			sprite_index = spr_player_leftwalk; facing = dir.left;
-			}
-			else if (sprite_index = spr_player_upwalk or sprite_index = spr_player_walk){
-			sprite_index = spr_player_upwalk; facing = dir.up;
-			}
-			break;
-			case 180: sprite_index = spr_player_leftwalk; facing = dir.left; break;
-			case 225: 
-			if (sprite_index = spr_player_leftwalk /*or sprite_index = spr_player_rightwalk*/){
-			sprite_index = spr_player_leftwalk; facing = dir.left;
-			}
-			else if (sprite_index = spr_player_walk  or sprite_index = spr_player_upwalk){
-			sprite_index = spr_player_walk; facing = dir.down;
-			}
-			break;
-			case 270: sprite_index = spr_player_walk; facing = dir.down break;
-			case 315: 
-			if (sprite_index = spr_player_rightwalk /* or sprite_index = spr_player_leftwalk */){
-			sprite_index = spr_player_rightwalk; facing = dir.right;
-			}
-			else if (sprite_index = spr_player_walk or sprite_index = spr_player_upwalk){
-			sprite_index = spr_player_walk; facing = dir.down;
-			}
-			break;
-		} 
-		
-} else if (global.hasBackpack and !global.hasCoat){
-//Set Sprite with backpack
-		switch(dir){
-			case 0: sprite_index = spr_player_rightwalk_bag; facing = dir.right; break;
-			case 45: 
-			if (sprite_index = spr_player_rightwalk_bag /*or sprite_index = spr_player_leftwalk_bag*/){
-			sprite_index = spr_player_rightwalk_bag; facing = dir.right;
-			}
-			else if (sprite_index = spr_player_upwalk_bag or sprite_index = spr_player_walk_bag){
-			sprite_index = spr_player_upwalk_bag; facing = dir.up;
-			}
-			break;
-			case 90: sprite_index = spr_player_upwalk_bag; facing = dir.up; break;
-			case 135: 
-			if (sprite_index = spr_player_leftwalk_bag /* or sprite_index = spr_player_rightwalk_bag */){
-			sprite_index = spr_player_leftwalk_bag; facing = dir.left;
-			}
-			else if (sprite_index = spr_player_upwalk_bag or sprite_index = spr_player_walk_bag){
-			sprite_index = spr_player_upwalk_bag; facing = dir.up;
-			}
-			break;
-			case 180: sprite_index = spr_player_leftwalk_bag; facing = dir.left; break;
-			case 225: 
-			if (sprite_index = spr_player_leftwalk_bag /* or sprite_index = spr_player_rightwalk_bag */){
-			sprite_index = spr_player_leftwalk_bag; facing = dir.left;
-			}
-			else if (sprite_index = spr_player_walk_bag  or sprite_index = spr_player_upwalk_bag){
-			sprite_index = spr_player_walk_bag; facing = dir.down;
-			}
-			break;
-			case 270: sprite_index = spr_player_walk_bag; facing = dir.down break;
-			case 315: 
-			if (sprite_index = spr_player_rightwalk_bag /* or sprite_index = spr_player_leftwalk_bag */){
-			sprite_index = spr_player_rightwalk_bag; facing = dir.right;
-			}
-			else if (sprite_index = spr_player_walk_bag or sprite_index = spr_player_upwalk_bag){
-			sprite_index = spr_player_walk_bag; facing = dir.down;
-			}
-			break;
-	} 
-} else if (global.hasBackpack and global.hasCoat){
-//Set Sprite with backpack
-		switch(dir){
-			case 0: sprite_index = spr_player_rightwalk_coat; facing = dir.right; break;
-			case 45: 
-			if (sprite_index = spr_player_rightwalk_coat  /* or sprite_index = spr_player_leftwalk_coat */){
-			sprite_index = spr_player_rightwalk_coat; facing = dir.right;
-			}
-			else if (sprite_index = spr_player_upwalk_coat or sprite_index = spr_player_walk_coat){
-			sprite_index = spr_player_upwalk_coat; facing = dir.up;
-			}
-			break;
-			case 90: sprite_index = spr_player_upwalk_coat; facing = dir.up; break;
-			case 135: 
-			if (sprite_index = spr_player_leftwalk_coat /* or sprite_index = spr_player_rightwalk_coat */){
-			sprite_index = spr_player_leftwalk_coat; facing = dir.left;
-			}
-			else if (sprite_index = spr_player_upwalk_coat or sprite_index = spr_player_walk_coat){
-			sprite_index = spr_player_upwalk_coat; facing = dir.up;
-			}
-			break;
-			case 180: sprite_index = spr_player_leftwalk_coat; facing = dir.left; break;
-			case 225: 
-			if (sprite_index = spr_player_leftwalk_coat /*or sprite_index = spr_player_rightwalk_coat */){
-			sprite_index = spr_player_leftwalk_coat; facing = dir.left;
-			}
-			else if (sprite_index = spr_player_walk_coat  or sprite_index = spr_player_upwalk_coat){
-			sprite_index = spr_player_walk_coat; facing = dir.down;
-			}
-			break;
-			case 270: sprite_index = spr_player_walk_coat; facing = dir.down break;
-			case 315: 
-			if (sprite_index = spr_player_rightwalk_coat /*or sprite_index = spr_player_leftwalk_coat*/){
-			sprite_index = spr_player_rightwalk_coat; facing = dir.right;
-			}
-			else if (sprite_index = spr_player_walk_coat or sprite_index = spr_player_upwalk_coat){
-			sprite_index = spr_player_walk_coat; facing = dir.down;
-			}
-			break;
-	} 
+if (!global.hasBackpack) {
+	s_down = spr_player_walk;
+	s_right = spr_player_rightwalk;
+	s_left = spr_player_leftwalk;
+	s_up = spr_player_upwalk;
+}
+else if (global.hasBackpack and !global.hasCoat){
+	s_down = spr_player_walk_bag;
+	s_right = spr_player_rightwalk_bag;
+	s_left = spr_player_leftwalk_bag;
+	s_up = spr_player_upwalk_bag;
+}
+else if (global.hasBackpack and global.hasCoat){
+	s_down = spr_player_walk_coat;
+	s_right = spr_player_rightwalk_coat;
+	s_left = spr_player_leftwalk_coat;
+	s_up = spr_player_upwalk_coat;
 }
 
-#endregion
-	if (image_index != 3){
-		lastframe = image_index+1;
-	} else {
-		lastframe = 0;
+//Set Sprite
+switch(dir){
+	case 0: sprite_index = s_right; facing = dir.right; break;
+	case 45: 
+	if (sprite_index = s_right /*or sprite_index = spr_player_leftwalk*/){
+	sprite_index = s_right; facing = dir.right;
 	}
+	else if (sprite_index = s_up or sprite_index = s_down){
+	sprite_index = s_up; facing = dir.up;
+	}
+	break;
+	case 90: sprite_index = s_up; facing = dir.up; break;
+	case 135: 
+	if (sprite_index = s_left /*or sprite_index = spr_player_rightwalk*/){
+	sprite_index = s_left; facing = dir.left;
+	}
+	else if (sprite_index = s_up or sprite_index = s_down){
+	sprite_index = s_up; facing = dir.up;
+	}
+	break;
+	case 180: sprite_index = s_left; facing = dir.left; break;
+	case 225: 
+	if (sprite_index = s_left /*or sprite_index = spr_player_rightwalk*/){
+	sprite_index = s_left; facing = dir.left;
+	}
+	else if (sprite_index = s_down  or sprite_index = s_up){
+	sprite_index = s_down; facing = dir.down;
+	}
+	break;
+	case 270: sprite_index = s_down; facing = dir.down break;
+	case 315: 
+	if (sprite_index = s_right /* or sprite_index = spr_player_leftwalk */){
+	sprite_index = s_right; facing = dir.right;
+	}
+	else if (sprite_index = s_down or sprite_index = s_up){
+	sprite_index = s_down; facing = dir.down;
+	}
+	break;
+} 
+
+
+#endregion
+if (image_index != 3){
+	lastframe = image_index+1;
+} else {
+	lastframe = 0;
+}
 
 	} else {
 		if (canMove = true){
@@ -309,4 +246,4 @@ if (global.hasBackpack == false){
 				} else { image_index = 0; }
 			}
 		}
-	}
+}

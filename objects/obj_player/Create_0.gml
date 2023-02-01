@@ -1,6 +1,11 @@
 hsp = 0;
 vsp = 0;
 
+s_down = spr_player_walk;
+s_right = spr_player_rightwalk;
+s_left = spr_player_leftwalk;
+s_up = spr_player_upwalk;
+
 canMove = true;
 spd = 2;
 sprite_index = spr_player_walk;
@@ -37,3 +42,10 @@ if (keyboard_check(vk_up or vk_down or vk_right or vk_left)){
 	}
 }
 }, [], 1);
+
+stateFree = function()
+{
+	
+}
+
+state = stateFree;
