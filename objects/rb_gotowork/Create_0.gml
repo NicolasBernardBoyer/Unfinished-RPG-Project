@@ -6,6 +6,7 @@ speakers = [id];
 next_line = [0];
 scripts = [-1];
 
+// Collision radius for roadblock
 radiusX = 24;
 radiusY = 32;
 runOnce = false;

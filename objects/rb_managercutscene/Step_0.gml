@@ -1,3 +1,4 @@
+// Normal collision rectangle code
 var inst = collision_rectangle(x-radiusX, y-radiusY, x+radiusX, y+radiusY, obj_player, false, true);
 if (inst!=noone){
 	if (runOnce == false){
@@ -11,6 +12,8 @@ if (inst!=noone){
 } else if (!place_meeting(x,y,obj_player)){
 	runOnce = false;
 }
+// Take this code and put it into a parent later
+
 
 if (instance_exists(obj_player) and createManager = true){
 	if (playerApproach = true and obj_player.x != 223){
