@@ -14,7 +14,6 @@ if (inst!=noone){
 }
 // Take this code and put it into a parent later
 
-
 if (instance_exists(obj_player) and createManager = true){
 	if (playerApproach = true and obj_player.x != 223){
 		obj_player.x = Approach(obj_player.x, 223, 3);
