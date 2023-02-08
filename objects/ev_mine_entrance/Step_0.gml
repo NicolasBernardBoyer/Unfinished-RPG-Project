@@ -72,7 +72,7 @@ switch (cutProg){
 	break;
 	case 2:
 	// Wait a little bit before creating the textbox
-	time_source_start(twoSeconds);
+	time_source_start(twoSeconds1);
 	break;
 	case 3:
 	with obj_kat {
@@ -92,7 +92,7 @@ switch (cutProg){
 	}
 	// Once the animation has finished, wait before continuing again
 	if (obj_kat.sprite_index = spr_kat_dustoff and obj_kat.image_index = 8){
-		time_source_start(twoSeconds);
+		time_source_start(twoSeconds2);
 	}
 	break;
 	case 4:

@@ -1,6 +1,7 @@
 if (obj_player.x > 191){
 	//Stop the player from moving
 	obj_player.canMove = false;
+	obj_player.state = stateCutscene;
 	global.canPause = false;
 	
 	// Make the player keep walking as long as they haven't reached a point
@@ -9,7 +10,9 @@ if (obj_player.x > 191){
 		obj_player.x = Approach(obj_player.x, 223, 2);
 		obj_kat.x = Approach(obj_kat.x, 256, 2);
 		if (obj_player.x < 223){
-			obj_player.sprite_index = spr_player_rightwalk_coat; }
+			obj_player.sprite_index = spr_player_rightwalk_coat;
+			obj_player.image_speed = 1;
+			}
 		else {
 		//When the player reaches a certain point, make them look ahead
 			obj_player.sprite_index = spr_player_upwalk_coat;

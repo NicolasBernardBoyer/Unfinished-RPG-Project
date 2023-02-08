@@ -6,22 +6,26 @@ cutProg = 0;
 kat = obj_kat;
 
 // Two second pause during the cutscene
-twoSeconds = time_source_create(time_source_game, 2, time_source_units_seconds, function() {
+twoSeconds1 = time_source_create(time_source_game, 2, time_source_units_seconds, function() {
 	// Runs when cutscene progression is at 2
 	// Turns highboxes on and changes kat's sprite, as well as creates a textbox
 	if (!instance_exists(obj_textbox) and cutProg = 2){
 		global.highbox = true;
 		obj_kat.image_index = 2;
 		create_textbox(text,speakers,next_line,scripts);
-		time_source_stop(twoSeconds);
+		time_source_stop(twoSeconds1);
 	}
-	// Runs when cutscene progression is at 3
-	// Makes kat turn towards the player and creates a textbox
-	else if (!instance_exists(obj_textbox) and cutProg = 3){
+}, [], 1);
+
+// Two second pause during the cutscene
+twoSeconds2 = time_source_create(time_source_game, 2, time_source_units_seconds, function() {
+	// Runs when cutscene progression is at 2
+	// Turns highboxes on and changes kat's sprite, as well as creates a textbox
+	if (!instance_exists(obj_textbox) and cutProg = 3){
 		obj_kat.sprite_index = spr_kat_rightwalk;
 		portrait_index = 10;
 		create_textbox(text2,speakers2,next_line2,scripts2);
-		time_source_stop(twoSeconds);
+		time_source_stop(twoSeconds2);
 	}
 }, [], 1);
 

@@ -116,11 +116,15 @@ switch (cutProg){
 }
 
 if (cutProg > 0){
+	// float animation
+	// float downwards until the speed hits 1, then reset the speed
 	dropSpeed += 1/60;
 	if (dropSpeed > 1) dropSpeed -= 1;
 	
+	// initialize animation curve
 	position = animcurve_channel_evaluate(curve,dropSpeed);
 	
+	// Start and end points for variables
 	var _startplayer = 157;
 	var _endplayer = 187;
 	var _distanceplayer = _endplayer - _startplayer;
@@ -133,9 +137,11 @@ if (cutProg > 0){
 	var _endbubble = 209;
 	var _distancebubble = _endbubble - _startbubble;
 	
+	// add animation curve amount to y variables
 	obj_player.y = _startplayer + (_distanceplayer * position);
 	obj_kat.y = _startkat + (_distancekat * position);
 	
+	// make the bubble float if it exists and has an img index of 4
 	if (instance_exists(obj_bubble) and obj_bubble.image_index = 4){
 		obj_bubble.y = _startbubble + (_distancebubble * position);
 	}
