@@ -1,7 +1,9 @@
 if (obj_player.x > 191){
 	//Stop the player from moving
-	obj_player.canMove = false;
-	obj_player.state = stateCutscene;
+	with (obj_player){
+		canMove = false;
+		state = stateCutscene;
+	}
 	global.canPause = false;
 	
 	// Make the player keep walking as long as they haven't reached a point
@@ -18,6 +20,7 @@ if (obj_player.x > 191){
 			obj_player.sprite_index = spr_player_upwalk_coat;
 			obj_player.image_index = 0;
 		}
+		obj_kat.image_speed = 1;
 		obj_kat.sprite_index = spr_kat_rightwalk;
 	//If there's not textbox and they have reached said point,
 	//Change both to look ahead and stop their image speed.

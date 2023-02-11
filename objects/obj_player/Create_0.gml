@@ -45,7 +45,8 @@ if (keyboard_check(vk_up or vk_down or vk_right or vk_left)){
 
 stateFree = function()
 {
-	
+
+if (global.inventoryOpen == false and !instance_exists(obj_textbox) and obj_game.doTransition == false and global.pause == false and canMove == true) {
 // get the input direction from keys
 hInput = keyboard_check(global.key_right) - keyboard_check(global.key_left);
 vInput = keyboard_check(global.key_down) - keyboard_check(global.key_up);
@@ -221,18 +222,19 @@ if (image_index != 3){
 				} else { image_index = 0; }
 			}
 		}
+	} else {
+		if (canMove = true){
+				checkFrame = true;
+				image_speed = 0;
+				if (!instance_exists(obj_textbox)){
+					time_source_start(stepLoop);
+				} else { image_index = 0; }
+			}
+		}
 }
 
 stateCutscene = function() {
-	if (instance_exists(obj_textbox)){
-			image_index = 0;
-			image_speed = 0;
-	}
-}
 
-stateTextbox = function() {
-	image_index = 0;
-	image_speed = 0;
 }
 
 state = stateFree;

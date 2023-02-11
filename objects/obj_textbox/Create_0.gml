@@ -1,3 +1,12 @@
+if (instance_exists(obj_player)){
+	with (obj_player){
+		if (state != stateCutscene){
+			image_index = 0;
+			image_speed = 0;
+		}
+	}
+}
+
 box = spr_textbox;
 frame = spr_box_empty;
 

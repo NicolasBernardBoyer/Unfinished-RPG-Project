@@ -1,8 +1,5 @@
 audio_listener_position(x, y, 0);
 
-
-
-
 if (room == rm_title_screen) {
 	instance_deactivate_object(self);
 }
@@ -64,8 +61,7 @@ if (insttrans != noone) {
 
 state();
 
-// Moving (only if there isn't a textbox and the inventory isn't open)
-if (global.inventoryOpen == false and !instance_exists(obj_textbox) and obj_game.doTransition == false and global.pause == false and canMove == true) {	
+if (global.inventoryOpen == false and global.pause == false and canMove == true) {	
 	state = stateFree;
 	} else {
 		state = stateCutscene;

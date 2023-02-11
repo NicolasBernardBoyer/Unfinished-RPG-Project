@@ -7,7 +7,7 @@ text = ["Head out to work?",
 	   ["Yes", "No"],
 	   "Hurry up!",
 	   "Hey " + global.playerName + ", be careful.\nIt's a wild world out there.",
-		"Get it? Wild?\nBecause animals part of it?\nOkay, I'll let you leave."
+		"Get it? Wild?\nBecause animals are part of it? Okay, I'll let you leave."
 	   ];
 portrait_index = 0;
 speakers = [id,id,id,obj_davecouch,obj_davecouch];

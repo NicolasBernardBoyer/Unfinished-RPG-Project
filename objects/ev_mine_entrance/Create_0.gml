@@ -69,7 +69,7 @@ speakers2 = [id];
 scripts2 = [[change_variable, id, "cutProg", 4]];
 
 text3 = ["Well, if we are going to find a way back to the surface, we should stick together.",
-		 "I hope your sense of direction is good, because mine sure isn't!"];
+		 "I hope your sense of direction is good."];
 next_line3 = [0, 0];
 speakers3 = [id, id];
 scripts3 = [[change_variable, id, "portrait_index", 3],[change_variable, id, "cutProg", 5]];
@@ -85,7 +85,7 @@ text5 = ["Now get us out of here, or I'll get you fired.",
 		 ["''What even was that?''", "''Yes ma'am!''"],
 		 "What was what?",
 		 "I have absolutely no idea what you're talking about.",
-		 "That's the kind of response I'm looking for!"];
+		 "That's the kind of response I'm looking for."];
 next_line5 = [0,0,0,[4,6],0,-1,0];
 speakers5 = [kat,kat,kat,kat,kat,kat,kat];
 scripts5 = [[change_variable, id, "portrait_index", 13],

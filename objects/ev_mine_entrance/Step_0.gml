@@ -152,7 +152,10 @@ switch (cutProg){
 	case 9:
 	/* End the cutscene, let the player move, make the camera follow
 	the player again. Destroy this event. */
-	obj_player.canMove = true;
+	with (obj_player){
+		canMove = true;
+		state = stateFree;
+	}
 	global.canPause = true;
 	global.highbox = false;
 	camera.following = obj_player;

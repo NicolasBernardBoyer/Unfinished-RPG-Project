@@ -14,6 +14,9 @@ if (!audio_is_playing(snd_wind)){
 	// Switch statement for cutscene progression
 switch (cutProg){
 	case 0:
+	with (obj_player){
+		state = stateCutscene;
+	}
 	// If the player y isnt at 157 move them and kat until a certain point
 		if(obj_player.y != 157){
 			obj_player.y++;

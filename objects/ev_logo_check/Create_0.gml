@@ -8,9 +8,9 @@ name = "";
 name_col = c_white;
 katApproach = false;
 
-text = ["Oh no.",
-		"I've seen this emblem before.",
-		["''What does it mean?''", "''Oh no?''"],
+text = ["Oh shit.",
+		"I've seen this emblem somewhere before.",
+		["''What does it mean?''", "''Oh shit?''"],
 		"It belongs to a company that sells magic-related substances.",
 		"Oh... it's nothing, just some company I've heard bad rumors about.",
 		"It's called ''Wolfred Entreprises'', or something like that.",
