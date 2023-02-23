@@ -1,6 +1,7 @@
 //get inputs (already done in obj_game)
 if (!ev_title_screen.titleMenu) exit;
 
+// start the alarm to let the player press options
 if(alarm[0] < 0){
 	if (ev_title_screen.titleMenu and canPress = false){
 		alarm[0] = 10;

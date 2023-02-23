@@ -29,6 +29,7 @@ startY = 72;
 startX = 60;
 var charCount = 1;
 
+// Draw each letter and the confirmation for having finished the name
 for (var yy = 0; yy < yLetters; yy++){
 	for (var xx = 0; xx < xLetters; xx ++){
 		#region CODE INSIDE FOR LOOP
@@ -48,6 +49,7 @@ for (var yy = 0; yy < yLetters; yy++){
 		draw_set_valign(fa_top);
 		draw_text(drawX, drawY, letter);
 		
+		// Draw cursor
 		if (a_letters[xx, yy] = "OK"){
 			if (xx == gridX and yy == gridY) draw_sprite(spr_paw_select_wide, 0, drawX+4, drawY+10);
 		} else {

@@ -1,2 +1,0 @@
-//Un-pause
-pause = false;

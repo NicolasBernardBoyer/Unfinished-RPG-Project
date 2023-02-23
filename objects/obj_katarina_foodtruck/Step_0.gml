@@ -1,25 +1,11 @@
-if (instance_exists(obj_facetextbox)){
-	if (obj_facetextbox.portrait = noone){
-		obj_facetextbox.portrait = spr_kat_faces;
-	}
-	obj_facetextbox.portrait_index = portrait_index;
-	obj_facetextbox.portrait = portrait;
-	obj_facetextbox.name = name;
-}
+// maintain portrait and name
+//if (instance_exists(obj_textbox)){
+//	obj_textbox.portrait_index = portrait_index;
+//	obj_textbox.portrait = portrait;
+//	obj_textbox.name = name;
+//}
 
-if (run2ndTextbox = true){
-	instance_destroy(obj_textbox);
-	portrait_index = 4;
-	create_facetextbox(text2, speakers2, next_line2, scripts2);
-	run2ndTextbox = false;
-}
-
-if (run4thTextbox = true){
-	instance_destroy(obj_textbox);
-	create_textbox(text4, speakers4, next_line4, scripts4);
-	run4thTextbox = false;
-}
-
+// If Katarina is standing up and finishes animation, change to second sprite
 if (sprite_index = spr_kat_sit_getup){
 	image_speed = 1;
 	if (image_index = 7){
@@ -27,6 +13,7 @@ if (sprite_index = spr_kat_sit_getup){
 	}
 }
 
+// when second getup is done, switch to normal standing sprite
 if (sprite_index = spr_kat_sit_getup2 and image_index = 4){
 	if (move_getup_y = true){
 		image_speed = 0;
@@ -37,6 +24,7 @@ if (sprite_index = spr_kat_sit_getup2 and image_index = 4){
 	time_source_start(swapSprite);
 }
 
+// After getting up, have kat walk towards the player
 if (move_getup_y2 = false){
 	time_source_start(approach);
 	if (image_speed = 1){
@@ -50,6 +38,7 @@ if (move_getup_y2 = false){
 	}
 }
 
+// remove all textboxes and delete any textbox
 if (end_scene){
 	instance_destroy(obj_textbox);
 	

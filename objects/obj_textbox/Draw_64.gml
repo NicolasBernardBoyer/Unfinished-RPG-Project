@@ -27,16 +27,20 @@ if (name != "" and global.hasname = true){
 	draw_text_color(text_x, text_y, "[" + name + "]", c,c,c,c, 1);
 }
 
+// do this only if the textbox isn't choice dialogue
 if(!choice_dialogue){
 	
 if (name = "") {
 //Draw Text if no name
+//increase counter if the text isn't all written already
 	if(!pause and counter < str_len){
 		counter++;
 		if(counter mod 4 == 0){
+			// play voice sfx
 			audio_play_sound(voice, 10, false);
 		}
 	
+		// pauses for certain characters
 		switch(string_char_at(text_wrapped, counter)){
 			case ",": 
 			case ";":
@@ -52,9 +56,11 @@ if (name = "") {
 			break;
 		}
 	}
+	// copy text
 	var substr = string_copy(text_wrapped, 1, counter);
-
+	
 	c = text_col;
+	// draw the text inside the textbox
 	if (portrait = noone){
 		draw_text_color(text_x, text_y, substr, c,c,c,c, 1);
 	} else {
@@ -62,7 +68,7 @@ if (name = "") {
 	}
 	
 } else {
-	//Draw Text if name
+	//Draw Text if name (the same, but with one line reserved for the name)
 	if(!pause and counter < str_len){
 		counter++;
 		if(counter mod 4 == 0){
@@ -89,10 +95,12 @@ if (name = "") {
 	draw_text_color(text_x, text_y+text_height, substr, c,c,c,c, 1);
 	}
 } else {
+	// if there is a choice dialogue, draw a line for every choice
 	var ii = 0, box_yadd = 0; repeat(text_array_len){
 		box_yadd += string_height_ext(text_array[ii], text_height,global.game_width);
 		ii++;
 	}
+	// choice textbox
 	draw_sprite_stretched(spr_box_noborder, 0, 0, box_y-box_yadd-8,global.game_width,box_yadd+8);
 	
 	if (!global.highbox){
@@ -117,6 +125,7 @@ if (name = "") {
 		}
 	}
 	
+	// draw the previous textbox's text again
 	c = text_col;
 	if (name != ""){
 		draw_text_color(text_x, text_y+text_height, text_wrapped, c,c,c,c, 1);

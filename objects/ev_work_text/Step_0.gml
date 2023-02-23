@@ -1,18 +1,10 @@
-
-if (katBox = true and !instance_exists(obj_textbox)){
-	voice = snd_meow;
-	name = "Katarina";
-	global.name_text_col = c_gray;
-	create_facetextbox(kattext, katspeakers, katnext_line, katscripts);
-	obj_textbox.portrait_index = 10;
-	obj_textbox.portrait = spr_kat_faces;
-	katBox = false;
+//once the cutscene is over destroy the disposable kat
+if (destroyKat = true){
+	instance_destroy(obj_kat);
 }
 
-if (instance_exists(obj_facetextbox)){
-	obj_textbox.portrait_index = portrait_index;
-}
-
+//once this condition is true set the spawn area to a certain point
+//and change the room to the crater room with a transition
 if (goToPark = true){
 	obj_game.spawnX = 237;
 	obj_game.spawnY = 30;

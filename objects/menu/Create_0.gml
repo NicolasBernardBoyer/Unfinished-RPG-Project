@@ -1,5 +1,7 @@
+//check to see if you can press 
 esc_okay = false;
 
+// enum for different menu pages
 enum menu_page {
 	main,
 	settings,
@@ -10,6 +12,7 @@ enum menu_page {
 	height
 }
 
+// enum for menu element type
 enum menu_element_type {
 	script_runner,
 	page_transfer,
@@ -61,6 +64,7 @@ ds_menu_controls = create_menu_page(
 	["Back",	   menu_element_type.page_transfer, menu_page.settings],
 );
 
+// array for menu pages
 page = 0;
 menu_pages[0] = ds_menu_main;
 menu_pages[1] = ds_settings;
@@ -69,12 +73,15 @@ menu_pages[3] = ds_menu_difficulty;
 menu_pages[4] = ds_menu_graphics;
 menu_pages[5] = ds_menu_controls;
 
+// create an array for the different menu options
+//  this is based off the size of the menu pages array
 var i = 0, array_len = array_length_1d(menu_pages);
 repeat(array_len){
 	menu_option[i] = 0;
 	i++;
 }
 
+// have the player not be inputting at first
 inputting = false;
 
 #endregion

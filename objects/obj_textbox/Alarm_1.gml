@@ -1,4 +1,3 @@
-//Un-pause
+//Un-pause the text writer
 pause = false;
 pauseDelay = true;
-alarm[2] = 60;

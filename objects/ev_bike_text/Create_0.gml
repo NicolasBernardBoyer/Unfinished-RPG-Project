@@ -1,6 +1,4 @@
 visible = false;
-deactivatePlayer = true;
-
 voice = snd_typewriter;
 name = "";
 text = [

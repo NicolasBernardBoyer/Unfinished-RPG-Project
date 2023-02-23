@@ -32,6 +32,7 @@ yLetters = 3;
 
 charCount = 1;
 
+// add every character to an array
 for(var yy = 0; yy < yLetters; yy ++){
 	for (var xx = 0; xx < xLetters; xx++){
 		if(charCount <= 29){

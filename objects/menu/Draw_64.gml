@@ -1,18 +1,25 @@
+// if you aren't pausing or can't pause don't display anything
 if(!global.pause) exit;
 if(!global.canPause) exit;
 
+// exit if the page is less than 1 (no main page on main menu)
 if(room = rm_title_settings){
 	if (page < 1){
 		exit;
 	}
 }
 
+// set the draw font
 draw_set_font(fnt_excelsior);
 
+// references for game width and height
 var gwidth = global.view_width, gheight = global.view_height;
 
+// create a grid equivalent to page, same as in step
 var ds_grid = page, ds_height = ds_grid_height(ds_grid);
+// buffer for drawing
 var y_buffer = 32, x_buffer = 16;
+// starting position for drawing
 var start_y = (gheight/2) - ((((ds_height)/2) * y_buffer)), start_x = gwidth/2;
 
 //Draw Pause Menu "Back"
@@ -23,8 +30,10 @@ draw_rectangle_color(0,0, gwidth, gheight, c,c,c,c, false);
 draw_set_valign(fa_middle);
 draw_set_halign(fa_right);
 
+// left text
 var ltx = start_x - x_buffer*2, lty, xo; 
 
+// draw the text for the menu options
 var yy = 0; repeat(ds_height){
 	lty = start_y + (yy*y_buffer);
 	c = c_white;
@@ -45,8 +54,11 @@ draw_line(start_x-x_buffer, start_y-y_buffer, start_x-x_buffer, lty+y_buffer);
 //Draw Elements on Right Side
 draw_set_halign(fa_left);
 
+//right text
 var rtx = start_x + x_buffer/4, rty;
 
+// draw the specific ds_grid elements depending on the menu element type
+// repeat for the size of the ds_height
 yy = 0; repeat(ds_height){
 	rty = start_y + (yy*y_buffer);
 	

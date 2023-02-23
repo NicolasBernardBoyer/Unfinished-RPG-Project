@@ -1,11 +1,14 @@
+// same conditions as step apply if they are met dont draw anything
 if (global.canPause == false) exit;
 if (global.inventoryOpen == false) exit;
 if (obj_game.doTransition) exit;
 if (instance_exists(obj_textbox) and global.inventoryTB = false){ exit; }
 else if (global.inventoryTB = true){
+	// make a tutorial if this is the first time the player opens the inventory
 	instance_create_layer(0,0, "Instances", obj_inventorytutorial);
 }
 
+// draw the black box over the screen
 draw_sprite_stretched
 (
 	/* sprite */spr_box_noborder,
@@ -16,6 +19,7 @@ draw_sprite_stretched
 	/* height */global.game_height
 );
 
+// draw another box for where the items will be displayed
 draw_sprite_stretched
 (
 	/* sprite */spr_box,
@@ -26,6 +30,7 @@ draw_sprite_stretched
 	/* height */global.game_height-64
 );
 
+// draw the player's money
 draw_sprite_stretched(spr_box, 0, 42, 9, 105, 24);
 draw_sprite_stretched(spr_box, 0, 42, global.game_height-33, global.game_width-88, 24);
 draw_text(48, 12, "MONEY: $" + string(global.money));
@@ -34,6 +39,7 @@ draw_text(48, 12, "MONEY: $" + string(global.money));
 draw_set_font(fnt_8bit);
 draw_set_halign(fa_center);
 
+// draw instructions
 draw_text_transformed(120, 260, "Z/    : Select/Confirm", 0.8, 0.8, 0);
 draw_text_transformed(270, 260, "X/    : Back/Close", 0.8, 0.8, 0);
 draw_sprite(spr_buttons, 0, 80, 267);
@@ -80,6 +86,7 @@ if (partyCursorActive == false){
 			var yy = 148 + (i div inventoryRowLength)*24;
 			if (ds_list_find_value(party, i) != undefined)
 			{ 
+				// draw party member names, store this in a better way later
 				if (ds_list_find_value(party, i) == 0){
 					if (cursor = i) text_col = c_yellow;
 					draw_text_color(xx,yy,global.playerName,text_col,text_col,text_col,text_col, 1);
@@ -143,12 +150,14 @@ if (partyCursorActive == false){
 			}
 		}
 	} 
+	// draw the item consume menu
 	else if (inventorytab == 1 and itemConsumeMenu == true){
 		draw_text(box_x+235, box_y+110, "Give to whom?");
 		draw_line(210, 143, 210, 240);
 		for (var i = 0; i < SELECTED_PARTY_SLOTS+1; i += 1){
 			var xx = 280;
 			var yy = 162 + i*16;
+				// again this could be organized better, no need to draw all party member names like this
 				if (ds_list_find_value(selectedParty, i) == 0){
 					if (cursor = i) text_col = c_yellow;
 					draw_text_color(xx,yy,global.playerName,text_col,text_col,text_col,text_col, 1);
@@ -179,7 +188,9 @@ if (partyCursorActive == false){
 				}
 			}
 		}
+// items list can be edited into seperate object in an array there is no need to do this
 #region ITEMS LIST
+// draw item descriptions
 		#region BURGER
 		if (ds_list_find_value(consumables, consumingItem) = "Burger"){
 			draw_set_halign(fa_left);
@@ -188,6 +199,7 @@ if (partyCursorActive == false){
 			draw_text(box_x+10, box_y+142, "It's disgusting.");
 			for (var i = 0; i < SELECTED_PARTY_SLOTS; i += 1){
 				if (cursor = i){
+					
 					if (ds_list_find_value(selectedParty,i) = 0){
 						draw_set_color(c_lime);
 						draw_text(box_x+10, box_y+158, "ATK: " + string(global.playerATK) + " -> " + string(global.playerATK + 2));
@@ -298,7 +310,9 @@ if (partyCursorActive == false){
 draw_set_halign(fa_left);
 
 
-// DRAW PARTY
+// DRAW PARTY FACES
+// Draw text for character's HP
+// Find a more efficient way to group this in the future
 for (var i = 0; i < SELECTED_PARTY_SLOTS; i += 1)
 {
 	var xx = 42 + (i mod partyRowLength)*74;
@@ -377,6 +391,7 @@ for (var i = 0; i < SELECTED_PARTY_SLOTS; i += 1)
 		draw_sprite(spr_heart, 0, xx+66, yy+14);
 		draw_set_color(c_white);
 	} else {
+		// if there is no character just draw text saying (empty)
 		if (partyCursorActive == true and partyCursor == i){
 			draw_sprite_stretched(spr_box_empty_white,0,xx+5,yy+5,64,64);
 		}

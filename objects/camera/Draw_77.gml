@@ -1,6 +1,7 @@
-
+// This code prevent camera jitter and makes for smooth movement
 gpu_set_blendenable(false);
 
+//find how much the window is scaled in proportion to the camera
 var _scale = window_get_width()/camWidth;
 
 draw_surface_ext

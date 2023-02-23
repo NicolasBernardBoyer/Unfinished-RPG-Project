@@ -1,5 +1,5 @@
 
-
+// change text positioning based off the presence of a portrait
 if (portrait = noone){
 	text_x = box_x + x_buffer;
 }
@@ -7,8 +7,10 @@ if (portrait != noone){
 	text_x = box_x + x_buffer + portraitspace;
 }
 
+// when pressing interact key (make this just one button) do this
 if(keyboard_check_pressed(interact_key) or keyboard_check_pressed(other_interact_key) or gamepad_button_check_pressed(0,interact_button)){
 	if (proceed){
+		// if text is done displaying, go to next page, otherwise, write out all the text
 		if(!choice_dialogue and counter < str_len){ counter = str_len; }
 		else if(page < array_length_1d(text) - 1){
 
@@ -32,12 +34,13 @@ if(keyboard_check_pressed(interact_key) or keyboard_check_pressed(other_interact
 	}
 }
 
+// if there is choice dialogue, pressing up and down moves the selection
 if(choice_dialogue){
-	if (keyboard_check_pressed(global.key_down) or keyboard_check_pressed(global.key_up)){
+	if (global.PU or global.PD){
 		audio_play_sound(snd_typewriter, 5, false);
 	}
 	
-	choice += keyboard_check_pressed(global.key_down) - keyboard_check_pressed(global.key_up);
+	choice += global.PD - global.PU;
 	
 	if(choice > text_array_len-1) choice = 0;
 	if(choice < 0) choice = text_array_len-1;
