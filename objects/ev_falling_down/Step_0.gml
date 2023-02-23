@@ -34,9 +34,14 @@ switch (cutProg){
 		}
 	break;
 	case 2:
-	// Delayed staff pull animation
-		staffPull = time_source_create(time_source_game, 40, time_source_units_frames, function(){
-		with (obj_kat){
+
+	// Start timer
+	if (runOnce){
+		time_source_start(staffPull);
+		runOnce = false;
+	}
+	if (staffAnim){
+	with (obj_kat){
 	// When timer is done, change sprite and play sfx
 				if (sprite_index != spr_kat_staffpull and sprite_index != spr_kat_stafffall){
 					audio_play_sound(snd_fling2, 10, false);
@@ -46,22 +51,19 @@ switch (cutProg){
 	// When animation is done, change the sprite and continue cutscene
 				else if (sprite_index = spr_kat_staffpull and image_index = 8){
 					sprite_index = spr_kat_stafffall;
+					ev_falling_down.runOnce = true;
 					ev_falling_down.cutProg++;
 				}
 			}
-		}, [], 1);
-	// Start timer
-		time_source_start(staffPull);
+	}
+	
 	break;
 	case 3:
 	// Katarina tells the player to move closer to her after a delay
-		approachTextbox = time_source_create(time_source_game, 45, time_source_units_frames, function(){
-			if (!instance_exists(obj_textbox) and cutProg = 3){
-				obj_kat.portrait_index = 0;
-				create_textbox(text2,speakers2,next_line2,scripts2);
-			}
-		}, [], 1);
+	if (runOnce){
 		time_source_start(approachTextbox);
+		runOnce = false;
+	}
 	break;
 	case 4:
 	// Move the player closer to Katarina

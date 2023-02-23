@@ -1,3 +1,4 @@
+// time source initialization
 textboxDelay = time_source_create(time_source_game, 60, time_source_units_frames, function()
 	{
 		if (moveCam = true and !instance_exists(obj_textbox)){

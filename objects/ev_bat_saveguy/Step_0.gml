@@ -35,7 +35,7 @@ switch (cutProg){
 	//once the camera is close enough, create the textbox
 	if (camera.x >= ev_bat_saveguy.x){
 		if (!instance_exists(obj_textbox)){
-			obj_kat.portrait_index = 19;
+			obj_kat.portrait_index = 14;
 			create_textbox(text2, speakers2, next_line2, scripts2);
 		}
 	}
