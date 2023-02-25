@@ -1,8 +1,12 @@
 visible = false;
+
+// event variables
 hasText = true;
 runOnce = false;
+
 image_speed = 0;
 image_index = 1;
+
 global.name_text_col = c_orange;
 interactCh = false;
 

@@ -31,7 +31,6 @@ sprite_index = spr_kat_sit;
 
 // textbox running variables
 run2ndTextbox = false;
-run3rdTextbox = false;
 
 // scene parts 
 end_scene = false;

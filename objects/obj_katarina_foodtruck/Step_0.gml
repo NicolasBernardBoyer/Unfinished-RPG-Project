@@ -1,9 +1,3 @@
-// maintain portrait and name
-//if (instance_exists(obj_textbox)){
-//	obj_textbox.portrait_index = portrait_index;
-//	obj_textbox.portrait = portrait;
-//	obj_textbox.name = name;
-//}
 
 // If Katarina is standing up and finishes animation, change to second sprite
 if (sprite_index = spr_kat_sit_getup){
