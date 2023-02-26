@@ -1,10 +1,18 @@
 visible = false;
+
+// Alarms for creating the player object
 alarm[0] = -1;
 alarm[1] = -1;
+
+// start by not playing the animation
 image_speed = 0;
+
+// booleans to check during cutscene
 runAlarm = true;
 textAlarm = false;
 moveReady = false;
+
+
 hasText = true;
 
 voice = snd_typewriter;

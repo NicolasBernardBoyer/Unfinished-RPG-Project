@@ -83,11 +83,6 @@ page = 0;
 name = "";
 voice = snd_typewriter;
 
-// keys to interact, change these to the global variables
-interact_key = ord("Z");
-other_interact_key = ord("X");
-interact_button = gp_face1;
-
 // choice dialogue color and choice hover
 choice = 0;
 choice_col = c_yellow;

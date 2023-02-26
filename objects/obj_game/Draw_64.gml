@@ -1,3 +1,4 @@
+// handle transition when exiting a room
 if(doTransition){
 	//Handle Black Fade/Room Transition
 	if(room != spawnRoom){

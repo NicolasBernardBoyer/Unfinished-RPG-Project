@@ -2,8 +2,6 @@
 // make it so that our objects higher on the y axis are drawn first
 visible = false;
 
-animState = "idle";
-
 name_col = c_white;
 kat = obj_kat;
 
@@ -19,6 +17,7 @@ speakers = [id];
 next_line =  [0];
 scripts = [-1];
 
+// state machines
 stateIdle = function(){
 	sprite_index = spr_save_guy;
 }

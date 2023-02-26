@@ -8,7 +8,7 @@ if (portrait != noone){
 }
 
 // when pressing interact key (make this just one button) do this
-if(keyboard_check_pressed(interact_key) or keyboard_check_pressed(other_interact_key) or gamepad_button_check_pressed(0,interact_button)){
+if(global.POK or global.PCAN){
 	if (proceed){
 		// if text is done displaying, go to next page, otherwise, write out all the text
 		if(!choice_dialogue and counter < str_len){ counter = str_len; }

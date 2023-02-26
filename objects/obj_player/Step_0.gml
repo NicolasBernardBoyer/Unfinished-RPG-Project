@@ -1,12 +1,14 @@
+// listen for audio at player position
 audio_listener_position(x, y, 0);
 
+// dont show player if on title screen
 if (room == rm_title_screen) {
 	instance_deactivate_object(self);
 }
 
 if (!global.pause) {
 
-// Textbox interaction
+// Textbox interaction, create one if not a party member and interacting with an object
 if (keyboard_check_pressed(global.key_confirm) or gamepad_button_check_pressed(0,global.gp_confirm)){
 	if (!global.inventoryOpen and global.canPause = true and canMove = true){
 		if(active_textbox == noone and !instance_exists(obj_textbox)){
@@ -24,15 +26,7 @@ if (keyboard_check_pressed(global.key_confirm) or gamepad_button_check_pressed(0
 				if (variable_struct_exists(interact, "hasText")){
 					if (interact.hasText = true){
 						with(interact){
-							if (!variable_instance_exists(interact, "portrait")){
-								var tbox = create_textbox(text, speakers, next_line, scripts);
-							} else {
-								if (portrait != noone){
-									var tbox = create_facetextbox(text, speakers, next_line, scripts);
-								} else {
-									var tbox = create_textbox(text, speakers, next_line, scripts);
-								}
-							}
+							var tbox = create_textbox(text, speakers, next_line, scripts);
 						}
 						active_textbox = tbox;
 					}
@@ -46,7 +40,7 @@ if (keyboard_check_pressed(global.key_confirm) or gamepad_button_check_pressed(0
 	}
 }
 
-//Objects
+// handle transition when touching one
 var insttrans = instance_place(x,y,obj_transition);
 if (insttrans != noone) {
 	with(obj_game){
@@ -59,8 +53,10 @@ if (insttrans != noone) {
 	}
 }
 
+// run state machine
 state();
 
+// handle states under certain conditions
 if (global.inventoryOpen == false and global.pause == false and canMove == true) {	
 	state = stateFree;
 	} else {

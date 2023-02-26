@@ -1,3 +1,4 @@
+// audio emitter and counter for sfx
 pick_em = audio_emitter_create();
 counter = 0;
 

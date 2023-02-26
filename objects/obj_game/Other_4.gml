@@ -1,7 +1,9 @@
+// handle where player will go after a transition
 if(spawnRoom == -1) exit;
 if (instance_exists(obj_player)){
 	obj_player.x = spawnX;
 	obj_player.y = spawnY;
+	// additional party members appear on top of player
 	if (instance_exists(obj_kat)){
 		if (obj_player.canMove = true and global.canPause = true){
 			obj_kat.x = spawnX;

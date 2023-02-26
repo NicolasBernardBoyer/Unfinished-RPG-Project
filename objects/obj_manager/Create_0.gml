@@ -1,5 +1,8 @@
 // make it so that our objects higher on the y axis are drawn first
 visible		= false;
+
+// variables that interact with rb_managercutscene
+// (found in cutscenes under Opening City)
 isWalking   = true;
 moveCam		= true;
 managerPass = false;

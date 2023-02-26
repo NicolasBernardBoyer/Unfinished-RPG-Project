@@ -1,16 +1,22 @@
+// variables that will never be used
 portrait_index = 0;
 voice = snd_typewriter;
 name = "";
 
+pad_num = 0;
+
 radius = 8;
 active_textbox = noone;
+// determine where or not the textbox is at the top or bottom of screen
 global.highbox = false;
 
+// create particle system
 global.partSystem = part_system_create();
 part_system_depth(global.partSystem, 100);
 
 facing = 0;
 
+// save slot and difficulty
 global.gameSaveSlot = 0;
 global.difficultySet = 0;
 
@@ -90,19 +96,21 @@ global.sidLK	= 3;
 
 #endregion
 
+// global variables for text and pausing
 global.pause = false;
 global.name_text_col = c_white;
 global.hasname = false;
 global.hasportrait = false;
 
+// variables for transitions
 blackAlpha = 0;
-
 spawnRoom = -1;
 spawnX = 0;
 spawnY = 0;
 spawnPlayerFacing = -1;
 doTransition = false;
 
+// determine direction
 enum dir {
 	right = 0,
 	up = 90,
@@ -181,6 +189,9 @@ display_set_gui_size(global.game_width, global.game_height);
 	global.gp_del		= gp_face2;
 	global.gp_shift		= gp_face3;
 	global.gp_inventory = gp_face4;
+	global.gp_shoulderR = gp_shoulderrb;
+	global.gp_shoulderL = gp_shoulderlb;
+	
 #endregion
 
 #region DEFINE KEYS
@@ -196,6 +207,7 @@ display_set_gui_size(global.game_width, global.game_height);
 	global.HR = false; //HELD RIGHT
 	global.HU = false; //HELD UP
 	global.HD = false; //HELD DOWN
+	global.HRUN = false; //HELD RUN
 	
 	global.RL = false; //RELEASED LEFT
 	global.RR = false; //RELEASED RIGHT
@@ -206,7 +218,7 @@ display_set_gui_size(global.game_width, global.game_height);
 	global.PINV = false;
 #endregion
 
-audio_group_load(audiogroup_music);
+audio_group_load(audiogroup_music); // LOAD AUDIO GROUPS
 audio_group_load(audiogroup_soundeffects);
 
 

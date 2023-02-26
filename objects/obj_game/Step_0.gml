@@ -1,4 +1,5 @@
 #region PAUSING
+// handle pausing
 if (keyboard_check_pressed(global.key_esc) or gamepad_button_check_pressed(0,global.gp_esc)){
 	if(room != rm_title_screen){
 		if (!instance_exists(obj_textbox) and global.canPause == true and !instance_exists(obj_name_creator)){
@@ -49,17 +50,35 @@ if (instance_exists(obj_devmode)){
 #region PLAYER INPUT
 
 //HELD
-if (keyboard_check(global.key_right) or gamepad_button_check(0,global.gp_right)) global.HR = true;
+var h_move = gamepad_axis_value(pad_num, gp_axislh);
+var v_move = gamepad_axis_value(pad_num, gp_axislv);
+
+if (keyboard_check(global.key_right) or gamepad_button_check(0,global.gp_right)
+	or h_move > 0){
+	global.HR = true;
+}
 else global.HR = false;
 
-if (keyboard_check(global.key_left) or gamepad_button_check(0,global.gp_left)) global.HL = true;
+if (keyboard_check(global.key_left) or gamepad_button_check(0,global.gp_left)
+	or h_move < 0){ 
+	global.HL = true;
+}
 else global.HL = false;
 
-if (keyboard_check(global.key_up) or gamepad_button_check(0,global.gp_up)) global.HU = true;
+if (keyboard_check(global.key_up) or gamepad_button_check(0,global.gp_up)
+	or v_move < 0){
+	global.HU = true;
+}
 else global.HU = false;
 
-if (keyboard_check(global.key_down) or gamepad_button_check(0,global.gp_down)) global.HD = true;
+if (keyboard_check(global.key_down) or gamepad_button_check(0,global.gp_down)
+	or v_move > 0){
+	global.HD = true;
+}
 else global.HD = false;
+
+if (keyboard_check(global.key_revert) or gamepad_button_check(0,global.gp_shoulderR) or gamepad_button_check(0,global.gp_shoulderL)) global.HRUN = true;
+else global.HRUN = false;
 
 //RELEASED
 if (keyboard_check_released(global.key_right) or gamepad_button_check_released(0,global.gp_right)) global.RR = true;
@@ -75,16 +94,24 @@ if (keyboard_check_released(global.key_down) or gamepad_button_check_released(0,
 else global.RD = false;
 
 //PRESSED
-if (keyboard_check_pressed(global.key_right) or gamepad_button_check_pressed(0,global.gp_right)) global.PR = true;
+if (keyboard_check_pressed(global.key_right) or gamepad_button_check_pressed(0,global.gp_right)){
+	global.PR = true;
+}
 else global.PR = false;
 
-if (keyboard_check_pressed(global.key_left) or gamepad_button_check_pressed(0,global.gp_left)) global.PL = true;
+if (keyboard_check_pressed(global.key_left) or gamepad_button_check_pressed(0,global.gp_left)){
+	global.PL = true;
+}
 else global.PL = false;
 
-if (keyboard_check_pressed(global.key_up) or gamepad_button_check_pressed(0,global.gp_up)) global.PU = true;
+if (keyboard_check_pressed(global.key_up) or gamepad_button_check_pressed(0,global.gp_up)){
+	global.PU = true;
+}
 else global.PU = false;
 
-if (keyboard_check_pressed(global.key_down) or gamepad_button_check_pressed(0,global.gp_down)) global.PD = true;
+if (keyboard_check_pressed(global.key_down) or gamepad_button_check_pressed(0,global.gp_down)){
+	global.PD = true;
+}
 else global.PD = false;
 
 if (keyboard_check_pressed(global.key_enter) or keyboard_check_pressed(global.key_confirm) or

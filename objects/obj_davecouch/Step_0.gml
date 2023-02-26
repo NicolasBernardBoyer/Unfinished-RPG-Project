@@ -18,7 +18,7 @@ if (runOnce = false){
 	// when the camera is in the right stop, created the textbox
 	if (camera.y >= 382 and !instance_exists(obj_textbox)){
 		image_index = 0;
-		create_facetextbox(evtext, evspeakers, evnext_line, evscripts);
+		create_textbox(evtext, evspeakers, evnext_line, evscripts);
 		runOnce = true;
 	}
 }

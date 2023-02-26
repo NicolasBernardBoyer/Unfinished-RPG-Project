@@ -1,6 +1,7 @@
 visible = false;
 hasText = true;
 radius = 8;
+name_col = c_orange;
 
 voice = snd_typewriter;
 name = "Busy Seagull";

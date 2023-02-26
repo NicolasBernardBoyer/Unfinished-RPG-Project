@@ -1,5 +1,7 @@
 visible = false;
 hasText = true;
+
+// cutscene variables
 fallEvent = false;
 alarm[0] = -1;
 alarm[1] = -1;
