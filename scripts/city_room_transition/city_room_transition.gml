@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function city_room_transition(){
 	instance_destroy(obj_textbox);
+	// move player to the city scene
 	with(obj_game){
 		if(!doTransition){
 			spawnRoom = rm_waytowork;

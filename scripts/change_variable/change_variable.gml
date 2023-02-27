@@ -6,6 +6,9 @@
 
 
 function change_variable(){
+	// can change multiple variables depending on argument
+	// change_variable(id, what you want changed, what to change it to);
+	// then keep going if you are changing more
 		if (argument_count >= 3){
 		with(argument0){
 			variable_instance_set(id,argument1,argument2);

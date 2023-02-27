@@ -2,7 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function destroy_obj(){
 	///@arg object
-	
+	// destroy the current object and let player move again
+	// useful for ending cutscenes
 	global.canPause = true;
 	
 	with (obj_player){
@@ -11,4 +12,5 @@ function destroy_obj(){
 	}
 	
 	instance_destroy(argument0);
+	
 }

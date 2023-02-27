@@ -1,6 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function coat_pickup(){
+	// same as backpack but for the player's coat
 	global.hasCoat = true;
 	
 	//change player's sprite depending on direction

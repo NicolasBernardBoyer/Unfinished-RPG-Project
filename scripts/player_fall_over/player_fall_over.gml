@@ -1,6 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function player_fall_over(){
+	// have player fall off their bike
 	obj_player.canMove = false;
 	global.canPause = false;
 	audio_play_sound(global.s_punch, 5, false);

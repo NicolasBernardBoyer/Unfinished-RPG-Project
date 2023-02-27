@@ -3,6 +3,7 @@
 function change_difficulty(){
 	var type = menu_option[page];
 	
+	// change the difficulty
 	if (type == 0) {
 		switch(argument0){
 			case 0:

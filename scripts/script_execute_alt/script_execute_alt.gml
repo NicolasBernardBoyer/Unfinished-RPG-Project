@@ -4,6 +4,7 @@ function script_execute_alt(){
 ///@description script_execute_alt
 ///@arg ind
 ///@arg [arg1,arg2,...]
+// execute multiple scripts at once
 	var s = argument[0];
 	var a = argument[1];
 	var len = array_length_1d(argument[1]);

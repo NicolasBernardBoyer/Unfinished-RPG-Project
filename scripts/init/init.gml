@@ -1,5 +1,5 @@
 #region Particle Type
-
+// when game get initialized (currently only used for particles)
 //Glass Particle
 var _glass = part_type_create();
 

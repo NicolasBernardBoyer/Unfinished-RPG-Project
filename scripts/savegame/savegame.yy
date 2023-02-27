@@ -6,6 +6,6 @@
   "isCompatibility": false,
   "parent": {
     "name": "Saving",
-    "path": "folders/Scripts/Saving.yy",
+    "path": "folders/Scripts/Menu Options/Saving.yy",
   },
 }

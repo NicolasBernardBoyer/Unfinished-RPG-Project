@@ -2,6 +2,7 @@
 
 with (par_object) instance_destroy();
 
+// if there is a saved file, load it
 if (file_exists("savedgame.save"))
 {
 	var _buffer = buffer_load("savedgame.sav");
@@ -10,6 +11,7 @@ if (file_exists("savedgame.save"))
 	
 	var _loadData = json_parse(_string);
 	
+	//Put all instances back
 	while (array_length(_loadData) > 0)
 	{
 		var _loadEntity = array_pop(_loadData);

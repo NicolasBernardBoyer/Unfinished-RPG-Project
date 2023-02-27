@@ -1,3 +1,4 @@
+// inventory functions, use when inventory is fleshed out
 function InventorySearch(rootObject, itemType)
 {
 	for (var i = 0; i < INVENTORY_SLOTS; i += 1)
