@@ -4,6 +4,5 @@ function player_approach_true(){
 	// have player move towards to center of the park in manager cutscene
 	global.canPause = false;
 	obj_player.canMove = false;
-	instance_destroy(obj_textbox);
 	rb_managercutscene.playerApproach = true;
 }

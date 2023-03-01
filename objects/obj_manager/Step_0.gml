@@ -13,7 +13,7 @@ if (isWalking = true){
 		camera.y = Approach(camera.y, 264, 1);
 	}
 	// if has walked enough distance, remove from scene
-	if (y = 450){
+	if (y >= 475){
 		instance_destroy(self);
 	}
 }

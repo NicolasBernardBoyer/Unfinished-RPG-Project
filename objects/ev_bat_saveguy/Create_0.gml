@@ -21,7 +21,7 @@ text2 = ["EEK! IS THAT A NAKED GUY?!? OH MY GOD!",
 		 "Can you not read the sign? I'm Save Guy.",
 		 "There's no way in hell that that's your actual name.",
 		 "I ain't lyin'. Name's Save Guy.",
-		 "This area is off-limits, don't ya know?. I dunno what y'all are doin' here.",
+		 "This area is off-limits, don't ya know? I dunno what y'all are doin' here.",
 		 "Wait, do you work for that company?",
 		 "No. My job is workin' as a save guy for the city.",
 		 "Anyways, both of ya should go back the way ya came.",
@@ -63,7 +63,7 @@ text3 = ["So, about your job...",
 		 "It's a lot easier to grasp with a demonstration.",
 		 "...but you don't really have anythin' to save.",
 		 "Once my tutorial is done, then I can save for you.",
-		 "Alright, time to beat you two to a pulp! ...In an educational way!",
+		 "Alright, time to beat the shit outta you! ...In an educational way!",
 		 "It's savin' time!"];
 speakers3 = [kat, kat, sguy, kat, sguy, sguy, sguy, sguy, sguy];
 next_line3 = [0,0,0,0,0,0,0,0,0];

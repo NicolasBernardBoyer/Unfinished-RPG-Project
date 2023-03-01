@@ -22,8 +22,10 @@ if (instance_exists(obj_player) and createManager = true){
 		obj_player.x = Approach(obj_player.x, 223, 3);
 		if (obj_player.x < 223){
 			obj_player.sprite_index = spr_player_rightwalk_coat;
+			obj_player.image_speed = 1;
 		} else if (obj_player.x > 223){
 			obj_player.sprite_index = spr_player_leftwalk_coat;
+			obj_player.image_speed = 1;
 		}
 	} else if (obj_player.x = 223 and playerApproach = true){
 		//If the player is at the right position, proceed with the cutscene

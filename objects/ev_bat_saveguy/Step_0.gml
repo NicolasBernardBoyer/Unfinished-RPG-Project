@@ -67,7 +67,9 @@ switch (cutProg){
 	case 3:
 	with (obj_save_guy){
 		state = stateThrow;
-		instance_create_layer(x-32, y, "Instances", obj_bat);
+		if (!instance_exists(obj_bat)){
+			instance_create_layer(x-32, y, "Instances", obj_bat);
+		}
 	}
 	cutProg++;
 	break;
