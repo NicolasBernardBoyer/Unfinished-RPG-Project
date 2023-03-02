@@ -1,15 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_camreference",
-  "eventList": [],
+  "name": "obj_battle_unit_enemy",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "camera",
-    "path": "folders/Objects/camera.yy",
+    "name": "battles",
+    "path": "folders/Objects/battles.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_battle_unit",
+    "path": "objects/obj_battle_unit/obj_battle_unit.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

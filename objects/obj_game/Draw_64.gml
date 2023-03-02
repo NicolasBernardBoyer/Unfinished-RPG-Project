@@ -6,7 +6,9 @@ if(doTransition){
 		if(blackAlpha >= 1){ room_goto(spawnRoom) }
 	} else {
 		blackAlpha -= 0.1;
-		if(blackAlpha <= 0) { doTransition = false; }
+		if(blackAlpha <= 0) { doTransition = false;
+			global.canPause = true;
+		}
 	}
 	
 	//Draw Black Fade

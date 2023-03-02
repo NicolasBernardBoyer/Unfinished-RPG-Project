@@ -13,6 +13,9 @@ if (global.pause == true){
 if (global.pause == false){
 	instance_activate_layer("Instances");
 }
+if (doTransition){
+	global.canPause = false;
+}
 if (global.pause == false and global.canPause == true and !instance_exists(obj_textbox)){
 	if (global.hasBackpack){
 		if (global.PINV and !global.inventoryOpen){
@@ -28,17 +31,7 @@ if (instance_exists(obj_player)){
 	global.targetY = obj_player.y;
 }
 
-#region CHARACTER HP CAP
-if (global.playerHP > global.MAXplayerHP){
-	global.playerHP = global.MAXplayerHP;
-} 
-if (global.katHP > global.MAXkatHP){
-	global.katHP = global.MAXkatHP;
-} 
-if (global.natHP > global.MAXnatHP){
-	global.natHP = global.MAXnatHP;
-} 
-#endregion
+
 
 #region ACTIVATE DEVMODE PRIVILEGES
 if (instance_exists(obj_devmode)){

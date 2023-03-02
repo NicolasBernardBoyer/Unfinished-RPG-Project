@@ -5,10 +5,8 @@ if (instance_exists(obj_player)){
 	obj_player.y = spawnY;
 	// additional party members appear on top of player
 	if (instance_exists(obj_kat)){
-		if (obj_player.canMove = true and global.canPause = true){
-			obj_kat.x = spawnX;
-			obj_kat.y = spawnY;
-		}
+		obj_kat.x = spawnX;
+		obj_kat.y = spawnY;
 	}
 }
 

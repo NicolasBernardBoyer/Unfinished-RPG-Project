@@ -58,7 +58,7 @@ scripts2 = [[port_swap, 0], [port_swap, 0], [port_swap, 0], [port_swap, 1],
 			
 text3 = ["So, about your job...",
 		 "What exactly does being a save guy entail?",
-		 "I do savin' for people.",
+		 "It's quite simple, actually. I save for people.",
 		 "I'm not sure I understand.",
 		 "It's a lot easier to grasp with a demonstration.",
 		 "...but you don't really have anythin' to save.",
