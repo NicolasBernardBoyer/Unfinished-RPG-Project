@@ -7,9 +7,10 @@ if (following != noone){
 	xTo = following.x;
 	yTo = following.y;
 	
-	x += xTo - x
-	y += yTo - y
 }
+
+x += xTo - x;
+y += yTo - y;
 
 // have the camera stay so that the player is at the center
 x= clamp(x,0+halfcamerawidth,room_width-halfcamerawidth);

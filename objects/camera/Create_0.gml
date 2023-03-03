@@ -1,5 +1,5 @@
 //camera width and height
-camWidth = 430;
+camWidth = 600;
 camHeight = 320;
 
 //half of those variables

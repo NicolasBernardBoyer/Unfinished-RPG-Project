@@ -12,8 +12,8 @@ BUFFER = ceil(6);
 
 #region DRAW CURRENT NAME
 
-startY = 32;
-startX = 92;
+startY = global.game_width/3 + 32;
+startX = global.game_height/3 + 92;
 
 //Draw Current Name
 draw_set_halign(fa_left);
@@ -25,8 +25,8 @@ draw_text(startX, startY + 2, spaces);
 
 #region DRAW LETTERS
 
-startY = 72;
-startX = 60;
+startY = global.game_width/2 + 72;
+startX = global.game_height/3 + 60;
 var charCount = 1;
 
 // Draw each letter and the confirmation for having finished the name

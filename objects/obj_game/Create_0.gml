@@ -92,8 +92,8 @@ global.s_birds		= snd_birds;
 #region Camera and Window size variables
 global.view_width  = camera_get_view_width(view_camera[0]);
 global.view_height = camera_get_view_height(view_camera[0]);
-global.game_width  = 384;
-global.game_height = 288;
+global.game_width  = 600;
+global.game_height = 320;
 display_set_gui_size(global.game_width, global.game_height);
 #endregion
 
