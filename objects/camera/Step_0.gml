@@ -7,10 +7,9 @@ if (following != noone){
 	xTo = following.x;
 	yTo = following.y;
 	
+	x += xTo - x;
+	y += yTo - y;
 }
-
-x += xTo - x;
-y += yTo - y;
 
 // have the camera stay so that the player is at the center
 x= clamp(x,0+halfcamerawidth,room_width-halfcamerawidth);
@@ -24,5 +23,20 @@ if (room_width >= camWidth or room_height >= camHeight){
 		floor(y-(camHeight*0.5))
 	);
 }
+if (room_width < camWidth){
+	camera_set_view_pos(
+		view_camera[0],
+		x,
+		camHeight,
+	);
+}
+if (room_height < camHeight){
+	camera_set_view_pos(
+		view_camera[0],
+		camWidth,
+		camHeight/2,
+	);
+}
+
 
 

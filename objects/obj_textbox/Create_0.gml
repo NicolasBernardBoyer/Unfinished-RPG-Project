@@ -31,7 +31,7 @@ proceed = true;
 // portrait positioning
 port_y = (global.game_height*0.98) - port_height - 2;
 port_x = (global.game_width - box_width - port_width) * 0.5 + 45;
-box_x = 32;
+box_x = (global.game_width - box_width)/2;
 
 // display box at the top or bottom of the screen depending on the highbox global
 if(global.highbox = true){
@@ -39,9 +39,9 @@ if(global.highbox = true){
 	port_y = box_height-10;
 	frame_y = 6;
 } else {
-	box_y = 200;
+	box_y = global.game_height - box_height;
 	port_y = (global.game_height*0.98) - port_height - 2;
-	frame_y = 206;
+	frame_y = global.game_height - box_height + 6;
 }
 
 // Texbox frame if there is one added in the future
@@ -88,7 +88,7 @@ choice = 0;
 choice_col = c_yellow;
 
 // choice text positioning
-ch_text_x = 38;
+ch_text_x = box_x+8;
 ch_text_y = text_y-48;
 
 

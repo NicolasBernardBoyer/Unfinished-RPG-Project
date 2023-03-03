@@ -1,6 +1,6 @@
 // if the cutscene hasn't run once before, do this
 if (runOnce = false){
-	// if the player hasn't hit 319 Y yet.
+	// if the player has hit 319 Y yet.
 	if (obj_player.y >= 319){
 		// stop player movement and pausing
 		moveCam = true;
