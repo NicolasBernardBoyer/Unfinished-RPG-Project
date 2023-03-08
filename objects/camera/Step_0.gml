@@ -12,8 +12,16 @@ if (following != noone){
 }
 
 // have the camera stay so that the player is at the center
-x= clamp(x,0+halfcamerawidth,room_width-halfcamerawidth);
-y= clamp(y,0+halfcameraheight,room_height-halfcameraheight);
+if (room_width >= camWidth){
+	x= clamp(x,0+halfcamerawidth,room_width-halfcamerawidth);
+} else {
+	x = room_width/2;
+}
+if (room_height >= camHeight){
+	y= clamp(y,0+halfcameraheight,room_height-halfcameraheight);
+} else {
+	y = room_height/2;
+}
 
 //prevent the camera from jittering on the edges of a room
 if (room_width >= camWidth or room_height >= camHeight){
@@ -21,20 +29,6 @@ if (room_width >= camWidth or room_height >= camHeight){
 		view_camera[0],
 		floor(x-(camWidth*0.5)),
 		floor(y-(camHeight*0.5))
-	);
-}
-if (room_width < camWidth){
-	camera_set_view_pos(
-		view_camera[0],
-		x,
-		camHeight,
-	);
-}
-if (room_height < camHeight){
-	camera_set_view_pos(
-		view_camera[0],
-		camWidth,
-		camHeight/2,
 	);
 }
 

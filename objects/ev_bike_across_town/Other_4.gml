@@ -1,6 +1,6 @@
 // Activate the player and trigger a fade in effect
 instance_activate_object(obj_player);
-instance_create_layer(543,0, "Transitions", obj_fade_in);
+instance_create_layer(0,0, "Transitions", obj_fade_in);
 obj_fade_in.image_speed = 2;
 // Stop the player from moving and enable biking animation
 with(obj_player){

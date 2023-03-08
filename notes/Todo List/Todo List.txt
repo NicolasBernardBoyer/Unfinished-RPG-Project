@@ -1,6 +1,8 @@
 - Change inventory functionality
 - Add first battle/save guy 
-- Add white outlines to portraits
 - Add light around characters in cave
-- Reorganization day (VERY IMPORTANT!)
+- Change textbox style
+- Make outdoor rooms larger (park/foodtruck)
+- Fix cutscenes
+- 
 

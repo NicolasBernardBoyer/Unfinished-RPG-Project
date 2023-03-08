@@ -42,14 +42,11 @@ if (instance_exists(obj_player) and createManager = true){
 	if (moveCam = true){
 		//If the manager object isnt there yet, move the camera to the right position
 		if (!instance_exists(obj_manager)){
-			if (camera.x != 224){
-				camera.x = Approach(camera.x, 224, 2);
-			}
 			if (camera.y != 220){
 				camera.y = Approach(camera.y, 220, 2);
 			}
 			//if the camera is in the right player and there is no manager, create one only once
-			if (camera.x = 224 and camera.y = 220 and !instance_exists(obj_manager) and createManager = true){
+			if (camera.y = 220 and !instance_exists(obj_manager) and createManager = true){
 				instance_create_layer(223, 95, "Instances", obj_manager);
 				createManager = false;
 			}
