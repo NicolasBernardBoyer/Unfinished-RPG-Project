@@ -1,4 +1,8 @@
-if (instance_exists(obj_devmode)) instance_destroy(self);
+if (!instance_exists(obj_devskip)){
+	if (instance_exists(obj_devmode)){
+		instance_destroy(self);
+	}
+}
 
 global.name_text_col = c_gray;
 cutProg = 0;
