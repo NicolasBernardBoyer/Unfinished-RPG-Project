@@ -2,7 +2,6 @@
 - Add first battle/save guy 
 - Add light around characters in cave
 - Change textbox style
-- Make outdoor rooms larger (park/foodtruck)
-- Fix cutscenes
-- 
+
+
 
