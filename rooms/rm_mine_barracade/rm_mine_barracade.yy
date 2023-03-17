@@ -7,13 +7,13 @@
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_8A7FDEE","path":"rooms/rm_mine_barracade/rm_mine_barracade.yy",},
     {"name":"inst_5147EE79","path":"rooms/rm_mine_barracade/rm_mine_barracade.yy",},
     {"name":"inst_2A6492CD","path":"rooms/rm_mine_barracade/rm_mine_barracade.yy",},
     {"name":"inst_1A47608C","path":"rooms/rm_mine_barracade/rm_mine_barracade.yy",},
+    {"name":"inst_7961B52D","path":"rooms/rm_mine_barracade/rm_mine_barracade.yy",},
     {"name":"inst_3979A6FF","path":"rooms/rm_mine_barracade/rm_mine_barracade.yy",},
     {"name":"inst_29D2F14D","path":"rooms/rm_mine_barracade/rm_mine_barracade.yy",},
-    {"name":"inst_7961B52D","path":"rooms/rm_mine_barracade/rm_mine_barracade.yy",},
+    {"name":"inst_8A7FDEE","path":"rooms/rm_mine_barracade/rm_mine_barracade.yy",},
   ],
   "isDnd": false,
   "layers": [

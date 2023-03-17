@@ -8,7 +8,7 @@ global.party =
 		mp: 10,
 		mpMax: 15,
 		strength: 6,
-		sprites: { idle: spr_player_rightwalk_coat },
+		sprites: { idle: spr_player_idle },
 		actions: []
 	}
 	,
@@ -19,7 +19,7 @@ global.party =
 		mp: 10,
 		mpMax: 15,
 		strength: 12,
-		sprites: { idle: spr_kat_rightwalk },
+		sprites: { idle: spr_kat_idle },
 		actions: []
 	}
 ];
