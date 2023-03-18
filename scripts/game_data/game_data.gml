@@ -5,10 +5,13 @@ global.party =
 		name: "You",
 		hp: 90,
 		hpMax: 90,
-		mp: 10,
+		mp: 15,
 		mpMax: 15,
 		strength: 6,
-		sprites: { idle: spr_player_idle },
+		defense: 4,
+		agility: 6,
+		luck: 8,
+		sprites: { idle: spr_player_idle, },
 		actions: []
 	}
 	,
@@ -16,10 +19,13 @@ global.party =
 		name: "Katarina",
 		hp: 70,
 		hpMax: 70,
-		mp: 10,
+		mp: 15,
 		mpMax: 15,
 		strength: 12,
-		sprites: { idle: spr_kat_idle },
+		defense: 2,
+		agility: 12,
+		luck: 1,
+		sprites: { idle: spr_kat_idle, },
 		actions: []
 	}
 ];
@@ -33,7 +39,10 @@ global.enemies = {
 		hpMax: 30,
 		mp: 0,
 		mpMax: 0,
-		strength: 5,
+		strength: 1,
+		defense: 1,
+		agility: 1,
+		luck: 1,
 		sprites: { idle: spr_save_guy },
 		actions: [],
 		xpValue : 15,

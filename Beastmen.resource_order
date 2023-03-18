@@ -289,6 +289,7 @@
     {"name":"spr_roadblock","order":6,"path":"sprites/spr_roadblock/spr_roadblock.yy",},
     {"name":"spr_cliff_park","order":11,"path":"sprites/spr_cliff_park/spr_cliff_park.yy",},
     {"name":"init","order":13,"path":"scripts/init/init.yy",},
+    {"name":"battle_cam","order":1,"path":"objects/battle_cam/battle_cam.yy",},
     {"name":"spr_kat_fall_angry","order":3,"path":"sprites/spr_kat_fall_angry/spr_kat_fall_angry.yy",},
     {"name":"obj_devskip","order":5,"path":"objects/obj_devskip/obj_devskip.yy",},
     {"name":"obj_emblem_large","order":3,"path":"objects/obj_emblem_large/obj_emblem_large.yy",},

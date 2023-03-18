@@ -364,6 +364,7 @@
     {"id":{"name":"spr_roadblock","path":"sprites/spr_roadblock/spr_roadblock.yy",},},
     {"id":{"name":"spr_cliff_park","path":"sprites/spr_cliff_park/spr_cliff_park.yy",},},
     {"id":{"name":"init","path":"scripts/init/init.yy",},},
+    {"id":{"name":"battle_cam","path":"objects/battle_cam/battle_cam.yy",},},
     {"id":{"name":"spr_kat_fall_angry","path":"sprites/spr_kat_fall_angry/spr_kat_fall_angry.yy",},},
     {"id":{"name":"obj_devskip","path":"objects/obj_devskip/obj_devskip.yy",},},
     {"id":{"name":"obj_emblem_large","path":"objects/obj_emblem_large/obj_emblem_large.yy",},},
