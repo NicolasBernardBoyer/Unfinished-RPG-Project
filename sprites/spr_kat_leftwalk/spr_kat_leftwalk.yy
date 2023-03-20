@@ -24,7 +24,6 @@
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ce52114b-d95d-4153-90c6-51c3bd0b1803","blendMode":0,"displayName":"Tail (2)","isLocked":false,"opacity":100.0,"visible":true,},
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"41b775cf-e0b1-4e08-941a-163f1d55e036","blendMode":0,"displayName":"PlayerShadow","isLocked":false,"opacity":100.0,"visible":false,},
   ],
   "nineSlice": null,
   "origin": 7,

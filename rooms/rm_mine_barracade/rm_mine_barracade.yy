@@ -38,8 +38,8 @@
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"BackgroundTSET","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":10,"SerialiseWidth":18,"TileCompressedData":[
 -6,5,1,44,-3,0,1,43,-3,5,-4,-2147483648,1,69,-4,21,1,52,
--12,21,-12,19,1,37,-5,19,-2,4,1,85,-5,4,1,85,-9,4,
--72,36,-15,0,-3,-2147483648,-3,72,1,23,-10,0,-4,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tset_mine","path":"tilesets/tset_mine/tset_mine.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+-12,21,-12,19,1,37,-5,19,-18,35,-18,20,-54,36,-15,0,-3,-2147483648,
+-3,72,1,23,-10,0,-4,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tset_mine","path":"tilesets/tset_mine/tset_mine.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {
