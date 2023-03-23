@@ -76,6 +76,7 @@
     {"name":"Unused","order":1,"path":"folders/Sprites/Unused.yy",},
     {"name":"Tile Sets","order":12,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":3,"path":"folders/Timelines.yy",},
+    {"name":"BattleUI","order":13,"path":"folders/Sprites/UI/BattleUI.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"goto_title","order":7,"path":"scripts/goto_title/goto_title.yy",},
@@ -322,6 +323,7 @@
     {"name":"player_fall_over","order":1,"path":"scripts/player_fall_over/player_fall_over.yy",},
     {"name":"rb_yourbedroom","order":4,"path":"objects/rb_yourbedroom/rb_yourbedroom.yy",},
     {"name":"snd_exclamation","order":12,"path":"sounds/snd_exclamation/snd_exclamation.yy",},
+    {"name":"spr_hppart","order":1,"path":"sprites/spr_hppart/spr_hppart.yy",},
     {"name":"ev_name_creator_timer","order":4,"path":"objects/ev_name_creator_timer/ev_name_creator_timer.yy",},
     {"name":"spr_foodtruck","order":8,"path":"sprites/spr_foodtruck/spr_foodtruck.yy",},
     {"name":"spr_shade_diagonal_half","order":9,"path":"sprites/spr_shade_diagonal_half/spr_shade_diagonal_half.yy",},
