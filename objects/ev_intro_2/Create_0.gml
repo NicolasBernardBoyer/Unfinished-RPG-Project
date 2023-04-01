@@ -25,19 +25,19 @@ preScripts = [-1,[[change_variable, id, "nameok", false, id, "runText2", true],[
 // Special dialogue for the name Noa
 if (global.playerName = "Noa"){
 	text = [
-			"My name is...",
-			global.playerName + "? Oh yeah, it always was.",
-			"Back when I was part of this reality, how hard was life?",
-			"The harsher reality is, the stronger I'll get.",
-			"Select your difficulty.\nThis can be changed at any point during gameplay in settings.",
+			"Your name is...",
+			global.playerName + "? It always was.",
+			"Now it's time for you to choose your reality.",
+			"The harsher reality is, the stronger you'll be.",
+			"Select your difficulty.\nThis can be changed at any point during gameplay in settings.\n(Difficulty changes nothing lmao)",
 			];
 } else {
 	text = [
-			"My name is...",
-			global.playerName + "? My memory's kinda foggy...",
-			"Back when I was part of this reality, how hard was life?",
-			"The harsher reality is, the stronger I'll get.",
-			"Select your difficulty.\nThis can be changed at any point during gameplay in settings.",
+			"Your name is...",
+			global.playerName + "? Perfect.",
+			"Now it's time for you to choose your reality.",
+			"The harsher reality is, the stronger you'll be.",
+			"Select your difficulty.\nThis can be changed at any point during gameplay in settings.\n(Difficulty changes nothing lmao)",
 			];
 }
 
@@ -51,9 +51,9 @@ scripts = [-1,-1, -1, [change_variable, id, "draw_difficulty", true], -1];
 text2 = ["Is this the difficulty you want?",
 		["Yes", "No"],
 		"Select your difficulty.\nThis can be changed at any point during gameplay in settings.",
-		"Yeah... That's how things were.",
-		"Now...\nTime to wake up, I guess.",
-		"I must do the right thing."];
+		"...So that's how it is.",
+		"Now...\nIt's time to wake up.",
+		"...Have fun."];
 speakers2 = [id,id,id,id,id,id];
 next_line2 = [0,[3,0],1,0,0,0];
 scripts2 = [-1,[[change_variable, id, "draw_difficulty", false, id, "confirm_difficulty", false],[change_variable, id, "draw_difficulty", true, id, "confirm_difficulty", false, obj_textbox, "proceed", false, id, "delayCheck", true]],-1,-1,-1,[goto_room]];

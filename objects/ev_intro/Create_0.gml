@@ -20,20 +20,16 @@ text = [
 		"Thus, fiction IS reality.",
 		"Try and escape as much as you can.\nThere's no running from reality.",
 		"Your new low-end job?\nYour lowsy roomate?\nAll real.\nThere is no running from it.",
-		"A world in which humans and animals are permanently in social tension?\nThat's also real.",
-		"And you are... Who again?",
+		"Let's start with your name.",
 		"Please enter your name.\nUse backspace/X to delete.",
 		];
 portrait_index = noone;
 speakers = [id, id, id, id, id,
 			id, id, id, id, id,
-			id, id, id, id, id,
-			id];
+			id, id, id, id, id];
 next_line = [0, 0, 0, [4,5], 6, 
 			 6, 0, 0, 0, 0,
-			 0, 0, 0, 0, 0,
-			 0];
+			 0, 0, 0, 0, 0];
 scripts = [-1, -1, -1, -1, -1,
-		   -1, -1, -1, -1, -1,
-		   -1, -1, -1, -1, [create_name_creator],
+		   -1, -1, -1, -1, -1, -1, -1, -1, [create_name_creator],
 		   -1];

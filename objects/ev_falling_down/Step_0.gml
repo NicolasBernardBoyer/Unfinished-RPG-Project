@@ -28,8 +28,7 @@ switch (cutProg){
 	case 1:
 	// Create a textbox if one doesn't exist
 		if (!instance_exists(obj_textbox)){
-			obj_kat.sprite_index = spr_kat_fall_angry;
-			obj_kat.portrait_index = 1;
+			obj_kat.portrait_index = 0;
 			create_textbox(text, speakers, next_line, scripts);
 		}
 	break;

@@ -4,7 +4,8 @@ switch (cutProg){
 	case -1:
 	//trigger cutscene when player reaches a certain point
 	if (obj_player.x > 188){
-		new_encounter([global.enemies.saveGuy], bg_bluesky);
+		room_goto(rm_lol);
+		//new_encounter([global.enemies.saveGuy], bg_bluesky);
 		cutProg++;
 	}
 	break;
