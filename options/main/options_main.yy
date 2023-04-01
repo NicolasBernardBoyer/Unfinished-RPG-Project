@@ -2,7 +2,7 @@
   "resourceType": "GMMainOptions",
   "resourceVersion": "1.4",
   "name": "Main",
-  "option_author": "",
+  "option_author": "Nicolas Boyer",
   "option_collision_compatibility": true,
   "option_copy_on_write_enabled": true,
   "option_draw_colour": 4294967295,
