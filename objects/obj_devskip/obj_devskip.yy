@@ -13,10 +13,7 @@
     "name": "dev stuff",
     "path": "folders/Objects/dev stuff.yy",
   },
-  "parentObjectId": {
-    "name": "obj_devmode",
-    "path": "objects/obj_devmode/obj_devmode.yy",
-  },
+  "parentObjectId": null,
   "persistent": true,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

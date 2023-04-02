@@ -16,6 +16,7 @@ if (global.pause == false){
 if (doTransition){
 	global.canPause = false;
 }
+/*
 if (global.pause == false and global.canPause == true and !instance_exists(obj_textbox)){
 	if (global.hasBackpack){
 		if (global.PINV and !global.inventoryOpen){
@@ -24,6 +25,7 @@ if (global.pause == false and global.canPause == true and !instance_exists(obj_t
 		} 
 	}
 }
+*/
 #endregion
 
 if (instance_exists(obj_player)){
@@ -121,8 +123,8 @@ if (keyboard_check_pressed(global.key_shift) or gamepad_button_check_pressed(0,g
 global.PSEL = true;
 else global.PSEL = false;
 
-if (keyboard_check_pressed(global.key_inventory) or gamepad_button_check_pressed(0,global.gp_inventory))
+/*if (keyboard_check_pressed(global.key_inventory) or gamepad_button_check_pressed(0,global.gp_inventory))
 global.PINV = true;
-else global.PINV = false;
+else global.PINV = false; */
 
 #endregion
