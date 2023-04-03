@@ -1,6 +1,6 @@
 //camera width and height
-camWidth = 600;
-camHeight = 320;
+camWidth = 640;
+camHeight = 360;
 
 //half of those variables
 //this is to use as a reference because we want to keep the player

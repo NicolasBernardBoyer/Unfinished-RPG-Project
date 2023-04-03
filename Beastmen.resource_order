@@ -77,6 +77,7 @@
     {"name":"Unused","order":1,"path":"folders/Sprites/Unused.yy",},
     {"name":"Tile Sets","order":12,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":3,"path":"folders/Timelines.yy",},
+    {"name":"Init","order":20,"path":"folders/Scripts/Init.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"goto_title","order":7,"path":"scripts/goto_title/goto_title.yy",},
@@ -290,7 +291,6 @@
     {"name":"spr_player_upwalk_bag","order":1,"path":"sprites/spr_player_upwalk_bag/spr_player_upwalk_bag.yy",},
     {"name":"spr_roadblock","order":6,"path":"sprites/spr_roadblock/spr_roadblock.yy",},
     {"name":"spr_cliff_park","order":11,"path":"sprites/spr_cliff_park/spr_cliff_park.yy",},
-    {"name":"init","order":13,"path":"scripts/init/init.yy",},
     {"name":"battle_cam","order":1,"path":"objects/battle_cam/battle_cam.yy",},
     {"name":"spr_kat_fall_angry","order":3,"path":"sprites/spr_kat_fall_angry/spr_kat_fall_angry.yy",},
     {"name":"obj_devskip","order":5,"path":"objects/obj_devskip/obj_devskip.yy",},
@@ -358,6 +358,7 @@
     {"name":"obj_barracade","order":4,"path":"objects/obj_barracade/obj_barracade.yy",},
     {"name":"obj_inventory","order":5,"path":"objects/obj_inventory/obj_inventory.yy",},
     {"name":"obj_trashcan","order":5,"path":"objects/obj_trashcan/obj_trashcan.yy",},
+    {"name":"obj_transition_manager","order":12,"path":"objects/obj_transition_manager/obj_transition_manager.yy",},
     {"name":"obj_shade","order":3,"path":"objects/obj_shade/obj_shade.yy",},
     {"name":"spr_rubble","order":3,"path":"sprites/spr_rubble/spr_rubble.yy",},
     {"name":"change_variable","order":12,"path":"scripts/change_variable/change_variable.yy",},

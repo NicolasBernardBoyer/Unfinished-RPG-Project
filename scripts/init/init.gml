@@ -53,3 +53,4 @@ global.ptRubble = _rubble;
 //part_type_death(global.ptBasic, 1, global.ptDeathExplosion);
 
 #endregion
+
