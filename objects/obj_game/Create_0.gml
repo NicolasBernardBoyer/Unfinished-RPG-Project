@@ -3,6 +3,7 @@ portrait_index = 0;
 voice = snd_typewriter;
 name = "";
 
+
 pad_num = 0;
 
 radius = 8;
@@ -92,8 +93,8 @@ global.s_birds		= snd_birds;
 #region Camera and Window size variables
 global.view_width  = camera_get_view_width(view_camera[0]);
 global.view_height = camera_get_view_height(view_camera[0]);
-global.game_width  = 600;
-global.game_height = 320;
+global.game_width  = 640;
+global.game_height = 360;
 display_set_gui_size(global.game_width, global.game_height);
 #endregion
 

@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Katarina",
-    "path": "folders/Objects/world Objects/Characters/Katarina.yy",
+    "path": "folders/Objects/characters/Katarina.yy",
   },
   "parentObjectId": {
     "name": "par_object",

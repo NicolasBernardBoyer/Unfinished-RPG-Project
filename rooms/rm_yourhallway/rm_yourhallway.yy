@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rm_yourhallway",
-  "creationCodeFile": "",
+  "creationCodeFile": "${project_dir}/rooms/rm_yourhallway/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
@@ -120,7 +120,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7B9DB87C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_kitchentable","path":"objects/obj_kitchentable/obj_kitchentable.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0625,"x":246.0,"y":447.5,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_62D3FD94","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_kitchenset","path":"objects/obj_kitchenset/obj_kitchenset.yy",},"properties":[],"rotation":0.0,"scaleX":0.99999994,"scaleY":0.8958334,"x":256.0,"y":334.25,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_522B61D8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_coatrack","path":"objects/obj_coatrack/obj_coatrack.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":176.0,"y":392.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_49EBB4F3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"ev_door_transition","path":"objects/ev_door_transition/ev_door_transition.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_49EBB4F3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"ev_door_transition","path":"objects/ev_door_transition/ev_door_transition.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_26449180","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_davecouch","path":"objects/obj_davecouch/obj_davecouch.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":112.0,"y":438.5,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Doors","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":19,"SerialiseWidth":12,"TileCompressedData":[
@@ -168,7 +168,7 @@
   },
   "sequenceId": null,
   "views": [
-    {"hborder":0,"hport":960,"hspeed":-1,"hview":321,"inherit":false,"objectId":null,"vborder":0,"visible":true,"vspeed":-1,"wport":1280,"wview":601,"xport":0,"xview":-108,"yport":0,"yview":0,},
+    {"hborder":0,"hport":720,"hspeed":-1,"hview":361,"inherit":false,"objectId":null,"vborder":0,"visible":true,"vspeed":-1,"wport":1280,"wview":641,"xport":0,"xview":-108,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
@@ -179,7 +179,7 @@
   ],
   "viewSettings": {
     "clearDisplayBuffer": true,
-    "clearViewBackground": true,
+    "clearViewBackground": false,
     "enableViews": true,
     "inheritViewSettings": false,
   },

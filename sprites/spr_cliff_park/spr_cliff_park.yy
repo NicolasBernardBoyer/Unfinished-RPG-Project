@@ -36,7 +36,7 @@
   "origin": 7,
   "parent": {
     "name": "The Park",
-    "path": "folders/Sprites/Overworld/InanimateObj/CitySprites/The Park.yy",
+    "path": "folders/Sprites/Overworld/CitySprites/The Park.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

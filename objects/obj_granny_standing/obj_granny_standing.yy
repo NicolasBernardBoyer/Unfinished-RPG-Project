@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Shopping District",
-    "path": "folders/Objects/world Objects/TheCity/Shopping District.yy",
+    "path": "folders/Objects/city/Shopping District.yy",
   },
   "parentObjectId": {
     "name": "par_object",

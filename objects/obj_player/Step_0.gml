@@ -9,7 +9,7 @@ if (room == rm_title_screen) {
 if (!global.pause) {
 
 // Textbox interaction, create one if not a party member and interacting with an object
-if (keyboard_check_pressed(global.key_confirm) or gamepad_button_check_pressed(0,global.gp_confirm)){
+if (global.POK){
 	if (global.canPause = true and canMove = true){
 		if(active_textbox == noone and !instance_exists(obj_textbox)){
 			var inst_list = ds_list_create();

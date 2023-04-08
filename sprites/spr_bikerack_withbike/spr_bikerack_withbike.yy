@@ -26,7 +26,7 @@
   "origin": 9,
   "parent": {
     "name": "The Park",
-    "path": "folders/Sprites/Overworld/InanimateObj/CitySprites/The Park.yy",
+    "path": "folders/Sprites/Overworld/CitySprites/The Park.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -59,7 +59,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 9,
+    "xorigin": 6,
     "yorigin": 48,
   },
   "swatchColours": null,

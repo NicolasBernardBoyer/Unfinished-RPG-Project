@@ -6,4 +6,4 @@ if (global.textvisible == true){
 } else {
 	c = c_black;
 }
-draw_text_color(global.game_width/3, global.game_height/2, "Press any button", c,c,c,c, 1);
+draw_text_color(global.game_width/3+35, global.game_height-150, "Press any button", c,c,c,c, 1);

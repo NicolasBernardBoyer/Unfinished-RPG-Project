@@ -117,6 +117,7 @@ switch (cutProg){
 		// notify that katarina has joined the party
 		audio_play_sound(snd_partyup, 5, false);
 		create_textbox(text4, speakers4, next_line4, scripts4);
+		obj_textbox.text_col = c_yellow;
 	}
 	break;
 	case 6:
@@ -137,20 +138,7 @@ switch (cutProg){
 	}
 	break;
 	case 7:
-	// If there is no textbox, change portrait index and create textbox
-	if (!instance_exists(obj_textbox)){
-		portrait_index = 8;
-		create_textbox(text5, speakers5, next_line5, scripts5);
-	}
-	break;
-	case 8:
-	// If there is no textbox, create one.
-	if (!instance_exists(obj_textbox)){
-		create_textbox(text6, speakers6, next_line6, scripts6);
-	}
-	break;
-	case 9:
-	/* End the cutscene, let the player move, make the camera follow
+		/* End the cutscene, let the player move, make the camera follow
 	the player again. Destroy this event. */
 	with (obj_player){
 		canMove = true;

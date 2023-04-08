@@ -32,7 +32,7 @@
   "origin": 9,
   "parent": {
     "name": "HomeSprites",
-    "path": "folders/Sprites/Overworld/InanimateObj/HomeSprites.yy",
+    "path": "folders/Sprites/Overworld/HomeSprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

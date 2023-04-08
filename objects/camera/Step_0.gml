@@ -11,7 +11,7 @@ if (following != noone){
 	y += yTo - y;
 }
 
-// have the camera stay so that the player is at the center
+
 if (room_width >= camWidth){
 	x= clamp(x,0+halfcamerawidth,room_width-halfcamerawidth);
 } else {
@@ -23,7 +23,6 @@ if (room_height >= camHeight){
 	y = room_height/2;
 }
 
-//prevent the camera from jittering on the edges of a room
 if (room_width >= camWidth or room_height >= camHeight){
 	camera_set_view_pos(
 		view_camera[0],
@@ -31,6 +30,5 @@ if (room_width >= camWidth or room_height >= camHeight){
 		floor(y-(camHeight*0.5))
 	);
 }
-
 
 

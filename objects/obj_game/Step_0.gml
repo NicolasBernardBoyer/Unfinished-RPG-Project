@@ -1,4 +1,7 @@
+
+	
 #region PAUSING
+
 // handle pausing
 if (keyboard_check_pressed(global.key_esc) or gamepad_button_check_pressed(0,global.gp_esc)){
 	if(room != rm_title_screen){

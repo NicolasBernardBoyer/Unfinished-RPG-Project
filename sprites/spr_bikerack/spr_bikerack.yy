@@ -17,16 +17,16 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 32,
+  "height": 48,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"54b0053a-5911-4fb4-b2db-d11e650f9d32","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 7,
+  "origin": 9,
   "parent": {
     "name": "The Park",
-    "path": "folders/Sprites/Overworld/InanimateObj/CitySprites/The Park.yy",
+    "path": "folders/Sprites/Overworld/CitySprites/The Park.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -59,8 +59,8 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 9,
-    "yorigin": 32,
+    "xorigin": 6,
+    "yorigin": 48,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 18,
+  "width": 64,
 }

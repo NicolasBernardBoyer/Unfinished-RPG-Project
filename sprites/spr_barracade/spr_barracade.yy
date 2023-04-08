@@ -26,7 +26,7 @@
   "origin": 7,
   "parent": {
     "name": "MineSprites",
-    "path": "folders/Sprites/Overworld/InanimateObj/MineSprites.yy",
+    "path": "folders/Sprites/Overworld/MineSprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

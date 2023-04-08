@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Mine",
-    "path": "folders/Objects/world Objects/Mine.yy",
+    "name": "mine",
+    "path": "folders/Objects/mine.yy",
   },
   "parentObjectId": {
     "name": "par_object",

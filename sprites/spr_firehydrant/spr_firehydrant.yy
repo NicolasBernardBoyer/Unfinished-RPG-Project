@@ -26,7 +26,7 @@
   "origin": 7,
   "parent": {
     "name": "Shopping District",
-    "path": "folders/Sprites/Overworld/InanimateObj/CitySprites/Shopping District.yy",
+    "path": "folders/Sprites/Overworld/CitySprites/Shopping District.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

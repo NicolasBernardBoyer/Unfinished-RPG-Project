@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "TheCity",
-    "path": "folders/Objects/world Objects/TheCity.yy",
+    "name": "city",
+    "path": "folders/Objects/city.yy",
   },
   "parentObjectId": {
     "name": "par_object",

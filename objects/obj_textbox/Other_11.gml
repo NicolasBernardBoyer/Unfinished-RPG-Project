@@ -4,6 +4,12 @@ voice = voices[page];
 portrait = portrait_imgs[page];
 name_text_col = name_cols[page];
 
+if (portrait_imgs[page] != noone){
+	text_x = box_x + x_buffer + portraitspace;
+} else {
+	text_x = box_x + x_buffer;
+}
+
 // if the page is 0 get the portrait index from the speakers
 if (page = 0){
 	portrait_index = speakers[0].portrait_index;

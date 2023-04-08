@@ -1,11 +1,4 @@
 
-// change text positioning based off the presence of a portrait
-if (portrait = noone){
-	text_x = box_x + x_buffer;
-}
-if (portrait != noone){
-	text_x = box_x + x_buffer + portraitspace;
-}
 
 // when pressing interact key (make this just one button) do this
 if(global.POK or global.PCAN){

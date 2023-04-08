@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "InanimateObj",
-    "path": "folders/Sprites/Overworld/InanimateObj.yy",
+    "name": "Overworld",
+    "path": "folders/Sprites/Overworld.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
