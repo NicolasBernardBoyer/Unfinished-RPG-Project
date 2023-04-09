@@ -96,6 +96,8 @@ global.view_height = camera_get_view_height(view_camera[0]);
 global.game_width  = 640;
 global.game_height = 360;
 display_set_gui_size(global.game_width, global.game_height);
+global.monitor_w = display_get_width();
+global.monitor_h = display_get_height();
 #endregion
 
 #region KEYBOARD CONTROLS

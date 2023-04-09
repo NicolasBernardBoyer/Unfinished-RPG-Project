@@ -1,7 +1,8 @@
-- Change inventory functionality
+- Add fixed resolutions if needed (fullscreen is fine for now)
+- Add a new intro
+- Navigate menus with the mouse?
 - Add first battle/save guy 
-- Add light around characters in cave
-- Change textbox style
+
 
 
 
