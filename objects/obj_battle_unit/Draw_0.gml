@@ -1,1 +1,2 @@
+//null
 draw_self();
