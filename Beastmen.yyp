@@ -308,7 +308,6 @@
     {"id":{"name":"backpack_pickup","path":"scripts/backpack_pickup/backpack_pickup.yy",},},
     {"id":{"name":"rm_waytowork","path":"rooms/rm_waytowork/rm_waytowork.yy",},},
     {"id":{"name":"spr_me","path":"sprites/spr_me/spr_me.yy",},},
-    {"id":{"name":"obj_battle_depthsorter","path":"objects/obj_battle_depthsorter/obj_battle_depthsorter.yy",},},
     {"id":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
     {"id":{"name":"spr_bat","path":"sprites/spr_bat/spr_bat.yy",},},
     {"id":{"name":"spr_couch","path":"sprites/spr_couch/spr_couch.yy",},},

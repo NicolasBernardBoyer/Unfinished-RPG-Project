@@ -241,7 +241,6 @@
     {"name":"spr_bookshelf","order":1,"path":"sprites/spr_bookshelf/spr_bookshelf.yy",},
     {"name":"Foodtutorial","order":2,"path":"notes/Foodtutorial/Foodtutorial.yy",},
     {"name":"Todo List","order":1,"path":"notes/Todo List/Todo List.yy",},
-    {"name":"obj_battle_depthsorter","order":4,"path":"objects/obj_battle_depthsorter/obj_battle_depthsorter.yy",},
     {"name":"spr_bat","order":4,"path":"sprites/spr_bat/spr_bat.yy",},
     {"name":"spr_couch","order":7,"path":"sprites/spr_couch/spr_couch.yy",},
     {"name":"rm_mine_leftentrance","order":3,"path":"rooms/rm_mine_leftentrance/rm_mine_leftentrance.yy",},
