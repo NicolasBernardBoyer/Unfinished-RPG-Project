@@ -53,7 +53,7 @@
     ],
     "top": 0,
   },
-  "origin": 7,
+  "origin": 9,
   "parent": {
     "name": "Battle",
     "path": "folders/Sprites/Overworld/Characters/Katarina/Battle.yy",
@@ -97,7 +97,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 45,
-    "yorigin": 68,
+    "yorigin": 66,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

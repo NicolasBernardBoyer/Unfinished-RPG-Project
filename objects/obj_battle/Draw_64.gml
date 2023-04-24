@@ -11,3 +11,5 @@ if (instance_exists(obj_battle_unit_enemy)){
 		draw_sprite(spr_hpbar, 0, 50, 50);
 	}
 }
+
+draw_sprite(spr_stat_box, 0, x, y+296);

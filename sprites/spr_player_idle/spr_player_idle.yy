@@ -26,7 +26,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d90c5f6e-b03d-4a2a-96d3-bc83e70bf1e8","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 7,
+  "origin": 9,
   "parent": {
     "name": "PlayerBattle",
     "path": "folders/Sprites/Overworld/Characters/Player/PlayerBattle.yy",
@@ -66,7 +66,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 34,
-    "yorigin": 84,
+    "yorigin": 80,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
