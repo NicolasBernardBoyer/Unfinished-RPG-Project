@@ -11,6 +11,7 @@ global.party =
 		defense: 4,
 		agility: 6,
 		luck: 8,
+		stat_box: spr_stat_player,
 		sprites: { idle: spr_player_idle, },
 		actions: []
 	}
@@ -25,6 +26,7 @@ global.party =
 		defense: 2,
 		agility: 12,
 		luck: 1,
+		stat_box: spr_stat_kat,
 		sprites: { idle: spr_kat_idle, },
 		actions: []
 	}

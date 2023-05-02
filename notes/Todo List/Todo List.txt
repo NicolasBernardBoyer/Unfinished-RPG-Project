@@ -2,6 +2,7 @@
 - Add a new intro
 - Navigate menus with the mouse?
 - Add first battle/save guy 
+- Add more options to name creator
 
 
 

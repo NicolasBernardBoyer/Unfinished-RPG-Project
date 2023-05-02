@@ -13,4 +13,5 @@
 - Glass breaking sfx (P.Jezisek)
 - Cat screaming sfx (Sound laboratory)
 - Walking sfx (Gelatin)
+- VCR OSD Mono font by Riciery Leal
 

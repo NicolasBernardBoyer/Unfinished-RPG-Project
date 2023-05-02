@@ -1,6 +1,6 @@
 //Draw Box
-draw_sprite(box, 0, box_x, box_y);
 
+draw_sprite_ext(box, 0, box_x, box_y, box_width/32, box_height/32, 0, c_white, 1);
 //Draw Portrait Back
 //draw_sprite(frame, 0, port_x, port_y);
 

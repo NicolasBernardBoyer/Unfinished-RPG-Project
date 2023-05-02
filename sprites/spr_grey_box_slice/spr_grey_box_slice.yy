@@ -26,7 +26,7 @@
     "resourceType": "GMNineSliceData",
     "resourceVersion": "1.0",
     "bottom": 7,
-    "enabled": false,
+    "enabled": true,
     "guideColour": [
       4294902015,
       4294902015,
@@ -35,7 +35,7 @@
     ],
     "highlightColour": 1728023040,
     "highlightStyle": 0,
-    "left": 6,
+    "left": 7,
     "right": 7,
     "tileMode": [
       0,
@@ -48,8 +48,8 @@
   },
   "origin": 0,
   "parent": {
-    "name": "BattleUI",
-    "path": "folders/Sprites/UI/BattleUI.yy",
+    "name": "General",
+    "path": "folders/Sprites/UI/General.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

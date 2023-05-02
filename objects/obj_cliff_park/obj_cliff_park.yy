@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "The Park",
-    "path": "folders/Objects/city/The Park.yy",
+    "path": "folders/Objects/general/city/The Park.yy",
   },
   "parentObjectId": null,
   "persistent": false,

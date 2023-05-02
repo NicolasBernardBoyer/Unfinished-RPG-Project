@@ -9,15 +9,15 @@ if (instance_exists(obj_player)){
 }
 
 // textbox and frame initialization
-box = spr_textbox;
+box = spr_box;
 frame = spr_box_empty;
 
 // set portrait to none at first, this will change based on who is talking
 portrait = noone;
 
 // box size variables
-box_width = sprite_get_width(box);
-box_height = sprite_get_height(box);
+box_width = 320;
+box_height = 88;
 port_width = sprite_get_width(portrait);
 port_height = sprite_get_height(portrait);
 

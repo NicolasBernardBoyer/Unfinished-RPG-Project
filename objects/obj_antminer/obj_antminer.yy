@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "mine",
-    "path": "folders/Objects/mine.yy",
+    "path": "folders/Objects/general/mine.yy",
   },
   "parentObjectId": {
     "name": "par_object",

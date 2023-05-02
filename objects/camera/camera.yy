@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "camera",
-    "path": "folders/Objects/camera.yy",
+    "name": "meta",
+    "path": "folders/Objects/meta.yy",
   },
   "parentObjectId": null,
   "persistent": true,

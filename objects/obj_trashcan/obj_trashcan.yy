@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "home",
-    "path": "folders/Objects/home.yy",
+    "path": "folders/Objects/general/home.yy",
   },
   "parentObjectId": {
     "name": "par_object",

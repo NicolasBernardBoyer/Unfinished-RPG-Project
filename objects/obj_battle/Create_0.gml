@@ -7,9 +7,14 @@ unitTurnOrder = [];
 unitRenderOrder = [];
 
 eXOffset	= 480;
-eXCharSpace = 10
-eYOffset	= 180;
+eXCharSpace = 20;
+eYOffset	= 190;
 eYCharSpace = 75;
+
+pXOffset	= 160;
+pXCharSpace = 20;
+pYOffset	= 190;
+pYCharSpace = 75;
 
 
 
@@ -18,9 +23,9 @@ for (var i = 0; i < array_length(enemies); i++)
 {
 	// go back to shawn's video for info on specific rows
 	if (i != 2) {
-		enemyUnits[i] = instance_create_depth(x+480-(i*10), y+180+(i*75), depth-10, obj_battle_unit_enemy, enemies[i]);
+		enemyUnits[i] = instance_create_depth(x+480-(i*eXCharSpace), y+eYOffset+(i*75), depth-10, obj_battle_unit_enemy, enemies[i]);
 	} else {
-		enemyUnits[i] = instance_create_depth(x+520, y+180+((i-1)*38), depth-10, obj_battle_unit_enemy, enemies[i]);
+		enemyUnits[i] = instance_create_depth(x+520, y+eYOffset+((i-1)*38), depth-10, obj_battle_unit_enemy, enemies[i]);
 	}
 	array_push(units, enemyUnits[i]);
 }
@@ -29,9 +34,9 @@ for (var i = 0; i < array_length(enemies); i++)
 for (var i = 0; i < array_length(global.party); i++)
 {
 	if (i != 2){
-		partyUnits[i] = instance_create_depth(x+160-(i*10), y+180+(i*75), depth-10, obj_battle_unit_pc, global.party[i]);
+		partyUnits[i] = instance_create_depth(x+160-(i*pXCharSpace), y+pYOffset+(i*70), depth-10, obj_battle_unit_pc, global.party[i]);
 	} else {
-		partyUnits[i] = instance_create_depth(x+80, y+180+((i-1)*38), depth-10, obj_battle_unit_pc, global.party[i]);
+		partyUnits[i] = instance_create_depth(x+80, y+pYOffset+((i-1)*38), depth-10, obj_battle_unit_pc, global.party[i]);
 	}
 	array_push(units, partyUnits[i]);
 }
