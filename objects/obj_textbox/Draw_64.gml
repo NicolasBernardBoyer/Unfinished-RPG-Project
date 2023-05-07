@@ -4,6 +4,7 @@ draw_sprite_ext(box, 0, box_x, box_y, box_width/32, box_height/32, 0, c_white, 1
 //Draw Portrait Back
 //draw_sprite(frame, 0, port_x, port_y);
 
+
 //Draw Portrait
 if (portrait != noone){
 	draw_sprite(portrait, portrait_index, port_x, port_y);

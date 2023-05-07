@@ -45,7 +45,7 @@ global.enemies = {
 		defense: 1,
 		agility: 1,
 		luck: 1,
-		sprites: { idle: spr_save_guy },
+		sprites: { idle: spr_save_guy_idle },
 		actions: [],
 		xpValue : 15,
 		AIscript : function()
