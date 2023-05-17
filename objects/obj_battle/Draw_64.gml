@@ -14,12 +14,12 @@ if (instance_exists(obj_battle_unit_pc)){
 		draw_set_halign(fa_left);
 		draw_set_font(fnt_vcr);
 		// (color will be yellow if hp/mp is at max)
-		if (global.party[i].hp = global.party[i].hpMax) draw_set_color(c_yellow);
-		draw_text(x+79+(i*STAT_BOX), y+304, global.party[i].hp);
+		if (partyUnits[i].visualhp = partyUnits[i].hpMax) draw_set_color(c_yellow);
+		draw_text(x+79+(i*STAT_BOX), y+304, partyUnits[i].visualhp);
 		draw_set_color(c_white);
 		
-		if (global.party[i].mp = global.party[i].mpMax) draw_set_color(c_yellow);
-		draw_text(x+79+(i*STAT_BOX), y+324, global.party[i].mp);
+		if (partyUnits[i].visualmp = partyUnits[i].mpMax) draw_set_color(c_yellow);
+		draw_text(x+79+(i*STAT_BOX), y+324, partyUnits[i].visualmp);
 		draw_set_color(c_white);
 		
 		draw_set_font(fnt_8bit);

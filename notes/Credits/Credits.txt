@@ -14,4 +14,5 @@
 - Cat screaming sfx (Sound laboratory)
 - Walking sfx (Gelatin)
 - VCR OSD Mono font by Riciery Leal
+- Retro Gaming font by Daymarius
 

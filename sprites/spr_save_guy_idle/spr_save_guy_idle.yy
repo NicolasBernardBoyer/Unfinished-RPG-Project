@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "SaveGuy",
-    "path": "folders/Sprites/Overworld/Characters/SaveGuy.yy",
+    "name": "Save Guy Battle",
+    "path": "folders/Sprites/Battle Sprites/Save Guy Battle.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

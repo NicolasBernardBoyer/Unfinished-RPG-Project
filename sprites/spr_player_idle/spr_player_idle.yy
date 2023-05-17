@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "PlayerBattle",
-    "path": "folders/Sprites/Overworld/Characters/Player/PlayerBattle.yy",
+    "name": "Player Battle",
+    "path": "folders/Sprites/Battle Sprites/Player Battle.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

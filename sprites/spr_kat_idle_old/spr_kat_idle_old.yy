@@ -55,8 +55,8 @@
   },
   "origin": 9,
   "parent": {
-    "name": "Battle",
-    "path": "folders/Sprites/Overworld/Characters/Katarina/Battle.yy",
+    "name": "Kat Battle",
+    "path": "folders/Sprites/Battle Sprites/Kat Battle.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
