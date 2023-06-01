@@ -32,6 +32,7 @@ global.party =
 [
 	{
 		name: "You",
+		unittype: "ally",
 		hp: 90,
 		visualhp : 90,
 		hpMax: 90,
@@ -43,12 +44,13 @@ global.party =
 		agility: 6,
 		luck: 8,
 		stat_box: spr_stat_player,
-		sprites: { idle: spr_player_idle, },
+		sprites: { idle: spr_player_idle, down: spr_player_faint},
 		actions: []
 	}
 	,
 	{
 		name: "Katarina",
+		unittype: "ally",
 		hp: 70,
 		visualhp : 70,
 		hpMax: 70,
@@ -60,7 +62,7 @@ global.party =
 		agility: 12,
 		luck: 1,
 		stat_box: spr_stat_kat,
-		sprites: { idle: spr_kat_idle, },
+		sprites: { idle: spr_kat_idle, down: spr_kat_faint},
 		actions: []
 	}
 ];
@@ -70,6 +72,7 @@ global.enemies = {
 	saveGuy:
 	{
 		name: "Save Guy",
+		unittype: "enemy",
 		hp: 30,
 		hpMax: 30,
 		mp: 0,

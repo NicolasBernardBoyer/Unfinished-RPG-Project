@@ -80,6 +80,8 @@ for (var i = 0; i < n - 1; i++){
 	}
 }
 
+changePartyPos = true;
+partyStartPos = unitTurnOrder[turn].x;
 partyTurnPos = unitTurnOrder[turn].x+64;
 
 // Where the menu box is created
@@ -111,6 +113,11 @@ function BattleStateSelectAction()
 {
 	// Get current unit
 	var _unit = unitTurnOrder[turn];
+	if (changePartyPos = true){
+		partyStartPos = _unit.x;
+		partyTurnPos = _unit.x+64;
+		changePartyPos = false;
+	}
 	
 	// is the unit dead or unable to act?
 	if (!instance_exists(_unit)) || (_unit.hp <= 0)
@@ -118,9 +125,25 @@ function BattleStateSelectAction()
 		battleState = BattleStateVictoryCheck;
 		exit;
 	}
-	
-	//Select an action to perform
-	BeginAction(_unit.id, global.actionLibrary.attack, _unit.id);
+	// check if current unit is an enemy
+	isEnemy = false;
+	if (_unit.unittype = "enemy"){
+		isEnemy = true;
+	}
+	// if it isnt an enemy go through the process of creating a menu, otherwise perform action
+	if (isEnemy = false){
+		if (_unit.x <= partyTurnPos) _unit.x = Approach(_unit.x, partyTurnPos, 2);
+		if (!instance_exists(obj_battle_menu) and _unit.x >= partyTurnPos){
+			// Create menu box based off unit's current turn
+			menuBoxX = partyTurnPos-32;
+			menuBoxY = _unit.y-160;
+			instance_create_depth(menuBoxX, menuBoxY, depth-10, obj_battle_menu);
+			//Select an action to perform
+			BeginAction(_unit.id, global.actionLibrary.attack, _unit.id);
+		}
+	} else {
+		BeginAction(_unit.id, global.actionLibrary.attack, _unit.id);
+	}
 }
 
 function BeginAction(_user, _action, _targets)
@@ -197,14 +220,30 @@ function BattleStateVictoryCheck()
 
 function BattleStateTurnProgression()
 {
-	turnCount++;
-	turn++;
-	if (turn > array_length(unitTurnOrder) - 1)
-	{
-		turn = 0;
-		roundCount++;
+	if (!isEnemy) {
+		if (unitTurnOrder[turn].x >= partyStartPos) unitTurnOrder[turn].x = Approach(unitTurnOrder[turn].x, partyStartPos, 2);
+		if (unitTurnOrder[turn].x <= partyStartPos){
+			if (instance_exists(obj_battle_menu)) instance_destroy(obj_battle_menu);
+			turnCount++;
+			turn++;
+			if (turn > array_length(unitTurnOrder) - 1)
+			{
+				turn = 0;
+				roundCount++;
+			}
+			battleState = BattleStateSelectAction;
+		}
+	} else {
+		turnCount++;
+			turn++;
+		if (turn > array_length(unitTurnOrder) - 1)
+		{
+			changePartyPos = true;
+			turn = 0;
+			roundCount++;
+		}
+		battleState = BattleStateSelectAction;
 	}
-	battleState = BattleStateSelectAction;
 }
 
 battleState = BattleStateSelectAction;
