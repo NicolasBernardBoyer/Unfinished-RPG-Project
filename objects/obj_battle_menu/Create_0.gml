@@ -1,3 +1,7 @@
+hover = 0;
+active = true;
+subMenuLevel = 0;
+
 battleOptions[0] = "MELEE";
 battleOptions[1] = "RANGED";
 battleOptions[2] = "SKILLS";

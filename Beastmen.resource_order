@@ -333,6 +333,7 @@
     {"name":"obj_emblem","order":2,"path":"objects/obj_emblem/obj_emblem.yy",},
     {"name":"snd_fling2","order":16,"path":"sounds/snd_fling2/snd_fling2.yy",},
     {"name":"player_fall_over","order":1,"path":"scripts/player_fall_over/player_fall_over.yy",},
+    {"name":"menu_functions","order":4,"path":"scripts/menu_functions/menu_functions.yy",},
     {"name":"rb_yourbedroom","order":4,"path":"objects/rb_yourbedroom/rb_yourbedroom.yy",},
     {"name":"snd_exclamation","order":12,"path":"sounds/snd_exclamation/snd_exclamation.yy",},
     {"name":"spr_hppart","order":1,"path":"sprites/spr_hppart/spr_hppart.yy",},

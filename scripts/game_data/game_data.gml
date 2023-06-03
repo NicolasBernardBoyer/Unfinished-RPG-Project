@@ -87,6 +87,14 @@ global.enemies = {
 		AIscript : function()
 		{
 			//enemy turn ai goes here
+			//attack random party member
+			var _action = actions[0];
+			var _possibleTargets = array_filter(obj_battle.partyUnits, function(_unit, _index)
+			{
+				return (_unit.hp > 0);
+			});
+			var _target = _possibleTargets[irandom(array_length(_possibleTargets)-1)];
+			return [_action, _target];
 		}
 	}
 }

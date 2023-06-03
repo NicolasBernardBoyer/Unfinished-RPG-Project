@@ -125,13 +125,9 @@ function BattleStateSelectAction()
 		battleState = BattleStateVictoryCheck;
 		exit;
 	}
-	// check if current unit is an enemy
-	isEnemy = false;
-	if (_unit.unittype = "enemy"){
-		isEnemy = true;
-	}
+
 	// if it isnt an enemy go through the process of creating a menu, otherwise perform action
-	if (isEnemy = false){
+	if (_unit.object_index == obj_battle_unit_pc){
 		if (_unit.x <= partyTurnPos) _unit.x = Approach(_unit.x, partyTurnPos, 2);
 		if (!instance_exists(obj_battle_menu) and _unit.x >= partyTurnPos){
 			// Create menu box based off unit's current turn
@@ -139,10 +135,23 @@ function BattleStateSelectAction()
 			menuBoxY = _unit.y-160;
 			instance_create_depth(menuBoxX, menuBoxY, depth-10, obj_battle_menu);
 			//Select an action to perform
-			BeginAction(_unit.id, global.actionLibrary.attack, _unit.id);
+			var _action = global.actionLibrary.attack;
+			var _possibleTargets = array_filter(obj_battle.enemyUnits, function(_unit, _index)
+			{
+				return (_unit.hp > 0);
+			});
+			var _target = _possibleTargets[irandom(array_length(_possibleTargets)-1)];
+			BeginAction(_unit.id, _action, _target);
+			
+			
+			//BeginAction(_unit.id, global.actionLibrary.attack, _unit.id);
 		}
 	} else {
-		BeginAction(_unit.id, global.actionLibrary.attack, _unit.id);
+		//BeginAction(_unit.id, global.actionLibrary.attack, _unit.id);
+		
+		// if the unit is AI controlled:
+		var _enemyAction = _unit.AIscript();
+		if (_enemyAction != -1) BeginAction(_unit.id, _enemyAction[0], _enemyAction[1]);
 	}
 }
 
@@ -220,7 +229,7 @@ function BattleStateVictoryCheck()
 
 function BattleStateTurnProgression()
 {
-	if (!isEnemy) {
+	if (unitTurnOrder[turn].object_index == obj_battle_unit_pc) {
 		if (unitTurnOrder[turn].x >= partyStartPos) unitTurnOrder[turn].x = Approach(unitTurnOrder[turn].x, partyStartPos, 2);
 		if (unitTurnOrder[turn].x <= partyStartPos){
 			if (instance_exists(obj_battle_menu)) instance_destroy(obj_battle_menu);
