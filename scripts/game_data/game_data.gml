@@ -24,6 +24,24 @@ global.actionLibrary =
 			var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
 			BattleChangeHP(_targets[0], -_damage, 0);
 		}
+	},
+	moonerang : 
+	{
+		name : "Moonerang",
+		description : "{0} throws a moonerang!",
+		subMenu : "Magic",
+		targetRequired: true,
+		targetEnemyByDefault: true, //0: party/self, 1: enemy
+		targetAll : MODE.NEVER,
+		userAnimation : "attack",
+		effectSprite : spr_glassParticle,
+		effectOnTarget : MODE.ALWAYS,
+		func: function(_user, _targets)
+		{
+			var _damage = irandom_range(10,15);
+			BattleChangeHP(_targets[0], -_damage);
+			//BattleChangeMP(_user, -mpCost)
+		}
 	}
 }
 
@@ -45,7 +63,7 @@ global.party =
 		luck: 8,
 		stat_box: spr_stat_player,
 		sprites: { idle: spr_player_idle, down: spr_player_faint},
-		actions: []
+		actions: [global.actionLibrary.attack]
 	}
 	,
 	{
@@ -63,7 +81,7 @@ global.party =
 		luck: 1,
 		stat_box: spr_stat_kat,
 		sprites: { idle: spr_kat_idle, down: spr_kat_faint},
-		actions: []
+		actions: [global.actionLibrary.attack, global.actionLibrary.moonerang]
 	}
 ];
 
@@ -73,8 +91,8 @@ global.enemies = {
 	{
 		name: "Save Guy",
 		unittype: "enemy",
-		hp: 30,
-		hpMax: 30,
+		hp: 200,
+		hpMax: 200,
 		mp: 0,
 		mpMax: 0,
 		strength: 1,
@@ -82,7 +100,7 @@ global.enemies = {
 		agility: 1,
 		luck: 1,
 		sprites: { idle: spr_save_guy_idle },
-		actions: [],
+		actions: [global.actionLibrary.attack],
 		xpValue : 15,
 		AIscript : function()
 		{

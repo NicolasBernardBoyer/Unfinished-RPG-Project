@@ -1,4 +1,5 @@
 battleState();
+input_handler();
 
 for (var i = 0; i < array_length(partyUnits); i++){
 	with (partyUnits[i]){

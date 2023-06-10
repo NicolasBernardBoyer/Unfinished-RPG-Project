@@ -9,7 +9,15 @@ if (active)
 	if (global.POK){
 		if (array_length(options[hover]) > 1) && (options[hover][3] == true)
 		{
-			
+			if (options[hover][1] != -1)
+			{
+				var _func = options[hover][1];
+				if (options[hover][2] != -1) script_execute_ext(_func,options[hover][2]); else _func();
+			}
 		}
+	}
+	
+	if (global.PCAN){
+		if (subMenuLevel > 0) MenuGoBack();
 	}
 }

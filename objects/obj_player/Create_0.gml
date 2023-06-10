@@ -58,7 +58,7 @@ if (global.HU or global.HD or global.HL or global.HR){
 stateFree = function()
 {
 // only allow movement if these conditions are met (double-checking)
-if (!instance_exists(obj_textbox) and obj_game.doTransition == false and global.pause == false and canMove == true) {
+if (!instance_exists(obj_textbox) and global.doTransition == false and global.pause == false and canMove == true) {
 // get the input direction from input
 hInput = global.HR - global.HL;
 vInput = global.HD - global.HU;

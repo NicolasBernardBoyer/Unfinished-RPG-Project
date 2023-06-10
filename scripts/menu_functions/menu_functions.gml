@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function Menu(_x, _y, _options, _description = -1, _width = spr_battle_menu.sprite_width, _height = spr_battle_menu.sprite_height)
+function Menu(_x, _y, _options, _description = -1, _width = undefined, _height = undefined)
 {
 	with (instance_create_depth(_x,_y,-99999,obj_battle_menu))
 	{
@@ -30,7 +30,7 @@ function Menu(_x, _y, _options, _description = -1, _width = spr_battle_menu.spri
 		//auto height
 		if (_height == undefined)
 		{
-			height = heightLine * (_optionsCount + description != -1);
+			height = heightLine * (_optionsCount + !(description == -1));
 			heightFull = height + ymargin * 2;
 		}
 		else
@@ -61,4 +61,11 @@ function MenuGoBack()
 	subMenuLevel--;
 	options = optionsAbove[subMenuLevel];
 	hover = 0;
+}
+
+function MenuSelectAction(_user, _action)
+{
+	with (obj_battle_menu) active = false;
+	with (obj_battle) BeginAction(_user, _action, _user);
+	with (obj_battle_menu) instance_destroy();
 }

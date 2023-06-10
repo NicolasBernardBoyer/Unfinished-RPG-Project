@@ -4,7 +4,7 @@ voice = snd_typewriter;
 name = "";
 
 
-pad_num = 0;
+global.pad_num = 0;
 
 radius = 8;
 active_textbox = noone;
@@ -43,7 +43,7 @@ spawnRoom = -1;
 spawnX = 0;
 spawnY = 0;
 spawnPlayerFacing = -1;
-doTransition = false;
+global.doTransition = false;
 
 // determine direction
 enum dir {
@@ -142,6 +142,7 @@ timeTillButtonREADY = 10; //This is how many steps a player has to hold a button
 	
 	global.POK = false; //OK
 	global.PCAN = false; //CANCEL (DELETE)
+	global.PESC = false; //ESCAPE/PAUSE
 	
 	global.HL = false; //HELD LEFT
 	global.HR = false; //HELD RIGHT

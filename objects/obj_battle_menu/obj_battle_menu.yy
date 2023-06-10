@@ -31,10 +31,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_battle_menu",
-    "path": "sprites/spr_battle_menu/spr_battle_menu.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

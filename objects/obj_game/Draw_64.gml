@@ -1,12 +1,12 @@
 // handle transition when exiting a room
-if(doTransition){
+if(global.doTransition){
 	//Handle Black Fade/Room Transition
 	if(room != spawnRoom){
 		blackAlpha += 0.1;
 		if(blackAlpha >= 1){ room_goto(spawnRoom) }
 	} else {
 		blackAlpha -= 0.1;
-		if(blackAlpha <= 0) { doTransition = false;
+		if(blackAlpha <= 0) { global.doTransition = false;
 			global.canPause = true;
 		}
 	}
