@@ -43,12 +43,12 @@ if (global.POK){
 // handle transition when touching one
 var insttrans = instance_place(x,y,obj_transition);
 if (insttrans != noone) {
-	with(obj_game){
-		if(!doTransition){
+	if(!global.doTransition){
+		with (obj_game){
 			spawnRoom = insttrans.targetRoom;
 			spawnX = insttrans.targetX;
 			spawnY = insttrans.targetY;
-			doTransition = true;
+			global.doTransition = true;
 		}
 	}
 }

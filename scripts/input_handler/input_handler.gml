@@ -17,9 +17,6 @@ if (global.pause == true){
 if (global.pause == false){
 	instance_activate_layer("Instances");
 }
-if (global.doTransition){
-	global.canPause = false;
-}
 /*
 if (global.pause == false and global.canPause == true and !instance_exists(obj_textbox)){
 	if (global.hasBackpack){

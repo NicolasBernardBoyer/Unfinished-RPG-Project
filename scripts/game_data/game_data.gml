@@ -25,6 +25,23 @@ global.actionLibrary =
 			BattleChangeHP(_targets[0], -_damage, 0);
 		}
 	},
+	food :
+	{
+		name : "Food",
+		description : "{0} attacks!",
+		subMenu : "Item",
+		targetRequired : true,
+		targetEnemyByDefault : true,
+		targetAll : MODE.NEVER,
+		userAnimation: "attack",
+		effectSprite : spr_glassParticle,
+		effectOnTarget : MODE.ALWAYS,
+		func: function (_user, _targets)
+		{
+			var _heal = 10;
+			BattleChangeHP(_targets[0], -_heal, 0);
+		}
+	},
 	moonerang : 
 	{
 		name : "Moonerang",
@@ -62,8 +79,8 @@ global.party =
 		agility: 6,
 		luck: 8,
 		stat_box: spr_stat_player,
-		sprites: { idle: spr_player_idle, down: spr_player_faint},
-		actions: [global.actionLibrary.attack]
+		sprites: { idle: spr_player_idle, down: spr_player_faint, walk: undefined },
+		actions: [global.actionLibrary.attack, global.actionLibrary.food]
 	}
 	,
 	{
@@ -80,8 +97,8 @@ global.party =
 		agility: 12,
 		luck: 1,
 		stat_box: spr_stat_kat,
-		sprites: { idle: spr_kat_idle, down: spr_kat_faint},
-		actions: [global.actionLibrary.attack, global.actionLibrary.moonerang]
+		sprites: { idle: spr_kat_idle, down: spr_kat_faint, walk: spr_kat_bwalk },
+		actions: [global.actionLibrary.moonerang]
 	}
 ];
 

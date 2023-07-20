@@ -129,9 +129,15 @@ function BattleStateSelectAction()
 
 		// if it isnt an enemy go through the process of creating a menu, otherwise perform action
 		if (_unit.object_index == obj_battle_unit_pc){
-			if (_unit.x <= partyTurnPos) _unit.x = Approach(_unit.x, partyTurnPos, 2);
+			if (_unit.x <= partyTurnPos) _unit.x = Approach(_unit.x, partyTurnPos, 3);
+			with (_unit){
+				if (sprites.walk != undefined) sprite_index = sprites.walk;
+			}
 			if (_unit.x >= partyTurnPos){
 				// Create menu box based off unit's current turn
+				with (_unit){
+					sprite_index = sprites.idle;
+				}
 				menuBoxX = partyTurnPos-32;
 				menuBoxY = _unit.y-160;
 				//instance_create_depth(menuBoxX, menuBoxY, depth-10, obj_battle_menu);
@@ -266,8 +272,14 @@ function BattleStateVictoryCheck()
 function BattleStateTurnProgression()
 {
 	if (unitTurnOrder[turn].object_index == obj_battle_unit_pc) {
-		if (unitTurnOrder[turn].x >= partyStartPos) unitTurnOrder[turn].x = Approach(unitTurnOrder[turn].x, partyStartPos, 2);
+		if (unitTurnOrder[turn].x >= partyStartPos) unitTurnOrder[turn].x = Approach(unitTurnOrder[turn].x, partyStartPos, 3);
+		with (unitTurnOrder[turn]){
+			if (sprites.walk != undefined) sprite_index = sprites.walk;
+		}
 		if (unitTurnOrder[turn].x <= partyStartPos){
+			with (unitTurnOrder[turn]){
+				sprite_index = sprites.idle;
+			}
 			if (instance_exists(obj_battle_menu)) instance_destroy(obj_battle_menu);
 			turnCount++;
 			turn++;
