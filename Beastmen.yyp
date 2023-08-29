@@ -106,7 +106,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.0.71",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"shd_simple_alpha","path":"shaders/shd_simple_alpha/shd_simple_alpha.yy",},},
