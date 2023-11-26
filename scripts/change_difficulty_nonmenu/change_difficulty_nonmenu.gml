@@ -2,5 +2,5 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function change_difficulty_nonmenu(){
 	// select difficulty
-	global.difficultySet = argument0;
+	global.difficulty_set = argument0;
 }

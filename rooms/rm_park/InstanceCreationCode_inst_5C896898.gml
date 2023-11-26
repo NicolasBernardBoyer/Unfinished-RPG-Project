@@ -1,5 +1,5 @@
 targetRoom = rm_foodtruck;
-targetX = 159;
-targetY = 345;
+target_x = 159;
+target_y = 345;
 targetPlayerX = true;
 targetPlayerY = false;

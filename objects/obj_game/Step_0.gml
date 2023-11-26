@@ -1,5 +1,5 @@
 input_handler();
 
-if (global.doTransition){
-	global.canPause = false;
+if (global.do_transition){
+	global.can_pause = false;
 }

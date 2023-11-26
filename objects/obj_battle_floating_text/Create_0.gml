@@ -1,4 +1,4 @@
-direction = 95;
+DIRection = 95;
 gravity = 0.05;
 speed = 1;
 image_xscale = 0.8;

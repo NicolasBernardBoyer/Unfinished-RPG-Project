@@ -1,70 +1,43 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function LoadGame(_slot)
+function load_game(slot)
 {
-	global.gameSaveSlot = _slot;
-	var _file = "save" + string(global.gameSaveSlot) + ".sav";
-	if (file_exists(_file)){
+	global.game_save_slot = slot;
+	var file = "save" + string(global.game_save_slot) + ".sav";
+	if (file_exists(file)){
 		//Load the game data
-		var _json = LoadJSONFromFile(_file);
+		var json = loadJSONFromFile(file);
 		
 		//global variables
-		room = _json[? "room"];
+		room = json[? "room"];
 		
-		global.money = _json[? "money"];
+		global.money = json[? "money"];
 
 		#region PLAYER STATS
-		global.targetX = _json[? "targetX"];
-		global.targetY = _json[? "targetY"];
+		global.target_x = json[? "target_x"];
+		global.target_y = json[? "target_y"];
 	
-		global.hasCoat = _json[? "hasCoat"];
-		global.hasBackpack = _json[? "hasBackpack"];
+		global.has_coat = json[? "has_coat"];
+		global.has_backpack = json[? "has_backpack"];
 	
-		global.MAXplayerHP = _json[? "MAXplayerHP"];
-		global.playerHP = _json[? "playerHP"];
-		global.playerATK = _json[? "playerATK"];
-		global.playerDEF = _json[? "playerDEF"];
-		global.playerSPD = _json[? "playerSPD"];
-		global.playerLK = _json[? "playerLK"];
-		global.playerName = _json[? "playerName"];
+		global.max_player_hp = json[? "max_player_hp"];
+		global.player_hp = json[? "player_hp"];
+		global.player_atk = json[? "player_atk"];
+		global.player_def = json[? "player_def"];
+		global.player_spd = json[? "player_spd"];
+		global.player_lk = json[? "player_lk"];
+		global.player_name = json[? "player_name"];
 		#endregion
 	
 		#region KATARINA STATS
-		global.MAXkatHP = _json[? "MAXkatHP"];
-		global.katHP = _json[? "katHP"];
-		global.katATK = _json[? "katATK"];
-		global.katDEF = _json[? "katDEF"];
-		global.katSPD = _json[? "katSPD"];
-		global.katLK = _json[? "katLK"];
+		global.max_kat_hp = json[? "max_kat_hp"];
+		global.kat_hp = json[? "kat_hp"];
+		global.kat_atk = json[? "kat_atk"];
+		global.kat_def = json[? "kat_def"];
+		global.kat_spd = json[? "kat_spd"];
+		global.kat_lk = json[? "kat_lk"];
 		#endregion
 
-		#region NATALIE STATS
-		global.MAXnatHP = _json[? "MAXnatHP"];
-		global.natHP = _json[? "natHP"];
-		global.natATK = _json[? "natATK"];
-		global.natDEF = _json[? "natDEF"];
-		global.natSPD = _json[? "natSPD"];
-		global.natLK = _json[? "natLK"];
-		#endregion
-	
-		#region MOM STATS
-		global.MAXmomHP = _json[? "MAXmomHP"];
-		global.momHP = _json[? "momHP"];
-		global.momATK = _json[? "momATK"];
-		global.momDEF = _json[? "momDEF"];
-		global.momSPD = _json[? "momSPD"];
-		global.momLK = _json[? "momLK"];
-		#endregion
-	
-		#region ROBERT STATS
-		global.MAXrobHP = _json[? "MAXrobHP"];
-		global.robHP = _json[? "robHP"];
-		global.robATK = _json[? "robATK"];
-		global.robDEF = _json[? "robDEF"];
-		global.robSPD = _json[? "robSPD"];
-		global.robLK = _json[? "robLK"];
-		#endregion
-		
 		//lists to arrays
 		//remember to put inventory and characters here
 		/*
@@ -83,10 +56,10 @@ function LoadGame(_slot)
 		*/
 		
 		//Player position
-		obj_player.x = _json[? "targetX"];
-		obj_player.y = _json[? "targetY"];
+		obj_player.x = json[? "target_x"];
+		obj_player.y = json[? "target_y"];
 		
-		ds_map_destroy(_json);
+		ds_map_destroy(json);
 		
 		return true;
 	}
@@ -98,11 +71,11 @@ function LoadGame(_slot)
 }
 
 
-function LoadJSONFromFile(_filename)
+function load_json_from_file(filename)
 {
-	var _buffer = buffer_load( _filename);
-	var _string = buffer_read( _buffer, buffer_string);
-	buffer_delete( _buffer );
-	var _json = json_decode( _string);
-	return _json;
+	var buffer = buffer_load(filename);
+	var str = buffer_read( buffer, buffer_string);
+	buffer_delete( buffer );
+	var json = json_decode( string);
+	return json;
 }

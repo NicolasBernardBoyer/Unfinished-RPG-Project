@@ -96,7 +96,7 @@ switch (cutProg){
 	}
 	break;
 	case 4:
-	// Make the player stand up
+	// Make the player stand UP
 	with (obj_player){
 		if (sprite_index = spr_player_face_fall){
 			image_index = 0;
@@ -115,7 +115,7 @@ switch (cutProg){
 		name = "";
 		voice = noone;
 		// notify that katarina has joined the party
-		audio_play_sound(snd_partyup, 5, false);
+		audio_play_sound(snd_partyUP, 5, false);
 		create_textbox(text4, speakers4, next_line4, scripts4);
 		obj_textbox.text_col = c_yellow;
 	}
@@ -141,10 +141,10 @@ switch (cutProg){
 		/* End the cutscene, let the player move, make the camera follow
 	the player again. Destroy this event. */
 	with (obj_player){
-		canMove = true;
+		can_move = true;
 		state = stateFree;
 	}
-	global.canPause = true;
+	global.can_pause = true;
 	global.highbox = false;
 	camera.following = obj_player;
 	instance_destroy(self);

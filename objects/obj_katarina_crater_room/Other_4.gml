@@ -1,6 +1,6 @@
 // beginning of cutscene restrictions on player
 // make them walk forward
-obj_player.canMove = false;
+obj_player.can_move = false;
 obj_player.sprite_index = spr_player_walk_coat;
 obj_player.image_speed = 1;
 

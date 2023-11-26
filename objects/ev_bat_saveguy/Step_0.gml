@@ -11,7 +11,7 @@ switch (cutProg){
 	case 0:
 	//Freeze sprites for the party (turn this into a script)
 	//	obj_player.sprite_index = spr_player_rightwalk_coat;
-	//	obj_kat.sprite_index = spr_kat_rightwalk;
+	//	obj_kat.sprite_index = spr_kat_RIGHTwalk;
 	//	obj_player.image_speed = 0;
 	//	obj_player.image_speed = 0;
 	//	obj_kat.image_speed = 0;
@@ -19,8 +19,8 @@ switch (cutProg){
 	//	obj_kat.image_index = 0;
 
 	////creates a textbox
-	//global.canPause = false;
-	//obj_player.canMove = false;
+	//global.can_pause = false;
+	//obj_player.can_move = false;
 	//if (!instance_exists(obj_textbox)){
 	//	obj_kat.portrait_index = 14;
 	//	create_textbox(text, speakers, next_line, scripts);

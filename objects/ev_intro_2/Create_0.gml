@@ -23,10 +23,10 @@ preNext_line = [0,[-1,0],0];
 preScripts = [-1,[[change_variable, id, "nameok", false, id, "runText2", true],[create_name_creator]], -1];
 
 // Special dialogue for the name Noa
-if (global.playerName = "Noa"){
+if (global.player_name = "Noa"){
 	text = [
 			"Your name is...",
-			global.playerName + "? It always was.",
+			global.player_name + "? It always was.",
 			"Now it's time for you to choose your reality.",
 			"The harsher reality is, the stronger you'll be.",
 			"Select your difficulty.\nThis can be changed at any point during gameplay in settings.\n(Difficulty changes nothing lmao)",
@@ -34,7 +34,7 @@ if (global.playerName = "Noa"){
 } else {
 	text = [
 			"Your name is...",
-			global.playerName + "? Perfect.",
+			global.player_name + "? Perfect.",
 			"Now it's time for you to choose your reality.",
 			"The harsher reality is, the stronger you'll be.",
 			"Select your difficulty.\nThis can be changed at any point during gameplay in settings.\n(Difficulty changes nothing lmao)",
@@ -52,7 +52,7 @@ text2 = ["Is this the difficulty you want?",
 		["Yes", "No"],
 		"Select your difficulty.\nThis can be changed at any point during gameplay in settings.",
 		"...So that's how it is.",
-		"Now...\nIt's time to wake up.",
+		"Now...\nIt's time to wake UP.",
 		"...Have fun."];
 speakers2 = [id,id,id,id,id,id];
 next_line2 = [0,[3,0],1,0,0,0];

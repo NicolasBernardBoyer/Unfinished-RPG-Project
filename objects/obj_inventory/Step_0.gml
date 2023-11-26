@@ -1,9 +1,9 @@
 // if you're pausing, can't pause, inventory isn't open,
 // doing a transition, or there is a textbox, exit
 if (global.pause) exit;
-if (global.canPause == false) exit;
+if (global.can_pause == false) exit;
 if (global.inventoryOpen == false) exit;
-if (obj_game.doTransition) exit;
+if (obj_game.do_transition) exit;
 if (instance_exists(obj_textbox)) exit;
 
 // If you press cancel and the itemconsumemenu isnt open, quit the inventory
@@ -63,7 +63,7 @@ else if (partyCursorActive = true) {
 #endregion
 
 #region MOVE THE CURSOR FOR ITEMS
-// If the cursor isnt present and player presses down on a tab move the cursor down to 0
+// If the cursor isnt present and player presses DOWN on a tab move the cursor DOWN to 0
 if (itemConsumeMenu == false and partyCursorActive = false){
 	if (inventorytab == 0 and cursor == -1){
 		if (global.PD and cursor == -1 and ds_list_size(party) != 0){
@@ -142,13 +142,13 @@ else if (itemConsumeMenu == true and inventorytab == 1 and partyCursorActive == 
 // item effects, this should be organized by changing them to be functions
 	if (ds_list_find_value(consumables, consumingItem) = "Burger"){
 		if (ds_list_find_value(selectedParty, cursor) = 0){
-			global.playerHP += 40;
-			global.playerATK += 2;
-			global.playerSPD -= 2;
+			global.player_hp += 40;
+			global.player_atk += 2;
+			global.player_spd -= 2;
 		} else if (ds_list_find_value(selectedParty, cursor) = 1){
-			global.katHP += 40;
-			global.katATK += 2;
-			global.katSPD -= 2;
+			global.kat_hp += 40;
+			global.kat_atk += 2;
+			global.kat_spd -= 2;
 		} else if (ds_list_find_value(selectedParty, cursor) = 2){
 			global.natHP += 40;
 			global.natATK += 2;

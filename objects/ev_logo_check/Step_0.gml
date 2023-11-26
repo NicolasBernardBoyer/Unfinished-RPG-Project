@@ -1,10 +1,10 @@
 if (obj_player.x > 191){
 	//Stop the player from moving
 	with (obj_player){
-		canMove = false;
+		can_move = false;
 		state = stateCutscene;
 	}
-	global.canPause = false;
+	global.can_pause = false;
 	
 	// Make the player keep walking as long as they haven't reached a point
 	// Same thing applies to Katarina
@@ -21,7 +21,7 @@ if (obj_player.x > 191){
 			obj_player.image_index = 0;
 		}
 		obj_kat.image_speed = 1;
-		obj_kat.sprite_index = spr_kat_rightwalk;
+		obj_kat.sprite_index = spr_kat_RIGHTwalk;
 	//If there's not textbox and they have reached said point,
 	//Change both to look ahead and stop their image speed.
 	} else if (!instance_exists(obj_textbox) and katApproach = false){
@@ -30,7 +30,7 @@ if (obj_player.x > 191){
 			image_index = 0;
 			image_speed = 0;}
 		with (obj_kat){
-			sprite_index = spr_kat_upwalk;
+			sprite_index = spr_kat_UPwalk;
 			image_index = 0;
 			image_speed = 0;}
 	//Change portrait index and then run the textbox
@@ -43,7 +43,7 @@ if (obj_player.x > 191){
 		if (obj_kat.x > obj_player.x+25){
 			with (obj_kat){
 				image_speed = 1;
-				sprite_index = spr_kat_leftwalk;
+				sprite_index = spr_kat_LEFTwalk;
 			}
 		} else {
 			destroy_obj(self);

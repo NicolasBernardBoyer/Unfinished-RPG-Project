@@ -2,6 +2,6 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function leave_house(){
 	// activate the transition for leaving the house
-	global.canPause = false;
+	global.can_pause = false;
 	instance_activate_object(inst_740548B5);
 }

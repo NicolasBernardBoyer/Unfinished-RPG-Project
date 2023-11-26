@@ -1,13 +1,13 @@
-global.playerName = "Nick";
+global.player_name = "Nick";
 room_goto(rm_mine_barracade);
 //instance_create_layer(2, 224, "Instances", obj_bubble);
 instance_create_layer(40, 172, "Instances", obj_player);
-//obj_player.sprite_index = spr_player_falling_coat_left;
+//obj_player.sprite_index = spr_player_falling_coat_LEFT;
 instance_create_layer(40, 172, "Instances", obj_kat);
-global.hasCoat = true;
-global.hasBackpack = true;
-global.canPause = true;
-obj_player.canMove = true;
+global.has_coat = true;
+global.has_backpack = true;
+global.can_pause = true;
+obj_player.can_move = true;
 instance_destroy(self);
 
 //obj_kat.x = 160;
@@ -17,5 +17,5 @@ instance_destroy(self);
 //obj_bubble.x = 191;
 //obj_bubble.y = 30;
 //obj_kat.sprite_index = spr_kat_fall;
-//global.canPause = false;
-//obj_player.canMove = false;
+//global.can_pause = false;
+//obj_player.can_move = false;

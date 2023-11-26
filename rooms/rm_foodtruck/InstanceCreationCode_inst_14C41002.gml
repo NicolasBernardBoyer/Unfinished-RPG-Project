@@ -1,5 +1,5 @@
 targetRoom = rm_park;
-targetX = 223;
-targetY = 32;
+target_x = 223;
+target_y = 32;
 targetPlayerX = true;
 targetPlayerY = false;

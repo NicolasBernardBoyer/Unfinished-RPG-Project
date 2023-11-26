@@ -19,7 +19,7 @@
     "name": "spr_tile_city",
     "path": "sprites/spr_tile_city/spr_tile_city.yy",
   },
-  "spriteNoExport": true,
+  "spriteNoExport": false,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",

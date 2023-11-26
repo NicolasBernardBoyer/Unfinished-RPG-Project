@@ -5,7 +5,7 @@ runAnim = false;
 alarm[0] = -1;
 
 visible = false;
-hasText = false;
+has_text = false;
 
 portrait_index = 0;
 voice = snd_typewriter;

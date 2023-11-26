@@ -1,5 +1,5 @@
 //Draw background art
-draw_sprite(battleBackground,0,x,y);
+draw_sprite(battle_background,0,x,y);
 
 // Draw units in depth order
 var _unitWithCurrentTurn = unitTurnOrder[turn].id;

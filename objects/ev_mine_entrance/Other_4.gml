@@ -9,5 +9,5 @@ with (obj_player){
 	state = stateCutscene;
 }
 audio_stop_sound(snd_wind);
-obj_player.canMove = false;
-global.canPause = false;
+obj_player.can_move = false;
+global.can_pause = false;

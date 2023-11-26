@@ -4,8 +4,8 @@ instance_create_layer(0,0, "Transitions", obj_fade_in);
 obj_fade_in.image_speed = 2;
 // Stop the player from moving and enable biking animation
 with(obj_player){
-	canMove = false;
-	sprite_index = spr_player_leftbike;
+	can_move = false;
+	sprite_index = spr_player_LEFTbike;
 	image_speed = 1;
 }
 // Play biking sfx

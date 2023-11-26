@@ -2,7 +2,7 @@
 visible = false;
 
 
-hasText = true;
+has_text = true;
 portrait_index = 0;
 
 voice = snd_typewriter;

@@ -19,7 +19,7 @@ global.name_text_col = c_gray;
 cutProg = 0;
 //Declare the curve for the falling animation
 dropSpeed = 0;
-curve = animcurve_get_channel(ac_pitFall,0);
+curve = animcurve_get_channel(ac_pit_fall,0);
 
 p = obj_player;
 kat = obj_kat;
@@ -36,7 +36,7 @@ text = ["I guess I'm gonna have to call mom and tell her I'm gonna be late.",
 		 ];
 speakers = [kat,kat,kat];
 next_line = [0,0,0];
-scripts = [[change_variable, obj_kat, "sprite_index", spr_kat_fall_lookright, obj_textbox, "portrait_index", 7],
+scripts = [[change_variable, obj_kat, "sprite_index", spr_kat_fall_lookRIGHT, obj_textbox, "portrait_index", 7],
    [port_swap,3],
    [change_variable, id, "cutProg", 2]];
 

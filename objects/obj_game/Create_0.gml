@@ -18,12 +18,12 @@ part_system_depth(global.partSystem, 100);
 facing = 0;
 
 // save slot and difficulty
-global.gameSaveSlot = 0;
-global.difficultySet = 0;
+global.game_save_slot = 0;
+global.difficulty_set = 0;
 
 //Player Position
-global.targetX = 0;
-global.targetY = 0;
+global.target_x = 0;
+global.target_y = 0;
 
 #region PARTY INFO
 
@@ -39,36 +39,36 @@ global.hasportrait = false;
 
 // variables for transitions
 blackAlpha = 0;
-spawnRoom = -1;
-spawnX = 0;
-spawnY = 0;
+spawn_room = -1;
+spawn_x = 0;
+spawn_y = 0;
 spawnPlayerFacing = -1;
-global.doTransition = false;
+global.do_transition = false;
 
-// determine direction
-enum dir {
-	right = 0,
-	up = 90,
-	left = 180,
-	down = 270,
+// determine DIRection
+enum DIR {
+	RIGHT = 0,
+	UP = 90,
+	LEFT = 180,
+	DOWN = 270,
 }
 
 #region STATE VARIABLES
 global.inventoryOpen = false;
 global.inBattle = false;
-global.canPause = true;
+global.can_pause = true;
 global.inventoryTB = true;
 #endregion
 
 #region INFORMATION VARAIBLES
-global.playerName = "New Person";
+global.player_name = "New Person";
 global.previousRoom = rm_yourbedroom;
 
 #endregion
 
 #region EVENT VARIABLES
-global.hasCoat = false;
-global.hasBackpack = false;
+global.has_coat = false;
+global.has_backpack = false;
 global.playintro = true;
 #endregion
 
@@ -104,10 +104,10 @@ global.monitor_h = display_get_height();
 	global.key_revert	= ord("X");
 	global.key_confirm	= ord("Z");
 	global.key_enter	= vk_enter;
-	global.key_left		= vk_left;
-	global.key_right	= vk_right;
-	global.key_up		= vk_up;
-	global.key_down		= vk_down;
+	global.key_LEFT		= vk_LEFT;
+	global.key_RIGHT	= vk_RIGHT;
+	global.key_UP		= vk_UP;
+	global.key_DOWN		= vk_DOWN;
 	global.key_esc		= vk_escape;
 	global.key_del		= vk_backspace;
 	global.key_shift	= vk_shift;
@@ -118,10 +118,10 @@ global.monitor_h = display_get_height();
 	global.gp_revert	= gp_face2;
 	global.gp_confirm	= gp_face1;
 	global.gp_enter		= gp_select;
-	global.gp_left		= gp_padl;
-	global.gp_right		= gp_padr;
-	global.gp_up		= gp_padu;
-	global.gp_down		= gp_padd;
+	global.gp_LEFT		= gp_padl;
+	global.gp_RIGHT		= gp_padr;
+	global.gp_UP		= gp_padu;
+	global.gp_DOWN		= gp_padd;
 	global.gp_esc		= gp_start;
 	global.gp_del		= gp_face2;
 	global.gp_shift		= gp_face3;
@@ -159,7 +159,7 @@ timeTillButtonREADY = 10; //This is how many steps a player has to hold a button
 	global.PINV = false;
 #endregion
 
-audio_group_load(audiogroup_music); // LOAD AUDIO GROUPS
-audio_group_load(audiogroup_soundeffects);
+audio_groUP_load(audiogroUP_music); // LOAD AUDIO GROUPS
+audio_groUP_load(audiogroup_soundeffects);
 
 

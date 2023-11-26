@@ -6,8 +6,8 @@ if (runOnce = false){
 		moveCam = true;
 		obj_player.image_speed = 0;
 		obj_player.image_index = 0;
-		obj_player.canMove = false;
-		global.canPause = false;
+		obj_player.can_move = false;
+		global.can_pause = false;
 	}
 	// move the camera towards Dave
 	if (moveCam = true){
@@ -15,7 +15,7 @@ if (runOnce = false){
 		camera.y = Approach(camera.y, 382, 1);
 	}
 	
-	// when the camera is in the right stop, created the textbox
+	// when the camera is in the RIGHT stop, created the textbox
 	if (camera.y >= 382 and !instance_exists(obj_textbox)){
 		image_index = 0;
 		create_textbox(evtext, evspeakers, evnext_line, evscripts);
@@ -27,8 +27,8 @@ if (runOnce = false){
 if (runOnce = true and !instance_exists(obj_textbox)){
 	if (camera.y = obj_player.y){
 		camera.following = obj_player;
-		obj_player.canMove = true;
-		global.canPause = true;
+		obj_player.can_move = true;
+		global.can_pause = true;
 		moveCam = false;
 	} else if (moveCam = true) {
 		camera.y = Approach(camera.y, obj_player.y, 1);

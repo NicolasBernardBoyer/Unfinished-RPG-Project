@@ -1,10 +1,10 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function canPauseTrue(){
+function can_pause_true(){
 	// allow the player to pause and move again
 	global.highbox = false;
-	global.canPause = true;
-	obj_player.canMove = true;
+	global.can_pause = true;
+	obj_player.can_move = true;
 	instance_destroy(obj_textbox);
 	obj_player.active_textbox = noone;
 }

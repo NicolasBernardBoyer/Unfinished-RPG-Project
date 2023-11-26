@@ -1,6 +1,6 @@
 // if you aren't pausing or can't pause don't display anything
 if(!global.pause) exit;
-if(!global.canPause) exit;
+if(!global.can_pause) exit;
 
 // exit if the page is less than 1 (no main page on main menu)
 if(room = rm_title_settings){
@@ -26,11 +26,11 @@ var start_y = (gheight/2) - ((((ds_height)/2) * y_buffer)), start_x = gwidth/2;
 var c = c_black;
 draw_rectangle_color(0,0, gwidth, gheight, c,c,c,c, false);
 
-//Draw Elements on Left Side
+//Draw Elements on LEFT Side
 draw_set_valign(fa_middle);
-draw_set_halign(fa_right);
+draw_set_halign(fa_RIGHT);
 
-// left text
+// LEFT text
 var ltx = start_x - x_buffer*2, lty, xo; 
 
 // draw the text for the menu options
@@ -51,10 +51,10 @@ var yy = 0; repeat(ds_height){
 //Draw Dividing Line
 draw_line(start_x-x_buffer, start_y-y_buffer, start_x-x_buffer, lty+y_buffer);
 
-//Draw Elements on Right Side
-draw_set_halign(fa_left);
+//Draw Elements on RIGHT Side
+draw_set_halign(fa_LEFT);
 
-//right text
+//RIGHT text
 var rtx = start_x + x_buffer/4, rty;
 
 // draw the specific ds_grid elements depending on the menu element type
@@ -66,16 +66,16 @@ yy = 0; repeat(ds_height){
 		case menu_element_type.shift:
 			var current_val = ds_grid[# 3, yy];
 			var current_array = ds_grid[# 4, yy];
-			var left_shift = "<< ";
-			var right_shift = " >>";
+			var LEFT_shift = "<< ";
+			var RIGHT_shift = " >>";
 		
-			if(current_val == 0) left_shift = "";
-			if(current_val == array_length_1d(ds_grid[# 4, yy])-1) right_shift = "";
+			if(current_val == 0) LEFT_shift = "";
+			if(current_val == array_length_1d(ds_grid[# 4, yy])-1) RIGHT_shift = "";
 		
 			c = c_white;
 			
 			if(inputting and yy == menu_option[page]) { c = c_yellow; }
-			draw_text_color(rtx, rty, left_shift+current_array[current_val]+right_shift, c,c,c,c, 1);
+			draw_text_color(rtx, rty, LEFT_shift+current_array[current_val]+RIGHT_shift, c,c,c,c, 1);
 		
 		break;
 		
@@ -112,10 +112,10 @@ yy = 0; repeat(ds_height){
 			var string_val;
 			
 			switch(current_val){
-				case vk_up:		string_val = "Up Key"; break;
-				case vk_left:	string_val = "Left Key"; break;
-				case vk_right:	string_val = "Right Key"; break;
-				case vk_down:	string_val = "Down Key"; break;
+				case vk_UP:		string_val = "UP Key"; break;
+				case vk_LEFT:	string_val = "LEFT Key"; break;
+				case vk_RIGHT:	string_val = "RIGHT Key"; break;
+				case vk_DOWN:	string_val = "DOWN Key"; break;
 				default:		string_val = chr(current_val); break;
 			}
 			

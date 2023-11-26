@@ -3,7 +3,7 @@ var inst = collision_rectangle(x-radiusX, y-radiusY, x+radiusX, y+radiusY, obj_p
 if (inst!=noone){
 
 	if (runOnce == false){
-	if (global.hasCoat == false){
+	if (global.has_coat == false){
 		
 		// Tell the player they can't leave
 		if (!instance_exists(obj_textbox)) {
@@ -24,9 +24,9 @@ if (movePlayer = true){
 		alarm[0] = 10;
 	}
 	with (obj_player){
-		canMove = false;
-		global.canPause = false;
-		sprite_index = spr_player_upwalk_bag;
+		can_move = false;
+		global.can_pause = false;
+		sprite_index = spr_player_UPwalk_bag;
 		image_speed = 1;
 		y--;
 	}

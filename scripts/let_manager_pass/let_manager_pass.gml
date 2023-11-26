@@ -4,7 +4,7 @@ function let_manager_pass(){
 	// make manager keep moving in cutscene
 	obj_manager.managerPass = true;
 	obj_manager.runOnce = true;
-	global.canPause = false;
-	obj_player.canMove = false;
+	global.can_pause = false;
+	obj_player.can_move = false;
 	instance_destroy(obj_textbox);
 }

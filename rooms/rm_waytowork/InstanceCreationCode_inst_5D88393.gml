@@ -1,3 +1,3 @@
 targetRoom = rm_park;
-targetX = 553;
-targetY = 560;
+target_x = 553;
+target_y = 560;

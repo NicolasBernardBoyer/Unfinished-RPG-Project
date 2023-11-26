@@ -19,7 +19,7 @@
     "name": "spr_tile_mine",
     "path": "sprites/spr_tile_mine/spr_tile_mine.yy",
   },
-  "spriteNoExport": true,
+  "spriteNoExport": false,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",

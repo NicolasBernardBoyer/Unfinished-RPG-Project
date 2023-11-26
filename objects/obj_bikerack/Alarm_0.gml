@@ -9,12 +9,12 @@ sprite_index = spr_bikerack_withbike;
 audio_play_sound(snd_move, 5, false);
 // move player off bike and allow them to move again
 with(obj_player){
-	canMove = true;
+	can_move = true;
 	sprite_index = spr_player_leftwalk_coat;
 	y+=5;
 	image_index = 0;
 }
-global.canPause = true;
-// activate the wall on the right of the room
+global.can_pause = true;
+// activate the wall on the RIGHT of the room
 instance_activate_object(inst_4D86892);
 instance_activate_object(inst_3E94A422);

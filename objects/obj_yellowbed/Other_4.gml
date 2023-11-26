@@ -5,6 +5,6 @@ if (global.playintro == true){
 
 // stop player from pausing and run the first alarm
 if (runAlarm){
-	global.canPause = false;
+	global.can_pause = false;
 	alarm[0] = 120;
 }

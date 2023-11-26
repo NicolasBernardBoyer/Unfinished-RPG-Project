@@ -16,7 +16,7 @@ startY = 32;
 startX = global.game_width/4;
 
 //Draw Current Name
-draw_set_halign(fa_left);
+draw_set_halign(fa_LEFT);
 draw_set_valign(fa_top);
 draw_text(startX, startY, currentName);
 draw_text(startX, startY + 2, spaces);
@@ -45,7 +45,7 @@ for (var yy = 0; yy < yLetters; yy++){
 		var drawX = startX + (xx * (fontSize * 2));
 		var drawY = startY + (yy * (fontSize + BUFFER));
 		
-		draw_set_halign(fa_left);
+		draw_set_halign(fa_LEFT);
 		draw_set_valign(fa_top);
 		draw_text(drawX, drawY, letter);
 		

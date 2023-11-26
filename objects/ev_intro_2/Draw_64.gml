@@ -5,7 +5,7 @@ if (!instance_exists(obj_name_creator) and nameok){
 	//draw_text(95,63, "Is this the name you want?");
 	//draw_set_color(c_yellow);
 	draw_set_font(fnt_excelsior);
-	draw_text(120,83, global.playerName);
+	draw_text(120,83, global.player_name);
 	draw_set_font(fnt_8bit);
 	draw_set_color(c_white);
 }
@@ -16,7 +16,7 @@ if (draw_difficulty = false and confirm_difficulty){
 	//draw_set_color(c_white);
 	//draw_text(85,63, "Is this the difficulty you want?");
 	draw_set_font(fnt_excelsior);
-		switch(global.difficultySet){
+		switch(global.difficulty_set){
 			case 0:
 				draw_set_color(c_lime);
 				draw_text(120,83, "Easy");

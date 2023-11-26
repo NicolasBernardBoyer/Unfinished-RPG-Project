@@ -1,8 +1,8 @@
 if (instance_exists(obj_player)){
 	if (targetPlayerX = true){
-		targetX = obj_player.x;
+		target_x = obj_player.x;
 	}
 	if (targetPlayerY = true){
-		targetY = obj_player.y;
+		target_y = obj_player.y;
 	}
 }

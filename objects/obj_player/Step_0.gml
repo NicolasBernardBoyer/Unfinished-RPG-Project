@@ -10,7 +10,7 @@ if (!global.pause) {
 
 // Textbox interaction, create one if not a party member and interacting with an object
 if (global.POK){
-	if (global.canPause = true and canMove = true){
+	if (global.can_pause = true and can_move = true){
 		if(active_textbox == noone and !instance_exists(obj_textbox)){
 			var inst_list = ds_list_create();
 			var inst = collision_rectangle_list(x-radius, y-radius, x+radius, y+radius, par_object, false, true, inst_list, true);
@@ -23,8 +23,8 @@ if (global.POK){
 				}
 			}
 			if(interact != noone){
-				if (variable_struct_exists(interact, "hasText")){
-					if (interact.hasText = true){
+				if (variable_struct_exists(interact, "has_text")){
+					if (interact.has_text = true){
 						with(interact){
 							var tbox = create_textbox(text, speakers, next_line, scripts);
 						}
@@ -43,12 +43,12 @@ if (global.POK){
 // handle transition when touching one
 var insttrans = instance_place(x,y,obj_transition);
 if (insttrans != noone) {
-	if(!global.doTransition){
+	if(!global.do_transition){
 		with (obj_game){
-			spawnRoom = insttrans.targetRoom;
-			spawnX = insttrans.targetX;
-			spawnY = insttrans.targetY;
-			global.doTransition = true;
+			spawn_room = insttrans.targetRoom;
+			spawn_x = insttrans.target_x;
+			spawn_y = insttrans.target_y;
+			global.do_transition = true;
 		}
 	}
 }
@@ -57,7 +57,7 @@ if (insttrans != noone) {
 state();
 
 // handle states under certain conditions
-if (global.pause == false and canMove == true) {	
+if (global.pause == false and can_move == true) {	
 	state = stateFree;
 	} else {
 		state = stateCutscene;

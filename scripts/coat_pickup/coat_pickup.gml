@@ -2,22 +2,22 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function coat_pickup(){
 	// same as backpack but for the player's coat
-	global.hasCoat = true;
+	global.has_coat = true;
 	
-	//change player's sprite depending on direction
-		if (obj_player.facing == dir.down) {
+	//change player's sprite depending on DIRection
+		if (obj_player.facing == DIR.DOWN) {
 			obj_player.sprite_index = spr_player_walk_coat;
 			obj_player.image_index = 0;
 		}
-		if (obj_player.facing == dir.up) {
+		if (obj_player.facing == DIR.UP) {
 			obj_player.sprite_index = spr_player_upwalk_coat;
 			obj_player.image_index = 0;
 		}
-		if (obj_player.facing == dir.left) {
+		if (obj_player.facing == DIR.LEFT) {
 			obj_player.sprite_index = spr_player_leftwalk_coat;
 			obj_player.image_index = 0;
 		}
-		if (obj_player.facing == dir.right) {
+		if (obj_player.facing == DIR.RIGHT) {
 			obj_player.sprite_index = spr_player_rightwalk_coat;
 			obj_player.image_index = 0;
 		} 

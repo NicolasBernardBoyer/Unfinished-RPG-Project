@@ -27,7 +27,7 @@ if(global.POK or global.PCAN){
 	}
 }
 
-// if there is choice dialogue, pressing up and down moves the selection
+// if there is choice dialogue, pressing UP and DOWN moves the selection
 if(choice_dialogue){
 	if (global.PU or global.PD){
 		audio_play_sound(snd_typewriter, 5, false);

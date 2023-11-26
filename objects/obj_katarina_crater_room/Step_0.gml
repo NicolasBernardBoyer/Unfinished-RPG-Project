@@ -36,7 +36,7 @@ if (moveCam){
 		image_speed = 1;
 		y++;
 	}
-	// have katarina look down into the hole
+	// have katarina look DOWN into the hole
 	else if (y = 175){
 		image_speed = 0;
 		image_index = 0;
@@ -68,19 +68,19 @@ if (stareChoice = true and cutProg = 0){
 		
 		// Once the player reaches the hole, have kat notice after a del
 		// if kat's sprite hasn't changed yet activate the timer
-		if (sprite_index != spr_kat_bendover_lookright and runOnce2 = true){
+		if (sprite_index != spr_kat_bendover_lookRIGHT and runOnce2 = true){
 			time_source_start(katReact);
 			runOnce2 = false;
 		}
 	}
 }
 
-// change Katarina's sprite a second time to make her look up
-if (obj_player.y = 173 and cutProg = 1 and sprite_index != spr_kat_lookright){
+// change Katarina's sprite a second time to make her look UP
+if (obj_player.y = 173 and cutProg = 1 and sprite_index != spr_kat_lookRIGHT){
 	switchSprite1 = time_source_create(time_source_game, 90, time_source_units_frames, function()
 	{
-		if (sprite_index != spr_kat_lookright and cutProg = 1){
-			sprite_index = spr_kat_lookright;
+		if (sprite_index != spr_kat_lookRIGHT and cutProg = 1){
+			sprite_index = spr_kat_lookRIGHT;
 			cutProg++;
 		}
 		time_source_stop(switchSprite1);

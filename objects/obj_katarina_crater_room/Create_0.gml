@@ -11,8 +11,8 @@ textboxDelay = time_source_create(time_source_game, 60, time_source_units_frames
 	
 	katReact = time_source_create(time_source_game, 90, time_source_units_frames, function()
 		{
-			if (sprite_index != spr_kat_bendover_lookright and cutProg = 0){
-				sprite_index = spr_kat_bendover_lookright;
+			if (sprite_index != spr_kat_bendover_lookRIGHT and cutProg = 0){
+				sprite_index = spr_kat_bendover_lookRIGHT;
 				instance_create_layer(x, y-55,"Text", obj_exclamation);
 				if (cutProg = 0){
 					cutProg++;
@@ -37,7 +37,7 @@ runOnce2 = true;
 
 cutProg = 0;
 
-hasText = false;
+has_text = false;
 portrait_index = 10;
 portrait = spr_kat_faces;
 voice = snd_meow;
@@ -52,7 +52,7 @@ scripts = [-1,
 [change_variable, id, "moveCam", true]];
 
 text2 = ["Sheesh. This thing is so deep, I can't even see the bottom.",
-		"I wonder how far down it goes..."];
+		"I wonder how far DOWN it goes..."];
 speakers2 = [id,id];
 next_line2 = [0,-1];
 scripts2 = [-1,

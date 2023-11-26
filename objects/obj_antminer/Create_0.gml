@@ -10,7 +10,7 @@ kat = obj_kat;
 
 textRpt = false;
 
-hasText = true;
+has_text = true;
 portrait_index = 0;
 portrait = noone;
 voice = snd_typewriter;

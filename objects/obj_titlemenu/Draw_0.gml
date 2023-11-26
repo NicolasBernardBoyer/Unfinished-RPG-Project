@@ -5,7 +5,7 @@ if (ev_title_screen.titleMenu = true){
 	//draw the options
 	draw_set_font(fnt_excelsior);
 	draw_set_valign(fa_top);
-	draw_set_halign(fa_left);
+	draw_set_halign(fa_LEFT);
 	for (var i = 0; i < op_length; i++)
 	{
 		var _c = c_white;

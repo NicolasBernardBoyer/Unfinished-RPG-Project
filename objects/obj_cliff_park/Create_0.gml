@@ -4,7 +4,7 @@ dropOff = false;
 dropSpeed = 0;
 
 // get animation curve
-curve = animcurve_get_channel(ac_accelDrop,0);
+curve = animcurve_get_channel(ac_accel_drop,0);
 
 alarm[0] = -1;
 

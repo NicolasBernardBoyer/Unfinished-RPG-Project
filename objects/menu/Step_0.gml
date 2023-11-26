@@ -1,48 +1,49 @@
 //If you aren't pausing but you are in title settings, go to title screen instead
 //of going back to the room
+// Feather disable GM1017
 if(!global.pause and room = rm_title_settings) room_goto(rm_title_screen);
 
 // If you aren't pausing, exit the menu
 if(!global.pause) exit;
 
 // If you can't pause in the first place, exit the menu
-if(!global.canPause) exit;
+if(!global.can_pause) exit;
 
 // There is no main page for the title settings
 // If you were to return to the main page in title settings, just unpause
 if(room = rm_title_settings){
 	if (page < 1){
 		global.pause = false;
-		global.canPause = false;
+		global.can_pause = false;
 	}
 }
 
 //inputs for the menu
-input_up_p		 = global.PU;
-input_down_p	 = global.PD;
+input_UP_p		 = global.PU;
+input_DOWN_p	 = global.PD;
 input_confirm_p  = global.POK;
 input_enter_p    = global.PSEL;
 input_revert_p	 = global.PCAN;
 
 //create a grid based off the page and get the height for it
-var ds_grid = page, ds_height = ds_grid_height(ds_grid);
+var _ds_grid = page, ds_height = ds_grid_height(_ds_grid);
 
 //if (menu_pages[page] = ds_menu_difficulty and inputting = false and ds_grid[# 1, menu_option[page]] = menu_element_type.toggle){
-//	ds_grid[# 3, menu_option[page]] = global.difficultySet;
+//	ds_grid[# 3, menu_option[page]] = global.difficulty_set;
 //}
 
 // If the player is inputting something
 if(inputting){
 	//depending on the menu option perform something different
-	switch(ds_grid[# 1, menu_option[page]]){
+	switch(_ds_grid[# 1, menu_option[page]]){
 		// show different choices for options
 		case menu_element_type.shift:
 			var hinput = global.PR - global.PL;
 			if (hinput != 0){
 				// audio
 				audio_play_sound(snd_typewriter, 5, false);
-				ds_grid[# 3, menu_option[page]] += hinput;
-				ds_grid[# 3, menu_option[page]] = clamp(ds_grid[# 3, menu_option[page]], 0, array_length_1d(ds_grid[# 4, menu_option[page]])-1);
+				_ds_grid[# 3, menu_option[page]] += hinput;
+				_ds_grid[# 3, menu_option[page]] = clamp(_ds_grid[# 3, menu_option[page]], 0, array_length_1d(_ds_grid[# 4, menu_option[page]])-1);
 			}
 			
 		break;
@@ -50,9 +51,9 @@ if(inputting){
 		case menu_element_type.slider:
 			var hinput = global.HR - global.HL;
 			if (hinput != 0){
-				ds_grid[# 3, menu_option[page]] += hinput*0.01;
-				ds_grid[# 3, menu_option[page]] = clamp(ds_grid[# 3, menu_option[page]], 0, 1);
-				script_execute(ds_grid[# 2, menu_option[page]], ds_grid[# 3, menu_option[page]]);
+				_ds_grid[# 3, menu_option[page]] += hinput*0.01;
+				_ds_grid[# 3, menu_option[page]] = clamp(_ds_grid[# 3, menu_option[page]], 0, 1);
+				script_execute(_ds_grid[# 2, menu_option[page]], _ds_grid[# 3, menu_option[page]]);
 			}
 		
 		break;
@@ -62,8 +63,8 @@ if(inputting){
 			if (hinput != 0){
 				// audio
 				audio_play_sound(snd_typewriter, 5, false);
-				ds_grid[# 3, menu_option[page]] += hinput;
-				ds_grid[# 3, menu_option[page]] = clamp(ds_grid[# 3, menu_option[page]], 0, 1);
+				_ds_grid[# 3, menu_option[page]] += hinput;
+				_ds_grid[# 3, menu_option[page]] = clamp(_ds_grid[# 3, menu_option[page]], 0, 1);
 			}
 		
 		break;
@@ -73,16 +74,16 @@ if(inputting){
 		var kk = keyboard_lastkey;
 		if(kk != vk_enter and kk != ord("Z") and kk != ord("X")){
 			// audio
-			if(kk != ds_grid[# 3, menu_option[page]]) audio_play_sound(snd_select, 5, false);
-			ds_grid[# 3, menu_option[page]] = kk;
-			variable_global_set(ds_grid[# 2, menu_option[page]], kk);
+			if(kk != _ds_grid[# 3, menu_option[page]]) audio_play_sound(snd_select, 5, false);
+			_ds_grid[# 3, menu_option[page]] = kk;
+			variable_global_set(_ds_grid[# 2, menu_option[page]], kk);
 		}
 			
 		break;
 	}
 } else {
-	// move the cursor up and down
-	var ochange = input_down_p - input_up_p;
+	// move the cursor UP and DOWN
+	var ochange = input_DOWN_p - input_UP_p;
 	if(ochange != 0){
 		audio_play_sound(snd_typewriter, 5, false);
 		menu_option[page] += ochange;
@@ -105,13 +106,13 @@ if(inputting){
 
 	// make modifications to the settings when user confirms
 	if(input_enter_p or input_confirm_p){
-		switch(ds_grid[# 1, menu_option[page]]){
-			case menu_element_type.script_runner: script_execute(ds_grid[# 2, menu_option[page]]); break;
-			case menu_element_type.page_transfer: page = ds_grid[# 2, menu_option[page]]; break;
+		switch(_ds_grid[# 1, menu_option[page]]){
+			case menu_element_type.script_runner: script_execute(_ds_grid[# 2, menu_option[page]]); break;
+			case menu_element_type.page_transfer: page = _ds_grid[# 2, menu_option[page]]; break;
 
 			case menu_element_type.shift:
 			case menu_element_type.slider:
-			case menu_element_type.toggle: if(inputting){ script_execute(ds_grid[# 2, menu_option[page]], ds_grid[# 3, menu_option[page]]); }
+			case menu_element_type.toggle: if(inputting){ script_execute(_ds_grid[# 2, menu_option[page]], _ds_grid[# 3, menu_option[page]]); }
 			case menu_element_type.input:
 				inputting = !inputting;
 				break;

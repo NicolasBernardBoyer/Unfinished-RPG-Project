@@ -1,3 +1,3 @@
 targetRoom = rm_takingbike;
-targetX = 0;
-targetY = 0;
+target_x = 0;
+target_y = 0;

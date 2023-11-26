@@ -11,10 +11,10 @@ if (instance_exists(obj_battle_unit_pc)){
 		draw_sprite(spr_spicon, 0, x+58+(i*STAT_BOX), y+328);
 		// draw stats text
 		draw_set_valign(fa_top);
-		draw_set_halign(fa_left);
+		draw_set_halign(fa_LEFT);
 		draw_set_font(fnt_vcr);
 		// (color will be yellow if hp/mp is at max)
-		if (partyUnits[i].visualhp = partyUnits[i].hpMax) draw_set_color(c_yellow);
+		if (partyUnits[i].visualhp = partyUnits[i].hp_max) draw_set_color(c_yellow);
 		draw_text(x+79+(i*STAT_BOX), y+304, partyUnits[i].visualhp);
 		draw_set_color(c_white);
 		

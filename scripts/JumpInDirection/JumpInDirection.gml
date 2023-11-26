@@ -1,12 +1,12 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function JumpInDirection(){
-	/// @description JumpInDirection(distance, direction)
+function jump_in_direction(){
+	/// @description jump_in_DIRection(distance, DIRection)
 /// @param distance
-/// @param direction
+/// @param DIRection
  
-// Teleports parent object to a spot based on given direction and distance
+// Teleports parent object to a spot based on given DIRection and distance
  
-x += lengthdir_x(argument0,argument1)
-y += lengthdir_y(argument0,argument1)
+x += lengthDIR_x(argument0,argument1)
+y += lengthDIR_y(argument0,argument1)
 }

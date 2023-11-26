@@ -1,7 +1,7 @@
 // If the player isnt in a cutscene and you cant pause, follow the player
-if (obj_player.canMove and global.canPause){
+if (obj_player.can_move and global.can_pause){
 	walk = obj_player.spd;
-	dir = point_direction(x,y,obj_player.x,obj_player.y);
+	DIR = point_DIRection(x,y,obj_player.x,obj_player.y);
 	
 	// keep kat 25 units away from the player and have her approach at the player's speed
 	if (x <= obj_player.x - 25 or x >= obj_player.x + 25){
@@ -61,13 +61,13 @@ if (obj_player.canMove and global.canPause){
 			sprite_index = spr_kat_walk;
 		}
 		else if (obj_player.sprite_index = spr_player_upwalk_coat){
-			sprite_index = spr_kat_upwalk;
+			sprite_index = spr_kat_UPwalk;
 		}
 		else if (obj_player.sprite_index = spr_player_leftwalk_coat){
-			sprite_index = spr_kat_leftwalk;
+			sprite_index = spr_kat_LEFTwalk;
 		}
 		else if (obj_player.sprite_index = spr_player_rightwalk_coat){
-			sprite_index = spr_kat_rightwalk;
+			sprite_index = spr_kat_RIGHTwalk;
 		}
 	}
 }

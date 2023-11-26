@@ -18,7 +18,7 @@ if (inst!=noone){
 if (instance_exists(obj_player) and createManager = true){
 	//if the player can approach and their x isnt 223
 	if (playerApproach = true and obj_player.x != 223){
-		//move player depending if they are on the left or right to the reference point
+		//move player depending if they are on the LEFT or RIGHT to the reference point
 		obj_player.x = Approach(obj_player.x, 223, 3);
 		if (obj_player.x < 223){
 			obj_player.sprite_index = spr_player_rightwalk_coat;
@@ -28,8 +28,8 @@ if (instance_exists(obj_player) and createManager = true){
 			obj_player.image_speed = 1;
 		}
 	} else if (obj_player.x = 223 and playerApproach = true){
-		//If the player is at the right position, proceed with the cutscene
-		//make the player look upwards and move the camera upwards
+		//If the player is at the RIGHT position, proceed with the cutscene
+		//make the player look UPwards and move the camera UPwards
 		obj_player.sprite_index = spr_player_upwalk_coat;
 		obj_player.image_index = 0;
 		obj_player.vspeed = 0;
@@ -40,12 +40,12 @@ if (instance_exists(obj_player) and createManager = true){
 		camera.following = noone;
 	}
 	if (moveCam = true){
-		//If the manager object isnt there yet, move the camera to the right position
+		//If the manager object isnt there yet, move the camera to the RIGHT position
 		if (!instance_exists(obj_manager)){
 			if (camera.y != 220){
 				camera.y = Approach(camera.y, 220, 2);
 			}
-			//if the camera is in the right player and there is no manager, create one only once
+			//if the camera is in the RIGHT player and there is no manager, create one only once
 			if (camera.y = 220 and !instance_exists(obj_manager) and createManager = true){
 				instance_create_layer(223, 95, "Instances", obj_manager);
 				createManager = false;
@@ -62,11 +62,11 @@ if (createManager = false and !instance_exists(obj_manager)){
 	if (camera.y != obj_player.y){
 		camera.y = Approach(camera.y, obj_player.y, 2);
 	}
-	//if the camera is in the right position let the player move again
+	//if the camera is in the RIGHT position let the player move again
 	//and change the camera back to following the player, then destroy this event
 	if (camera.y = obj_player.y){			
-		global.canPause = true;
-		obj_player.canMove = true;
+		global.can_pause = true;
+		obj_player.can_move = true;
 		camera.following = obj_player;
 		global.highbox = false;
 		instance_activate_object(rb_gotowork);

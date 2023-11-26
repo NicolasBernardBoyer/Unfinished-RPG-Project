@@ -3,7 +3,7 @@ if (isWalking = true){
 	// if camera is moving, simply move y
 	if (moveCam = true){
 		y += 2;
-	// if camera isnt moving and player x is in right place set image speed to 1
+	// if camera isnt moving and player x is in RIGHT place set image speed to 1
 	} else if (moveCam = false and obj_player.x = 256){
 		image_speed = 1;
 		y += 2;

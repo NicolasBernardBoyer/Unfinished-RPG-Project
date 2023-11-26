@@ -1,5 +1,6 @@
 
-function create_textbox(){
+function create_textbox()// Feather disable GM1041
+{
 	if (variable_struct_exists(self, "portrait")){
 		var hasPort = true;
 	} else { var hasPort = false; }

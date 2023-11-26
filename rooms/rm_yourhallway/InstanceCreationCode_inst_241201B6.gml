@@ -1,3 +1,3 @@
 targetRoom = rm_yourbathroom;
-targetX = 144;
-targetY = 158;
+target_x = 144;
+target_y = 158;

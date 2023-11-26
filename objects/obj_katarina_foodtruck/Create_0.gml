@@ -1,11 +1,11 @@
 // initialization for the 3 time sources that will run during the cutscene
 swapSprite = time_source_create(time_source_game, 30, time_source_units_frames, function()
 	{
-		if (move_getup_y2 = true){
-			sprite_index = spr_kat_leftwalk;
+		if (move_getUP_y2 = true){
+			sprite_index = spr_kat_LEFTwalk;
 			image_index = 0;
 			y-= 5;
-			move_getup_y2 = false;
+			move_getUP_y2 = false;
 		}
 		time_source_stop(swapSprite);
 	}, [], 1);
@@ -34,10 +34,10 @@ run2ndTextbox = false;
 
 // scene parts 
 end_scene = false;
-move_getup_y = true;
-move_getup_y2 = true;
+move_getUP_y = true;
+move_getUP_y2 = true;
 
-hasText = false;
+has_text = false;
 portrait_index = 7;
 portrait = spr_kat_faces;
 voice = snd_meow;
@@ -45,7 +45,7 @@ name = "???";
 text = ["OH UH... HEY BOSS! NO, I WASN'T SLACKING O-",
 		"Wait, nevermind. It's just the newbie.",
 		"H-hey there! I'm Katarina, and I'll be training you today.",
-		"You must be " + global.playerName + ", right?",
+		"You must be " + global.player_name + ", RIGHT?",
 		"Great! Let's get started then. Let me show you around."];
 speakers = [id,id,id,id,id];
 next_line = [0,0,0,0,0];
@@ -54,7 +54,7 @@ scripts =
 [port_swap, 6],
 [change_variable, obj_textbox, "portrait_index", 3, id, "name", "Katarina"],
 [port_swap, 4],
-[change_variable, id, "sprite_index", spr_kat_sit_getup, obj_textbox, "portrait_index", 10, id, "run2ndTextbox", true]];
+[change_variable, id, "sprite_index", spr_kat_sit_getUP, obj_textbox, "portrait_index", 10, id, "run2ndTextbox", true]];
 
 text2 = ["First, let's go over some rules.",
 		"No.1, don't tell the boss when I'm slacking off.",

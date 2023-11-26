@@ -50,8 +50,8 @@ switch (cutProg){
 	// When animation is done, change the sprite and continue cutscene
 				else if (sprite_index = spr_kat_staffpull and image_index = 8){
 					sprite_index = spr_kat_stafffall;
-					ev_falling_down.runOnce = true;
-					ev_falling_down.cutProg++;
+					ev_falling_DOWN.runOnce = true;
+					ev_falling_DOWN.cutProg++;
 				}
 			}
 	}
@@ -67,7 +67,7 @@ switch (cutProg){
 	case 4:
 	// Move the player closer to Katarina
 	with(obj_player){
-	// If the player's x isnt 120 keep moving them to the right
+	// If the player's x isnt 120 keep moving them to the RIGHT
 		if (x != 120){
 			x -= 1;
 			obj_kat.x += 1;
@@ -78,10 +78,10 @@ switch (cutProg){
 			}
 	// Then change the sprite and play sfx, then continue cutscene
 			obj_kat.sprite_index = spr_kat_staffbubble;
-			if (!audio_is_playing(snd_magicup)){
-				audio_play_sound(snd_magicup, 1, false);
+			if (!audio_is_playing(snd_magicUP)){
+				audio_play_sound(snd_magicUP, 1, false);
 			}
-			ev_falling_down.cutProg++;
+			ev_falling_DOWN.cutProg++;
 		}
 	}
 	break;
@@ -112,16 +112,16 @@ switch (cutProg){
 	case 6:
 	{
 		// End the cutscene and change rooms
-		obj_game.spawnX = 224;
-		obj_game.spawnY = 2;
-		obj_game.spawnRoom = rm_mine_entrance;
-		obj_game.doTransition = true;
+		obj_game.spawn_x = 224;
+		obj_game.spawn_y = 2;
+		obj_game.spawn_room = rm_mine_entrance;
+		obj_game.do_transition = true;
 	}
 }
 
 if (cutProg > 0){
 	// float animation
-	// float downwards until the speed hits 1, then reset the speed
+	// float DOWNwards until the speed hits 1, then reset the speed
 	dropSpeed += 1/60;
 	if (dropSpeed > 1) dropSpeed -= 1;
 	

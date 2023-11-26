@@ -21,7 +21,7 @@ if (draw_difficulty = true){
 	obj_textbox.proceed = false;
 	if (delayCheck != true){
 		// If the delay is gone, here is the code to switch between difficulties
-		// Press right and press left
+		// Press RIGHT and press LEFT
 		if (global.PR){
 			if (difficulty_page < 2){
 				difficulty_page++;
@@ -41,7 +41,7 @@ if (draw_difficulty = true){
 			obj_textbox.page += 1;
 			menu.ds_menu_difficulty = 0;
 			// Set difficulty to what is chosen
-			global.difficultySet = difficulty_page;
+			global.difficulty_set = difficulty_page;
 			draw_difficulty = false;
 			confirm_difficulty = true;
 			instance_destroy(obj_textbox);

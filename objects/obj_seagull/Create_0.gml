@@ -1,5 +1,5 @@
 visible = false;
-hasText = true;
+has_text = true;
 radius = 8;
 name_col = c_orange;
 

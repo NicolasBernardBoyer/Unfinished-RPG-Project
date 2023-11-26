@@ -2,8 +2,8 @@
 //gpu_set_blendenable(false);
 
 ////find how much the window is scaled in proportion to the camera
-//var _xscale = window_get_width()/camWidth;
-//var _yscale = window_get_height()/camHeight;
+//var _xscale = window_get_width()/cam_width;
+//var _yscale = window_get_height()/cam_height;
 
 //draw_surface_ext
 //(

@@ -1,4 +1,4 @@
 
 targetRoom = rm_yourhallway;
-targetX = 175;
-targetY = 178;
+target_x = 175;
+target_y = 178;

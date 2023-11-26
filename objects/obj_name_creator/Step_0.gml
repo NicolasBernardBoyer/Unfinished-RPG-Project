@@ -73,7 +73,7 @@ if (global.POK){
 	
 	//Save the new name to the hero
 	if (newLetter == "OK" and currentName != ""){
-		global.playerName = currentName;
+		global.player_name = currentName;
 		audio_play_sound(snd_select, 5, false);
 		instance_destroy(obj_textbox);
 		instance_destroy(ev_intro);

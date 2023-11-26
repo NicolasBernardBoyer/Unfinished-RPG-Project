@@ -1,5 +1,5 @@
 visible = false;
-hasText = true;
+has_text = true;
 
 // cutscene variables
 fallEvent = false;
@@ -16,7 +16,7 @@ speakers = [id, id];
 next_line = [0, 0];
 scripts = [-1, -1];
 
-alttext = ["You biked right into the rack and your bike inserted itself perfectly into it.",
+alttext = ["You biked RIGHT into the rack and your bike inserted itself perfectly into it.",
 			"You tried to get off the bike...",
 			"However, you get off too fast. As you land on the ground, you lose your balance...",
 			"..."];
@@ -28,6 +28,6 @@ alttext2 = ["...I gotta stop doing that.",
 			"..."];
 altspeakers2 = [id, id];
 altnext_line2 = [0, 0];
-altscripts2 = [[canPauseTrue], -1];
+altscripts2 = [[can_pause_true], -1];
 
 

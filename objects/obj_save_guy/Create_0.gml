@@ -7,7 +7,7 @@ kat = obj_kat;
 
 textRpt = false;
 
-hasText = true;
+has_text = true;
 portrait_index = 0;
 portrait = spr_save_guy_faces;
 voice = snd_typewriter;

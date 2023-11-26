@@ -4,10 +4,10 @@ function destroy_obj(){
 	///@arg object
 	// destroy the current object and let player move again
 	// useful for ending cutscenes
-	global.canPause = true;
+	global.can_pause = true;
 	
 	with (obj_player){
-		canMove = true;
+		can_move = true;
 		state = stateFree;
 	}
 	

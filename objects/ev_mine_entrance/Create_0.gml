@@ -25,7 +25,7 @@ twoSeconds2 = time_source_create(time_source_game, 2, time_source_units_seconds,
 	// Runs when cutscene progression is at 2
 	// Turns highboxes on and changes kat's sprite, as well as creates a textbox
 	if (!instance_exists(obj_textbox) and cutProg = 3){
-		obj_kat.sprite_index = spr_kat_rightwalk;
+		obj_kat.sprite_index = spr_kat_RIGHTwalk;
 		portrait_index = 10;
 		create_textbox(text2,speakers2,next_line2,scripts2);
 		time_source_stop(twoSeconds2);
@@ -50,7 +50,7 @@ spritewait = time_source_create(time_source_game, 10, time_source_units_frames, 
 }, [], 1);
 
 //Curve for speed of the falling anim
-curve = ac_bubbleShatter;
+curve = ac_bubble_shatter;
 curvePos = 0;
 curveSpeed = 0.02;
 
@@ -72,7 +72,7 @@ speakers2 = [id];
 scripts2 = [[change_variable, id, "cutProg", 4]];
 
 text3 = ["Well, if we are going to find a way back to the surface, we should stick together.",
-		 "I hope your sense of direction is good."];
+		 "I hope your sense of DIRection is good."];
 next_line3 = [0, 0];
 speakers3 = [id, id];
 scripts3 = [[change_variable, id, "portrait_index", 3],[change_variable, id, "cutProg", 5]];

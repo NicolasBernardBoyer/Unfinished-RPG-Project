@@ -7,7 +7,7 @@ voice = snd_typewriter;
 name = "";
 text = ["See that thing on the ground? You should probably take it with you.",
 		"We don't know when we might run into trouble.",
-		"I'm not saying that we're in grave danger, but better safe than sorry, right?",
+		"I'm not saying that we're in grave danger, but better safe than sorry, RIGHT?",
 		"WE'RE DOOMED! WE SHALL MEET OUR DEATH IN THIS PIT!! MWHAHAHAHAHA!",
 		"...sorry, that wasn't really funny.",
 		"Just take the weapon.",

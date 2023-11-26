@@ -4,12 +4,12 @@ function city_room_transition(){
 	instance_destroy(obj_textbox);
 	// move player to the city scene
 	with(obj_game){
-		if(!doTransition){
-			spawnRoom = rm_waytowork;
-			spawnX = 1400;
-			spawnY = 238;
+		if(!do_transition){
+			spawn_room = rm_waytowork;
+			spawn_x = 1400;
+			spawn_y = 238;
 			instance_activate_object(obj_player);
-			room_goto(spawnRoom);
+			room_goto(spawn_room);
 		}
 	}
 }

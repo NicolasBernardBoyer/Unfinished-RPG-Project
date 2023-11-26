@@ -22,7 +22,7 @@ global.actionLibrary =
 		func : function (_user, _targets)
 		{
 			var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
-			BattleChangeHP(_targets[0], -_damage, 0);
+			battle_change_hp(_targets[0], -_damage, 0);
 		}
 	},
 	food :
@@ -39,7 +39,7 @@ global.actionLibrary =
 		func: function (_user, _targets)
 		{
 			var _heal = 10;
-			BattleChangeHP(_targets[0], -_heal, 0);
+			battle_change_hp(_targets[0], -_heal, 0);
 		}
 	},
 	moonerang : 
@@ -56,7 +56,7 @@ global.actionLibrary =
 		func: function(_user, _targets)
 		{
 			var _damage = irandom_range(10,15);
-			BattleChangeHP(_targets[0], -_damage);
+			battle_change_hp(_targets[0], -_damage);
 			//BattleChangeMP(_user, -mpCost)
 		}
 	}
@@ -70,7 +70,7 @@ global.party =
 		unittype: "ally",
 		hp: 90,
 		visualhp : 90,
-		hpMax: 90,
+		hp_max: 90,
 		mp: 15,
 		visualmp : 15,
 		mpMax: 15,
@@ -79,7 +79,7 @@ global.party =
 		agility: 6,
 		luck: 8,
 		stat_box: spr_stat_player,
-		sprites: { idle: spr_player_idle, down: spr_player_faint, walk: undefined },
+		sprites: { idle: spr_player_idle, DOWN: spr_player_faint, walk: undefined },
 		actions: [global.actionLibrary.attack, global.actionLibrary.food]
 	}
 	,
@@ -88,7 +88,7 @@ global.party =
 		unittype: "ally",
 		hp: 70,
 		visualhp : 70,
-		hpMax: 70,
+		hp_max: 70,
 		mp: 15,
 		visualmp: 15,
 		mpMax: 15,
@@ -97,7 +97,7 @@ global.party =
 		agility: 12,
 		luck: 1,
 		stat_box: spr_stat_kat,
-		sprites: { idle: spr_kat_idle, down: spr_kat_faint, walk: spr_kat_bwalk },
+		sprites: { idle: spr_kat_idle, DOWN: spr_kat_faint, walk: spr_kat_bwalk },
 		actions: [global.actionLibrary.moonerang]
 	}
 ];
@@ -109,7 +109,7 @@ global.enemies = {
 		name: "Save Guy",
 		unittype: "enemy",
 		hp: 200,
-		hpMax: 200,
+		hp_max: 200,
 		mp: 0,
 		mpMax: 0,
 		strength: 1,

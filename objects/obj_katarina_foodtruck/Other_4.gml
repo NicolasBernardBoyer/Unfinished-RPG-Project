@@ -1,6 +1,6 @@
 // start cutscene and stop player from moving
-global.canPause = false;
-obj_player.canMove = false;
+global.can_pause = false;
+obj_player.can_move = false;
 obj_player.sprite_index = spr_player_rightwalk_coat;
 obj_player.image_index = 0;
 obj_player.image_speed = 0;

@@ -5,8 +5,8 @@ voice = snd_typewriter;
 name = "";
 text = ["Head out to work?", 
 	   ["Yes", "No"],
-	   "Hurry up!",
-	   "Hey " + global.playerName + ", be careful.\nIt's a wild world out there.",
+	   "Hurry UP!",
+	   "Hey " + global.player_name + ", be careful.\nIt's a wild world out there.",
 	   ];
 portrait_index = 0;
 speakers = [id,id,id,obj_davecouch,obj_davecouch];

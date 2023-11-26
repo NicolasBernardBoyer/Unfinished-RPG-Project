@@ -1,8 +1,8 @@
 
-function Approach(argument0, argument1, argument2){
+function approach(argument0, argument1, argument2){
 /// Approach(a, b, amount)
 // Moves "a" towards "b" by "amount" and returns the result
-// Nice bcause it will not overshoot "b", and works in both directions
+// Nice bcause it will not overshoot "b", and works in both DIRections
 // Examples:
 //      speed = Approach(speed, max_speed, acceleration);
 //      hp = Approach(hp, 0, damage_amount);

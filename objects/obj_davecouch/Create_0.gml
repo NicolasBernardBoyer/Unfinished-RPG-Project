@@ -1,7 +1,7 @@
 visible = false;
 
 // event variables
-hasText = true;
+has_text = true;
 runOnce = false;
 
 image_speed = 0;
@@ -17,11 +17,11 @@ moveCam = false;
 portrait = spr_dave_faces;
 portrait_index = 0;
 
-evtext = ["You seem to have taken quite the tumble out of bed, "+ global.playerName+". You good?",
+evtext = ["You seem to have taken quite the tumble out of bed, "+ global.player_name+". You good?",
 		 "You seem fine.\nGood luck on your first work day, roomie!",
 		 "It's unfortunate that my boss didn't grant you the job at the hardware store.",
-		 "But hey, what can you do.\nFood truck job's better than nothing, right?",
-		 ["''I guess you're right.''","''I'd rather not work at all...''"],
+		 "But hey, what can you do.\nFood truck job's better than nothing, RIGHT?",
+		 ["''I guess you're RIGHT.''","''I'd rather not work at all...''"],
 		 "That's the spirit!\nMaybe I'll stop by for a burger today.",
 		 "You don't have a choice.\nI can't be the only one paying rent.",
 		 "Anyways, you missed this morning's news on TV.",

@@ -1,7 +1,7 @@
 // same conditions as step apply if they are met dont draw anything
-if (global.canPause == false) exit;
+if (global.can_pause == false) exit;
 if (global.inventoryOpen == false) exit;
-if (obj_game.doTransition) exit;
+if (obj_game.do_transition) exit;
 if (instance_exists(obj_textbox) and global.inventoryTB = false){ exit; }
 else if (global.inventoryTB = true){
 	// make a tutorial if this is the first time the player opens the inventory
@@ -89,9 +89,9 @@ if (partyCursorActive == false){
 				// draw party member names, store this in a better way later
 				if (ds_list_find_value(party, i) == 0){
 					if (cursor = i) text_col = c_yellow;
-					draw_text_color(xx,yy,global.playerName,text_col,text_col,text_col,text_col, 1);
+					draw_text_color(xx,yy,global.player_name,text_col,text_col,text_col,text_col, 1);
 					text_col = c_white;
-					text = global.playerName;
+					text = global.player_name;
 					for (var ii = 0; ii < SELECTED_PARTY_SLOTS; ii += 1){
 						if (ds_list_find_value(selectedParty, ii) == 0){
 							//draw checkmark
@@ -160,9 +160,9 @@ if (partyCursorActive == false){
 				// again this could be organized better, no need to draw all party member names like this
 				if (ds_list_find_value(selectedParty, i) == 0){
 					if (cursor = i) text_col = c_yellow;
-					draw_text_color(xx,yy,global.playerName,text_col,text_col,text_col,text_col, 1);
+					draw_text_color(xx,yy,global.player_name,text_col,text_col,text_col,text_col, 1);
 					text_col = c_white;
-					text = global.playerName;
+					text = global.player_name;
 				} else if (ds_list_find_value(selectedParty, i) == 1){
 					if (cursor = i) text_col = c_yellow;
 					draw_text_color(xx,yy,"Katarina",text_col,text_col,text_col,text_col, 1);
@@ -193,7 +193,7 @@ if (partyCursorActive == false){
 // draw item descriptions
 		#region BURGER
 		if (ds_list_find_value(consumables, consumingItem) = "Burger"){
-			draw_set_halign(fa_left);
+			draw_set_halign(fa_LEFT);
 			draw_text(box_x+10, box_y+110, "A greasy burger");
 			draw_text(box_x+10, box_y+126, "from the food truck.");
 			draw_text(box_x+10, box_y+142, "It's disgusting.");
@@ -202,19 +202,19 @@ if (partyCursorActive == false){
 					
 					if (ds_list_find_value(selectedParty,i) = 0){
 						draw_set_color(c_lime);
-						draw_text(box_x+10, box_y+158, "ATK: " + string(global.playerATK) + " -> " + string(global.playerATK + 2));
+						draw_text(box_x+10, box_y+158, "ATK: " + string(global.player_atk) + " -> " + string(global.player_atk + 2));
 						draw_set_color(c_red);
-						draw_text(box_x+10, box_y+174, "SPD: " + string(global.playerSPD) + " -> " + string(global.playerSPD - 2));
+						draw_text(box_x+10, box_y+174, "SPD: " + string(global.player_spd) + " -> " + string(global.player_spd - 2));
 						draw_set_color(c_lime);
-						draw_text(box_x+10, box_y+190, "HP: " + string(global.playerHP) + " -> " + string(global.playerHP + 40));
+						draw_text(box_x+10, box_y+190, "HP: " + string(global.player_hp) + " -> " + string(global.player_hp + 40));
 						draw_set_color(c_white);
 					} else if (ds_list_find_value(selectedParty,i) = 1){
 						draw_set_color(c_lime);
-						draw_text(box_x+10, box_y+158, "ATK: " + string(global.katATK) + " -> " + string(global.katATK + 2));
+						draw_text(box_x+10, box_y+158, "ATK: " + string(global.kat_atk) + " -> " + string(global.kat_atk + 2));
 						draw_set_color(c_red);
-						draw_text(box_x+10, box_y+174, "SPD: " + string(global.katSPD) + " -> " + string(global.katSPD - 2));
+						draw_text(box_x+10, box_y+174, "SPD: " + string(global.kat_spd) + " -> " + string(global.kat_spd - 2));
 						draw_set_color(c_lime);
-						draw_text(box_x+10, box_y+190, "HP: " + string(global.katHP) + " -> " + string(global.katHP + 40));
+						draw_text(box_x+10, box_y+190, "HP: " + string(global.kat_hp) + " -> " + string(global.kat_hp + 40));
 						draw_set_color(c_white);
 					} else if (ds_list_find_value(selectedParty,i) = 2){
 						draw_set_color(c_lime);
@@ -260,7 +260,7 @@ if (partyCursorActive == false){
 #endregion
 #region DRAW PARTY STATS
 } else {
-	draw_set_halign(fa_left);
+	draw_set_halign(fa_LEFT);
 	for (var i = 0; i < SELECTED_PARTY_SLOTS; i += 1){
 		if (partyCursor == i){
 			if (ds_list_find_value(selectedParty, i) != undefined) {
@@ -272,24 +272,24 @@ if (partyCursorActive == false){
 				draw_text(box_x+10, box_y+190, "Luck: ");
 				
 				if (ds_list_find_value(selectedParty, i) = 0){
-					draw_text(box_x+100, box_y+110, global.playerName);
-					draw_text(box_x+100, box_y+126, string(global.MAXplayerHP));
-					draw_text(box_x+100, box_y+142, string(global.playerATK));
-					draw_text(box_x+100, box_y+158, string(global.playerDEF));
-					draw_text(box_x+100, box_y+174, string(global.playerSPD));
-					draw_text(box_x+100, box_y+190, string(global.playerLK));
+					draw_text(box_x+100, box_y+110, global.player_name);
+					draw_text(box_x+100, box_y+126, string(global.max_player_hp));
+					draw_text(box_x+100, box_y+142, string(global.player_atk));
+					draw_text(box_x+100, box_y+158, string(global.player_def));
+					draw_text(box_x+100, box_y+174, string(global.player_spd));
+					draw_text(box_x+100, box_y+190, string(global.player_lk));
 				} 
 				else if (ds_list_find_value(selectedParty, i) = 1){
 					draw_text(box_x+100, box_y+110, "Katarina");
-					draw_text(box_x+100, box_y+126, string(global.MAXkatHP));
-					draw_text(box_x+100, box_y+142, string(global.katATK));
-					draw_text(box_x+100, box_y+158, string(global.katDEF));
-					draw_text(box_x+100, box_y+174, string(global.katSPD));
-					draw_text(box_x+100, box_y+190, string(global.katLK));
+					draw_text(box_x+100, box_y+126, string(global.max_kat_hp));
+					draw_text(box_x+100, box_y+142, string(global.kat_atk));
+					draw_text(box_x+100, box_y+158, string(global.kat_def));
+					draw_text(box_x+100, box_y+174, string(global.kat_spd));
+					draw_text(box_x+100, box_y+190, string(global.kat_lk));
 				}
 				else if (ds_list_find_value(selectedParty, i) = 2){
 					draw_text(box_x+100, box_y+110, "Natalie");
-					draw_text(box_x+100, box_y+126, string(global.MAXnatHP));
+					draw_text(box_x+100, box_y+126, string(global.maxNathp));
 					draw_text(box_x+100, box_y+142, string(global.natATK));
 					draw_text(box_x+100, box_y+158, string(global.natDEF));
 					draw_text(box_x+100, box_y+174, string(global.natSPD));
@@ -307,12 +307,12 @@ if (partyCursorActive == false){
 
 
 #endregion
-draw_set_halign(fa_left);
+draw_set_halign(fa_LEFT);
 
 
 // DRAW PARTY FACES
 // Draw text for character's HP
-// Find a more efficient way to group this in the future
+// Find a more efficient way to groUP this in the future
 for (var i = 0; i < SELECTED_PARTY_SLOTS; i += 1)
 {
 	var xx = 42 + (i mod partyRowLength)*74;
@@ -324,68 +324,68 @@ for (var i = 0; i < SELECTED_PARTY_SLOTS; i += 1)
 			draw_sprite_stretched(spr_box_empty_white,0,xx+5,yy+5,64,64);
 		}
 		if (ds_list_find_value(selectedParty, i) = 0){
-			if (global.playerHP = global.MAXplayerHP) draw_set_color(c_lime);
-			if (global.MAXplayerHP > 99) {
+			if (global.player_hp = global.max_player_hp) draw_set_color(c_lime);
+			if (global.max_player_hp > 99) {
 				draw_sprite_stretched(spr_box,0,xx+20,yy,54,18);
-				if (global.playerHP <= global.MAXplayerHP){
-					draw_text_transformed(xx+25, yy+1, global.playerHP, 0.8, 0.8, 0);
+				if (global.player_hp <= global.max_player_hp){
+					draw_text_transformed(xx+25, yy+1, global.player_hp, 0.8, 0.8, 0);
 				} else {
-					draw_text_transformed(xx+25, yy+1, global.MAXplayerHP, 0.8, 0.8, 0);
+					draw_text_transformed(xx+25, yy+1, global.max_player_hp, 0.8, 0.8, 0);
 				}
 				draw_text_transformed(xx+38, yy+2, " / ", 0.7, 0.7, 0);
-				draw_text_transformed(xx+47, yy+5, global.MAXplayerHP, 0.6, 0.6, 0);
+				draw_text_transformed(xx+47, yy+5, global.max_player_hp, 0.6, 0.6, 0);
 			} else {
 				draw_sprite_stretched(spr_box,0,xx+30,yy,44,18);
-				if (global.playerHP <= global.MAXplayerHP){
-					draw_text_transformed(xx+34, yy+1, global.playerHP, 0.8, 0.8, 0);
+				if (global.player_hp <= global.max_player_hp){
+					draw_text_transformed(xx+34, yy+1, global.player_hp, 0.8, 0.8, 0);
 				} else {
-					draw_text_transformed(xx+34, yy+1, global.MAXplayerHP, 0.8, 0.8, 0);
+					draw_text_transformed(xx+34, yy+1, global.max_player_hp, 0.8, 0.8, 0);
 				}
 				draw_text_transformed(xx+42, yy+2, " / ", 0.7, 0.7, 0);
-				draw_text_transformed(xx+50, yy+5, global.MAXplayerHP, 0.6, 0.6, 0);
+				draw_text_transformed(xx+50, yy+5, global.max_player_hp, 0.6, 0.6, 0);
 			}
 		}
 		else if (ds_list_find_value(selectedParty, i) = 1){
-			if (global.katHP = global.MAXkatHP) draw_set_color(c_lime);
-			if (global.MAXkatHP > 99) {
+			if (global.kat_hp = global.max_kat_hp) draw_set_color(c_lime);
+			if (global.max_kat_hp > 99) {
 				draw_sprite_stretched(spr_box,0,xx+20,yy,54,18);
-				if (global.katHP <= global.MAXkatHP){
-					draw_text_transformed(xx+25, yy+1, global.katHP, 0.8, 0.8, 0);
+				if (global.kat_hp <= global.max_kat_hp){
+					draw_text_transformed(xx+25, yy+1, global.kat_hp, 0.8, 0.8, 0);
 				} else {
-					draw_text_transformed(xx+25, yy+1, global.MAXkatHP, 0.8, 0.8, 0);
+					draw_text_transformed(xx+25, yy+1, global.max_kat_hp, 0.8, 0.8, 0);
 				}
 				draw_text_transformed(xx+38, yy+2, " / ", 0.7, 0.7, 0);
-				draw_text_transformed(xx+47, yy+5, global.MAXkatHP, 0.6, 0.6, 0);
+				draw_text_transformed(xx+47, yy+5, global.max_kat_hp, 0.6, 0.6, 0);
 			} else {
 				draw_sprite_stretched(spr_box,0,xx+30,yy,44,18);
-				if (global.katHP <= global.MAXkatHP){
-					draw_text_transformed(xx+34, yy+1, global.katHP, 0.8, 0.8, 0);
+				if (global.kat_hp <= global.max_kat_hp){
+					draw_text_transformed(xx+34, yy+1, global.kat_hp, 0.8, 0.8, 0);
 				} else {
-					draw_text_transformed(xx+34, yy+1, global.MAXkatHP, 0.8, 0.8, 0);
+					draw_text_transformed(xx+34, yy+1, global.max_kat_hp, 0.8, 0.8, 0);
 				}
 				draw_text_transformed(xx+42, yy+2, " / ", 0.7, 0.7, 0);
-				draw_text_transformed(xx+50, yy+5, global.MAXkatHP, 0.6, 0.6, 0);
+				draw_text_transformed(xx+50, yy+5, global.max_kat_hp, 0.6, 0.6, 0);
 			}
 		} else if (ds_list_find_value(selectedParty, i) = 2){
-			if (global.natHP = global.MAXnatHP) draw_set_color(c_lime);
-			if (global.MAXnatHP > 99) {
+			if (global.natHP = global.maxNathp) draw_set_color(c_lime);
+			if (global.maxNathp > 99) {
 				draw_sprite_stretched(spr_box,0,xx+20,yy,54,18);
-				if (global.natHP <= global.MAXnatHP){
+				if (global.natHP <= global.maxNathp){
 					draw_text_transformed(xx+25, yy+1, global.natHP, 0.8, 0.8, 0);
 				} else {
-					draw_text_transformed(xx+25, yy+1, global.MAXnatHP, 0.8, 0.8, 0);
+					draw_text_transformed(xx+25, yy+1, global.maxNathp, 0.8, 0.8, 0);
 				}
 				draw_text_transformed(xx+38, yy+2, " / ", 0.7, 0.7, 0);
-				draw_text_transformed(xx+47, yy+5, global.MAXnatHP, 0.6, 0.6, 0);
+				draw_text_transformed(xx+47, yy+5, global.maxNathp, 0.6, 0.6, 0);
 			} else {
 				draw_sprite_stretched(spr_box,0,xx+30,yy,44,18);
-				if (global.natHP <= global.MAXnatHP){
+				if (global.natHP <= global.maxNathp){
 					draw_text_transformed(xx+34, yy+1, global.natHP, 0.8, 0.8, 0);
 				} else {
-					draw_text_transformed(xx+34, yy+1, global.MAXnatHP, 0.8, 0.8, 0);
+					draw_text_transformed(xx+34, yy+1, global.maxNathp, 0.8, 0.8, 0);
 				}
 				draw_text_transformed(xx+42, yy+2, " / ", 0.7, 0.7, 0);
-				draw_text_transformed(xx+50, yy+5, global.MAXnatHP, 0.6, 0.6, 0);
+				draw_text_transformed(xx+50, yy+5, global.maxNathp, 0.6, 0.6, 0);
 			}
 		}
 		draw_sprite(spr_heart, 0, xx+66, yy+14);
@@ -398,4 +398,4 @@ for (var i = 0; i < SELECTED_PARTY_SLOTS; i += 1)
 		draw_text(xx+10, yy+28, "(Empty)");
 	}
 }
-draw_set_halign(fa_left);
+draw_set_halign(fa_LEFT);

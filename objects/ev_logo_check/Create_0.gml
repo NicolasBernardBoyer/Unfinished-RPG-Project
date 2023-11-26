@@ -19,7 +19,7 @@ text = ["Oh shit.",
 		"Who would even purchase a drug that claims it would give you magic powers?",
 		["''I would, for sure.''", "''Maybe you?''", "''Losers with no life.''"],
 		"I guess the power is tempting. You'd be the prime target for a scam like this.",
-		"Me? I wouldn't believe in stupid scams like this.",
+		"Me? I wouldn't believe in stUPid scams like this.",
 		"My thoughts exactly. You can only learn magic through practice.",
 		"The only effective way to be able to do magic is to actually study witchcraft.",
 		"Anyways, enough about this topic. Let's press on."];
