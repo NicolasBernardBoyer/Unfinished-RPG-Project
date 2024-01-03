@@ -1,19 +1,27 @@
 // if the player isn't in a cutscene, stop their image index and speed to 0
 if (instance_exists(obj_player)){
 	with (obj_player){
-		if (state != stateCutscene){
+		if (state != state_cutscene){
 			image_index = 0;
 			image_speed = 0;
 		}
 	}
 }
 
+str_len = 0;
+choice_dialogue = false;
+name_text_col = undefined;
+text_array = undefined;
+text_array_len = 0;
+
+
+
 // textbox and frame initialization
 box = spr_box;
 frame = spr_box_empty;
 
 // set portrait to none at first, this will change based on who is talking
-portrait = noone;
+portrait = spr_kat_faces;
 
 // box size variables
 box_width = 320;
@@ -62,7 +70,7 @@ portrait_index = 0;
 counter = 0;
 // pausing when there are commas in the counter variable
 pause = false;
-pauseDelay = false;
+pause_delay = false;
 
 // display text color and name text color as well as the font
 text_col = c_white;
@@ -73,6 +81,7 @@ font = fnt_8bit;
 draw_set_font(font);
 // reference for the height of text
 text_height = string_height("M");
+text_wrapped = "";
 
 // text border so that it doesn't overflow outside the textbox
 text_max_width = box_width - (2*x_buffer);

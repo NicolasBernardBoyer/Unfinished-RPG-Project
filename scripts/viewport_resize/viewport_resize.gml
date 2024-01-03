@@ -13,5 +13,5 @@ if (win_wid/win_hgt>=16/9) {
 }
 view_hport[0]=win_hgt;
 view_wport[0]=win_wid;
-camera_set_view_size(camera,win_wid/scale,win_hgt/scale);
+camera_set_view_size(view_camera[0],win_wid/scale,win_hgt/scale);
 }

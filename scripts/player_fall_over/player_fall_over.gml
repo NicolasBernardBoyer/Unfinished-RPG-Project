@@ -8,5 +8,5 @@ function player_fall_over(){
 	obj_player.x += 8;
 	obj_player.y += 8;
 	obj_player.sprite_index = spr_player_on_ground;
-	obj_bikerack.fallEvent = true;
+	obj_bikerack.fall_event = true;
 }

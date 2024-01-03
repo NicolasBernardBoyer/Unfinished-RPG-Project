@@ -8,9 +8,9 @@ alarm[1] = -1;
 image_speed = 0;
 
 // booleans to check during cutscene
-runAlarm = true;
-textAlarm = false;
-moveReady = false;
+run_alarm = true;
+text_alarm = false;
+move_ready = false;
 
 
 has_text = true;
@@ -18,14 +18,14 @@ has_text = true;
 voice = snd_typewriter;
 name = "";
 
-itext = ["Do the RIGHT thing, " + global.player_name + "!",
+itext = ["Do the right thing, " + global.player_name + "!",
 			 "I can't be late for your first day at my new job...",
 			 "I'm working for a fast food company...",
 			 "...",
-			 "I don't want get UP, but I don't have a choice."];
+			 "I don't want get up, but I don't have a choice."];
 ispeakers = [id,id,id,id,id];
 inext_line = [0,0,0,0,0];
-iscripts = [-1,-1,-1,-1,[change_variable, id, "textAlarm", true]];
+iscripts = [-1,-1,-1,-1,[change_variable, id, "text_alarm", true]];
 
 text[0] = "It's my bed.";
 text[1] = "There are no dragons under it, sadly.";

@@ -8,7 +8,7 @@ function save_game(){
 	
 	map[? "money"] = global.money;
 
-	#region PLAYER STATS
+	#region plAYER STATS
 	map[? "target_x"] = global.target_x;
 	map[? "target_y"] = global.target_y;
 	

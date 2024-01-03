@@ -1,7 +1,7 @@
 
 
 // when pressing interact key (make this just one button) do this
-if(global.POK or global.PCAN){
+if(global.pok or global.pcan){
 	if (proceed){
 		// if text is done displaying, go to next page, otherwise, write out all the text
 		if(!choice_dialogue and counter < str_len){ counter = str_len; }
@@ -27,13 +27,13 @@ if(global.POK or global.PCAN){
 	}
 }
 
-// if there is choice dialogue, pressing UP and DOWN moves the selection
+// if there is choice dialogue, pressing up and down moves the selection
 if(choice_dialogue){
-	if (global.PU or global.PD){
+	if (global.pu or global.pd){
 		audio_play_sound(snd_typewriter, 5, false);
 	}
 	
-	choice += global.PD - global.PU;
+	choice += global.pd - global.pu;
 	
 	if(choice > text_array_len-1) choice = 0;
 	if(choice < 0) choice = text_array_len-1;

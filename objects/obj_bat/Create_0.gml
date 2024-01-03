@@ -8,7 +8,7 @@ voice = snd_typewriter;
 name = "";
 text = ["It's a wheelbarrow filled with rocks.",
 		"Attached is a sign.",
-		"''I have too much cobblestone in my pockets. Please take some off my hands.''"];
+		"''I have too much cobblestone in my pockets. please take some off my hands.''"];
 speakers = [id,id,id];
 next_line = [0,0,0];
 scripts = -1;

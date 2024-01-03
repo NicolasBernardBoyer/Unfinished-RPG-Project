@@ -2,11 +2,10 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function input_handler(){
 	#region PAUSING
-
 // handle pausing
 if (keyboard_check_pressed(global.key_esc) or gamepad_button_check_pressed(0,global.gp_esc)){
 	if(room != rm_title_screen){
-		if (!instance_exists(obj_textbox) and global.canPause == true and !instance_exists(obj_name_creator)){
+		if (!instance_exists(obj_textbox) and global.can_pause == true and !instance_exists(obj_name_creator)){
 			global.pause = true;
 		}
 	}
@@ -17,9 +16,12 @@ if (global.pause == true){
 if (global.pause == false){
 	instance_activate_layer("Instances");
 }
+if (global.do_transition){
+	global.can_pause = false;
+}
 /*
-if (global.pause == false and global.canPause == true and !instance_exists(obj_textbox)){
-	if (global.hasBackpack){
+if (global.pause == false and global.can_pause == true and !instance_exists(obj_textbox)){
+	if (global.has_backpack){
 		if (global.PINV and !global.inventoryOpen){
 			global.inventoryOpen = true;
 			audio_play_sound(global.s_select, 5, false);
@@ -28,105 +30,81 @@ if (global.pause == false and global.canPause == true and !instance_exists(obj_t
 }
 */
 #endregion
-
 if (instance_exists(obj_player)){
-	global.targetX = obj_player.x;
-	global.targetY = obj_player.y;
+	global.target_x = obj_player.x;
+	global.target_y = obj_player.y;
 }
-
-
-
 #region ACTIVATE DEVMODE PRIVILEGES
 if (instance_exists(obj_devmode)){
-	global.hasBackpack = true;
-	global.hasCoat = true;
+	global.has_backpack = true;
+	global.has_coat = true;
 }
 #endregion
-
 #region PLAYER INPUT
-
 //HELD
 var h_move = gamepad_axis_value(global.pad_num, gp_axislh);
 var v_move = gamepad_axis_value(global.pad_num, gp_axislv);
-
 if (keyboard_check(global.key_right) or gamepad_button_check(0,global.gp_right)
 	or h_move > 0){
-	global.HR = true;
+	global.hr = true;
 }
-else global.HR = false;
-
+else global.hr = false;
 if (keyboard_check(global.key_left) or gamepad_button_check(0,global.gp_left)
 	or h_move < 0){ 
-	global.HL = true;
+	global.hl = true;
 }
-else global.HL = false;
-
+else global.hl = false;
 if (keyboard_check(global.key_up) or gamepad_button_check(0,global.gp_up)
 	or v_move < 0){
-	global.HU = true;
+	global.hu = true;
 }
-else global.HU = false;
-
+else global.hu = false;
 if (keyboard_check(global.key_down) or gamepad_button_check(0,global.gp_down)
 	or v_move > 0){
-	global.HD = true;
+	global.hd = true;
 }
-else global.HD = false;
-
-if (keyboard_check(global.key_revert) or gamepad_button_check(0,global.gp_shoulderR) or gamepad_button_check(0,global.gp_shoulderL)) global.HRUN = true;
-else global.HRUN = false;
-
+else global.hd = false;
+if (keyboard_check(global.key_revert) or gamepad_button_check(0,global.gp_shoulder_r) or gamepad_button_check(0,global.gp_shoulder_l)) global.hrun = true;
+else global.hrun = false;
 //RELEASED
-if (keyboard_check_released(global.key_right) or gamepad_button_check_released(0,global.gp_right)) global.RR = true;
-else global.RR = false;
-
-if (keyboard_check_released(global.key_left) or gamepad_button_check_released(0,global.gp_left)) global.RL = true;
-else global.RL = false;
-
-if (keyboard_check_released(global.key_up) or gamepad_button_check_released(0,global.gp_up)) global.RU = true;
-else global.RU = false;
-
-if (keyboard_check_released(global.key_down) or gamepad_button_check_released(0,global.gp_down)) global.RD = true;
-else global.RD = false;
-
+if (keyboard_check_released(global.key_right) or gamepad_button_check_released(0,global.gp_right)) global.rr = true;
+else global.rr = false;
+if (keyboard_check_released(global.key_left) or gamepad_button_check_released(0,global.gp_left)) global.rl = true;
+else global.rl = false;
+if (keyboard_check_released(global.key_up) or gamepad_button_check_released(0,global.gp_up)) global.ru = true;
+else global.ru = false;
+if (keyboard_check_released(global.key_down) or gamepad_button_check_released(0,global.gp_down)) global.rd = true;
+else global.rd = false;
 //PRESSED
 if (keyboard_check_pressed(global.key_right) or gamepad_button_check_pressed(0,global.gp_right)){
-	global.PR = true;
+	global.pr = true;
 }
-else global.PR = false;
-
+else global.pr = false;
 if (keyboard_check_pressed(global.key_left) or gamepad_button_check_pressed(0,global.gp_left)){
-	global.PL = true;
+	global.pl = true;
 }
-else global.PL = false;
-
+else global.pl = false;
 if (keyboard_check_pressed(global.key_up) or gamepad_button_check_pressed(0,global.gp_up)){
-	global.PU = true;
+	global.pu = true;
 }
-else global.PU = false;
-
+else global.pu = false;
 if (keyboard_check_pressed(global.key_down) or gamepad_button_check_pressed(0,global.gp_down)){
-	global.PD = true;
+	global.pd = true;
 }
-else global.PD = false;
-
+else global.pd = false;
 if (keyboard_check_pressed(global.key_enter) or keyboard_check_pressed(global.key_confirm) or
 	gamepad_button_check_pressed(0,global.gp_enter) or gamepad_button_check_pressed(0,global.gp_confirm))
-global.POK = true;
-else global.POK = false;
-
+global.pok = true;
+else global.pok = false;
 if (keyboard_check_pressed(global.key_revert) or keyboard_check_pressed(global.key_del) or
 gamepad_button_check_pressed(0,global.gp_revert) or gamepad_button_check_pressed(0,global.gp_del))
-global.PCAN = true;
-else global.PCAN = false;
-
+global.pcan = true;
+else global.pcan = false;
 if (keyboard_check_pressed(global.key_shift) or gamepad_button_check_pressed(0,global.gp_shift))
-global.PSEL = true;
-else global.PSEL = false;
-
+global.psel = true;
+else global.psel = false;
 /*if (keyboard_check_pressed(global.key_inventory) or gamepad_button_check_pressed(0,global.gp_inventory))
 global.PINV = true;
 else global.PINV = false; */
-
 #endregion
 }

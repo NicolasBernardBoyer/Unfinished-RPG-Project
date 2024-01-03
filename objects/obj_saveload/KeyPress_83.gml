@@ -1,9 +1,9 @@
 //make save array
-var _saveData = array_create(0);
+var _save_data = array_create(0);
 
 //for every instance, create a struct and add it to the array
-with (par_object){
-	var _saveEntity = 
+with (obj_par_object){
+	var save_entity = 
 	{
 		obj : object_get_name(object_index),
 		y : y,
@@ -11,11 +11,11 @@ with (par_object){
 		image_index : image_index,
 		image_blend : image_blend,
 	}
-	array_push(_saveData, _saveEntity);
+	array_push(_save_data, save_entity);
 }
 
 //turn all this data into a JSON string and save it via a buffer
-var _string = json_stringify(_saveData);
+var _string = json_stringify(_save_data);
 var _buffer = buffer_create(string_byte_length(_string) +1, buffer_fixed, 1);
 buffer_write(_buffer, buffer_string, _string);
 buffer_save(_buffer, "savedgame.sav");

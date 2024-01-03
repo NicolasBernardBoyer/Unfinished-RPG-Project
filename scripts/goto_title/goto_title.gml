@@ -3,6 +3,6 @@
 function goto_title(){
 	// return to title screen and save last room
 	global.pause = false;
-	global.previousRoom = room;
+	global.previous_room = room;
 	room_goto(rm_title_screen);
 }

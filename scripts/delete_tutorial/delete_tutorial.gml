@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function delete_tutorial(){
 	// end the tutorial
-	global.inventoryTB = false;
+	global.inventory_tb = false;
 	instance_destroy(obj_inventorytutorial);
 	instance_destroy(obj_textbox);
 }

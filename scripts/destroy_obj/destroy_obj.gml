@@ -8,7 +8,7 @@ function destroy_obj(){
 	
 	with (obj_player){
 		can_move = true;
-		state = stateFree;
+		state = state_free;
 	}
 	
 	instance_destroy(argument0);

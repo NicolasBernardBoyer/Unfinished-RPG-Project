@@ -16,7 +16,7 @@ if (page = 0){
 }
 
 // is there is no name text color just use to global variable to assign one
-if (name_text_col != noone){
+if (name_text_col != undefined){
 global.name_text_col = name_text_col;
 }
 

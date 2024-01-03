@@ -1,10 +1,10 @@
 //Resize Grid
 var dgrid = ds_depthgrid;
-var inst_num = instance_number(par_object);
+var inst_num = instance_number(obj_par_object);
 ds_grid_resize(dgrid,2,inst_num);
 
 // Add Instance Info to Grid
-var yy = 0; with(par_object){
+var yy = 0; with(obj_par_object){
 	dgrid[# 0,yy] = id;
 	dgrid[# 1,yy] = y;
 	yy++;

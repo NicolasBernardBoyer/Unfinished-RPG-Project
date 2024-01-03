@@ -13,7 +13,7 @@ function load_game(slot)
 		
 		global.money = json[? "money"];
 
-		#region PLAYER STATS
+		#region plAYER STATS
 		global.target_x = json[? "target_x"];
 		global.target_y = json[? "target_y"];
 	
@@ -55,7 +55,7 @@ function load_game(slot)
 		RoomTransition(TRANS_TYPE.SLIDE, _json[? "room"]);
 		*/
 		
-		//Player position
+		//player position
 		obj_player.x = json[? "target_x"];
 		obj_player.y = json[? "target_y"];
 		

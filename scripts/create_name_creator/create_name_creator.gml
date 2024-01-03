@@ -3,5 +3,5 @@
 function create_name_creator(){
 	// stop textbox from continuing and make a name creator
 	obj_textbox.proceed = false;
-	instance_create_layer(0,0, "Instances", ev_name_creator_timer);
+	instance_create_layer(0,0, "Instances", obj_ev_name_creator_timer);
 }

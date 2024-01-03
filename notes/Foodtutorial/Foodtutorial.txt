@@ -1,14 +1,14 @@
 text5 = ["Oh, by the way.\nThese should come in handy."];
 next_line5 = [0];
 speakers5 = [id];
-scripts5 = [[change_variable, id, "cutProg", 7]];
+scripts5 = [[change_variable, id, "cut_prog", 7]];
 
 text6 = ["You got (2x) Brgr Burger."];
 next_line6 = [0];
 speakers6 = [id];
-scripts6 = [[change_variable, id, "cutProg", 9]];
+scripts6 = [[change_variable, id, "cut_prog", 9]];
 
-text7 = ["These are LEFTovers from the truck. I was going to give them to you.",
+text7 = ["These are leftovers from the truck. I was going to give them to you.",
 		 "I usually wouldn't recommend eating this stuff...\nIt's not very good for you.",
 		 "However, we are in a bit of an emergency situation here.",
 		 "Just, uh, please don't give me much. I DO NOT like that kind of food.",
@@ -21,7 +21,7 @@ text7 = ["These are LEFTovers from the truck. I was going to give them to you.",
 		 "They'll probably get a stat bonus that the food doesn't normally give.",
 		 "Same goes for food they don't like, they might lose certain stats if it sucks.",
 		 "You can view a food's effect on party members in your inventory.",
-		 "I hope you wrote all that DOWN, cuz I ain't repeatin' it!"
+		 "I hope you wrote all that down, cuz I ain't repeatin' it!"
 		 ];
 next_line7 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 speakers7 = [kat,kat,kat,kat,kat,kat,kat,kat,kat,kat,kat,kat,kat,kat];

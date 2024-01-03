@@ -2,17 +2,17 @@ visible = false;
 
 // event variables
 has_text = true;
-runOnce = false;
+run_once = false;
 
 image_speed = 0;
 image_index = 1;
 
 global.name_text_col = c_orange;
-interactCh = false;
+interact_ch = false;
 
 voice = snd_typewriter;
 name = "Dave";
-moveCam = false;
+move_cam = false;
 
 portrait = spr_dave_faces;
 portrait_index = 0;
@@ -20,8 +20,8 @@ portrait_index = 0;
 evtext = ["You seem to have taken quite the tumble out of bed, "+ global.player_name+". You good?",
 		 "You seem fine.\nGood luck on your first work day, roomie!",
 		 "It's unfortunate that my boss didn't grant you the job at the hardware store.",
-		 "But hey, what can you do.\nFood truck job's better than nothing, RIGHT?",
-		 ["''I guess you're RIGHT.''","''I'd rather not work at all...''"],
+		 "But hey, what can you do.\nFood truck job's better than nothing, right?",
+		 ["''I guess you're right.''","''I'd rather not work at all...''"],
 		 "That's the spirit!\nMaybe I'll stop by for a burger today.",
 		 "You don't have a choice.\nI can't be the only one paying rent.",
 		 "Anyways, you missed this morning's news on TV.",
@@ -45,7 +45,7 @@ text = ["Need something, roomie?",
 		"Besides, I'm getting bored of talking to you. Let me watch TV."];
 speakers = [id,id,id,id];
 next_line = [0,0,0,0];
-scripts = [-1,-1,[change_variable, obj_textbox, "portrait_index", 2],[change_variable, id, "interactCh", true]];
+scripts = [-1,-1,[change_variable, obj_textbox, "portrait_index", 2],[change_variable, id, "interact_ch", true]];
 
 alttext = ["I'll talk to ya later."];
 altspeakers = [id];

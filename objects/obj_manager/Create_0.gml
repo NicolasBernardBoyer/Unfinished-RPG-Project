@@ -1,20 +1,20 @@
 // make it so that our objects higher on the y axis are drawn first
 visible		= false;
 
-// variables that interact with rb_managercutscene
+// variables that interact with obj_rb_managercutscene
 // (found in cutscenes under Opening City)
-isWalking   = true;
-moveCam		= true;
-managerPass = false;
-runOnce		= false;
+is_walking   = true;
+move_cam		= true;
+manager_pass = false;
+run_once		= false;
 radius		= 32;
 
 has_text = false;
 portrait_index = 0;
 voice = snd_typewriter;
 name = "The Manager";
-text = ["There you are! You must be the new one. " + global.player_name + ", RIGHT?",
-		"I've got to get to the shop DOWNtown. Apparently things are getting really busy DOWN there and they need my help.",
+text = ["There you are! You must be the new one. " + global.player_name + ", right?",
+		"I've got to get to the shop downtown. Apparently things are getting really busy down there and they need my help.",
 		"Don't worry, though! I know it's your first day, so I've got you covered.",
 		"Someone else will be there to train you. She's a little shy, but she's great at her job.",
 		"It'll be good for her to train someone. You know, to help her break out of her shell.",

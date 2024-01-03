@@ -4,21 +4,21 @@
 #macro SELECTED_PARTY_SLOTS 4
 #macro PARTY_SLOTS 8
 // row inventory and length
-partyRowLength = 4;
-inventoryRowLength = 2;
+party_row_length = 4;
+inventory_row_length = 2;
 
 // create a list for each party tab
 keyitems = ds_list_create();
 party = ds_list_create();
-selectedParty = ds_list_create();
+selected_party = ds_list_create();
 consumables = ds_list_create();
 
 // tab
 inventorytab = 0;
 randomize();
 
-// seperate item menu for consuming stuff
-itemConsumeMenu = false;
+// seperate item obj_menu for consuming stuff
+item_consume_menu = false;
 
 // text color and text
 text_col = c_white;
@@ -26,13 +26,13 @@ text="";
 
 // cursor variables
 cursor = -1;
-partyCursor = 0;
-partyCursorActive = false;
-cursorLimit = 8;
+party_cursor = 0;
+party_cursor_active = false;
+cursor_limit = 8;
 
 // item states
-consumingItem = 0;
-usableItem = false;
+consuming_item = 0;
+usable_item = false;
 
 // box sizes
 box_x = 42;
@@ -47,9 +47,9 @@ ds_list_add(party, 0);
 
 // party members that appear in battle list
 #region SELECTED PARTY MEMBERS LIST
-ds_list_add(selectedParty, 0);
-// ds_list_add(selectedParty, 1);
-// ds_list_add(selectedParty, 2);
+ds_list_add(selected_party, 0);
+// ds_list_add(selected_party, 1);
+// ds_list_add(selected_party, 2);
 #endregion
 
 // consumbables that the player owns

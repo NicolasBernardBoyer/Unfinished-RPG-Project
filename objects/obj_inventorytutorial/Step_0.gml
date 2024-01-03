@@ -1,4 +1,4 @@
 // show textbox when first opening inventory
-if (global.inventoryOpen = true and !instance_exists(obj_textbox)){
+if (global.inventory_open = true and !instance_exists(obj_textbox)){
 	create_textbox(text, speakers, next_line, scripts);
 }

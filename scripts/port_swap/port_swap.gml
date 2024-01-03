@@ -4,5 +4,5 @@
 
 function port_swap() {
 	// switch the portrait of a textbox (shorter than doing change_variable)
-	variable_instance_set(obj_textbox,"portrait_index",argument0);
+	variable_instance_set(argument0,"portrait_index",argument1);
 }

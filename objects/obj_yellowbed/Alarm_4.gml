@@ -2,4 +2,4 @@
 image_speed = 0;
 audio_stop_sound(snd_move);
 global.can_pause = true;
-moveReady = true;
+move_ready = true;

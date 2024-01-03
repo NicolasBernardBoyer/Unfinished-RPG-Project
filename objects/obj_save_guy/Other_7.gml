@@ -1,6 +1,6 @@
 // change state one throwing state is finished
-if (state = stateThrow){
-	state = stateIdle;
+if (state = state_throw){
+	state = state_idle;
 }
 
 

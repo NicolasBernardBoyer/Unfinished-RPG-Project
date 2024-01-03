@@ -1,7 +1,7 @@
 // just to ensure that this works correctly
 // deactivate roadblocks and set active textbox
 var tbox = create_textbox(alttext,altspeakers,altnext_line,altscripts);
-instance_deactivate_object(rb_gotowork);
+instance_deactivate_object(obj_rb_gotowork);
 obj_player.active_textbox = tbox;
 
 // get player off bike
@@ -15,6 +15,6 @@ with(obj_player){
 	image_index = 0;
 }
 global.can_pause = true;
-// activate the wall on the RIGHT of the room
+// activate the wall on the right of the room
 instance_activate_object(inst_4D86892);
 instance_activate_object(inst_3E94A422);

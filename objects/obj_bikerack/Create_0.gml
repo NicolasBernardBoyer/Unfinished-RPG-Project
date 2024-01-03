@@ -2,7 +2,7 @@ visible = false;
 has_text = true;
 
 // cutscene variables
-fallEvent = false;
+fall_event = false;
 alarm[0] = -1;
 alarm[1] = -1;
 
@@ -16,7 +16,7 @@ speakers = [id, id];
 next_line = [0, 0];
 scripts = [-1, -1];
 
-alttext = ["You biked RIGHT into the rack and your bike inserted itself perfectly into it.",
+alttext = ["You biked right into the rack and your bike inserted itself perfectly into it.",
 			"You tried to get off the bike...",
 			"However, you get off too fast. As you land on the ground, you lose your balance...",
 			"..."];

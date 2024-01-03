@@ -2,12 +2,12 @@
 function create_textbox()// Feather disable GM1041
 {
 	if (variable_struct_exists(self, "portrait")){
-		var hasPort = true;
-	} else { var hasPort = false; }
+		var has_port = true;
+	} else { var has_port = false; }
 	
 	if (variable_struct_exists(self, "name_col")){
-		var hasCol = true;
-	} else { var hasCol = false; }
+		var has_col = true;
+	} else { var has_col = false; }
 	
 	var tbox = instance_create_layer(0,0, "Text", obj_textbox);
 	
@@ -17,10 +17,10 @@ function create_textbox()// Feather disable GM1041
 		next_line = argument[2];
 		scripts = argument[3];
 		
-		var len = array_length_1d(text);
+		var len = array_length(text);
 		var i = 0; repeat(len){
 			names[i]	 = speakers[i].name;
-			if (hasPort){
+			if (has_port){
 				if (speakers[i].portrait != noone){
 				portrait_imgs[i] = speakers[i].portrait;
 				} else {
@@ -29,7 +29,7 @@ function create_textbox()// Feather disable GM1041
 			} else {
 				portrait_imgs[i] = noone;
 			}
-			if (hasCol){
+			if (has_col){
 				if (speakers[i].name_col != noone){
 				name_cols[i] = speakers[i].name_col;
 				} else {

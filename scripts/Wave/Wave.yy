@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Wave",
+  "name": "wave",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

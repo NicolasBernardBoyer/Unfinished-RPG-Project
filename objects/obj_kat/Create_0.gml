@@ -16,4 +16,5 @@ scripts = -1;
 walk = 1;
 walking1 = false;
 walking2 = false;
+dir = point_direction(x,y,obj_player.x,obj_player.y);
 

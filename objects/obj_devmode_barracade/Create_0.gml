@@ -2,7 +2,7 @@ global.player_name = "Nick";
 room_goto(rm_mine_barracade);
 //instance_create_layer(2, 224, "Instances", obj_bubble);
 instance_create_layer(40, 172, "Instances", obj_player);
-//obj_player.sprite_index = spr_player_falling_coat_LEFT;
+//obj_player.sprite_index = spr_player_falling_coat_left;
 instance_create_layer(40, 172, "Instances", obj_kat);
 global.has_coat = true;
 global.has_backpack = true;

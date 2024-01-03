@@ -5,7 +5,7 @@ visible = false;
 name_col = c_white;
 kat = obj_kat;
 
-textRpt = false;
+text_rpt = false;
 
 has_text = true;
 portrait_index = 0;
@@ -18,13 +18,13 @@ next_line =  [0];
 scripts = [-1];
 
 // state machines
-stateIdle = function(){
+state_idle = function(){
 	sprite_index = spr_save_guy;
 }
 
-stateThrow = function(){
+state_throw = function(){
 	sprite_index = spr_save_guy_throw;
 }
 
-state = stateIdle;
+state = state_idle;
 

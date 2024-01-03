@@ -3,16 +3,16 @@
 //Glass Particle
 var _glass = part_type_create();
 
-part_type_sprite(_glass, spr_glassParticle, false, true, false);
+part_type_sprite(_glass, spr_glass_particle, false, true, false);
 part_type_life(_glass, 20, 40);
 part_type_gravity(_glass, 0.2, 270);
 part_type_size(_glass, 1.2, 1.2, -0.04, 0);
 
 part_type_speed(_glass, 2, 8, 0, 0);
-part_type_DIRection(_glass, 0, 180, 0, 0);
+part_type_direction(_glass, 0, 180, 0, 0);
 part_type_orientation(_glass, 0, 0, 0, 0, true);
 
-global.ptGlass = _glass;
+global.pt_glass = _glass;
 
 var _rubble = part_type_create();
 
@@ -20,11 +20,11 @@ part_type_sprite(_rubble, spr_rubble, false, false, false);
 part_type_life(_rubble, 20, 30);
 part_type_gravity(_rubble, 0.2, 270);
 
-part_type_DIRection(_rubble, 0, 180, 0, 0);
+part_type_direction(_rubble, 0, 180, 0, 0);
 part_type_orientation(_rubble, 0, 0, 0, 0, true);
 part_type_speed(_rubble, 1, 1, 0, 0.2);
 
-global.ptRubble = _rubble;
+global.pt_rubble = _rubble;
 
 //// Trail Particle
 //var _p = part_type_create();

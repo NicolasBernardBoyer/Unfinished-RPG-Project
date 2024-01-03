@@ -12,8 +12,8 @@ active_textbox = noone;
 global.highbox = false;
 
 // create particle system
-global.partSystem = part_system_create();
-part_system_depth(global.partSystem, 100);
+global.part_system = part_system_create();
+part_system_depth(global.part_system, 100);
 
 facing = 0;
 
@@ -21,7 +21,7 @@ facing = 0;
 global.game_save_slot = 0;
 global.difficulty_set = 0;
 
-//Player Position
+//player Position
 global.target_x = 0;
 global.target_y = 0;
 
@@ -38,31 +38,31 @@ global.hasname = false;
 global.hasportrait = false;
 
 // variables for transitions
-blackAlpha = 0;
+black_alpha = 0;
 spawn_room = -1;
 spawn_x = 0;
 spawn_y = 0;
-spawnPlayerFacing = -1;
+spawn_player_facing = -1;
 global.do_transition = false;
 
-// determine DIRection
+// determine direction
 enum DIR {
-	RIGHT = 0,
-	UP = 90,
-	LEFT = 180,
-	DOWN = 270,
+	right = 0,
+	up = 90,
+	left = 180,
+	down = 270,
 }
 
 #region STATE VARIABLES
-global.inventoryOpen = false;
-global.inBattle = false;
+global.inventory_open = false;
+global.in_battle = false;
 global.can_pause = true;
-global.inventoryTB = true;
+global.inventory_tb = true;
 #endregion
 
 #region INFORMATION VARAIBLES
 global.player_name = "New Person";
-global.previousRoom = rm_yourbedroom;
+global.previous_room = rm_yourbedroom;
 
 #endregion
 
@@ -90,7 +90,7 @@ global.s_birds		= snd_birds;
 
 #endregion
 
-#region Camera and Window size variables
+#region obj_camera and Window size variables
 global.view_width  = camera_get_view_width(view_camera[0]);
 global.view_height = camera_get_view_height(view_camera[0]);
 global.game_width  = 640;
@@ -104,10 +104,10 @@ global.monitor_h = display_get_height();
 	global.key_revert	= ord("X");
 	global.key_confirm	= ord("Z");
 	global.key_enter	= vk_enter;
-	global.key_LEFT		= vk_LEFT;
-	global.key_RIGHT	= vk_RIGHT;
-	global.key_UP		= vk_UP;
-	global.key_DOWN		= vk_DOWN;
+	global.key_left		= vk_left;
+	global.key_right	= vk_right;
+	global.key_up		= vk_up;
+	global.key_down		= vk_down;
 	global.key_esc		= vk_escape;
 	global.key_del		= vk_backspace;
 	global.key_shift	= vk_shift;
@@ -118,48 +118,48 @@ global.monitor_h = display_get_height();
 	global.gp_revert	= gp_face2;
 	global.gp_confirm	= gp_face1;
 	global.gp_enter		= gp_select;
-	global.gp_LEFT		= gp_padl;
-	global.gp_RIGHT		= gp_padr;
-	global.gp_UP		= gp_padu;
-	global.gp_DOWN		= gp_padd;
+	global.gp_left		= gp_padl;
+	global.gp_right		= gp_padr;
+	global.gp_up		= gp_padu;
+	global.gp_down		= gp_padd;
 	global.gp_esc		= gp_start;
 	global.gp_del		= gp_face2;
 	global.gp_shift		= gp_face3;
 	global.gp_inventory = gp_face4;
-	global.gp_shoulderR = gp_shoulderrb;
-	global.gp_shoulderL = gp_shoulderlb;
+	global.gp_shoulder_r = gp_shoulderrb;
+	global.gp_shoulder_l = gp_shoulderlb;
 #endregion
 
-buttonREADY = false; //Ready for cursor to move to next letter or not (set by pressing/holding buttons)
-buttonTimer = 0; //Times how many steps the button has been held for
-timeTillButtonREADY = 10; //This is how many steps a player has to hold a button for before buttonREADY becomes true - this is bypassed by just PRESSING a button
+button_ready = false; //Ready for cursor to move to next letter or not (set by pressing/holding buttons)
+button_timer = 0; //Times how many steps the button has been held for
+time_till_button_ready = 10; //This is how many steps a player has to hold a button for before button_ready becomes true - this is bypassed by just prESSING a button
 
 #region DEFINE KEYS
-	global.PL = false; //LEFT
-	global.PR = false; //RIGHT
-	global.PU = false; //UP
-	global.PD = false; //DOWN
+	global.pl = false; //left
+	global.pr = false; //right
+	global.pu = false; //up
+	global.pd = false; //down
 	
-	global.POK = false; //OK
-	global.PCAN = false; //CANCEL (DELETE)
-	global.PESC = false; //ESCAPE/PAUSE
+	global.pok = false; //OK
+	global.pcan = false; //CANCEL (DELETE)
+	global.pesc = false; //ESCAPE/PAUSE
 	
-	global.HL = false; //HELD LEFT
-	global.HR = false; //HELD RIGHT
-	global.HU = false; //HELD UP
-	global.HD = false; //HELD DOWN
-	global.HRUN = false; //HELD RUN
+	global.hl = false; //HELD left
+	global.hr = false; //HELD right
+	global.hu = false; //HELD up
+	global.hd = false; //HELD down
+	global.hrun = false; //HELD RUN
 	
-	global.RL = false; //RELEASED LEFT
-	global.RR = false; //RELEASED RIGHT
-	global.RU = false; //RELEASED UP
-	global.RD = false; //RELEASED DOWN
+	global.rl = false; //RELEASED left
+	global.rr = false; //RELEASED right
+	global.ru = false; //RELEASED up
+	global.rd = false; //RELEASED down
 	
-	global.PSEL = false;
-	global.PINV = false;
+	global.psel = false;
+	global.pinv = false;
 #endregion
 
-audio_groUP_load(audiogroUP_music); // LOAD AUDIO GROUPS
-audio_groUP_load(audiogroup_soundeffects);
+audio_group_load(audiogroup_music); // LOAD AUDIO GROUPS
+audio_group_load(audiogroup_soundeffects);
 
 

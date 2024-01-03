@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Approach",
+  "name": "approach",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

@@ -8,7 +8,7 @@ visible = false;
 name_col = c_dkgray;
 kat = obj_kat;
 
-textRpt = false;
+text_rpt = false;
 
 has_text = true;
 portrait_index = 0;
@@ -36,5 +36,5 @@ scripts = [-1,-1,
  -1,
  [port_swap, 10], -1,
  -1,
- [change_variable, id, "textRpt", true]];
+ [change_variable, id, "text_rpt", true]];
 

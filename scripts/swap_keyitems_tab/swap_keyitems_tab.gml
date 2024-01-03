@@ -2,5 +2,5 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function swap_keyitems_tab(){
 	obj_inventory.inventorytab = 2;
-	obj_inventorytutorial.swapTab = true;
+	obj_inventorytutorial.swap_tab = true;
 }

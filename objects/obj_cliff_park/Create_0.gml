@@ -1,14 +1,14 @@
 // cutscene variables
-cliffBreak = false;
-dropOff = false;
-dropSpeed = 0;
+cliff_break = false;
+drop_off = false;
+drop_speed = 0;
 
 // get animation curve
 curve = animcurve_get_channel(ac_accel_drop,0);
 
 alarm[0] = -1;
 
-hasText = false;
+has_text = false;
 
 voice = snd_typewriter;
 name = "";

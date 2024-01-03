@@ -1,7 +1,7 @@
 // make it so that our objects higher on the y axis are drawn first
 image_speed = 0;
 // variables for delayed animation
-runAnim = false;
+run_anim = false;
 alarm[0] = -1;
 
 visible = false;

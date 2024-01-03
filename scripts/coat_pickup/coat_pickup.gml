@@ -4,20 +4,20 @@ function coat_pickup(){
 	// same as backpack but for the player's coat
 	global.has_coat = true;
 	
-	//change player's sprite depending on DIRection
-		if (obj_player.facing == DIR.DOWN) {
+	//change player's sprite depending on direction
+		if (obj_player.facing == DIR.down) {
 			obj_player.sprite_index = spr_player_walk_coat;
 			obj_player.image_index = 0;
 		}
-		if (obj_player.facing == DIR.UP) {
+		if (obj_player.facing == DIR.up) {
 			obj_player.sprite_index = spr_player_upwalk_coat;
 			obj_player.image_index = 0;
 		}
-		if (obj_player.facing == DIR.LEFT) {
+		if (obj_player.facing == DIR.left) {
 			obj_player.sprite_index = spr_player_leftwalk_coat;
 			obj_player.image_index = 0;
 		}
-		if (obj_player.facing == DIR.RIGHT) {
+		if (obj_player.facing == DIR.right) {
 			obj_player.sprite_index = spr_player_rightwalk_coat;
 			obj_player.image_index = 0;
 		} 
@@ -32,7 +32,7 @@ function coat_pickup(){
 	inst_522B61D8.next_line = [0];
 	inst_522B61D8.scripts = [-1];
 	
-	instance_activate_object(rb_leaveyourhouse);
+	instance_activate_object(obj_rb_leaveyourhouse);
 	instance_destroy(inst_458E5062);
 	
 }

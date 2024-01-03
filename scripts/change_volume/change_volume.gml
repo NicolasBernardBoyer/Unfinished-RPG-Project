@@ -3,10 +3,10 @@
 function change_volume(){
 	var type = menu_option[page];
 	
-	// change sound of audio groUPs
+	// change sound of audio groups
 	switch(type){
 		case 0: audio_master_gain(argument0);
-		case 1: audio_groUP_set_gain(audiogroup_soundeffects, argument0, 0); break;
-		case 2: audio_groUP_set_gain(audiogroUP_music, argument0, 0); break;
+		case 1: audio_group_set_gain(audiogroup_soundeffects, argument0, 0); break;
+		case 2: audio_group_set_gain(audiogroup_music, argument0, 0); break;
 	}
 }

@@ -1,14 +1,14 @@
 
 function approach(argument0, argument1, argument2){
-/// Approach(a, b, amount)
+/// approach(a, b, amount)
 // Moves "a" towards "b" by "amount" and returns the result
-// Nice bcause it will not overshoot "b", and works in both DIRections
+// Nice bcause it will not overshoot "b", and works in both directions
 // Examples:
-//      speed = Approach(speed, max_speed, acceleration);
-//      hp = Approach(hp, 0, damage_amount);
-//      hp = Approach(hp, max_hp, heal_amount);
-//      x = Approach(x, target_x, move_speed);
-//      y = Approach(y, target_y, move_speed);
+//      speed = approach(speed, max_speed, acceleration);
+//      hp = approach(hp, 0, damage_amount);
+//      hp = approach(hp, max_hp, heal_amount);
+//      x = approach(x, target_x, move_speed);
+//      y = approach(y, target_y, move_speed);
  
 if (argument0 < argument1)
 {

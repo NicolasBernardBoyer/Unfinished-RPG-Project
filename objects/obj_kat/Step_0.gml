@@ -1,12 +1,12 @@
 // If the player isnt in a cutscene and you cant pause, follow the player
 if (obj_player.can_move and global.can_pause){
 	walk = obj_player.spd;
-	DIR = point_DIRection(x,y,obj_player.x,obj_player.y);
+	dir = point_direction(x,y,obj_player.x,obj_player.y);
 	
 	// keep kat 25 units away from the player and have her approach at the player's speed
 	if (x <= obj_player.x - 25 or x >= obj_player.x + 25){
-		x = Approach(x, obj_player.x, walk);
-		y = Approach(y, obj_player.y, walk);	
+		x = approach(x, obj_player.x, walk);
+		y = approach(y, obj_player.y, walk);	
 		
 		// prevent clipping through walls
 		if (place_meeting(x+walk,y,obj_wall)){
@@ -29,8 +29,8 @@ if (obj_player.can_move and global.can_pause){
 	}  else { walking1 = false; }
 	// one of these if statements is for the x variable and the other is for the y
 	if (y <= obj_player.y - 25 or y >= obj_player.y + 25){
-		x = Approach(x, obj_player.x, walk);
-		y = Approach(y, obj_player.y, walk);	
+		x = approach(x, obj_player.x, walk);
+		y = approach(y, obj_player.y, walk);	
 		
 		if (place_meeting(x,y+walk,obj_wall)){
 			y -= walk;
@@ -61,13 +61,13 @@ if (obj_player.can_move and global.can_pause){
 			sprite_index = spr_kat_walk;
 		}
 		else if (obj_player.sprite_index = spr_player_upwalk_coat){
-			sprite_index = spr_kat_UPwalk;
+			sprite_index = spr_kat_upwalk;
 		}
 		else if (obj_player.sprite_index = spr_player_leftwalk_coat){
-			sprite_index = spr_kat_LEFTwalk;
+			sprite_index = spr_kat_leftwalk;
 		}
 		else if (obj_player.sprite_index = spr_player_rightwalk_coat){
-			sprite_index = spr_kat_RIGHTwalk;
+			sprite_index = spr_kat_rightwalk;
 		}
 	}
 }

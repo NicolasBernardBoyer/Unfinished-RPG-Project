@@ -1,1 +1,1 @@
-camera.following = obj_player;
+obj_camera.following = obj_player;

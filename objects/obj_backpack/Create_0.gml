@@ -8,10 +8,10 @@ text = [
 		"It's my backpack. I'm gonna need this for work.",
 		"Take it?",
 		["Yes","No"],
-		"I picked UP the backpack. Press C to open your inventory.",
+		"I picked up the backpack. press C to open your inventory.",
 		"I decided to not take the backpack."
 		];
 portrait_index = noone;
 speakers = [id, id, id, id, id, id];
 next_line = [0, 0, [3,4], -1, -1];
-scripts = [-1,-1,[[backpack_pickUP], -1] ,-1,-1];
+scripts = [-1,-1,[[backpack_pickup], -1] ,-1,-1];

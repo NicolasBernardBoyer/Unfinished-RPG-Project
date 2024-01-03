@@ -7,7 +7,7 @@ function script_execute_alt(){
 // execute multiple scripts at once
 	var s = argument[0];
 	var a = argument[1];
-	var len = array_length_1d(argument[1]);
+	var len = array_length(argument[1]);
  
 	switch(len){
 	    case 0 : script_execute(s); break;

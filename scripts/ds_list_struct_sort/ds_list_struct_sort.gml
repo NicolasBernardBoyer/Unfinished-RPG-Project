@@ -42,7 +42,7 @@ function ds_list_struct_sort(_list, _int, _asc){
     //now we can copy and overwrite the original list, with this newly sorted list
     ds_list_copy(_list, _dsl_new_list);
   
-    //cleanUP
+    //cleanup
     ds_priority_destroy(_dsp_agilities);
     ds_list_destroy(_dsl_new_list);
   
