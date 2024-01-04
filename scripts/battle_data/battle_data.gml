@@ -1,18 +1,27 @@
 
+
 global.player_data = {
 	hp : 100,
 	atk : 10,
 	moves : {
 		attack : function(_atk, _target) {
-			
+			_target.hp -= _atk * 1;
+			var _psys = part_system_create(p_hit_effect);
+			part_system_position(_psys, _target.x, _target.y);
 		},
-		
 	}
 };
 
 global.test_enemy_data = {
 	hp : 100,
-	atk : 10
+	atk : 10,
+	moves : {
+		attack : function(_atk, _target) {
+			_target.hp -= _atk * 1;
+			var _psys = part_system_create(p_hit_effect);
+			part_system_position(_psys, _target.x, _target.y);
+		},
+	}
 };
 
 global.battle_coords = {
@@ -36,7 +45,7 @@ function battle() constructor {
 		ds_list_add(units, argument[i]);
 	}
 	create_units = function(_list) {
-		instance_create_layer(global.battle_coords.player_x, global.battle_coords.player_y, "Instances", obj_player_battler, global.player_data);
+		instance_create_layer(global.battle_coords.player_x, global.battle_coords.player_y, "Instances", ds_list_find_value(_list, 0), global.player_data);
 		switch (ds_list_size(_list)) {
 			case 1:
 				// Execute win, only player left
@@ -44,30 +53,32 @@ function battle() constructor {
 				break;
 			case 2:
 				show_debug_message("Creating 2 units");
-				instance_create_layer(global.battle_coords.enemy1_x, global.battle_coords.enemy1_y, "Instances", obj_enemy_battler, global.test_enemy_data);
+				instance_create_layer(global.battle_coords.enemy1_x, global.battle_coords.enemy1_y, "Instances", ds_list_find_value(_list, 1), global.test_enemy_data);
 				break;
 			case 3:
-				instance_create_layer(global.battle_coords.enemy1_x, global.battle_coords.enemy1_y, "Instances", obj_enemy_battler, global.test_enemy_data);
-				instance_create_layer(global.battle_coords.enemy2_x, global.battle_coords.enemy2_y, "Instances", obj_enemy_battler, global.test_enemy_data);
+				instance_create_layer(global.battle_coords.enemy1_x, global.battle_coords.enemy1_y, "Instances", ds_list_find_value(_list, 1), global.test_enemy_data);
+				instance_create_layer(global.battle_coords.enemy2_x, global.battle_coords.enemy2_y, "Instances", ds_list_find_value(_list, 2), global.test_enemy_data);
 				break;
 			case 4:
-				instance_create_layer(global.battle_coords.enemy1_x, global.battle_coords.enemy1_y, "Instances", obj_enemy_battler, global.test_enemy_data);
-				instance_create_layer(global.battle_coords.enemy2_x, global.battle_coords.enemy2_y, "Instances", obj_enemy_battler, global.test_enemy_data);
-				instance_create_layer(global.battle_coords.enemy3_x, global.battle_coords.enemy3_y, "Instances", obj_enemy_battler, global.test_enemy_data);
+				instance_create_layer(global.battle_coords.enemy1_x, global.battle_coords.enemy1_y, "Instances", ds_list_find_value(_list, 1), global.test_enemy_data);
+				instance_create_layer(global.battle_coords.enemy2_x, global.battle_coords.enemy2_y, "Instances", ds_list_find_value(_list, 2), global.test_enemy_data);
+				instance_create_layer(global.battle_coords.enemy3_x, global.battle_coords.enemy3_y, "Instances", ds_list_find_value(_list, 3), global.test_enemy_data);
 				break;
 			default:
 				show_debug_message("Amount of units not valid to start a battle");
 		}
 	}
-	function execute_turn() {
-		has_turn = ds_list_find_value(units, turn);
+	function execute_turn(_units, _turn) {
+		var has_turn = ds_list_find_value(_units, _turn);
 		if (has_turn == obj_player_battler) {
-			
+			// create a menu and let player select
+			global.player_data.moves.attack(10, ds_list_find_value(_units, 1));
 		} else if (has_turn == obj_enemy_battler){
-			
+			// run specific enemy AI function here
+			global.test_enemy_data.moves.attack(10, ds_list_find_value(_units, 0));
 		}
 	}
-	
-	execute_turn();
+
 	create_units(units);
+	execute_turn(units, turn);
 }
