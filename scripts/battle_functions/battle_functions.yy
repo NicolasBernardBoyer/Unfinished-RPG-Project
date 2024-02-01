@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "battle_data",
+  "name": "battle_functions",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

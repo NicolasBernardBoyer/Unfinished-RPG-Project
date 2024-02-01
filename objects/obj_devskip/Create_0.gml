@@ -1,1 +1,1 @@
-room_goto(rm_battle_test);
+new_encounter([global.enemies.test_slime, global.enemies.test_slime], spr_battlebg1);
