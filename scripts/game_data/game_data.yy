@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "game_data",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Battles",
-    "path": "folders/Scripts/Battles.yy",
+  "$GMScript":"v1",
+  "%Name":"game_data",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"game_data",
+  "parent":{
+    "name":"Battles",
+    "path":"folders/Scripts/Battles.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

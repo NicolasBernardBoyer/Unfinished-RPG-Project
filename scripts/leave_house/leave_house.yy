@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "leave_house",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "YourHome",
-    "path": "folders/Scripts/Events/YourHome.yy",
+  "$GMScript":"v1",
+  "%Name":"leave_house",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"leave_house",
+  "parent":{
+    "name":"YourHome",
+    "path":"folders/Scripts/Events/YourHome.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

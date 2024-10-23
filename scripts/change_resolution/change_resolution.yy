@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "change_resolution",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Menu Options",
-    "path": "folders/Scripts/Menu Options.yy",
+  "$GMScript":"v1",
+  "%Name":"change_resolution",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"change_resolution",
+  "parent":{
+    "name":"Menu Options",
+    "path":"folders/Scripts/Menu Options.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
