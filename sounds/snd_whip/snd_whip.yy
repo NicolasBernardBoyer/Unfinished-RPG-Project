@@ -1,17 +1,15 @@
 {
-  "$GMSound":"v2",
+  "$GMSound":"",
   "%Name":"snd_whip",
   "audioGroupId":{
     "name":"audiogroup_soundeffects",
     "path":"audiogroups/audiogroup_soundeffects",
   },
   "bitDepth":1,
-  "channelFormat":0,
+  "bitRate":128,
   "compression":0,
-  "compressionQuality":4,
   "conversionMode":0,
   "duration":0.413265,
-  "exportDir":"",
   "name":"snd_whip",
   "parent":{
     "name":"Sound Effects",
@@ -22,5 +20,6 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snd_whip.wav",
+  "type":0,
   "volume":1.0,
 }

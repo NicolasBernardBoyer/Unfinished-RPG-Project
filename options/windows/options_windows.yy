@@ -1,6 +1,10 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "$GMWindowsOptions":"v1",
+=======
+  "$GMWindowsOptions":"",
+>>>>>>> parent of 617e23d (Changes before reverting)
   "%Name":"Windows",
   "name":"Windows",
   "option_windows_allow_fullscreen_switching":false,
@@ -8,7 +12,6 @@
   "option_windows_company_info":"Nicolas Boyer",
   "option_windows_copyright_info":"Nicolas Boyer",
   "option_windows_copy_exe_to_dest":false,
-  "option_windows_d3dswapeffectdiscard":false,
   "option_windows_description_info":"Animal RPG created by Nicolas Boyer",
   "option_windows_disable_sandbox":false,
   "option_windows_display_cursor":true,

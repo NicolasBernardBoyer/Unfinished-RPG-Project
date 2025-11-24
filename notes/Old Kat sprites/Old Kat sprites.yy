@@ -1,5 +1,5 @@
 {
-  "$GMNotes":"v1",
+  "$GMNotes":"",
   "%Name":"Old Kat sprites",
   "name":"Old Kat sprites",
   "parent":{

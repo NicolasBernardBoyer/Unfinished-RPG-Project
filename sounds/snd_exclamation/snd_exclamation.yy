@@ -1,17 +1,15 @@
 {
-  "$GMSound":"v2",
+  "$GMSound":"",
   "%Name":"snd_exclamation",
   "audioGroupId":{
     "name":"audiogroup_soundeffects",
     "path":"audiogroups/audiogroup_soundeffects",
   },
   "bitDepth":1,
-  "channelFormat":0,
+  "bitRate":128,
   "compression":2,
-  "compressionQuality":4,
   "conversionMode":0,
   "duration":0.422789,
-  "exportDir":"",
   "name":"snd_exclamation",
   "parent":{
     "name":"Sound Effects",
@@ -22,5 +20,6 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snd_exclamation.wav",
+  "type":0,
   "volume":1.0,
 }
