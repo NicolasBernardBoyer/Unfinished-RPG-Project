@@ -12,7 +12,7 @@ halfcameraheight = cam_height/2;
 //(the actual obj_camera size in the room is that of those variables +1)
 surface_resize(application_surface,cam_width+1,cam_height+1);
 //application_surface_draw_enable(false);
-//window_set_fullscreen(true);
+window_set_fullscreen(true);
 
 global.x_offset = (global.monitor_w-640)/2;
 global.y_offset = (global.monitor_h-360)/2

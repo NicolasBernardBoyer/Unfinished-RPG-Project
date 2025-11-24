@@ -1,13 +1,11 @@
 {
-  "$GMScript":"v1",
-  "%Name":"create_name_creator",
-  "isCompatibility":false,
-  "isDnD":false,
-  "name":"create_name_creator",
-  "parent":{
-    "name":"Intro",
-    "path":"folders/Scripts/Events/Intro.yy",
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "create_name_creator",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Intro",
+    "path": "folders/Scripts/Events/Intro.yy",
   },
-  "resourceType":"GMScript",
-  "resourceVersion":"2.0",
 }

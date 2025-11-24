@@ -1,5 +1,3 @@
-show_debug_message("Player has been created.");
-
 // speed variables for walking
 hsp = 0;
 vsp = 0;

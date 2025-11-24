@@ -1,13 +1,11 @@
 {
-  "$GMScript":"v1",
-  "%Name":"create_textbox",
-  "isCompatibility":false,
-  "isDnD":false,
-  "name":"create_textbox",
-  "parent":{
-    "name":"Textboxes",
-    "path":"folders/Scripts/Textboxes.yy",
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "create_textbox",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Textboxes",
+    "path": "folders/Scripts/Textboxes.yy",
   },
-  "resourceType":"GMScript",
-  "resourceVersion":"2.0",
 }

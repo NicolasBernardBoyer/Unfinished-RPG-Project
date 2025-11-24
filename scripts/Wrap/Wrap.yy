@@ -1,24 +1,11 @@
 {
-<<<<<<< HEAD
-  "$GMScript":"v1",
-  "%Name":"wrap",
-  "isCompatibility":false,
-  "isDnD":false,
-  "name":"wrap",
-  "parent":{
-    "name":"generic",
-    "path":"folders/Scripts/generic.yy",
-=======
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "wrap",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
->>>>>>> parent of cd8b372 (Started RPG battle system)
+    "name": "generic",
+    "path": "folders/Scripts/generic.yy",
   },
-  "resourceType":"GMScript",
-  "resourceVersion":"2.0",
 }
