@@ -21,12 +21,20 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"909e62ee-7bf3-49d1-a4e2-e3af73ced5ed","blendMode":0,"displayName":"default","isLocked":false,"name":"909e62ee-7bf3-49d1-a4e2-e3af73ced5ed","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
+<<<<<<< HEAD
   "name":"spr_battlebg1",
   "nineSlice":null,
   "origin":0,
   "parent":{
     "name":"Backgrounds",
     "path":"folders/Sprites/Backgrounds.yy",
+=======
+  "nineSlice": null,
+  "origin": 7,
+  "parent": {
+    "name": "Backgrounds",
+    "path": "folders/Sprites/Backgrounds.yy",
+>>>>>>> parent of cd8b372 (Started RPG battle system)
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -71,10 +79,17 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"dab5ae8a-8a76-4661-9a49-cdeb20329f2b","path":"sprites/spr_battlebg1/spr_battlebg1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"4b0e4cc6-277c-4670-adbc-083786d2693b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
+<<<<<<< HEAD
     "visibleRange":null,
     "volume":1.0,
     "xorigin":0,
     "yorigin":0,
+=======
+    "visibleRange": null,
+    "volume": 1.0,
+    "xorigin": 320,
+    "yorigin": 361,
+>>>>>>> parent of cd8b372 (Started RPG battle system)
   },
   "swatchColours":null,
   "swfPrecision":2.525,
