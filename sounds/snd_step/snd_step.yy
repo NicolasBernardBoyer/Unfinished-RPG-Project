@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"snd_step",
   "audioGroupId":{
     "name":"audiogroup_soundeffects",
     "path":"audiogroups/audiogroup_soundeffects",
   },
   "bitDepth":1,
-  "bitRate":128,
+  "channelFormat":0,
   "compression":1,
+  "compressionQuality":4,
   "conversionMode":0,
   "duration":0.230363,
+  "exportDir":"",
   "name":"snd_step",
   "parent":{
     "name":"Sound Effects",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snd_step.wav",
-  "type":0,
   "volume":1.0,
 }

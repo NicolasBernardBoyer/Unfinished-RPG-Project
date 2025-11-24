@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"snd_catscreaming",
   "audioGroupId":{
     "name":"audiogroup_soundeffects",
     "path":"audiogroups/audiogroup_soundeffects",
   },
   "bitDepth":1,
-  "bitRate":128,
+  "channelFormat":0,
   "compression":0,
+  "compressionQuality":4,
   "conversionMode":0,
   "duration":1.869208,
+  "exportDir":"",
   "name":"snd_catscreaming",
   "parent":{
     "name":"Sound Effects",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snd_catscreaming.wav",
-  "type":0,
   "volume":1.0,
 }
