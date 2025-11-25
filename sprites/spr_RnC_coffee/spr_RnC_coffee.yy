@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_RnC_coffee",
@@ -16,6 +17,24 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d3527007-3eab-478a-b4ad-7ff2c23c8bf3",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"78edf68f-b46f-499b-a3db-c0004906fc5a",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"86d15adf-02fd-4d39-8f48-17b99fcd8619",},
+=======
+  "$GMSprite":"v2",
+  "%Name":"spr_RnC_coffee",
+  "bboxMode":0,
+  "bbox_bottom":77,
+  "bbox_left":4,
+  "bbox_right":94,
+  "bbox_top":6,
+  "collisionKind":1,
+  "collisionTolerance":0,
+  "DynamicTexturePage":false,
+  "edgeFiltering":false,
+  "For3D":false,
+  "frames":[
+    {"$GMSpriteFrame":"v1","%Name":"d3527007-3eab-478a-b4ad-7ff2c23c8bf3","name":"d3527007-3eab-478a-b4ad-7ff2c23c8bf3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"78edf68f-b46f-499b-a3db-c0004906fc5a","name":"78edf68f-b46f-499b-a3db-c0004906fc5a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"86d15adf-02fd-4d39-8f48-17b99fcd8619","name":"86d15adf-02fd-4d39-8f48-17b99fcd8619","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+>>>>>>> parent of 83912ee (Going back back)
   ],
   "gridX": 32,
   "gridY": 32,
@@ -31,6 +50,7 @@
     "name": "GeneralNPCs",
     "path": "folders/Sprites/Overworld/Characters/GeneralNPCs.yy",
   },
+<<<<<<< HEAD
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
@@ -61,6 +81,52 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"78edf68f-b46f-499b-a3db-c0004906fc5a","path":"sprites/spr_RnC_coffee/spr_RnC_coffee.yy",},},},"Disabled":false,"id":"a2d28658-497b-474e-82b1-d1f789a09c40","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"86d15adf-02fd-4d39-8f48-17b99fcd8619","path":"sprites/spr_RnC_coffee/spr_RnC_coffee.yy",},},},"Disabled":false,"id":"ad54892c-21a8-4704-90e8-9a7087909589","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
+=======
+  "preMultiplyAlpha":false,
+  "resourceType":"GMSprite",
+  "resourceVersion":"2.0",
+  "sequence":{
+    "$GMSequence":"v1",
+    "%Name":"spr_RnC_coffee",
+    "autoRecord":true,
+    "backdropHeight":768,
+    "backdropImageOpacity":0.5,
+    "backdropImagePath":"",
+    "backdropWidth":1366,
+    "backdropXOffset":0.0,
+    "backdropYOffset":0.0,
+    "events":{
+      "$KeyframeStore<MessageEventKeyframe>":"",
+      "Keyframes":[],
+      "resourceType":"KeyframeStore<MessageEventKeyframe>",
+      "resourceVersion":"2.0",
+    },
+    "eventStubScript":null,
+    "eventToFunction":{},
+    "length":3.0,
+    "lockOrigin":false,
+    "moments":{
+      "$KeyframeStore<MomentsEventKeyframe>":"",
+      "Keyframes":[],
+      "resourceType":"KeyframeStore<MomentsEventKeyframe>",
+      "resourceVersion":"2.0",
+    },
+    "name":"spr_RnC_coffee",
+    "playback":1,
+    "playbackSpeed":7.0,
+    "playbackSpeedType":0,
+    "resourceType":"GMSequence",
+    "resourceVersion":"2.0",
+    "showBackdrop":true,
+    "showBackdropImage":false,
+    "timeUnits":1,
+    "tracks":[
+      {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"d3527007-3eab-478a-b4ad-7ff2c23c8bf3","path":"sprites/spr_RnC_coffee/spr_RnC_coffee.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"da1d6fe8-1189-4f4e-83af-269836bb12b8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"78edf68f-b46f-499b-a3db-c0004906fc5a","path":"sprites/spr_RnC_coffee/spr_RnC_coffee.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"a2d28658-497b-474e-82b1-d1f789a09c40","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"86d15adf-02fd-4d39-8f48-17b99fcd8619","path":"sprites/spr_RnC_coffee/spr_RnC_coffee.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"ad54892c-21a8-4704-90e8-9a7087909589","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+          ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
+>>>>>>> parent of 83912ee (Going back back)
     ],
     "visibleRange": null,
     "volume": 1.0,

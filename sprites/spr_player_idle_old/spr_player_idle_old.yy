@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_player_idle_old",
@@ -17,6 +18,25 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"813ece78-dbd1-4e88-a988-1e4616d85106",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bf8acbd3-10b5-4cd7-b6eb-dfc24c2fb5c8",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"842a0f78-d483-4663-8cc5-dfc7adb846a3",},
+=======
+  "$GMSprite":"v2",
+  "%Name":"spr_player_idle_old",
+  "bboxMode":0,
+  "bbox_bottom":79,
+  "bbox_left":12,
+  "bbox_right":47,
+  "bbox_top":11,
+  "collisionKind":1,
+  "collisionTolerance":0,
+  "DynamicTexturePage":false,
+  "edgeFiltering":false,
+  "For3D":false,
+  "frames":[
+    {"$GMSpriteFrame":"v1","%Name":"a8268761-8662-4496-8a80-4c261ff12bd8","name":"a8268761-8662-4496-8a80-4c261ff12bd8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"813ece78-dbd1-4e88-a988-1e4616d85106","name":"813ece78-dbd1-4e88-a988-1e4616d85106","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bf8acbd3-10b5-4cd7-b6eb-dfc24c2fb5c8","name":"bf8acbd3-10b5-4cd7-b6eb-dfc24c2fb5c8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"842a0f78-d483-4663-8cc5-dfc7adb846a3","name":"842a0f78-d483-4663-8cc5-dfc7adb846a3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+>>>>>>> parent of 83912ee (Going back back)
   ],
   "gridX": 0,
   "gridY": 0,
@@ -31,6 +51,7 @@
     "name": "Player Battle",
     "path": "folders/Sprites/Battle Sprites/Player Battle.yy",
   },
+<<<<<<< HEAD
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
@@ -62,6 +83,53 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bf8acbd3-10b5-4cd7-b6eb-dfc24c2fb5c8","path":"sprites/spr_player_idle_old/spr_player_idle_old.yy",},},},"Disabled":false,"id":"cb3042c9-90ac-4395-ab80-f8ed6e3f503a","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"842a0f78-d483-4663-8cc5-dfc7adb846a3","path":"sprites/spr_player_idle_old/spr_player_idle_old.yy",},},},"Disabled":false,"id":"e5a68e22-5bff-46ce-b8bf-de6693208333","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
+=======
+  "preMultiplyAlpha":false,
+  "resourceType":"GMSprite",
+  "resourceVersion":"2.0",
+  "sequence":{
+    "$GMSequence":"v1",
+    "%Name":"spr_player_idle_old",
+    "autoRecord":true,
+    "backdropHeight":768,
+    "backdropImageOpacity":0.5,
+    "backdropImagePath":"",
+    "backdropWidth":1366,
+    "backdropXOffset":0.0,
+    "backdropYOffset":0.0,
+    "events":{
+      "$KeyframeStore<MessageEventKeyframe>":"",
+      "Keyframes":[],
+      "resourceType":"KeyframeStore<MessageEventKeyframe>",
+      "resourceVersion":"2.0",
+    },
+    "eventStubScript":null,
+    "eventToFunction":{},
+    "length":4.0,
+    "lockOrigin":false,
+    "moments":{
+      "$KeyframeStore<MomentsEventKeyframe>":"",
+      "Keyframes":[],
+      "resourceType":"KeyframeStore<MomentsEventKeyframe>",
+      "resourceVersion":"2.0",
+    },
+    "name":"spr_player_idle_old",
+    "playback":1,
+    "playbackSpeed":6.0,
+    "playbackSpeedType":0,
+    "resourceType":"GMSequence",
+    "resourceVersion":"2.0",
+    "showBackdrop":true,
+    "showBackdropImage":false,
+    "timeUnits":1,
+    "tracks":[
+      {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"a8268761-8662-4496-8a80-4c261ff12bd8","path":"sprites/spr_player_idle_old/spr_player_idle_old.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"651bf960-8a1b-49ef-b412-58559852b174","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"813ece78-dbd1-4e88-a988-1e4616d85106","path":"sprites/spr_player_idle_old/spr_player_idle_old.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"ededcab2-81f1-4b08-962d-5ffb1b75bda1","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"bf8acbd3-10b5-4cd7-b6eb-dfc24c2fb5c8","path":"sprites/spr_player_idle_old/spr_player_idle_old.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"cb3042c9-90ac-4395-ab80-f8ed6e3f503a","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"842a0f78-d483-4663-8cc5-dfc7adb846a3","path":"sprites/spr_player_idle_old/spr_player_idle_old.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"e5a68e22-5bff-46ce-b8bf-de6693208333","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+          ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
+>>>>>>> parent of 83912ee (Going back back)
     ],
     "visibleRange": null,
     "volume": 1.0,

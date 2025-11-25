@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_yoru_rightwalkold",
@@ -17,6 +18,25 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0b4d3e1a-9986-4fb5-8de5-518d9bcc6406",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"444b39bd-53a4-470f-9f50-07cfc7bb4096",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0addb1d8-2cf9-4a54-b66d-e4e3d3ea427e",},
+=======
+  "$GMSprite":"v2",
+  "%Name":"spr_yoru_rightwalkold",
+  "bboxMode":2,
+  "bbox_bottom":63,
+  "bbox_left":7,
+  "bbox_right":24,
+  "bbox_top":59,
+  "collisionKind":1,
+  "collisionTolerance":0,
+  "DynamicTexturePage":false,
+  "edgeFiltering":false,
+  "For3D":false,
+  "frames":[
+    {"$GMSpriteFrame":"v1","%Name":"400469ce-8ce5-4eff-9672-a37f7ce88c7a","name":"400469ce-8ce5-4eff-9672-a37f7ce88c7a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0b4d3e1a-9986-4fb5-8de5-518d9bcc6406","name":"0b4d3e1a-9986-4fb5-8de5-518d9bcc6406","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"444b39bd-53a4-470f-9f50-07cfc7bb4096","name":"444b39bd-53a4-470f-9f50-07cfc7bb4096","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0addb1d8-2cf9-4a54-b66d-e4e3d3ea427e","name":"0addb1d8-2cf9-4a54-b66d-e4e3d3ea427e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+>>>>>>> parent of 83912ee (Going back back)
   ],
   "gridX": 0,
   "gridY": 0,
@@ -31,6 +51,7 @@
     "name": "OldPlayer",
     "path": "folders/Sprites/Overworld/Characters/Player/OldPlayer.yy",
   },
+<<<<<<< HEAD
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
@@ -62,6 +83,53 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"444b39bd-53a4-470f-9f50-07cfc7bb4096","path":"sprites/spr_yoru_rightwalkold/spr_yoru_rightwalkold.yy",},},},"Disabled":false,"id":"5a79aaab-c584-48e5-8544-84911ce8b9b8","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0addb1d8-2cf9-4a54-b66d-e4e3d3ea427e","path":"sprites/spr_yoru_rightwalkold/spr_yoru_rightwalkold.yy",},},},"Disabled":false,"id":"845aa528-6551-4ef5-ab7e-984b684c8817","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
+=======
+  "preMultiplyAlpha":false,
+  "resourceType":"GMSprite",
+  "resourceVersion":"2.0",
+  "sequence":{
+    "$GMSequence":"v1",
+    "%Name":"spr_yoru_rightwalkold",
+    "autoRecord":true,
+    "backdropHeight":768,
+    "backdropImageOpacity":0.5,
+    "backdropImagePath":"",
+    "backdropWidth":1366,
+    "backdropXOffset":0.0,
+    "backdropYOffset":0.0,
+    "events":{
+      "$KeyframeStore<MessageEventKeyframe>":"",
+      "Keyframes":[],
+      "resourceType":"KeyframeStore<MessageEventKeyframe>",
+      "resourceVersion":"2.0",
+    },
+    "eventStubScript":null,
+    "eventToFunction":{},
+    "length":4.0,
+    "lockOrigin":true,
+    "moments":{
+      "$KeyframeStore<MomentsEventKeyframe>":"",
+      "Keyframes":[],
+      "resourceType":"KeyframeStore<MomentsEventKeyframe>",
+      "resourceVersion":"2.0",
+    },
+    "name":"spr_yoru_rightwalkold",
+    "playback":1,
+    "playbackSpeed":5.0,
+    "playbackSpeedType":0,
+    "resourceType":"GMSequence",
+    "resourceVersion":"2.0",
+    "showBackdrop":true,
+    "showBackdropImage":false,
+    "timeUnits":1,
+    "tracks":[
+      {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"400469ce-8ce5-4eff-9672-a37f7ce88c7a","path":"sprites/spr_yoru_rightwalkold/spr_yoru_rightwalkold.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"492f926d-34d3-4530-bf92-e0895a3b372b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"0b4d3e1a-9986-4fb5-8de5-518d9bcc6406","path":"sprites/spr_yoru_rightwalkold/spr_yoru_rightwalkold.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"45b8fc0a-6fe2-4237-b9d5-69068c921db9","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"444b39bd-53a4-470f-9f50-07cfc7bb4096","path":"sprites/spr_yoru_rightwalkold/spr_yoru_rightwalkold.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"5a79aaab-c584-48e5-8544-84911ce8b9b8","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"0addb1d8-2cf9-4a54-b66d-e4e3d3ea427e","path":"sprites/spr_yoru_rightwalkold/spr_yoru_rightwalkold.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"845aa528-6551-4ef5-ab7e-984b684c8817","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+          ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
+>>>>>>> parent of 83912ee (Going back back)
     ],
     "visibleRange": null,
     "volume": 1.0,

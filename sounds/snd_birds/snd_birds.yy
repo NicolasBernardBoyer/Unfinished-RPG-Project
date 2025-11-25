@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
   "name": "snd_birds",
@@ -20,4 +21,30 @@
   "soundFile": "snd_birds.wav",
   "type": 0,
   "volume": 1.0,
+=======
+  "$GMSound":"v2",
+  "%Name":"snd_birds",
+  "audioGroupId":{
+    "name":"audiogroup_soundeffects",
+    "path":"audiogroups/audiogroup_soundeffects",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":24.056826,
+  "exportDir":"",
+  "name":"snd_birds",
+  "parent":{
+    "name":"Sound Effects",
+    "path":"folders/Sounds/Sound Effects.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_birds.wav",
+  "volume":1.0,
+>>>>>>> parent of 83912ee (Going back back)
 }

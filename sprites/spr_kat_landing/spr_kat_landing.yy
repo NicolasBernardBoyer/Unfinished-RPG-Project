@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_kat_landing",
@@ -16,6 +17,24 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6dc48fed-729d-4fc9-9b0a-5de454a689f2",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"089fb54d-a5b0-436c-b174-f82e430ed206",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e8ff455c-bb1a-44e9-820d-5afc9f9a673a",},
+=======
+  "$GMSprite":"v2",
+  "%Name":"spr_kat_landing",
+  "bboxMode":0,
+  "bbox_bottom":51,
+  "bbox_left":8,
+  "bbox_right":53,
+  "bbox_top":8,
+  "collisionKind":1,
+  "collisionTolerance":0,
+  "DynamicTexturePage":false,
+  "edgeFiltering":false,
+  "For3D":false,
+  "frames":[
+    {"$GMSpriteFrame":"v1","%Name":"6dc48fed-729d-4fc9-9b0a-5de454a689f2","name":"6dc48fed-729d-4fc9-9b0a-5de454a689f2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"089fb54d-a5b0-436c-b174-f82e430ed206","name":"089fb54d-a5b0-436c-b174-f82e430ed206","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e8ff455c-bb1a-44e9-820d-5afc9f9a673a","name":"e8ff455c-bb1a-44e9-820d-5afc9f9a673a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+>>>>>>> parent of 83912ee (Going back back)
   ],
   "gridX": 0,
   "gridY": 0,
@@ -30,6 +49,7 @@
     "name": "Cutscene",
     "path": "folders/Sprites/Overworld/Characters/Katarina/Cutscene.yy",
   },
+<<<<<<< HEAD
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
@@ -60,6 +80,52 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"089fb54d-a5b0-436c-b174-f82e430ed206","path":"sprites/spr_kat_landing/spr_kat_landing.yy",},},},"Disabled":false,"id":"59db62f9-42c2-4647-977c-72381fade840","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e8ff455c-bb1a-44e9-820d-5afc9f9a673a","path":"sprites/spr_kat_landing/spr_kat_landing.yy",},},},"Disabled":false,"id":"7636761c-d065-4f41-8daf-3518ed4ead9e","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
+=======
+  "preMultiplyAlpha":false,
+  "resourceType":"GMSprite",
+  "resourceVersion":"2.0",
+  "sequence":{
+    "$GMSequence":"v1",
+    "%Name":"spr_kat_landing",
+    "autoRecord":true,
+    "backdropHeight":768,
+    "backdropImageOpacity":0.5,
+    "backdropImagePath":"",
+    "backdropWidth":1366,
+    "backdropXOffset":0.0,
+    "backdropYOffset":0.0,
+    "events":{
+      "$KeyframeStore<MessageEventKeyframe>":"",
+      "Keyframes":[],
+      "resourceType":"KeyframeStore<MessageEventKeyframe>",
+      "resourceVersion":"2.0",
+    },
+    "eventStubScript":null,
+    "eventToFunction":{},
+    "length":3.0,
+    "lockOrigin":false,
+    "moments":{
+      "$KeyframeStore<MomentsEventKeyframe>":"",
+      "Keyframes":[],
+      "resourceType":"KeyframeStore<MomentsEventKeyframe>",
+      "resourceVersion":"2.0",
+    },
+    "name":"spr_kat_landing",
+    "playback":1,
+    "playbackSpeed":5.0,
+    "playbackSpeedType":0,
+    "resourceType":"GMSequence",
+    "resourceVersion":"2.0",
+    "showBackdrop":true,
+    "showBackdropImage":false,
+    "timeUnits":1,
+    "tracks":[
+      {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"6dc48fed-729d-4fc9-9b0a-5de454a689f2","path":"sprites/spr_kat_landing/spr_kat_landing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3ceb2d3c-11b8-4493-84fa-7aa6d472e7da","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"089fb54d-a5b0-436c-b174-f82e430ed206","path":"sprites/spr_kat_landing/spr_kat_landing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"59db62f9-42c2-4647-977c-72381fade840","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"e8ff455c-bb1a-44e9-820d-5afc9f9a673a","path":"sprites/spr_kat_landing/spr_kat_landing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"7636761c-d065-4f41-8daf-3518ed4ead9e","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+          ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
+>>>>>>> parent of 83912ee (Going back back)
     ],
     "visibleRange": null,
     "volume": 1.0,

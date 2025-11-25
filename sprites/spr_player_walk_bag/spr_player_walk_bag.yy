@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_player_walk_bag",
@@ -17,6 +18,25 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ecebfc0d-00e0-4a49-a069-de3f17bd3a1b",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b96d4f4a-b1bb-4c69-bb2d-c3c986d9942a",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"01afc2ee-acce-444d-8446-be4af34c1299",},
+=======
+  "$GMSprite":"v2",
+  "%Name":"spr_player_walk_bag",
+  "bboxMode":2,
+  "bbox_bottom":67,
+  "bbox_left":5,
+  "bbox_right":28,
+  "bbox_top":62,
+  "collisionKind":1,
+  "collisionTolerance":0,
+  "DynamicTexturePage":false,
+  "edgeFiltering":false,
+  "For3D":false,
+  "frames":[
+    {"$GMSpriteFrame":"v1","%Name":"dab8e393-3664-438e-961d-8cffe1eec6ff","name":"dab8e393-3664-438e-961d-8cffe1eec6ff","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ecebfc0d-00e0-4a49-a069-de3f17bd3a1b","name":"ecebfc0d-00e0-4a49-a069-de3f17bd3a1b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b96d4f4a-b1bb-4c69-bb2d-c3c986d9942a","name":"b96d4f4a-b1bb-4c69-bb2d-c3c986d9942a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"01afc2ee-acce-444d-8446-be4af34c1299","name":"01afc2ee-acce-444d-8446-be4af34c1299","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+>>>>>>> parent of 83912ee (Going back back)
   ],
   "gridX": 17,
   "gridY": 17,
@@ -31,6 +51,7 @@
     "name": "PlayerWithBag",
     "path": "folders/Sprites/Overworld/Characters/Player/PlayerWithBag.yy",
   },
+<<<<<<< HEAD
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
@@ -62,6 +83,53 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b96d4f4a-b1bb-4c69-bb2d-c3c986d9942a","path":"sprites/spr_player_walk_bag/spr_player_walk_bag.yy",},},},"Disabled":false,"id":"24ad3cec-9903-4786-afc7-7113f31d8f7c","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"01afc2ee-acce-444d-8446-be4af34c1299","path":"sprites/spr_player_walk_bag/spr_player_walk_bag.yy",},},},"Disabled":false,"id":"02d34ff7-6b40-4dc3-b0db-9698d9baba12","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
+=======
+  "preMultiplyAlpha":false,
+  "resourceType":"GMSprite",
+  "resourceVersion":"2.0",
+  "sequence":{
+    "$GMSequence":"v1",
+    "%Name":"spr_player_walk_bag",
+    "autoRecord":true,
+    "backdropHeight":768,
+    "backdropImageOpacity":0.5,
+    "backdropImagePath":"",
+    "backdropWidth":1366,
+    "backdropXOffset":0.0,
+    "backdropYOffset":0.0,
+    "events":{
+      "$KeyframeStore<MessageEventKeyframe>":"",
+      "Keyframes":[],
+      "resourceType":"KeyframeStore<MessageEventKeyframe>",
+      "resourceVersion":"2.0",
+    },
+    "eventStubScript":null,
+    "eventToFunction":{},
+    "length":4.0,
+    "lockOrigin":false,
+    "moments":{
+      "$KeyframeStore<MomentsEventKeyframe>":"",
+      "Keyframes":[],
+      "resourceType":"KeyframeStore<MomentsEventKeyframe>",
+      "resourceVersion":"2.0",
+    },
+    "name":"spr_player_walk_bag",
+    "playback":1,
+    "playbackSpeed":6.0,
+    "playbackSpeedType":0,
+    "resourceType":"GMSequence",
+    "resourceVersion":"2.0",
+    "showBackdrop":true,
+    "showBackdropImage":false,
+    "timeUnits":1,
+    "tracks":[
+      {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"dab8e393-3664-438e-961d-8cffe1eec6ff","path":"sprites/spr_player_walk_bag/spr_player_walk_bag.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"11a8b7d9-a164-4f1e-bf6e-e00fe8a555ee","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"ecebfc0d-00e0-4a49-a069-de3f17bd3a1b","path":"sprites/spr_player_walk_bag/spr_player_walk_bag.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"f0191468-3b46-48b6-8965-0a6b2e844950","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"b96d4f4a-b1bb-4c69-bb2d-c3c986d9942a","path":"sprites/spr_player_walk_bag/spr_player_walk_bag.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"24ad3cec-9903-4786-afc7-7113f31d8f7c","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"01afc2ee-acce-444d-8446-be4af34c1299","path":"sprites/spr_player_walk_bag/spr_player_walk_bag.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"02d34ff7-6b40-4dc3-b0db-9698d9baba12","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+          ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
+>>>>>>> parent of 83912ee (Going back back)
     ],
     "visibleRange": null,
     "volume": 1.0,
