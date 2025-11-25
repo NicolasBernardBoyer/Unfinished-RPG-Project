@@ -1,20 +1,10 @@
 {
-<<<<<<< HEAD
-  "resourceType": "GMProject",
-  "resourceVersion": "1.7",
-  "name": "Beastmen",
-  "AudioGroups": [
-    {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
-    {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_music","targets":-1,},
-    {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_soundeffects","targets":-1,},
-=======
   "$GMProject":"v1",
   "%Name":"Beastmen",
   "AudioGroups":[
     {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
     {"$GMAudioGroup":"v1","%Name":"audiogroup_music","exportDir":"","name":"audiogroup_music","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
     {"$GMAudioGroup":"v1","%Name":"audiogroup_soundeffects","exportDir":"","name":"audiogroup_soundeffects","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
->>>>>>> parent of 83912ee (Going back back)
   ],
   "configs": {
     "children": [],
@@ -113,20 +103,12 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"generic","folderPath":"folders/Scripts/generic.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Placeholders","folderPath":"folders/Sprites/Placeholders.yy",},
   ],
-<<<<<<< HEAD
-  "IncludedFiles": [],
-  "isEcma": false,
-  "LibraryEmitters": [],
-  "MetaData": {
-    "IDEVersion": "2023.11.1.129",
-=======
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
     "IDEVersion":"2024.14.1.210",
->>>>>>> parent of 83912ee (Going back back)
   },
   "resources": [
     {"id":{"name":"shd_simple_alpha","path":"shaders/shd_simple_alpha/shd_simple_alpha.yy",},},
