@@ -226,6 +226,8 @@
     {"name":"player_fall_over","order":1,"path":"scripts/player_fall_over/player_fall_over.yy",},
     {"name":"port_swap","order":9,"path":"scripts/port_swap/port_swap.yy",},
     {"name":"resume_game","order":1,"path":"scripts/resume_game/resume_game.yy",},
+    {"name":"scr_enums","order":22,"path":"scripts/scr_enums/scr_enums.yy",},
+    {"name":"scr_player_states","order":23,"path":"scripts/scr_player_states/scr_player_states.yy",},
     {"name":"script_execute_alt","order":10,"path":"scripts/script_execute_alt/script_execute_alt.yy",},
     {"name":"settings_to_main_menu","order":8,"path":"scripts/settings_to_main_menu/settings_to_main_menu.yy",},
     {"name":"string_wrap","order":3,"path":"scripts/string_wrap/string_wrap.yy",},

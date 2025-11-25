@@ -292,6 +292,8 @@
     {"id":{"name":"port_swap","path":"scripts/port_swap/port_swap.yy",},},
     {"id":{"name":"resume_game","path":"scripts/resume_game/resume_game.yy",},},
     {"id":{"name":"SaveGame","path":"scripts/SaveGame/SaveGame.yy",},},
+    {"id":{"name":"scr_enums","path":"scripts/scr_enums/scr_enums.yy",},},
+    {"id":{"name":"scr_player_states","path":"scripts/scr_player_states/scr_player_states.yy",},},
     {"id":{"name":"script_execute_alt","path":"scripts/script_execute_alt/script_execute_alt.yy",},},
     {"id":{"name":"settings_to_main_menu","path":"scripts/settings_to_main_menu/settings_to_main_menu.yy",},},
     {"id":{"name":"string_wrap","path":"scripts/string_wrap/string_wrap.yy",},},

@@ -46,11 +46,11 @@ spawn_player_facing = -1;
 global.do_transition = false;
 
 // determine direction
-enum DIR {
-	right = 0,
-	up = 90,
-	left = 180,
-	down = 270,
+global.DIR = {
+	right: 0,
+	up: 90,
+	left: 180,
+	down: 270,
 }
 
 #region STATE VARIABLES
