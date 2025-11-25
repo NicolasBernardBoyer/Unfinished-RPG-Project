@@ -1,6 +1,6 @@
 
 // move_cam = keyboard_check(ord("C"));
-if (!instance_exists(obj_player) or room = rm_yourbedroom or !instance_exists(obj_battle)) exit;
+if (!instance_exists(obj_player) or room = rm_yourbedroom) exit;
 
 // have the obj_camera follow whatever it is following
 if (following != noone){
