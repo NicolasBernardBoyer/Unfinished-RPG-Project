@@ -1,13 +1,11 @@
 {
-  "$GMScript":"v1",
-  "%Name":"coat_pickup",
-  "isCompatibility":false,
-  "isDnD":false,
-  "name":"coat_pickup",
-  "parent":{
-    "name":"YourHome",
-    "path":"folders/Scripts/Events/YourHome.yy",
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "coat_pickup",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "YourHome",
+    "path": "folders/Scripts/Events/YourHome.yy",
   },
-  "resourceType":"GMScript",
-  "resourceVersion":"2.0",
 }

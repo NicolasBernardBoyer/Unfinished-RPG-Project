@@ -1,13 +1,11 @@
 {
-  "$GMScript":"v1",
-  "%Name":"string_wrap",
-  "isCompatibility":false,
-  "isDnD":false,
-  "name":"string_wrap",
-  "parent":{
-    "name":"Textboxes",
-    "path":"folders/Scripts/Textboxes.yy",
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "string_wrap",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Textboxes",
+    "path": "folders/Scripts/Textboxes.yy",
   },
-  "resourceType":"GMScript",
-  "resourceVersion":"2.0",
 }
