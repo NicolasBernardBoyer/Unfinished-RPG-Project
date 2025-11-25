@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "change_difficulty_nonmenu",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Intro",
-    "path": "folders/Scripts/Events/Intro.yy",
+  "$GMScript":"v1",
+  "%Name":"change_difficulty_nonmenu",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"change_difficulty_nonmenu",
+  "parent":{
+    "name":"Intro",
+    "path":"folders/Scripts/Events/Intro.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "SaveGame",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Saving",
-    "path": "folders/Scripts/Menu Options/Saving.yy",
+  "$GMScript":"v1",
+  "%Name":"SaveGame",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SaveGame",
+  "parent":{
+    "name":"Saving",
+    "path":"folders/Scripts/Menu Options/Saving.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

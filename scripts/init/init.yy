@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "init",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Init",
-    "path": "folders/Scripts/Init.yy",
+  "$GMScript":"v1",
+  "%Name":"init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"init",
+  "parent":{
+    "name":"Init",
+    "path":"folders/Scripts/Init.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
