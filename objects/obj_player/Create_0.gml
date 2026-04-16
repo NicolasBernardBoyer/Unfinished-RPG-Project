@@ -5,15 +5,15 @@ hsp = 0;
 vsp = 0;
 
 // reference variables for walk animations
-s_down = spr_player_walk;
-s_right = spr_player_rightwalk;
-s_left = spr_player_leftwalk;
-s_up = spr_player_upwalk;
+s_down = spr_katwalkD;
+s_right = spr_katwalkR;
+s_left = spr_katwalkL;
+s_up = spr_katwalkU;
 
 // initial ability to move and speed, sprite, etc.
 can_move = true;
 spd = 2;
-sprite_index = spr_player_walk;
+sprite_index = spr_katwalkD;
 image_index = 0;
 framebefore = 0;
 lastframe = 0;
@@ -58,4 +58,4 @@ if (global.hu or global.hd or global.hl or global.hr){
 
 
 // start at state_free
-state = state_idle;
+state = state_free;

@@ -44,6 +44,11 @@ if (instance_exists(obj_devmode)){
 //HELD
 var h_move = gamepad_axis_value(global.pad_num, gp_axislh);
 var v_move = gamepad_axis_value(global.pad_num, gp_axislv);
+
+var deadzone = 0.2;
+if (abs(h_move) < deadzone) h_move = 0;
+if (abs(v_move) < deadzone) v_move = 0;
+
 if (keyboard_check(global.key_right) or gamepad_button_check(0,global.gp_right)
 	or h_move > 0){
 	global.hr = true;
