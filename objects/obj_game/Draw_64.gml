@@ -1,3 +1,7 @@
+// Debug for viewing FPS
+draw_text(10, 10, "FPS: " + string(fps));
+
+
 // handle transition when exiting a room
 if(global.do_transition){
 	//Handle Black Fade/Room Transition

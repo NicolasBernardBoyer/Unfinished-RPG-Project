@@ -1,4 +1,2 @@
 // only draw if player is visible
-if (sprite_index != noone){
-	draw_self();
-}
+draw_sprite(sprite_index, image_index, round(x), round(y));

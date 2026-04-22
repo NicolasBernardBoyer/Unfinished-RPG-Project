@@ -22,9 +22,9 @@ visible = false;
 // counter
 count = 0;
 
-// text variables (will not use)
+// used by textbodx system via speakers[]
 portrait_index = 0; 
-portrait = noone;
+portrait = spr_kat_faces;
 voice = snd_typewriter;
 name = "";
 

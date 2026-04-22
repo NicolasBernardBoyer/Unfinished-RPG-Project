@@ -16,16 +16,14 @@ if (!global.pause) {
 			if(active_textbox == noone and !instance_exists(obj_textbox)){
 				var inst_list = ds_list_create();
 				var inst = collision_rectangle_list(x-radius, y-radius, x+radius, y+radius, obj_par_object, false, true, inst_list, true);
-				var interact;
-				if inst > 0 {
-					for (var i = 0; i < inst; ++i;){
-						if (inst_list[| i] != obj_kat){
-							interact = inst_list[| i];
-						} else {
-							interact = noone;	
-						}
-					}
+				var interact = noone;
+				for (var i = 0; i < inst; ++i;){
+					var candidate = inst_list[| i];
+					interact = candidate;
+					break;
 				}
+				ds_list_destroy(inst_list);
+				
 				if(interact != noone){
 					if (variable_struct_exists(interact, "has_text")){
 						if (interact.has_text == true){

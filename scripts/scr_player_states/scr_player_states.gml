@@ -5,6 +5,13 @@ function state_idle() {
 		return;
 	}
 	
+	// Debug for Text Boxes
+	if (keyboard_check_pressed(ord("E"))) {
+		show_debug_message("Trying to create a text box")
+		create_textbox(["this is a test box blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah", "hell yeah"], [id, id], [0, 0], [-1, -1])	
+	}
+
+	
 	// read input
 	h_input = global.hr - global.hl;
 	v_input = global.hd - global.hu;
@@ -43,12 +50,6 @@ function state_free() {
                    " | hsp:" + string(hsp) + " vsp:" + string(vsp));
 
 	
-		
-	if (keyboard_check_pressed(ord("E"))) {
-		show_debug_message("Trying to create a text box")
-		create_textbox(["this is a test box"], [id], [0], [0])	
-	}
-
 	// if player is not inputting
 	if (h_input == 0 && v_input == 0) {
 		show_debug_message("Switching to idle - no input detected. hr:" + string(global.hr) + " hl:" + string(global.hl) + " hd:" + string(global.hd) + " hu:" + string(global.hu));
@@ -104,6 +105,9 @@ function state_free() {
 	// add movement to player
 	x += hsp;
 	y += vsp;
+	
+	x = round(x);
+	y = round(y);
 
 	
 	// This region is for setting the sprite depending on the state of the player

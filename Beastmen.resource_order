@@ -415,7 +415,9 @@
     {"name":"spr_yoru_upwalkold","order":2,"path":"sprites/spr_yoru_upwalkold/spr_yoru_upwalkold.yy",},
     {"name":"spr_yoru_walkold","order":3,"path":"sprites/spr_yoru_walkold/spr_yoru_walkold.yy",},
     {"name":"Sprite145","order":1,"path":"sprites/Sprite145/Sprite145.yy",},
+    {"name":"TileSetTest","order":3,"path":"sprites/TileSetTest/TileSetTest.yy",},
     {"name":"tset_city","order":1,"path":"tilesets/tset_city/tset_city.yy",},
     {"name":"tset_mine","order":2,"path":"tilesets/tset_mine/tset_mine.yy",},
+    {"name":"tset_test","order":3,"path":"tilesets/tset_test/tset_test.yy",},
   ],
 }

@@ -1,3 +1,5 @@
+draw_set_font(fnt_8bit);
+
 // variables that will never be used
 portrait_index = 0;
 voice = snd_typewriter;
