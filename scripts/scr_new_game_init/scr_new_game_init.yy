@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"viewport_resize",
+  "%Name":"scr_new_game_init",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"viewport_resize",
+  "name":"scr_new_game_init",
   "parent":{
-    "name":"generic",
-    "path":"folders/Scripts/generic.yy",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

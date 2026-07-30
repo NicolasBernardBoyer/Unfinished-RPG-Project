@@ -8,7 +8,7 @@ function state_idle() {
 	// Debug for Text Boxes
 	if (keyboard_check_pressed(ord("E"))) {
 		show_debug_message("Trying to create a text box")
-		create_textbox(["this is a test box blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah", "hell yeah"], [id, id], [0, 0], [-1, -1])	
+		create_textbox(["this is a test box blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah", ["Yes", "No"], "hell yeah"], [id, id, id], [0, [0,0], 0], [-1, [-1, -1], -1])	
 	}
 
 	

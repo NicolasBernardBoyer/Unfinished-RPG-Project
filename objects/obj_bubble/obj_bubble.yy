@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"particle effects",
-    "path":"folders/Objects/particle effects.yy",
+    "path":"folders/Objects/legacy/particle effects.yy",
   },
   "parentObjectId":null,
   "persistent":true,
