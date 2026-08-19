@@ -6,7 +6,7 @@
   "name":"LoadGame",
   "parent":{
     "name":"Saving",
-    "path":"folders/Scripts/Menu Options/Saving.yy",
+    "path":"folders/Scripts/Settings Options/Saving.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

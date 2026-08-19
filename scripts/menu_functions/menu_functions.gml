@@ -1,71 +1,110 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function Menu(_x, _y, _options, _description = -1, _width = undefined, _height = undefined)
+function menu(_x, _y, _options, _description = -1, _width = undefined, _height = undefined)
 {
-	with (instance_create_depth(_x,_y,-99999,obj_battle_menu))
+	with (instance_create_depth(_x,_y,-99999,obj_menu))
 	{
-		options = _options;
-		description = _description;
-		var _optionsCount = array_length(_options);
-		visibleOptionsMax = _optionsCount;
+		options = _options
+		var _options_count = array_length(_options);
+		visible_options_max = _options_count;
 		
-		//Set up size
+		//size setup
 		xmargin = 10;
 		ymargin = 8;
-		draw_set_font(fnt_small);
-		heightLine = 12;
+		draw_set_font(fnt_8bit);
+		height_line = 12;
 		
-		//auto width
-		//not really used since we have the width from our box object already
-		if (_width == undefined){
+		//Auto width
+		if (_width == undefined)
+		{
 			width = 1;
-			if (description != -1) width = max(width, string_width(_description));
-			for (var i = 0; i < _optionsCount; i++)
+			for (var i = 0; i < _options_count; i++)
 			{
 				width = max(width, string_width(_options[i][0]));
 			}
-			widthFull = width + xmargin * 2;
-		} else widthFull = _width;
+			width_full = width + xmargin * 2;
+		} else width_full = _width;
 		
-		//auto height
+		//Auto height
 		if (_height == undefined)
 		{
-			height = heightLine * (_optionsCount + !(description == -1));
-			heightFull = height + ymargin * 2;
+			height = height_line * (_options_count);
+			height_full = height + ymargin * 2;
 		}
 		else
 		{
-			heightFull = _height;
+			height_full = _height;
 			//scrolling?
-			//normally I'm not using this in my game but its a option to have
-			if (heightLine * (_optionsCount + description != -1) > _height - (ymargin*2))
+			if (height_line * (_options_count) > _height - (ymargin*2))
 			{
 				scrolling = true;
-				visibleOptionsMax = (_height - ymargin * 2) div heightLine;
+				visible_options_max = (_height - ymargin * 2) div height_line;
 			}
 		}
 	}
 }
 
-function SubMenu(_options)
+function sub_menu(_options)
 {
-	//store old options in array and increase submenu level
-	optionsAbove[subMenuLevel] = options;
-	subMenuLevel++;
+	options_above[sub_menu_level] = options;
+	sub_menu_level++;
 	options = _options;
 	hover = 0;
 }
 
-function MenuGoBack()
+function menu_go_back()
 {
-	subMenuLevel--;
-	options = optionsAbove[subMenuLevel];
+	sub_menu_level--;
+	options = options_above[sub_menu_level];
 	hover = 0;
 }
 
-function MenuSelectAction(_user, _action)
+function menu_select_action(_user, _action)
 {
-	with (obj_battle_menu) active = false;
-	with (obj_battle) BeginAction(_user, _action, _user);
-	with (obj_battle_menu) instance_destroy();
+	with (obj_menu) active = false;	
+	
+	//Activate the targetting cursor if needed, or simply being action
+	with (obj_battle) {
+		if (_action.target_required)
+		{
+			with (cursor)
+			{
+				active = true;
+				active_action = _action;
+				target_all = _action.target_all;
+				if (target_all == MODE.VARIES) target_all = true; //"toggle" starts as true
+				active_user = _user;
+				
+				//Which side to target by default?
+				if (_action.target_enemy_by_default) //target enemy by default
+				{
+					target_index = 0;
+					target_side = obj_battle.enemy_units;
+					active_target = obj_battle.enemy_units[target_index];
+				}
+				else //target self by default
+				{
+					target_side = obj_battle.party_units;
+					active_target = active_user;
+					var _find_self = function(_element)
+					{
+						return (_element == active_target)
+					}
+					target_index = array_find_index(obj_battle.party_units, _find_self);
+				}
+			}
+		}
+		else 
+		{
+			//If no target needed, being the action and end the menu
+			begin_action(_user, _action,-1);
+			with (obj_menu) instance_destroy();
+		}
+	}
+}
+
+function use_item(_name) {
+	// Get an item from the array, use it up, so delete it.
+	for (var i = 0; i < array_length(global.party); i++) {
+		var _index = array_get_index(global.party[i].actions, _name);
+		array_delete(global.party[i].actions, _index, 1);
+	}
 }

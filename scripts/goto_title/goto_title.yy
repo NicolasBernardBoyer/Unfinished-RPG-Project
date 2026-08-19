@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"goto_title",
   "parent":{
-    "name":"Menu Options",
-    "path":"folders/Scripts/Menu Options.yy",
+    "name":"Settings Options",
+    "path":"folders/Scripts/Settings Options.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

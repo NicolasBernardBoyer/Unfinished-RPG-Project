@@ -5,10 +5,23 @@ turn = 0;
 unit_turn_order = [];
 unit_render_order = [];
 
+//Make targeting cursor
+cursor = 
+{
+	active_user: noone,
+	active_target: noone,
+	action_action: -1,
+	target_index: 0,
+	target_all: false,
+	confirm_delay : 0,
+	active : false
+};
+
 turn_count = 0;
 round_count = 0;
 battle_wait_time_frames = 30;
 battle_wait_time_remaining = 0;
+battle_text = "";
 current_user = noone;
 current_action = -1;
 current_targets = noone;
@@ -45,16 +58,73 @@ refresh_render_order();
 
 function battle_state_select_action()
 {
-	//Get current unit
-	var _unit = unit_turn_order[turn];
-	
-	if (!instance_exists(_unit)) || (_unit.hp <= 0)
+	if (!instance_exists(obj_menu))
 	{
-		battle_state = battle_state_victory_check;
-		exit;
-	}
+		//Get current unit
+		var _unit = unit_turn_order[turn];
 	
-	begin_action(_unit.id, global.action_library.attack, _unit.id);
+		if (!instance_exists(_unit) || _unit.hp <= 0)
+		{
+			battle_state = battle_state_victory_check;
+			exit;
+		}
+	
+		//begin_action(_unit.id, global.action_library.attack, _unit.id);
+	
+		//if unit is player controlled:
+		if (_unit.object_index == obj_battle_unit_pc){
+			//Compile the action menu
+			
+			var _menu_options = [];
+			var _sub_menus = {};
+		
+			var _action_list = _unit.actions;
+		
+			for (var i = 0; i < array_length(_action_list); i++)
+			{
+				var _action = _action_list[i];
+				var _available = true;
+				var _name_and_count = _action.name;
+				if (_action.submenu == -1)
+				{
+					array_push(_menu_options, [_name_and_count, menu_select_action, [_unit, _action], _available]);
+				}
+				else
+				{
+					//create or add to a submenu
+					if (is_undefined(_sub_menus[$ _action.submenu]))
+					{
+						variable_struct_set(_sub_menus, _action.submenu, [[_name_and_count, menu_select_action, [_unit, _action], _available]]);
+					}
+					else
+					{
+						array_push(_sub_menus[$ _action.submenu], [_name_and_count, menu_select_action, [_unit, _action], _available]);
+					}
+				}
+			}
+		
+			//turn sub menus into an array
+			var _sub_menus_array = variable_struct_get_names(_sub_menus);
+			for (var i = 0; i < array_length(_sub_menus_array); i++)
+			{
+				//sort submenu if needed
+				//(here)
+				
+				//add back option at the end of each submenu
+				array_push(_sub_menus[$ _sub_menus_array[i]], ["Back", menu_go_back, -1, true]);
+				//add submenu into main menu
+				array_push(_menu_options, [_sub_menus_array[i], sub_menu, [_sub_menus[$ _sub_menus_array[i]]], true]);
+			}
+		
+			menu(x+10, y+110, _menu_options, , 74, 60);
+		}
+		else
+		{
+			//if unit is AI controlled
+			var _enemy_action = _unit.ai_script();
+			if (_enemy_action != -1) begin_action(_unit.id, _enemy_action[0], _enemy_action[1]);
+		}
+	}
 }
 
 function begin_action(_user, _action, _targets)
@@ -62,6 +132,7 @@ function begin_action(_user, _action, _targets)
 	current_user = _user;
 	current_action = _action;
 	current_targets = _targets;
+	battle_text = string_ext(_action.description, [_user.name]);
 	if (!is_array(current_targets)) current_targets = [current_targets];
 	battle_wait_time_remaining = battle_wait_time_frames;
 	with (_user) 
@@ -129,6 +200,7 @@ function battle_state_victory_check()
 
 function battle_state_turn_progression()
 {
+	battle_text = ""; // reset battle text
 	turn_count++;
 	turn++;
 	//Loop turns
