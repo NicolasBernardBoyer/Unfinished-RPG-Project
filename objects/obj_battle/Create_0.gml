@@ -195,7 +195,22 @@ function battle_state_perform_action()
 
 function battle_state_victory_check()
 {
-	battle_state = battle_state_turn_progression;
+	var _enemies_remain = false;
+	
+	for (var i = 0; i < array_length(enemy_units); i++) {
+		if (enemy_units[i].alive == true) {
+			_enemies_remain = true;
+			break;
+		}
+	}
+	
+	if (_enemies_remain == false) {
+		instance_activate_all();
+		
+		instance_destroy();
+	} else {
+		battle_state = battle_state_turn_progression;
+	}
 }
 
 function battle_state_turn_progression()

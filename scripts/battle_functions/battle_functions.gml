@@ -1,5 +1,6 @@
-function new_encounter(_enemies, _bg)
+function new_encounter(_enemies, _bg, _trigger_id)
 {
+	instance_destroy(_trigger_id);
 	instance_create_depth
 	(
 		camera_get_view_x(view_camera[0]),
